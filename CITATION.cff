@@ -12,13 +12,13 @@ authors:
     affiliation: "Node & Norm"
 abstract: "An open documentary assurance method for evaluating whether human authority retained practical force in AI-mediated institutional decisions."
 license: Apache-2.0
-repository-code: "https://github.com/mj3b/human-influence-telemetry"
+repository-code: "https://github.com/node-and-norm/human-influence-telemetry"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21446141"
     description: "Concept DOI representing all published software versions of Human Influence Telemetry."
   - type: url
-    value: "https://github.com/mj3b/human-influence-telemetry"
+    value: "https://github.com/node-and-norm/human-influence-telemetry"
     description: "Canonical public software repository."
 keywords:
   - AI governance

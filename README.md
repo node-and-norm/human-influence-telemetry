@@ -1,7 +1,11 @@
 # Human Influence Telemetry
 
-[![HIT Validation](https://github.com/mj3b/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/mj3b/human-influence-telemetry/actions/workflows/validate.yml)
-[![Latest release: v0.6.5](https://img.shields.io/badge/latest%20release-v0.6.5-blue.svg)](https://github.com/mj3b/human-influence-telemetry/releases/tag/v0.6.5)
+[Node & Norm research directory](https://github.com/node-and-norm) · Documentary assurance of the exercise of human authority.
+
+Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope.
+
+[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml)
+[![Latest release: v0.6.5](https://img.shields.io/badge/latest%20release-v0.6.5-blue.svg)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5)
 [![DOI: all software versions](https://zenodo.org/badge/DOI/10.5281/zenodo.21446141.svg)](https://doi.org/10.5281/zenodo.21446141)
 [![Stable target: v1.0.0](https://img.shields.io/badge/stable%20target-v1.0.0%20gated-orange.svg)](docs/releases/v1.0.0-candidate.md)
 [![Maturity: Level 2](https://img.shields.io/badge/research%20maturity-Level%202%20Applicable-green.svg)](RESEARCH.md)
@@ -20,7 +24,7 @@ HIT evaluates what contemporaneous records establish about human access, judgmen
 
 | Layer | Status | Meaning |
 |---|---|---|
-| Published repository release | [`0.6.5`](https://github.com/mj3b/human-influence-telemetry/releases/tag/v0.6.5) | Claim-evidence integrity audit and paper workspace |
+| Published repository release | [`0.6.5`](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5) | Claim-evidence integrity audit and paper workspace |
 | Human-result release | [`0.6.0`](docs/releases/v0.6.0.md) | First bounded independent human result |
 | Active empirical package | [`0.7.0` candidate](docs/releases/v0.7.0-candidate.md) | Three-case current-contract protocol and packet construction |
 | Stable release candidate | `0.9.0` planned | Clean-room implementation audit and release-candidate freeze |
@@ -39,7 +43,7 @@ HIT evaluates what contemporaneous records establish about human access, judgmen
 **Version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
 **Previous version DOI, exact `v0.6.4` release:** [10.5281/zenodo.21446142](https://doi.org/10.5281/zenodo.21446142)
 
-The [GitHub Releases page](https://github.com/mj3b/human-influence-telemetry/releases) contains published releases. Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.
+The [GitHub Releases page](https://github.com/node-and-norm/human-influence-telemetry/releases) contains published releases. Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.
 
 ## v0.6.5 research-integrity release
 
@@ -149,7 +153,7 @@ See the [repository release index](docs/releases/README.md) for the distinction 
 ## Quick start
 
 ```bash
-git clone https://github.com/mj3b/human-influence-telemetry.git
+git clone https://github.com/node-and-norm/human-influence-telemetry.git
 cd human-influence-telemetry
 python -m pip install --requirement requirements-dev.txt
 
