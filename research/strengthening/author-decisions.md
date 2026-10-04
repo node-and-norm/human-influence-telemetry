@@ -11,3 +11,15 @@ The author's response was: “Accept these qualifications; preserve historical s
 Disposition: accept the stated qualifications associated with SOLO-A-01 and SOLO-A-02. Preserve released assessments and apply the qualifications to future reuse. This records the author's acceptance of the proposed boundaries; it does not attest that the author independently re-read each cited source. No new numeric score, full current-contract assessment, publication-gate decision, or independent review is created.
 
 SOLO-A-03 and all other queue items remain unresolved unless separately recorded. The original assistant-prepared dossier remains unchanged as proposal history. This additive decision record controls the accepted scope.
+
+## AD-002: P06 interpretation disagreement
+
+Date: 3 October 2026, America/New_York. Recorded by Codex from the author's direction in the working conversation.
+
+The assistant recommended preserving P06 as an unresolved interpretation disagreement: the passage reports an announcement on 18 August, while the claim concerns 17 August. An announcement on one date does not exclude another announcement, although the wording may suggest a single event. The recommendation preserved both original labels and the 9/10 agreement result, without declaring a proven model error.
+
+Following that recommendation, the author directed: “Proceed on P06.” This direction authorizes the recommended handling disposition. It does not establish which interpretation is scientifically correct or attest to an independent source review.
+
+Disposition: retain the frozen reference label, insufficient, and the observed model label, contradicted. Report P06 as an unresolved event-identity interpretation disagreement. Preserve the original inputs, response, analysis, and 9/10 agreement count. Any experiment that explicitly specifies a unique event requires a new design and result; it must not replace this record.
+
+This closes the immediate handling decision for P06 while leaving its interpretation unresolved. It changes no HIT score, maturity status, publication eligibility, or external-replication claim.

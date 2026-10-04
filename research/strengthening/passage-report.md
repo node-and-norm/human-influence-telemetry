@@ -21,6 +21,8 @@ The three declared invariance relations, P03/P01, P04/P01, and P08/P01, held. No
 
 ## Interpret the disagreement before changing anything
 
+Update: [AD-002](author-decisions.md#ad-002-p06-interpretation-disagreement) records the author's direction to proceed with retaining an unresolved interpretation disagreement. The original analysis below and all frozen artifacts remain unchanged. The handling decision is recorded; event identity remains unresolved.
+
 P06 states that an announcement occurred on 18 August and asks about 17 August. The reference uses an open-world reading: an event on the 18th does not exclude another event on the 17th. The model's answer may reflect an assumption that the two dates identify the same unique event. The response contains no explanation, so that account remains an inference. Its reported confidence of 0.97 does not settle the interpretation.
 
 Retain the mismatch and original reference. Author adjudication should decide whether the task's event identity was sufficiently explicit. A revised task that specifies uniqueness would be a new experiment, not a correction to this result. The finding supports manual review of date-based contradiction labels in this workflow; it does not establish a general model defect.
