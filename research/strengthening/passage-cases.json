@@ -1,0 +1,17 @@
+{
+  "study": "HIT-JEV-002",
+  "model": "jev-1.13.0",
+  "source_paths": [],
+  "cases": [
+    {"id":"P01","packet":"On 17 August 2020, Ofqual announced a change to grading. Implementation was planned.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"supported"},
+    {"id":"P02","packet":"Implementation was planned.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"insufficient"},
+    {"id":"P03","packet":"Ofqual's announcement of 17 August 2020 changed the stated grading approach. Implementation remained a planned step.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"supported"},
+    {"id":"P04","packet":"Implementation was planned. On 17 August 2020, Ofqual announced a change to grading.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"supported"},
+    {"id":"P05","packet":"On 17 August 2020, Agency Z announced a change to grading. Implementation was planned.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"insufficient"},
+    {"id":"P06","packet":"On 18 August 2020, Ofqual announced a change to grading. Implementation was planned.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"insufficient"},
+    {"id":"P07","packet":"Record A: On 17 August 2020, Ofqual announced a change to grading. Record B: Ofqual made no grading-change announcement on 17 August 2020. Neither record supersedes the other; their reliability is unresolved.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"insufficient"},
+    {"id":"P08","packet":"On 17 August 2020, Ofqual announced a change to grading. Implementation was planned. On 17 August 2020, Ofqual announced a change to grading. Implementation was planned.","claim":"Ofqual announced a grading change on 17 August 2020.","expected":"supported"},
+    {"id":"P09","packet":"On 17 August 2020, Ofqual announced a change to grading. Implementation was planned.","claim":"Every affected student received a corrected grade on 17 August 2020.","expected":"insufficient"},
+    {"id":"P10","packet":"On 17 August 2020, Ofqual announced a change to grading. Implementation was planned.","claim":"Ofqual made no grading-change announcement on 17 August 2020.","expected":"contradicted"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "design_id": "HIT-JEV-001",
+  "model": "jev-1.13.0",
+  "source_paths": [
+    "README.md",
+    "SPECIFICATION.md"
+  ],
+  "reference_status": "AI-authored development expectations; independent adjudication pending",
+  "cases": [
+    {
+      "id": "J01",
+      "claim": "The current assessment specification version is 0.4.0.",
+      "expected": "supported"
+    },
+    {
+      "id": "J02",
+      "claim": "The current-contract external-rater replication has been completed.",
+      "expected": "contradicted"
+    },
+    {
+      "id": "J03",
+      "claim": "Documentary silence by itself establishes affirmative absence under HIT 0.4.0.",
+      "expected": "contradicted"
+    },
+    {
+      "id": "J04",
+      "claim": "The reported two-scorer Cigna exercise used the preserved 0.1.0 scorer contract.",
+      "expected": "supported"
+    },
+    {
+      "id": "J05",
+      "claim": "The specification requires IE to be averaged into an ordinal total.",
+      "expected": "contradicted"
+    },
+    {
+      "id": "J06",
+      "claim": "The specification separates institutional-record integrity from assessment-packet integrity.",
+      "expected": "supported"
+    },
+    {
+      "id": "J07",
+      "claim": "Using HIT reduces the average time a researcher needs to review an institutional case by 30 percent.",
+      "expected": "insufficient"
+    },
+    {
+      "id": "J08",
+      "claim": "Higher HIT findings predict a 20 percent reduction in institutional harm.",
+      "expected": "insufficient"
+    }
+  ]
+}

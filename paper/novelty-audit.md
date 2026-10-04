@@ -16,3 +16,7 @@ The paper may describe the implemented combination and identify differences from
 4. Obtain external methodological review before submission when feasible.
 
 Novelty remains provisional until these tests close.
+
+## Supplementary development review
+
+The [closest-method challenge](../research/strengthening/closest-methods.md) identifies overlap with SMACTR and argument-based assurance. The [priority disposition](../research/strengthening/priority-status.md) records remaining obligations. These assistant-prepared comparisons await author adjudication and do not expand the existing publication-eligible claim set.

@@ -1,0 +1,99 @@
+{
+  "status": "ADVISORY_DEVELOPMENT_RESULT",
+  "scheduled": 10,
+  "valid": 10,
+  "matches": 9,
+  "false_support": 0,
+  "false_alarms": 0,
+  "confusion": {
+    "supported": {
+      "supported": 4,
+      "contradicted": 0,
+      "insufficient": 0
+    },
+    "contradicted": {
+      "supported": 0,
+      "contradicted": 1,
+      "insufficient": 0
+    },
+    "insufficient": {
+      "supported": 0,
+      "contradicted": 1,
+      "insufficient": 4
+    }
+  },
+  "rows": [
+    {
+      "id": "P01",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 0.97
+    },
+    {
+      "id": "P02",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "P03",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 0.96
+    },
+    {
+      "id": "P04",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 0.95
+    },
+    {
+      "id": "P05",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 0.97
+    },
+    {
+      "id": "P06",
+      "expected": "insufficient",
+      "actual": "contradicted",
+      "match": false,
+      "confidence": 0.97
+    },
+    {
+      "id": "P07",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "P08",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "P09",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 0.79
+    },
+    {
+      "id": "P10",
+      "expected": "contradicted",
+      "actual": "contradicted",
+      "match": true,
+      "confidence": 0.99
+    }
+  ],
+  "human_adjudication": "pending",
+  "external_replication": "unresolved"
+}

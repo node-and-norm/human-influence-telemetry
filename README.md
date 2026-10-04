@@ -98,6 +98,8 @@ Draft manual workbooks exist for Scorers A, B, and C. They remain marked `DRAFT 
 
 ## Research question
 
+The supplementary [research strengthening workbench](research/strengthening/README.md) audits repository claims, compares adjacent literature, tests adversarial evidence states, and prepares usefulness and external-review studies. Its synthetic results and AI-assisted observations do not advance research maturity or resolve current-contract replication.
+
 > Can observable records distinguish substantive human influence from ceremonial human presence in AI-mediated institutional decisions?
 
 ## Six substantive dimensions plus Telemetry Integrity

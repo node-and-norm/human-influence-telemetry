@@ -1,0 +1,75 @@
+{
+  "study": "HIT-SOLO-001-A",
+  "scope": "synthetic_conditional_rule_checks",
+  "documentary_interpretation_validated": false,
+  "human_adjudication": "pending",
+  "sha256": {
+    "research/strengthening/solo-001/plan.md": "f6b779b12724655182f04e5aa6cb77c7403a1411e278bd994216908e09775a93",
+    "research/strengthening/solo-001/dossier.md": "47c78a1348d6289db5635a698bdbccdb43b525390527fcb7f0483a705204b0df",
+    "research/strengthening/solo-001/cases.json": "b8b7770d391de8f197d2b72fec36680e598840cddea21311ac8e165b147ee718",
+    "scripts/validate_solo_application.py": "993c3d832130454089ea1b38f529f1c1673dc0cd26d8213f74510be7de12a396",
+    "src/rubric/rules_v040.py": "09464280f224e28d67e4bd3fc19691106b25683c83476bdb5e3b3758d17a3a30"
+  },
+  "observations": [
+    {
+      "id": "A01",
+      "actual": {
+        "finding": 2
+      },
+      "expected": {
+        "finding": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "A02",
+      "actual": {
+        "finding": "IE"
+      },
+      "expected": {
+        "finding": "IE"
+      },
+      "pass": true
+    },
+    {
+      "id": "A03",
+      "actual": {
+        "finding": "IE"
+      },
+      "expected": {
+        "finding": "IE"
+      },
+      "pass": true
+    },
+    {
+      "id": "A04",
+      "actual": {
+        "finding": 2
+      },
+      "expected": {
+        "finding": 2
+      },
+      "pass": true
+    },
+    {
+      "id": "A05",
+      "actual": {
+        "finding": "IE"
+      },
+      "expected": {
+        "finding": "IE"
+      },
+      "pass": true
+    },
+    {
+      "id": "A06",
+      "actual": {
+        "finding": 1
+      },
+      "expected": {
+        "finding": 1
+      },
+      "pass": true
+    }
+  ]
+}

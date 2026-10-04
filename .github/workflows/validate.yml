@@ -82,6 +82,14 @@ jobs:
           python -m src conformance --all --format json
           --output hit-conformance-report.json
 
+      - name: Verify supplementary research tests
+        run: |
+          python scripts/validate_research_strengthening.py --check
+          python scripts/test_research_strengthening.py
+          python scripts/validate_solo_application.py --check
+          python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
+          python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
+
       - name: Smoke-test public CLI commands
         run: python scripts/validate_v050_cli.py
 

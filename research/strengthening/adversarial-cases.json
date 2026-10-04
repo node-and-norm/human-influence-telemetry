@@ -1,0 +1,22 @@
+{
+  "suite_id": "HIT-ADV-001",
+  "evidence_class": "E1_synthetic",
+  "cases": [
+    {"id":"A01","rule":"FR-01","scenario":"A complete record search explicitly establishes absence.","facts":{"complete_record_search_absent":true},"expected":{"finding":0}},
+    {"id":"A02","rule":"FR-01","scenario":"The same search has incomplete coverage; absence is unresolved.","facts":{"complete_record_search_absent":false},"expected":{"finding":"IE"}},
+    {"id":"A03","rule":"FR-02","scenario":"A policy assigns a role to this unit, decision, and period.","facts":{"process_specific_artifact":true,"defined_or_assigned":true,"applies_to_unit":true,"applies_to_decision_type":true,"applies_to_period":true},"expected":{"finding":1}},
+    {"id":"A04","rule":"FR-02","scenario":"The policy is from a later period with no retrospective applicability.","facts":{"process_specific_artifact":true,"defined_or_assigned":true,"applies_to_unit":true,"applies_to_decision_type":true,"applies_to_period":false},"expected":{"finding":"IE"}},
+    {"id":"A05","rule":"FR-04","scenario":"The reviewer retrieved underlying evidence before the decision.","facts":{"actual_predecision_access":true,"relevant_underlying_evidence":true,"timing_known":true},"expected":{"finding":2}},
+    {"id":"A06","rule":"FR-04","scenario":"Retrieval is documented but its timing is unknown and no formal route is evidenced.","facts":{"actual_predecision_access":true,"relevant_underlying_evidence":true,"timing_known":false},"expected":{"finding":"IE"}},
+    {"id":"A07","rule":"FR-05","scenario":"Two process-specific indicators support ceremonial review.","facts":{"formal_review":true,"indirect_indicator_count":2,"process_specific":true,"material_contrary_evidence":false},"expected":{"finding":1}},
+    {"id":"A08","rule":"FR-05","scenario":"Material contrary evidence makes the indicator-based interpretation unresolved.","facts":{"formal_review":true,"indirect_indicator_count":2,"process_specific":true,"material_contrary_evidence":true},"expected":{"finding":"IE"}},
+    {"id":"A09","rule":"FR-06","scenario":"The named institution controls a tested intervention with a specified consequence.","facts":{"operational_test":true,"named_authority":true,"institution_controls_mechanism":true,"specified_consequence":true,"formal_authority":true},"expected":{"finding":2}},
+    {"id":"A10","rule":"FR-06","scenario":"Only the vendor controls the tested mechanism; the institution retains formal authority.","facts":{"operational_test":true,"named_authority":true,"institution_controls_mechanism":false,"specified_consequence":true,"formal_authority":true},"expected":{"finding":1}},
+    {"id":"A11","rule":"FR-08","scenario":"Specific harm evidence has independent corroboration and only formal repair ownership.","facts":{"specific_contemporaneous_harm_evidence":true,"independent_corroboration":true,"formal_repair_owner":true},"expected":{"trigger":"triggered","finding":1}},
+    {"id":"A12","rule":"FR-08","scenario":"Three articles repeat the same allegation; no independent corroboration establishes the harm trigger.","facts":{"specific_contemporaneous_harm_evidence":true,"independent_corroboration":false,"formal_repair_owner":true},"expected":{"trigger":"indeterminate","finding":"IE"}},
+    {"id":"A13","rule":"FR-09","scenario":"Linked operative reform is established within a declared follow-up period.","facts":{"followup_period_declared":true,"change_identifiable":true,"change_linked_to_assessed_failure":true,"implementing_actor_identified":true,"operative_change":true,"formal_reform_authority":true},"expected":{"finding":2}},
+    {"id":"A14","rule":"FR-09","scenario":"The same later reform falls outside any declared follow-up; formal authority remains evidenced.","facts":{"followup_period_declared":false,"change_identifiable":true,"change_linked_to_assessed_failure":true,"implementing_actor_identified":true,"operative_change":true,"formal_reform_authority":true},"expected":{"finding":1}},
+    {"id":"A15","rule":"FR-14","scenario":"A materially better-supported account has an explicit weighting explanation.","facts":{"materially_better_supported_account":true,"weighting_explanation_recorded":true},"expected":{"disposition":"determinate"}},
+    {"id":"A16","rule":"FR-14","scenario":"An unresolved conflict can change the finding despite a weighting explanation.","facts":{"materially_better_supported_account":true,"weighting_explanation_recorded":true,"unresolved_conflict_could_change_finding":true},"expected":{"disposition":"IE"}}
+  ]
+}

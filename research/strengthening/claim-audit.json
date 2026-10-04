@@ -1,0 +1,17 @@
+{
+  "audit_id": "HIT-STRENGTHENING-001",
+  "review_date": "2026-10-03",
+  "baseline_commit": "74558075da0e6a8bc0c25357dac27f4428bede9e",
+  "review_kind": "AI-assisted repository review; human adjudication pending",
+  "external_replication": "unresolved",
+  "findings": [
+    {"id": "CA-01", "path": "case-studies/assessments/toeslagenaffaire-harm-period.json", "locator": "The public record does not show an exercised authority", "issue": "Historical Reform 0 rationale describes unobserved exercise; current contract requires affirmative absence for 0.", "disposition": "Preserve historical result; require a new bounded assessment before current-contract reuse.", "status": "open"},
+    {"id": "CA-02", "path": "RESEARCH.md", "locator": "Demonstrated for 48 synthetic boundary cases", "issue": "Synthetic distinction tests do not establish discrimination in source interpretation. The machine-readable H2 claim is narrower than a general validity reading of this row.", "disposition": "Read H2 as executable fixture behavior; source interpretation remains untested under the current contract.", "status": "bounded"},
+    {"id": "CA-03", "path": "RESEARCH.md", "locator": "7 of 7", "issue": "Seven compared items share one packet; all six substantive ratings use one category. They are not seven independent cases.", "disposition": "Retain descriptive agreement only; report cases, raters, categories, and items separately.", "status": "bounded"},
+    {"id": "CA-04", "path": "audits/v0.6.5/audit-report.md", "locator": "Unmapped repository prose remains outside this audit", "issue": "Passing mapped controls does not evaluate every repository statement or verify external source truth.", "disposition": "Use a separate scope register for supplementary claims and retain manual source review.", "status": "bounded"},
+    {"id": "CA-05", "path": "paper/novelty-audit.md", "locator": "Novelty remains provisional", "issue": "The existing contribution is an implemented combination; novelty and comparative benefit remain unestablished.", "disposition": "Add targeted comparison; retain provisional novelty until a documented wider search and review.", "status": "open"},
+    {"id": "CA-06", "path": "SPECIFICATION.md", "locator": "observed exercise affected the decision path", "issue": "A substantive finding can arise through observed exercise or qualifying capability; these evidence routes support different descriptions.", "disposition": "Preserve the contract; report which route supports every 2 in future studies and analyze routes separately.", "status": "open"},
+    {"id": "CA-07", "path": "RESEARCH.md", "locator": "Higher HIT findings predict lower harm or better repair", "issue": "Practical authority can be exercised harmfully. Repair also overlaps the proposed outcome and can create circular prediction.", "disposition": "Keep H5 untested. Any future study must separate predictor dimensions, observation windows, outcomes, and confounding.", "status": "bounded"},
+    {"id": "CA-08", "path": "paper/references.bib", "locator": "version = {0.6.4}", "issue": "The manuscript describes v0.6.5 while the software bibliography entry identifies v0.6.4.", "disposition": "Preserve the historical entry; add a distinct v0.6.5 entry and use it for v0.6.5 descriptions.", "status": "resolved_additively"}
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "status": "ADVISORY_DEVELOPMENT_RESULT",
+  "scheduled": 8,
+  "valid": 8,
+  "matches": 8,
+  "false_support": 0,
+  "false_alarms": 0,
+  "confusion": {
+    "supported": {
+      "supported": 3,
+      "contradicted": 0,
+      "insufficient": 0
+    },
+    "contradicted": {
+      "supported": 0,
+      "contradicted": 3,
+      "insufficient": 0
+    },
+    "insufficient": {
+      "supported": 0,
+      "contradicted": 0,
+      "insufficient": 2
+    }
+  },
+  "rows": [
+    {
+      "id": "J01",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J02",
+      "expected": "contradicted",
+      "actual": "contradicted",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J03",
+      "expected": "contradicted",
+      "actual": "contradicted",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J04",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 0.99
+    },
+    {
+      "id": "J05",
+      "expected": "contradicted",
+      "actual": "contradicted",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J06",
+      "expected": "supported",
+      "actual": "supported",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J07",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 1.0
+    },
+    {
+      "id": "J08",
+      "expected": "insufficient",
+      "actual": "insufficient",
+      "match": true,
+      "confidence": 0.87
+    }
+  ],
+  "human_adjudication": "pending",
+  "external_replication": "unresolved"
+}
