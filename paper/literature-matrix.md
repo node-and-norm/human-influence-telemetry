@@ -11,3 +11,5 @@
 | HIT repository releases | Contract, conformance, and bounded human result | Primary artifact evidence | Audited in repository | Claims remain version-bound |
 
 This matrix is a working review control. A row marked pending cannot support a novelty or literature-synthesis conclusion.
+
+The [2026-10-03 targeted comparison](../research/strengthening/literature-review.md) supplements this initial matrix with five named sources and reviewed locations. Green received a bounded introduction review and Buçinca et al. an abstract review; neither is represented as a completed full-text review. Siebert et al., Raji et al., and Hallgren add comparisons on authority, audit artifacts, and reliability. Novelty and exhaustive coverage remain provisional.
