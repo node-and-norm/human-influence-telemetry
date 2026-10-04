@@ -18,6 +18,8 @@ The candidate contribution is a reproducible representation of documentary judgm
 
 ## First documentary application
 
+The [five-candidate inventory and selection freeze](solo-series.md) retains three partial applications. The [Ofqual and Robodebt dossiers](solo-bc.md) extend the first audit with announcement and recommendation boundaries. Their source packets do not establish operational delivery. All comparison judgments require author adjudication; full documentary sensitivity and invariance tests remain incomplete. The [E5 writing rules](e5-writing.md) apply the author's supplied packet to this workbench.
+
 The [Obermeyer development audit](solo-001/dossier.md) proposes two rationale qualifications and an overcorrection warning. Its matched structured-review comparison is a tie, not evidence of HIT superiority. Six conditional software checks accompany it; they do not validate source interpretation. Author adjudication and the remaining case-series selection are pending. Run `python scripts/validate_solo_application.py --check` to replay those checks. The [plan](solo-001/plan.md) discloses prior source exposure and the exploratory staging amendment.
 
 ## Completion criteria
