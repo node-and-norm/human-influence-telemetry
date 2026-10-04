@@ -12,6 +12,8 @@ Status as of 3 October 2026. This workbench records completed development work a
 
 ## Author decision queue
 
+[AD-001](author-decisions.md) records the author's acceptance of the stated clinician-access and operational-rollout qualifications associated with SOLO-A-01 and SOLO-A-02, while preserving historical scores. Other interpretations remain pending. The items below retain the original queue for traceability.
+
 The following decisions require the author's scientific judgment. These are open questions, not prefilled attestations. For each decision, record accepted, revised, rejected with reason, or unresolved; cite the material reviewed and retain the original proposal.
 
 1. Review CA-01 and CA-06 in claim-audit.json: historical absence reasoning and evidence routes for substantive findings.
@@ -25,6 +27,6 @@ The assistant can implement the resulting editorial and software changes. It can
 
 ## Publication and archive boundary
 
-Keep this work in the draft PR until the material interpretations have dispositions. The existing manuscript and v0.6.5 audit remain version-bound. Supplementary model and documentary findings are not automatically eligible under that audit. Before adding them to a paper conclusion, map each new claim, obtain the required support review, evaluate fitness and dependencies, and regenerate the audit for the proposed publication version.
+PR #28 was merged at the author's explicit request on 3 October 2026. Merge approval does not adjudicate the proposed scientific interpretations. The existing manuscript and v0.6.5 audit remain version-bound. Supplementary model and documentary findings are not automatically eligible under that audit. Before adding them to a paper conclusion, map each new claim, obtain the required support review, evaluate fitness and dependencies, and regenerate the audit for the proposed publication version.
 
 No Zenodo update or new release has been made for this workbench. A future version must preserve the historical DOI boundaries and identify the exact archived commit. Existing permissions to publish do not turn unresolved research claims into supported conclusions.

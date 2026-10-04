@@ -18,7 +18,7 @@ Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, a
 
 **Originating research DOI:** [10.5281/zenodo.21204892](https://doi.org/10.5281/zenodo.21204892)
 
-HIT evaluates what contemporaneous records establish about human access, judgment, authority, correction, repair, and reform. It does not infer intention, certify legal compliance, perform runtime[...]
+HIT evaluates what contemporaneous records establish about human access, judgment, authority, correction, repair, and reform. It does not infer intention or certify legal compliance. It assesses documentary evidence; it does not control deployed systems.
 
 ## Public version status
 
@@ -134,17 +134,17 @@ Two eligible independent scorers applied frozen packet `HIT-IR-CIGNA-PXDX-001` u
 
 Both scorers assigned `1` to Counsel, Judgment, Command, Correction, Repair, and Reform. Both assigned `limited` to Telemetry Integrity.
 
-Supplementary Cohen's kappa is `null` because all six substantive ratings fell in one category. The data contain no category variance for chance-corrected estimation. The primary exact-agreement [...]
+Supplementary Cohen's kappa is `null` because all six substantive ratings fell in one category. The data contain no category variance for chance-corrected estimation. Exact agreement describes this packet and these scorers; it does not establish population reliability.
 
 See [`validation/results/`](validation/results/), [`RESEARCH.md`](RESEARCH.md), and [ADR-0004](docs/decisions/ADR-0004-advance-hit-to-maturity-level-2.md).
 
 ## Release layers
 
-Release `0.4.0` stabilized the normative assessment contract. It introduced evidence states, explicit finding thresholds, dimension-specific rules, Repair triggers, split Telemetry Integrity, sam[...]
+Release `0.4.0` stabilized the normative assessment contract, including evidence states, explicit finding thresholds, dimension-specific rules, Repair triggers, and split Telemetry Integrity.
 
 Release `0.5.0` added executable complete-record conformance without changing the `0.4.0` contract.
 
-Release `0.6.0` publishes the bounded human agreement result. It changes research maturity and claim status. It does not change the `0.4.0` specification, schema, catalog, handbook, or scoring se[...]
+Release `0.6.0` publishes the bounded human agreement result. It changes research maturity and claim status. It does not change the `0.4.0` specification, schema, catalog, handbook, or scoring semantics.
 
 Release `0.6.4` synchronizes the published software archive and DOI metadata. It does not change the normative contract, conformance engine, human result, H3 decision, or research maturity.
 
@@ -153,6 +153,8 @@ Release `0.6.5` adds claim-evidence publication controls. It does not change the
 See the [repository release index](docs/releases/README.md) for the distinction between published releases and candidate release documents.
 
 ## Quick start
+
+Use Python 3.12, the version exercised by CI. Install dependencies in a virtual environment. The commands below assume that environment is active.
 
 ```bash
 git clone https://github.com/node-and-norm/human-influence-telemetry.git
