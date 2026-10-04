@@ -12,6 +12,8 @@ Status as of 3 October 2026. This workbench records completed development work a
 
 ## Author decision queue
 
+[AD-002](author-decisions.md#ad-002-p06-interpretation-disagreement) records P06's handling disposition: retain the unresolved interpretation disagreement and both frozen labels. The 9/10 result remains unchanged. Queue item 5 therefore has a handling decision, with scientific interpretation still open.
+
 [AD-001](author-decisions.md) records the author's acceptance of the stated clinician-access and operational-rollout qualifications associated with SOLO-A-01 and SOLO-A-02, while preserving historical scores. Other interpretations remain pending. The items below retain the original queue for traceability.
 
 The following decisions require the author's scientific judgment. These are open questions, not prefilled attestations. For each decision, record accepted, revised, rejected with reason, or unresolved; cite the material reviewed and retain the original proposal.

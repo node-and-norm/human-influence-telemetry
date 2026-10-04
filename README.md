@@ -1,167 +1,193 @@
+<div align="center">
+
 # Human Influence Telemetry
 
-[Node & Norm research directory](https://github.com/node-and-norm) · Documentary assurance of the exercise of human authority.
+Documentary evidence of practical human authority.
 
-Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope.
+[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Release: v0.6.5](https://img.shields.io/badge/release-v0.6.5-blue)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
 
-[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml)
-[![Latest release: v0.6.5](https://img.shields.io/badge/latest%20release-v0.6.5-blue.svg)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5)
-[![DOI: all software versions](https://zenodo.org/badge/DOI/10.5281/zenodo.21446141.svg)](https://doi.org/10.5281/zenodo.21446141)
-[![Stable target: v1.0.0](https://img.shields.io/badge/stable%20target-v1.0.0%20gated-orange.svg)](docs/releases/v1.0.0-candidate.md)
-[![Maturity: Level 2](https://img.shields.io/badge/research%20maturity-Level%202%20Applicable-green.svg)](RESEARCH.md)
-[![Research integrity: PASS WITH EXCEPTIONS](https://img.shields.io/badge/research%20integrity-PASS_WITH_EXCEPTIONS-orange.svg)](audits/v0.6.5/audit-report.md)
-[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+</div>
 
-**An open documentary assurance method for evaluating whether human authority retained practical force in AI-mediated institutional decisions.**
+[At a glance](#at-a-glance) · [Choose your path](#choose-your-path) · [The research problem](#the-research-problem) · [Current results](#current-results) · [Repository map](#repository-map) · [Reproduce the checks](#reproduce-the-checks) · [Research boundaries](#research-boundaries) · [Citation](#citation) · [Release history and next gates](#release-history-and-next-gates)
+
+## At a glance
+
+A record that a person reviewed an algorithmic decision does not establish what that person could understand or change. Human Influence Telemetry (HIT) helps researchers organize documentary evidence about that practical authority, identify missing records, and make assessment judgments open to inspection.
+
+Use the specification and handbook to define an actor, decision, period, and evidence boundary. Record the finding and its supporting sources, then run the conformance checks. A valid assessment record still requires a defensible interpretation of the evidence.
+
+| Research checkpoint | Current account |
+| :--- | :--- |
+| Published artifact | Repository release 0.6.5; normative contract 0.4.0; conformance engine 0.5.0 |
+| Human evidence | Two independent scorers agreed on 7 of 7 items for one frozen Cigna packet under the earlier 0.1.0 scorer contract |
+| Publication controls | Thirteen mapped claims, five gates, eight negative controls; audit state `PASS_WITH_EXCEPTIONS` |
+| Later development on main | Three partial documentary applications and two advisory model experiments; no new release or maturity promotion |
+| Open questions | Current-contract replication, broader validity, comparative usefulness, novelty, and institutional outcomes remain unresolved |
+
+**Current release:** 0.6.5
+
+**Human-result release:** 0.6.0
+
+**Conformance engine version:** 0.5.0
+
+**Current maturity:** Level 2, Applicable
+
+The [working manuscript](paper/manuscript.md) is a methods draft. The [five-priority status](research/strengthening/priority-status.md) distinguishes completed development work from pending research obligations. Main includes unreleased work beyond the archived v0.6.5 package.
+
+## Choose your path
+
+| Reader | Start here | Then inspect |
+| :--- | :--- | :--- |
+| Researcher | [Application handbook](docs/application-handbook.md) and [specification](SPECIFICATION.md) | [Historical cases](case-studies/README.md), [solo evaluation design](research/strengthening/solo-evaluation.md), and [limitations](LIMITATIONS.md) |
+| Reviewer | [Research claims](RESEARCH.md) and [claim-evidence map](evidence/claim-evidence-map.json) | [Integrity audit](audits/v0.6.5/audit-report.md), [source challenges](research/strengthening/solo-001/dossier.md), and [author decisions](research/strengthening/author-decisions.md) |
+| Implementer | [Reproduce the checks](#reproduce-the-checks) and [schema](schema/) | [Conformance fixtures](fixtures/v0.5.0-conformance/README.md) and [implementation candidate](implementation/v1.0.0-candidate/README.md) |
+
+## The research problem
+
+> Can observable records distinguish substantive human influence from ceremonial human presence in AI-mediated institutional decisions?
+
+HIT assesses what records establish about a named actor's influence. It does not infer intention or control deployed systems. A signature or review step prompts questions about access, reasoning, intervention, and consequences; the label alone cannot answer them.
+
+### Six substantive dimensions plus Telemetry Integrity
+
+| Dimension | Documentary question |
+| :--- | :--- |
+| Counsel | Did the authority have pre-decision access to relevant underlying evidence? |
+| Judgment | Did the authority independently evaluate reasons, alternatives, uncertainty, and context? |
+| Command | Could the authority practically approve, reject, modify, stop, or escalate? |
+| Correction | Could a decision be contested, reconsidered, modified, reversed, or appealed in practice? |
+| Repair | After qualifying harm, did a named actor own and deliver remediation to affected persons? |
+| Reform | Did a named authority exercise power to change the decision architecture? |
+| Telemetry Integrity | What do process coverage and packet integrity establish about the assessment's documentary basis? |
+
+The [specification](SPECIFICATION.md) controls the exact thresholds and evidence routes. These questions are a reading guide.
+
+### Finding states
+
+- `0`: absence supported by affirmative evidence.
+- `1`: process-specific formal or ceremonial presence under the applicable rule.
+- `2`: substantive exercise or qualifying operational capability under the applicable rule.
+- `IE`: insufficient evidence.
+
+`IE` is not converted to zero or averaged into an ordinal total. A substantive finding must identify its evidence route. Practical authority can be exercised harmfully; a high finding does not establish a fair outcome.
+
+## Current results
+
+### Preserved human exercise
+
+Two eligible independent scorers assessed frozen packet `HIT-IR-CIGNA-PXDX-001` under protocol `HIT-IRP-CIGNA-001` and scorer contract 0.1.0. They produced 7 of 7 exact agreements, with zero critical disagreements. Both assigned `1` to all six substantive dimensions and `limited` to Telemetry Integrity.
+
+Cohen's kappa is undefined because the six substantive ratings have no category variance. This result describes one packet, two scorers, and one category pattern. It does not establish population reliability or replication under contract 0.4.0. See the [preserved results](validation/results/README.md) and [maturity decision](docs/decisions/ADR-0004-advance-hit-to-maturity-level-2.md).
+
+### Executable publication controls
+
+Version 0.6.5 connects H1–H9 and four material paper claims to traceability, integrity, human support review, evidence fitness, and dependency-closure gates. Evidence fitness separates directness, contemporaneity, independence, completeness, and publication authority. Eight negative controls test specified corruptions.
+
+The [audit](audits/v0.6.5/audit-report.md) reports `PASS_WITH_EXCEPTIONS`. That state describes mapped claims and controls; it does not certify every repository statement or external source.
+
+### Unreleased documentary and model work
+
+The [development workbench](research/strengthening/README.md) contains three partial applications: Obermeyer, Ofqual, and selected Robodebt inquiry recommendations. The assistant-prepared comparisons propose ties with a capable structured review. The [author decision record](research/strengthening/author-decisions.md) accepts two bounded Obermeyer qualifications while preserving historical scores.
+
+Two separate Jev experiments matched 8/8 and 9/10 assistant-authored reference labels. The [second experiment](research/strengthening/passage-report.md) retains a date-related interpretation disagreement. Its inputs are constructed passages, not full historical documents. These results test advisory model behavior; they supply no independent human ratings or measured user benefit.
+
+## Repository map
+
+| Location | Purpose |
+| :--- | :--- |
+| [SPECIFICATION.md](SPECIFICATION.md), [schema/](schema/), [handbook](docs/application-handbook.md) | Normative rules, record structure, and application guidance |
+| [case-studies/](case-studies/README.md) | Version-bound historical assessments |
+| [validation/](validation/README.md) | Preserved human results and gated replication work |
+| [src/](src/), [fixtures/](fixtures/README.md), [scripts/](scripts/) | Conformance implementation, test inputs, and validation tools |
+| [evidence/](evidence/), [audits/](audits/), [protocols/](protocols/) | Claim support, research lineage, and publication controls |
+| [research/strengthening/](research/strengthening/README.md) | Current documentary tests, model results, literature challenges, and author decisions |
+| [paper/](paper/README.md), [figures/](figures/README.md) | Working manuscript, references, and reproducible publication figures |
+| [Release index](docs/releases/README.md), [roadmap](ROADMAP.md) | Published checkpoints and future gates |
+| [Repository audit](docs/repository-audit-2026-10-03.md) | Cleanup findings, checks performed, and remaining limits |
+
+## Reproduce the checks
+
+Use Python 3.12, matching CI. From a local clone, create and activate a virtual environment, then install the pinned dependencies:
+
+```bash
+git clone https://github.com/node-and-norm/human-influence-telemetry.git
+cd human-influence-telemetry
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install --requirement requirements-dev.txt
+python -m src conformance --all
+python scripts/run_research_integrity_audit.py --check
+python scripts/validate_research_strengthening.py --check
+python scripts/validate_solo_application.py --check
+python scripts/test_research_strengthening.py
+python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
+python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
+```
+
+On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. These checks and model replays require no API key or live inference. The [CI workflow](.github/workflows/validate.yml) lists the additional release, replication-candidate, and implementation-readiness checks.
+
+To inspect your own record, run `python -m src conformance --path assessment.json`. For a historical record, `python -m src migration-plan --path historical-assessment.json` produces a non-mutating migration plan. Conformance checks record structure and declared rules; it does not verify source truth.
+
+## Research boundaries
+
+HIT has not established population reliability, causal effectiveness, legal conformity, independent institutional adoption, or general field validity. The literature review and novelty assessment remain incomplete. Model agreement, deterministic tests, and a valid record cannot substitute for source interpretation or independent human evidence.
+
+**Active replication protocol:** `HIT-IRP-HIT040-002`, candidate, scoring prohibited
+
+The solo development track remains separate from that protocol. Ofqual and Robodebt are automation-boundary applications; their inclusion does not establish that each system meets every definition of AI. Read [LIMITATIONS.md](LIMITATIONS.md), the [closest-method comparison](research/strengthening/closest-methods.md), and the [author decision queue](research/strengthening/priority-status.md) before reusing conclusions.
+
+Contributions should identify the changed proposition, supporting evidence, uncertainty, and conditions that would reverse the conclusion. Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [GOVERNANCE.md](GOVERNANCE.md); exclude confidential or restricted case material without documented publication authority.
+
+## Citation
+
+Cite the exact archived software version you used. Unreleased work on main should also identify its commit; the v0.6.5 DOI does not archive later changes.
+
+> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.5) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21864224
+
+**Version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
 
 **Concept DOI, all software versions:** [10.5281/zenodo.21446141](https://doi.org/10.5281/zenodo.21446141)
 
 **Originating research DOI:** [10.5281/zenodo.21204892](https://doi.org/10.5281/zenodo.21204892)
 
-HIT evaluates what contemporaneous records establish about human access, judgment, authority, correction, repair, and reform. It does not infer intention or certify legal compliance. It assesses documentary evidence; it does not control deployed systems.
-
-## Public version status
-
-| Layer | Status | Meaning |
-|---|---|---|
-| Published repository release | [`0.6.5`](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5) | Claim-evidence integrity audit and paper workspace |
-| Human-result release | [`0.6.0`](docs/releases/v0.6.0.md) | First bounded independent human result |
-| Active empirical package | [`0.7.0` candidate](docs/releases/v0.7.0-candidate.md) | Three-case current-contract protocol and packet construction |
-| Stable release candidate | `0.9.0` planned | Clean-room implementation audit and release-candidate freeze |
-| Stable public contract | [`1.0.0` gated candidate](docs/releases/v1.0.0-candidate.md) | Compatibility and independent-implementation commitment after all gates pass |
-
-**Current release:** 0.6.5
-**Human-result release:** 0.6.0
-**Conformance engine version:** 0.5.0
-**Specification version:** 0.4.0
-**Assessment schema version:** 0.4.0
-**Dimension catalog version:** 0.4.0
-**Current maturity:** Level 2, Applicable
-**Human reliability claim:** Supported for one frozen packet under `HIT-IRP-CIGNA-001`
-**Active replication protocol:** `HIT-IRP-HIT040-002`, candidate, scoring prohibited
-**Stable target:** `1.0.0`, release prohibited until the published gates pass
-**Version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
 **Previous version DOI, exact `v0.6.4` release:** [10.5281/zenodo.21446142](https://doi.org/10.5281/zenodo.21446142)
 
-The [GitHub Releases page](https://github.com/node-and-norm/human-influence-telemetry/releases) contains published releases. Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.
+Machine-readable citation metadata is in [CITATION.cff](CITATION.cff). The originating research record and software archives are separate artifacts.
 
-## v0.6.5 research-integrity release
+## Author
 
-Version 0.6.5 adds a machine-readable claim-evidence map for H1 through H9 and four material paper claims. Its audit separates traceability, integrity, human support review, evidence fitness, and dependency closure. Evidence fitness separately records directness, contemporaneity, independence, completeness, and publication authority.
+Mark Julius Banasihan · [Node & Norm](https://github.com/node-and-norm) · [ORCID](https://orcid.org/0009-0001-8121-2878)
 
-Eight negative controls test whether the audit detects broken references, weakened integrity, removed review, failed fitness, unresolved dependencies, false conclusion eligibility, missing locators, and a current-contract replication overclaim. The generated state is `PASS_WITH_EXCEPTIONS`: the controls pass while claims lacking required evidence remain blocked.
+Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope. AI assistance and scoped author decisions are disclosed in the research records.
 
-The release also adds research lineage, an AI-assistance log, a paper workspace, and reproducible claim-gate data and figures. See [`docs/releases/v0.6.5.md`](docs/releases/v0.6.5.md), [`protocols/research-integrity-audit.md`](protocols/research-integrity-audit.md), and [`paper/`](paper/).
+## Release history and next gates
 
-This release changes no normative scoring rule, conformance behavior, human result, or maturity decision. The 0.4.0 normative contract, 0.5.0 engine, 0.6.0 human result, and version-specific archive DOIs remain separate preserved layers. Current-contract external-rater replication remains unresolved and scoring-prohibited.
+<details>
+<summary>Published layers and preserved boundaries</summary>
 
-## What `1.0.0` will mean
+| Version | Published contribution |
+| :--- | :--- |
+| 0.4.0 | Normative assessment contract |
+| 0.5.0 | Complete-record conformance engine |
+| 0.6.0 | Bounded human result; maturity Level 2, Applicable |
+| 0.6.4 | Standalone software archive and DOI metadata |
+| 0.6.5 | Claim-evidence controls and paper workspace |
 
-Version `1.0.0` will declare that the public HIT assessment contract is stable enough for independent implementation, versioned compatibility commitments, and reproducible conformance checking from public artifacts.
+Specification, assessment schema, and dimension catalog remain 0.4.0. The engine remains 0.5.0. See the [release index](docs/releases/README.md) for checkpoint details.
 
-It will not declare population-wide inter-rater reliability, causal effectiveness, legal conformity, certification, truthful reasoning, or independent institutional adoption. Semantic stability and research maturity remain separate claims.
+</details>
 
-The governing materials are:
+<details>
+<summary>Future releases and v1.0 gates</summary>
 
-- [`ROADMAP.md`](ROADMAP.md), for the chronological release path;
-- [`docs/v1-readiness-plan.md`](docs/v1-readiness-plan.md), for the stable-contract gates;
-- [`docs/releases/v1.0.0-candidate.md`](docs/releases/v1.0.0-candidate.md), for the candidate release boundary;
-- [`release/v1.0.0/contract-freeze.candidate.json`](release/v1.0.0/contract-freeze.candidate.json), for the machine-readable gate ledger;
-- [`implementation/v1.0.0-candidate/`](implementation/v1.0.0-candidate/), for the clean-room implementation packet candidate.
+**Stable target:** `1.0.0`, release prohibited until the published gates pass.
 
-## Path to `1.0.0`
+Version 1.0.0 would make a compatibility and public-implementability commitment. Research maturity remains a separate claim. Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.
 
-| Version | State | Release function |
-|---|---|---|
-| `0.4.0` | Complete | Stabilized the normative assessment contract |
-| `0.5.0` | Complete | Added complete-record executable conformance |
-| `0.6.0` | Published | Added the first bounded independent human result and advanced maturity to Level 2 |
-| `0.6.4` | Published | Established the standalone software archive and version-specific Zenodo DOI |
-| `0.6.5` | Published | Added claim-evidence integrity controls and paper workspace |
-| `0.7.0` | Active candidate | Freeze three current-contract packets and the multi-case replication protocol |
-| `0.8.0` | Pending | Publish current-contract applications and the empirical result or declared recruitment disposition |
-| `0.9.0` | Pending | Publish the stable release candidate after clean-room implementation review |
-| `1.0.0` | Gated | Promote synchronized stable components after every release gate passes |
+The planned sequence is 0.7.0 packet and protocol freeze, 0.8.0 current-contract applications and empirical result or recruitment disposition, and 0.9.0 implementation review and release-candidate freeze before 1.0.0 promotion.
 
-Current blocking gates are:
+Open gates include human case selection, frozen packets, locked scoring materials, current-contract applications or migration exceptions, a complete implementation packet, clean-room review, a public release candidate, and synchronized component promotion. Draft workbooks remain scoring-prohibited.
 
-1. a signed human selection of one exercise-rich, one constraint-rich, and one evidence-limited case;
-2. three frozen packet boundaries, source manifests, identifiers, and digests;
-3. locked `v0.7.0` scorer, coordinator, comparison, and workbook materials;
-4. three current-contract public applications or documented migration exceptions;
-5. a complete standalone implementation packet;
-6. a clean-room implementation audit with original outputs preserved;
-7. a public `v0.9.0` release candidate;
-8. synchronized `1.0.0` component promotion, breaking-change review, and exact-release validation.
+The [readiness plan](docs/v1-readiness-plan.md), [candidate release](docs/releases/v1.0.0-candidate.md), and [machine-readable gate ledger](release/v1.0.0/contract-freeze.candidate.json) govern these decisions.
 
-Draft manual workbooks exist for Scorers A, B, and C. They remain marked `DRAFT - SCORING PROHIBITED` until the `0.7.0` protocol and all three packets are locked.
-
-## Research question
-
-The supplementary [research strengthening workbench](research/strengthening/README.md) audits repository claims, compares adjacent literature, tests adversarial evidence states, and prepares usefulness and external-review studies. Its synthetic results and AI-assisted observations do not advance research maturity or resolve current-contract replication.
-
-> Can observable records distinguish substantive human influence from ceremonial human presence in AI-mediated institutional decisions?
-
-## Six substantive dimensions plus Telemetry Integrity
-
-1. **Counsel:** Did a named human authority have actual pre-decision access to relevant underlying evidence?
-2. **Judgment:** Did the authority independently evaluate reasons, alternatives, uncertainty, and context?
-3. **Command:** Could the authority practically approve, reject, modify, stop, or escalate?
-4. **Correction:** Could the decision be contested, interrupted, reconsidered, modified, reversed, or appealed in practice?
-5. **Repair:** After qualifying harm, did a named actor own and deliver remediation to affected persons?
-6. **Reform:** Did a named authority have and exercise power to change the decision architecture?
-7. **Telemetry Integrity:** Can the institutional records and assessment packet be trusted as bounded audit evidence?
-
-## Findings
-
-- `0`: absent; requires affirmative evidence of absence;
-- `1`: present but ceremonial; requires process-specific formal presence;
-- `2`: present and substantively exercised; requires observed exercise or directly demonstrated operational capability;
-- `IE`: insufficient evidence; records an unresolved evidentiary state.
-
-`IE` is not converted to zero and is not averaged into an ordinal total.
-
-## Human inter-rater result
-
-Release `0.6.0` publishes the first completed locked human exercise.
-
-Two eligible independent scorers applied frozen packet `HIT-IR-CIGNA-PXDX-001` under the preserved `0.1.0` scorer contract. The pre-adjudication comparison produced:
-
-- 7 of 7 exact agreements;
-- exact-agreement proportion `1.0000`;
-- zero critical disagreements;
-- advancement threshold met.
-
-Both scorers assigned `1` to Counsel, Judgment, Command, Correction, Repair, and Reform. Both assigned `limited` to Telemetry Integrity.
-
-Supplementary Cohen's kappa is `null` because all six substantive ratings fell in one category. The data contain no category variance for chance-corrected estimation. Exact agreement describes this packet and these scorers; it does not establish population reliability.
-
-See [`validation/results/`](validation/results/), [`RESEARCH.md`](RESEARCH.md), and [ADR-0004](docs/decisions/ADR-0004-advance-hit-to-maturity-level-2.md).
-
-## Release layers
-
-Release `0.4.0` stabilized the normative assessment contract, including evidence states, explicit finding thresholds, dimension-specific rules, Repair triggers, and split Telemetry Integrity.
-
-Release `0.5.0` added executable complete-record conformance without changing the `0.4.0` contract.
-
-Release `0.6.0` publishes the bounded human agreement result. It changes research maturity and claim status. It does not change the `0.4.0` specification, schema, catalog, handbook, or scoring semantics.
-
-Release `0.6.4` synchronizes the published software archive and DOI metadata. It does not change the normative contract, conformance engine, human result, H3 decision, or research maturity.
-
-Release `0.6.5` adds claim-evidence publication controls. It does not change the normative contract, conformance engine, human result, H3 decision, or research maturity.
-
-See the [repository release index](docs/releases/README.md) for the distinction between published releases and candidate release documents.
-
-## Quick start
-
-Use Python 3.12, the version exercised by CI. Install dependencies in a virtual environment. The commands below assume that environment is active.
-
-```bash
-git clone https://github.com/node-and-norm/human-influence-telemetry.git
-cd human-influence-telemetry
-python -m pip install --requirement requirements-dev.txt
-
-python -m src conformance --all
-python -m src conformance --path assessment.json
-python -m src migration-plan --path historical-assessment.json
-```
+</details>
