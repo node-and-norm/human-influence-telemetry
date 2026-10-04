@@ -6,8 +6,8 @@ This supplementary workbench tests the usefulness and limits of HIT. It is devel
 |---|---|---|
 | 1. Claim audit | [Findings and dispositions](claim-audit.md), machine-readable [register](claim-audit.json) | Repository observations and proposed interpretation limits; human adjudication pending |
 | 2. Closest literature | [Comparison and search record](literature-review.md) | Targeted source review; systematic coverage and independent novelty review pending |
-| 3. Adversarial tests | [Protocol](adversarial-protocol.md), [cases](adversarial-cases.json), generated [results](results.json) | Deterministic tests of supplied facts; source interpretation remains untested |
-| 4. Analytical usefulness | [Primary solo evaluation](solo-evaluation.md); [demonstration and deferred participant extension](utility-protocol.md) | Synthetic demonstration completed; documentary comparisons and solo applications pending |
+| 3. Adversarial tests | [Protocol](adversarial-protocol.md), [cases](adversarial-cases.json), generated [results](results.json); [conditional sensitivity checks](solo-001/results.json) | Deterministic tests of supplied facts; no validated document-to-finding pipeline |
+| 4. Analytical usefulness | [Primary solo evaluation](solo-evaluation.md); [first documentary application](solo-001/dossier.md); [deferred participant extension](utility-protocol.md) | First exploratory comparison proposes a tie with structured review; author adjudication and remaining applications pending |
 | 5. External evaluation | [Reviewer packet](external-review.md), [response template](review-response.template.json) | Optional extension; no external review claimed |
 
 Run `python scripts/validate_research_strengthening.py --check` from the repository root. Use `--write` to regenerate the result after reviewing changes to inputs. Neither command calls an AI service. Results include hashes of inputs and the existing rubric implementation. CI verifies reproducibility and rejects unsupported promotions in this workbench.
@@ -16,9 +16,13 @@ The 0.4.0 contract, 0.5.0 conformance engine, historical applications, 0.6.0 hum
 
 The candidate contribution is a reproducible representation of documentary judgments about practical authority, with explicit uncertainty and actor/period boundaries. Whether this representation improves assessment is an open empirical question. High findings do not establish a fair decision, lower harm, or legitimate authority.
 
+## First documentary application
+
+The [Obermeyer development audit](solo-001/dossier.md) proposes two rationale qualifications and an overcorrection warning. Its matched structured-review comparison is a tie, not evidence of HIT superiority. Six conditional software checks accompany it; they do not validate source interpretation. Author adjudication and the remaining case-series selection are pending. Run `python scripts/validate_solo_application.py --check` to replay those checks. The [plan](solo-001/plan.md) discloses prior source exposure and the exploratory staging amendment.
+
 ## Completion criteria
 
-The workbench deliverables exist and validation passes; the solo evaluation is a prospective design, not a completed study. Its publication path requires responsible-author adjudication, verified sources and literature comparisons, case applications, explicit comparator outcomes, and sensitivity results. Claims about other users require participant evidence; independent-review claims require external records. Neither is a prerequisite for completing a bounded solo analytical study. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
+The workbench deliverables exist and validation passes; the first exploratory solo application is recorded, not a completed case series. Its publication path requires responsible-author adjudication, verified sources and literature comparisons, case applications, explicit comparator outcomes, and sensitivity results. Claims about other users require participant evidence; independent-review claims require external records. Neither is a prerequisite for completing a bounded solo analytical study. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
 
 ## Assistance and provenance
 

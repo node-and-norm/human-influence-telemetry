@@ -1,0 +1,14 @@
+{
+  "study": "HIT-SOLO-001-A",
+  "kind": "synthetic_conditional_rule_checks",
+  "human_adjudication": "pending",
+  "current_contract_assessment": false,
+  "cases": [
+    {"id": "A01", "rule": "FR-04", "facts": {"actual_predecision_access": true, "relevant_underlying_evidence": true, "timing_known": true}, "expected": {"finding": 2}},
+    {"id": "A02", "rule": "FR-04", "facts": {"actual_predecision_access": false, "relevant_underlying_evidence": true, "timing_known": true}, "expected": {"finding": "IE"}},
+    {"id": "A03", "rule": "FR-04", "facts": {"actual_predecision_access": true, "relevant_underlying_evidence": true, "timing_known": false}, "expected": {"finding": "IE"}},
+    {"id": "A04", "rule": "FR-09", "facts": {"followup_period_declared": true, "change_identifiable": true, "change_linked_to_assessed_failure": true, "implementing_actor_identified": true, "operative_change": true}, "expected": {"finding": 2}},
+    {"id": "A05", "rule": "FR-09", "facts": {"followup_period_declared": true, "change_identifiable": true, "change_linked_to_assessed_failure": true, "implementing_actor_identified": true, "operative_change": false}, "expected": {"finding": "IE"}},
+    {"id": "A06", "rule": "FR-09", "facts": {"followup_period_declared": true, "change_identifiable": true, "change_linked_to_assessed_failure": true, "implementing_actor_identified": true, "operative_change": false, "formal_change_process": true}, "expected": {"finding": 1}}
+  ]
+}
