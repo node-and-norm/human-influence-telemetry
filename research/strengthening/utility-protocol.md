@@ -1,5 +1,7 @@
 # Practical usefulness: demonstration and prospective pilot
 
+Amendment, 2026-10-03: the six-reviewer design below is a deferred optional extension. [HIT-SOLO-001](solo-evaluation.md) is now the primary proposed evaluation path for this solo research effort. The earlier design is retained for provenance; no participants were recruited and no results were observed before this change. The synthetic demonstration remains valid within its stated scope.
+
 Protocol HIT-UTILITY-001, candidate. No participants recruited or observed. Human approval of packets, participant information, data handling, and the analysis plan is pending. This protocol does not activate HIT-IRP-HIT040-002.
 
 ## Completed synthetic demonstration

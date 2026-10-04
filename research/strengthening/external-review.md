@@ -2,6 +2,8 @@
 
 Status: prepared; no invitation sent and no external result claimed. These tasks concern research review. Scoring an empirical packet under HIT-IRP-HIT040-002 remains prohibited until its existing gates pass.
 
+The [solo analytical evaluation](solo-evaluation.md) is the primary research path. These external tasks are optional extensions and are required only for the particular external-review, usability, or implementation claims they could support.
+
 Choose one task. A reviewer may decline or leave unresolved items. Estimated time budgets below are proposed caps, not measured completion times. Preserve original responses before author interpretation. Disclose conflicts, prior involvement, compensation, and AI use. Compensation, if offered, must be independent of conclusions. Obtain permission before publishing identity or quotations; use a public pseudonym where appropriate.
 
 | Task | Materials | Requested output | Proposed cap |

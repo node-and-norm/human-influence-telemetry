@@ -7,8 +7,8 @@ This supplementary workbench tests the usefulness and limits of HIT. It is devel
 | 1. Claim audit | [Findings and dispositions](claim-audit.md), machine-readable [register](claim-audit.json) | Repository observations and proposed interpretation limits; human adjudication pending |
 | 2. Closest literature | [Comparison and search record](literature-review.md) | Targeted source review; systematic coverage and independent novelty review pending |
 | 3. Adversarial tests | [Protocol](adversarial-protocol.md), [cases](adversarial-cases.json), generated [results](results.json) | Deterministic tests of supplied facts; source interpretation remains untested |
-| 4. Practical usefulness | [Comparison protocol and worked demonstration](utility-protocol.md) | Synthetic worked demonstration; participant results absent |
-| 5. External evaluation | [Reviewer packet](external-review.md), [response template](review-response.template.json) | Ready for scoped review; no external review claimed |
+| 4. Analytical usefulness | [Primary solo evaluation](solo-evaluation.md); [demonstration and deferred participant extension](utility-protocol.md) | Synthetic demonstration completed; documentary comparisons and solo applications pending |
+| 5. External evaluation | [Reviewer packet](external-review.md), [response template](review-response.template.json) | Optional extension; no external review claimed |
 
 Run `python scripts/validate_research_strengthening.py --check` from the repository root. Use `--write` to regenerate the result after reviewing changes to inputs. Neither command calls an AI service. Results include hashes of inputs and the existing rubric implementation. CI verifies reproducibility and rejects unsupported promotions in this workbench.
 
@@ -18,7 +18,7 @@ The candidate contribution is a reproducible representation of documentary judgm
 
 ## Completion criteria
 
-The local deliverables are complete when the five linked artifacts exist and validation passes. Research conclusions require additional evidence: responsible-author adjudication of audit findings; independently checked literature comparisons; raw participant outputs for usefulness; and external reviewer records. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
+The workbench deliverables exist and validation passes; the solo evaluation is a prospective design, not a completed study. Its publication path requires responsible-author adjudication, verified sources and literature comparisons, case applications, explicit comparator outcomes, and sensitivity results. Claims about other users require participant evidence; independent-review claims require external records. Neither is a prerequisite for completing a bounded solo analytical study. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
 
 ## Assistance and provenance
 
