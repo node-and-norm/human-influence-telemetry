@@ -1,0 +1,202 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "human_review": "pending",
+  "external_replication": "unresolved",
+  "input_sha256": {
+    "research/strengthening/claim-audit.json": "acb9b04d07e113985244b9ae1adc9a25802834c371924576e13529f1f496613c",
+    "research/strengthening/adversarial-cases.json": "0a658217fde90643e5495d1603b53992d8cb9641da6039400177fdc9ba3a3442",
+    "research/strengthening/utility-cases.json": "cd4feb52bfc2cc7f900b553676e89938585f353fc52f22b2b72ab1f34856c754",
+    "src/rubric/rules_v040.py": "09464280f224e28d67e4bd3fc19691106b25683c83476bdb5e3b3758d17a3a30",
+    "scripts/validate_research_strengthening.py": "4a9184553582fa79a4fd421472534f38b086d9ca21baab2fca07572e71c0b2a0"
+  },
+  "audit_locator_count": 8,
+  "adversarial_results": [
+    {
+      "id": "A01",
+      "expected": {
+        "finding": 0
+      },
+      "actual": {
+        "finding": 0
+      },
+      "match": true
+    },
+    {
+      "id": "A02",
+      "expected": {
+        "finding": "IE"
+      },
+      "actual": {
+        "finding": "IE"
+      },
+      "match": true
+    },
+    {
+      "id": "A03",
+      "expected": {
+        "finding": 1
+      },
+      "actual": {
+        "finding": 1
+      },
+      "match": true
+    },
+    {
+      "id": "A04",
+      "expected": {
+        "finding": "IE"
+      },
+      "actual": {
+        "finding": "IE"
+      },
+      "match": true
+    },
+    {
+      "id": "A05",
+      "expected": {
+        "finding": 2
+      },
+      "actual": {
+        "finding": 2
+      },
+      "match": true
+    },
+    {
+      "id": "A06",
+      "expected": {
+        "finding": "IE"
+      },
+      "actual": {
+        "finding": "IE"
+      },
+      "match": true
+    },
+    {
+      "id": "A07",
+      "expected": {
+        "finding": 1
+      },
+      "actual": {
+        "finding": 1
+      },
+      "match": true
+    },
+    {
+      "id": "A08",
+      "expected": {
+        "finding": "IE"
+      },
+      "actual": {
+        "finding": "IE"
+      },
+      "match": true
+    },
+    {
+      "id": "A09",
+      "expected": {
+        "finding": 2
+      },
+      "actual": {
+        "finding": 2
+      },
+      "match": true
+    },
+    {
+      "id": "A10",
+      "expected": {
+        "finding": 1
+      },
+      "actual": {
+        "finding": 1
+      },
+      "match": true
+    },
+    {
+      "id": "A11",
+      "expected": {
+        "trigger": "triggered",
+        "finding": 1
+      },
+      "actual": {
+        "trigger": "triggered",
+        "finding": 1
+      },
+      "match": true
+    },
+    {
+      "id": "A12",
+      "expected": {
+        "trigger": "indeterminate",
+        "finding": "IE"
+      },
+      "actual": {
+        "trigger": "indeterminate",
+        "finding": "IE"
+      },
+      "match": true
+    },
+    {
+      "id": "A13",
+      "expected": {
+        "finding": 2
+      },
+      "actual": {
+        "finding": 2
+      },
+      "match": true
+    },
+    {
+      "id": "A14",
+      "expected": {
+        "finding": 1
+      },
+      "actual": {
+        "finding": 1
+      },
+      "match": true
+    },
+    {
+      "id": "A15",
+      "expected": {
+        "disposition": "determinate"
+      },
+      "actual": {
+        "disposition": "determinate"
+      },
+      "match": true
+    },
+    {
+      "id": "A16",
+      "expected": {
+        "disposition": "IE"
+      },
+      "actual": {
+        "disposition": "IE"
+      },
+      "match": true
+    }
+  ],
+  "utility_demonstration": [
+    {
+      "id": "U01",
+      "human_presence": "present",
+      "hit_command": 2
+    },
+    {
+      "id": "U02",
+      "human_presence": "present",
+      "hit_command": 1
+    },
+    {
+      "id": "U03",
+      "human_presence": "absent",
+      "hit_command": 0
+    },
+    {
+      "id": "U04",
+      "human_presence": "unknown",
+      "hit_command": "IE"
+    }
+  ],
+  "participant_count": 0
+}

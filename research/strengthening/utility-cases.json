@@ -1,0 +1,10 @@
+{
+  "evidence_class": "E1_synthetic",
+  "baseline_definition": "Human presence is present when formal_authority is true, absent when no_named_human_authority is true, and otherwise unknown.",
+  "cases": [
+    {"id":"U01","description":"A named authority controls a tested intervention.","facts":{"formal_authority":true,"operational_test":true,"named_authority":true,"institution_controls_mechanism":true,"specified_consequence":true},"expected_presence":"present","expected_hit":2},
+    {"id":"U02","description":"A named authority has a formal role but only the vendor controls intervention.","facts":{"formal_authority":true,"operational_test":true,"named_authority":true,"institution_controls_mechanism":false,"specified_consequence":true},"expected_presence":"present","expected_hit":1},
+    {"id":"U03","description":"An authority instrument explicitly excludes any named human authority.","facts":{"no_named_human_authority":true},"expected_presence":"absent","expected_hit":0},
+    {"id":"U04","description":"Available records do not establish who can intervene.","facts":{},"expected_presence":"unknown","expected_hit":"IE"}
+  ]
+}
