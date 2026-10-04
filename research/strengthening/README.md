@@ -2,6 +2,8 @@
 
 This supplementary workbench tests the usefulness and limits of HIT. It is development work following v0.6.5, with no new release or research-maturity decision. The submitted chapter is outside its scope.
 
+See the [five-priority disposition and author decision queue](priority-status.md) for the current completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
+
 | Priority | Deliverable | Evidence available |
 |---|---|---|
 | 1. Claim audit | [Findings and dispositions](claim-audit.md), machine-readable [register](claim-audit.json) | Repository observations and proposed interpretation limits; human adjudication pending |

@@ -28,6 +28,25 @@ class ResearchChecks(unittest.TestCase):
         with self.assertRaises(ValueError):
             pilot.analyze(self.design, self.response)
 
+    def test_passage_questions_are_isolated_and_reference_free(self):
+        design = json.loads((pilot.ROOT / "research/strengthening/passage-cases.json").read_text())
+        request = pilot.prepare(design)
+        self.assertEqual(request["state"], {})
+        for case in design["cases"]:
+            instructions = request["questions"][case["id"]]["instructions"]
+            self.assertEqual(instructions["packet"], case["packet"])
+            self.assertEqual(set(instructions), {"packet", "claim", "task"})
+        changed = copy.deepcopy(design)
+        for case in changed["cases"]:
+            case["expected"] = "supported"
+        self.assertEqual(request, pilot.prepare(changed))
+
+    def test_passage_shared_source_leak_is_rejected(self):
+        design = json.loads((pilot.ROOT / "research/strengthening/passage-cases.json").read_text())
+        design["source_paths"] = ["README.md"]
+        with self.assertRaisesRegex(ValueError, "must not share"):
+            pilot.prepare(design)
+
     def test_unexpected_model_is_rejected(self):
         self.response["model"] = "other"
         with self.assertRaises(ValueError):

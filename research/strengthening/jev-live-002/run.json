@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "requested_model": "jev-1.13.0",
+  "scheduled": 10,
+  "attempted_requests": 1,
+  "started_at": "2026-10-04T01:05:38.965535+00:00",
+  "commit": "d8316d928fa61d59ca9e594f7d3764b9e92e2540",
+  "sha256": {
+    "design.json": "97db198c85bda1fa9d6585110f04ed63987962ede08d81abe2c2f0581d51f160",
+    "request.json": "d6b849ad17f1f02d30badc4037a487ac254b0baa2cd725c42c97a071cf91301d",
+    "response.json": "06b6e91bc96e5ce183fee5b4f2541aa4a22010d95b5153414f366cc68e48ec7c"
+  },
+  "runner_sha256": "fddaba331ba5f5173866bb1f98d09f5887fd5ad6d1f1fe42765a59ce35207e42",
+  "http_status": 200,
+  "returned_model": "jev-1.13.0",
+  "usage": {
+    "input_tokens": 2201,
+    "output_tokens": 451
+  },
+  "request_seconds": 0.35967929199978244,
+  "finished_at": "2026-10-04T01:05:39.339343+00:00"
+}
