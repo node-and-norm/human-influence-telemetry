@@ -1,8 +1,11 @@
 # ADR-0005: Separate stable-contract and replication-study release dependencies
 
-**Status:** Accepted for implementation; no release authorized  
-**Date:** 2026-10-07, America/New_York  
-**Decision authority:** Mark Julius Banasihan  
+**Status:** Accepted for implementation; no release authorized
+
+**Date:** 2026-10-07, America/New_York
+
+**Decision authority:** Mark Julius Banasihan
+
 **Recorded by:** Codex, from the author's direction in the working conversation
 
 ## Authorization and scope

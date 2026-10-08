@@ -15,6 +15,8 @@ Date: 7 October 2026, America/New_York. Baseline: main `3214dc9`, after PR #30. 
 | Missing canonical, migration or comparison input declarations could pass | Require the exact candidate input map and distinct comparison inputs. |
 | Eligibility helper used a format different from the public submission schema | Use the same public auditor object for pre-audit declarations and submitted records. |
 | README retained a single release sequence after track separation | Replaced that sequence with separate-track and chronological-allocation language. |
+| Ofqual's April 2021 report page was retrieved in a version marked updated April 2024 | Added the current-version distinction without implying an authenticated original or silently rescoring. |
+| One issue-report proposition was reused across four dimensions | Split the dimension-specific propositions and reasoning paths while preserving one source lineage, not four independent confirmations. |
 
 ## Validation scope
 
@@ -25,6 +27,8 @@ The 27 readiness regression tests cover omitted files and inputs, path traversal
 The current repository workflow checks were run locally: historical human-result and release metadata, current-contract replication-candidate safeguards, source-audit and recruitment controls, public release status, the v0.6.5 research-integrity audit, conformance and CLI behavior, and supplementary research checks. The archived Jev runs were replayed offline; no new model API call was made. The research-integrity audit retains PASS_WITH_EXCEPTIONS and all eight negative controls.
 
 The implementation rehearsal ran the public valid/invalid examples, non-mutating migration plan and synthetic comparison. Repeated comparison output was byte-identical. This is preparation by contributing software agents, not eligible clean-room evidence.
+
+The complete-record draft passes executable conformance. Eight additional tests cover the valid draft and reject premature author acceptance, independent-review claims, release credit, frozen-plan edits, event-boundary expansion, missing source-ledger material and invalid claim references. The retained byte check does not validate source truth or recalculate the four within-assistant source-subset judgments. Period, conflict and formatting reanalyses remain unexecuted.
 
 ## Known historical-check limitation
 

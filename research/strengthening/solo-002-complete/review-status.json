@@ -1,0 +1,20 @@
+{
+  "assessment_id": "HIT-SOLO-002-OFQUAL-DRAFT",
+  "assessment_path": "research/strengthening/solo-002-complete/assessment.draft.json",
+  "status": "draft_pending_author",
+  "assessor_type": "ai_assistant",
+  "author_adjudication": "pending",
+  "independent_review": false,
+  "scientific_conclusion_eligible": false,
+  "release_gate_satisfied": false,
+  "plan_freeze_commit": "43eae81a3a4938a46062d3c1ba41aab6655db11a",
+  "plan_path": "research/strengthening/solo-002-complete/plan.md",
+  "decision_queue_path": "research/strengthening/solo-002-complete/baseline-and-review.md",
+  "review_date": "2026-10-07",
+  "date_timezone": "America/New_York",
+  "notes": [
+    "Schema and conformance validation do not adjudicate the proposed findings.",
+    "Any additional AI pressure test remains assistant development review, not independent human review.",
+    "Authorization to perform or merge this work is not recorded as scientific acceptance."
+  ]
+}

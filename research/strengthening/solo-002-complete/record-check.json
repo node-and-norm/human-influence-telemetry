@@ -1,0 +1,24 @@
+{
+  "assessment_id": "HIT-SOLO-002-OFQUAL-DRAFT",
+  "check_kind": "development_record_consistency_only",
+  "conformance_valid": true,
+  "source_truth_validated": false,
+  "scientific_interpretation_validated": false,
+  "author_adjudication": "pending",
+  "independent_review": false,
+  "scientific_conclusion_eligible": false,
+  "evidence_claim_count": 23,
+  "source_subset_judgments_recomputed": false,
+  "sha256": {
+    "research/strengthening/solo-002-complete/plan.md": "786799a1fb27f40e58a144e60910813dd75217bc9c713bef72cdd8083a06fc66",
+    "research/strengthening/solo-002-complete/README.md": "bd7ae1558a86d3c5e9728146460bcf2b88e8bf89ad38ebc31643fd7445e476f8",
+    "research/strengthening/solo-002-complete/assessment.draft.json": "020ae6d8c4a33cc6294891886fccef1bef51d471e1b0376d9995a78d369e182c",
+    "research/strengthening/solo-002-complete/source-ledger.md": "54876920f18ee731c96ab20e7706eac95514d3dbd9ef0d7ef2a5b578c86163b0",
+    "research/strengthening/solo-002-complete/baseline-and-review.md": "0d03d09b6a5bb5d013850611fb3af7806f9fd138784566dba3776c9866ac962c",
+    "research/strengthening/solo-002-complete/sensitivity.md": "c3d0ac09bdbb57e51aa29dfe8d9ba564c3b14490cb8c4c83eeb233d789fba6c9",
+    "research/strengthening/solo-002-complete/review-status.json": "a890d64eb54c13386be956ba0dccd2c7889aa74d74f82779b019aa2fcf63b9e8",
+    "scripts/validate_solo_complete.py": "3084bb39b746faefb09b72bf26615f42fedf02b06bdabb29fdbbc45cae53a18d",
+    "schema/hit-assessment.schema.json": "bddfaccc4b6ced6bd8d586a5d846efa0234b66185f37ff5d7611b9d619769740",
+    "src/validation/assessment.py": "5c7abee20a76e88561f0bd347fc9d6f779d53c6e6dfd81cd3ca50d349c0b1d63"
+  }
+}

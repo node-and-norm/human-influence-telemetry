@@ -90,6 +90,8 @@ jobs:
           python scripts/validate_research_strengthening.py --check
           python scripts/test_research_strengthening.py
           python scripts/validate_solo_application.py --check
+          python scripts/validate_solo_complete.py --check
+          python scripts/test_solo_complete.py
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
 

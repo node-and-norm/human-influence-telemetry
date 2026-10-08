@@ -113,7 +113,7 @@ Telemetry Integrity is cross-cutting and has two visible components: institution
 
 ## Case-study lineage
 
-The historical public evidence pack contains four immutable `0.1.0` assessment files. The Cigna locked protocol is complete. No `0.4.0` public-case findings are claimed.
+The historical public evidence pack contains four immutable `0.1.0` assessment files. The Cigna locked protocol is complete. The supplementary [Ofqual 0.4.0 draft](research/strengthening/solo-002-complete/README.md) records AI-assisted proposals pending author adjudication. It is neither an accepted author application nor independent scoring evidence, and it closes no release gate.
 
 ## Normative decision lineage
 
