@@ -151,23 +151,11 @@ Contributions should identify the changed proposition, supporting evidence, unce
 
 ## Citation
 
-Cite the exact software version and commit you used. The v0.6.6 DOI identifies the archive at tag `v0.6.6`, commit `6745873a990554cf40303e217865895122494696`. The v0.6.5 DOI identifies only that earlier archive and must not be attached to 0.6.6.
+For the current published release, use:
 
-**Exact-version DOI:** [10.5281/zenodo.23226713](https://doi.org/10.5281/zenodo.23226713)
+> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.6) [Software]. Zenodo. [https://doi.org/10.5281/zenodo.23226713](https://doi.org/10.5281/zenodo.23226713)
 
-Use this citation for the verified v0.6.6 archive:
-
-> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.6) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23226713
-
-**Previous version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
-
-**Concept DOI, all software versions:** [10.5281/zenodo.21446141](https://doi.org/10.5281/zenodo.21446141)
-
-**Originating research DOI:** [10.5281/zenodo.21204892](https://doi.org/10.5281/zenodo.21204892)
-
-**Previous version DOI, exact `v0.6.4` release:** [10.5281/zenodo.21446142](https://doi.org/10.5281/zenodo.21446142)
-
-Machine-readable citation metadata is in [CITATION.cff](CITATION.cff). The originating research record and software archives are separate artifacts.
+Cite the version you actually used. For an older release, the project across versions, or the originating research, follow the [citation guide](docs/citation.md). Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 
 ## Author
 

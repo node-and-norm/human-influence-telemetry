@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
-from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_citation_guidance, validate_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -41,7 +41,7 @@ P = {
 
 REQUIRED = {
     "README.md", "RESEARCH.md", "ROADMAP.md", "LIMITATIONS.md", "PROVENANCE.md",
-    "CHANGELOG.md", "CITATION.cff", ".zenodo.json", "SPECIFICATION.md",
+    "CHANGELOG.md", "CITATION.cff", ".zenodo.json", "SPECIFICATION.md", "docs/citation.md",
     "compatibility/hit-compatibility-manifest.json", "docs/application-handbook.md",
     "docs/releases/v0.6.0.md", "docs/releases/v0.6.4.md", "docs/releases/v0.6.5.md", "docs/v0.6.0-release-readiness.md",
     "docs/decisions/ADR-0004-advance-hit-to-maturity-level-2.md",
@@ -167,6 +167,7 @@ def validate() -> list[str]:
 
     citation, zenodo = yaml.safe_load(read("CITATION.cff")), load(".zenodo.json")
     f += validate_identity(citation, zenodo, load("release/v1.0.0/contract-freeze.candidate.json"))
+    f += validate_citation_guidance(read("README.md"), read("docs/citation.md"))
     if citation.get("version") != CURRENT_RELEASE or citation.get("date-released") != CURRENT_RELEASE_DATE: f.append("citation metadata incorrect")
     if citation.get("doi") != CURRENT_VERSION_DOI: f.append("citation exact-version DOI incorrect")
     dois = {str(x.get("value")) for x in citation.get("identifiers",[]) if x.get("type") == "doi"}
@@ -175,7 +176,7 @@ def validate() -> list[str]:
     related_identifiers = zenodo.get("related_identifiers", [])
     if {"identifier": ORIGINATING_RESEARCH_DOI, "relation": "isSupplementTo", "resource_type": "dataset"} not in related_identifiers: f.append("Zenodo originating research relation incorrect")
     phrases = {
-      "README.md":["**Current release:** 0.6.6","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","10.5281/zenodo.21446141","10.5281/zenodo.21864224","10.5281/zenodo.21204892","10.5281/zenodo.21446142","7 of 7 exact agreements"],
+      "README.md":["**Current release:** 0.6.6","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","7 of 7 exact agreements"],
       "RESEARCH.md":["Current repository release: `0.6.6`","Software concept DOI: `10.5281/zenodo.21446141`","Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`","Supported for one frozen Cigna packet","Level 2, Applicable"],
       "ROADMAP.md":["0.6.6: Development and reproducibility controls, current release"],
       "LIMITATIONS.md":["Narrow reliability evidence","Kappa indeterminacy"],

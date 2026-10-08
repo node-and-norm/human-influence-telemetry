@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+
 CURRENT_RELEASE = "0.6.6"
 CURRENT_RELEASE_DATE = "2026-10-07"
 CURRENT_VERSION_DOI = "10.5281/zenodo.23226713"
@@ -12,6 +14,29 @@ HISTORICAL_VERSION_DOIS = {
     "0.6.4": "10.5281/zenodo.21446142",
     "0.6.5": "10.5281/zenodo.21864224",
 }
+
+
+def validate_citation_guidance(readme: str, guide: str) -> list[str]:
+    """Check citation navigation and DOI mappings, not external publication."""
+    failures = []
+    section = readme.partition("## Citation\n")[2].split("\n## ", 1)[0]
+    for link in ("[citation guide](docs/citation.md)", "[CITATION.cff](CITATION.cff)"):
+        if link not in section:
+            failures.append(f"README citation section must retain {link}")
+    doi_url = f"https://doi.org/{CURRENT_VERSION_DOI}"
+    citation_suffix = f"(Version {CURRENT_RELEASE}) [Software]. Zenodo. [{doi_url}]({doi_url})"
+    quotes = [line for line in section.splitlines() if line.startswith("> ")]
+    if len(quotes) != 1 or citation_suffix not in quotes[0]:
+        failures.append("README must provide one current-version citation with its exact DOI link")
+    if set(re.findall(r"10\.5281/zenodo\.\d+", section)) != {CURRENT_VERSION_DOI}:
+        failures.append("README citation section must direct other DOI choices to the guide")
+    for version, doi in {CURRENT_RELEASE: CURRENT_VERSION_DOI, **HISTORICAL_VERSION_DOIS}.items():
+        if f"| {version} | [{doi}](https://doi.org/{doi}) |" not in guide:
+            failures.append(f"citation guide exact-version mapping missing or incorrect: {version}")
+    for label, doi in (("software concept", SOFTWARE_CONCEPT_DOI), ("originating research", ORIGINATING_RESEARCH_DOI)):
+        if f"The {label} DOI, [{doi}](https://doi.org/{doi})," not in guide:
+            failures.append(f"citation guide {label} DOI missing or incorrect")
+    return failures
 
 
 def validate_identity(citation: dict, zenodo: dict, ledger: dict) -> list[str]:
