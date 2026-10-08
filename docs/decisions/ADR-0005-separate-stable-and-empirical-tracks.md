@@ -10,7 +10,7 @@
 
 ## Authorization and scope
 
-After a pressure test proposed five priorities, including explicit separation of stable release from replication-study preparation while retaining independent implementation review, the author directed: “Proceed with the priorities listed. Let's go to work. Let's always make sure to pressure test it as necessary.” This records approval to implement that bounded plan. It does not record acceptance of new documentary findings, a human source-review attestation, an audit signature, or release acceptance.
+After a methodological review proposed five priorities, including explicit separation of stable release from replication-study preparation while retaining independent implementation review, the author directed: “Proceed with the priorities listed. Let's go to work. Let's always make sure to pressure test it as necessary.” This records approval to implement that bounded plan. It does not record acceptance of new documentary findings, a human source-review attestation, an audit signature, or release acceptance.
 
 ADR-0001 remains a historical proposal with its original date and research context. This decision adopts the separation prospectively and resolves the present dependency conflict. It does not infer an earlier adoption date. ADR-0004's completed Level 2 decision and its historical evidence remain unchanged.
 
@@ -35,7 +35,7 @@ The existing 0.7.0 and 0.8.0 labels identify planned study packages. If the stab
 
 The stable track retains the existing requirement for at least three compatible public applications or case-specific explanations that migration requires unavailable records. The four existing historical exceptions require review against that threshold. Missing structured fields, unfinished reassessment, or an AI-generated draft alone does not establish that source records are unavailable. Partial dossiers cannot be promoted by relabeling.
 
-## Alternatives and pressure test
+## Alternatives and methodological review
 
 Keeping all study-preparation dependencies would preserve a coupling that does not establish stable-contract quality. Removing independent implementation review would weaken the public-implementability claim. Declaring v1 now would leave unfinished applications and packaging defects unresolved. Adding operational integrations would introduce new semantics before these obligations close.
 

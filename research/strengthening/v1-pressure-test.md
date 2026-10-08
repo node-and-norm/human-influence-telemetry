@@ -1,6 +1,8 @@
-# Pressure test of the bounded v1 increment
+# Software verification and methodological review of the bounded v1 increment
 
 Date: 7 October 2026, America/New_York. Baseline: main `3214dc9`, after PR #30. This is an AI-assisted development review, not an independent implementation audit or scientific acceptance record.
+
+The [evaluation-methods register](evaluation-methods.md) distinguishes each procedure and its inference limit. The filename is retained for link continuity; “pressure test” is not the formal name of an evaluation method.
 
 ## Findings and repairs
 
@@ -18,7 +20,7 @@ Date: 7 October 2026, America/New_York. Baseline: main `3214dc9`, after PR #30. 
 | Ofqual's April 2021 report page was retrieved in a version marked updated April 2024 | Added the current-version distinction without implying an authenticated original or silently rescoring. |
 | One issue-report proposition was reused across four dimensions | Split the dimension-specific propositions and reasoning paths while preserving one source lineage, not four independent confirmations. |
 
-## Validation scope
+## Verification procedures and scope
 
 Local development checks used Python 3.14.3 in an isolated environment with requirements-dev.txt. The CI workflow uses Python 3.12; its run on the exact pushed head is a separate verification record. Local results must not be described as a completed CI run before GitHub reports that outcome.
 

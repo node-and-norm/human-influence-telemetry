@@ -8,6 +8,7 @@
 - Repaired the declared migration-guide path and Cigna migration status; reviewed the limits of four existing historical exceptions without accepting them for v1.
 - Added an unresolved stable-gate register, actual artifact-path checks, readiness-blocker reports, and negative tests. Staging success is explicitly distinct from audit and release readiness; future promotion acceptance still requires reviewed implementation.
 - Added a public implementation rehearsal, task catalog, and draft audit-submission schema with an unperformed template.
+- Added an evaluation-methods register that distinguishes software verification, methodological review, exploratory reanalysis, and pending independent evaluation; preserved frozen plans and historical terminology.
 - Froze the exploratory Ofqual complete-record application plan before new dimension findings; added the full draft record, matched baseline, four qualitative reanalyses and eight draft-boundary tests. Scientific judgments remain subject to source-based author adjudication.
 - Preserved the 0.4.0 normative contract, 0.5.0 engine, 0.6.0 human result, published release 0.6.5 and its DOI boundaries. No new release, external audit, or current-contract replication is asserted.
 

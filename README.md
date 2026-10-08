@@ -128,6 +128,8 @@ On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerS
 
 To inspect your own record, run `python -m src conformance --path assessment.json`. For a historical record, `python -m src migration-plan --path historical-assessment.json` produces a non-mutating migration plan. Conformance checks record structure and declared rules; it does not verify source truth.
 
+The [evaluation-methods register](research/strengthening/evaluation-methods.md) states what each software check, documentary review, and research evaluation can establish. It distinguishes completed development procedures from pending independent implementation and current-contract reliability studies.
+
 ## Research boundaries
 
 HIT has not established population reliability, causal effectiveness, legal conformity, independent institutional adoption, or general field validity. The literature review and novelty assessment remain incomplete. Model agreement, deterministic tests, and a valid record cannot substitute for source interpretation or independent human evidence.

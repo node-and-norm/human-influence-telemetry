@@ -9,7 +9,8 @@
     {"id": "V1-CONTROLS", "role": "Draft prospective governance separation, reconcile documents, repair validators, and run negative controls.", "human_role": "Maintainer approved the bounded plan; release acceptance remains separate."},
     {"id": "SOLO-002", "role": "Retrieve public primary sources and prepare an exploratory complete-record application, counterarguments, and capable-baseline comparison after plan commit 43eae81.", "human_role": "Source interpretation, findings, and publication eligibility remain pending responsible-author adjudication."},
     {"id": "V1-PACKET", "role": "Prepare public implementation instructions, task records, and submission controls; conduct development checks.", "human_role": "Eligible independent human implementation audit and maintainer activation remain absent."},
-    {"id": "PRESSURE-TEST", "role": "Collaborating agents challenge code behavior and research claim boundaries.", "human_role": "These agents are not independent human reviewers or empirical participants."}
+    {"id": "PRESSURE-TEST", "role": "Collaborating agents conduct software verification and methodological review of research claim boundaries; the original activity identifier is retained for lineage.", "human_role": "These agents are not independent human reviewers or empirical participants."},
+    {"id": "EVALUATION-TERMINOLOGY", "role": "Name evaluation procedures, objects, executors and inference limits in evaluation-methods.md; preserve frozen plans and historical terminology.", "human_role": "The author requested precise terminology and authorized merge, branch cleanup and publication work; pending scientific decisions remain separate."}
   ],
   "publication_eligibility": "No supplementary scientific claim is promoted into the v0.6.5 audit or manuscript conclusion by this log.",
   "new_human_ratings": 0,

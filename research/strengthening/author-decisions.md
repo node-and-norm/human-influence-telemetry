@@ -31,3 +31,11 @@ Date: 7 October 2026, America/New_York. Recorded by Codex from the author's dire
 Following the pressure test and five-priority plan, the author directed: “Proceed with the priorities listed. Let's go to work. Let's always make sure to pressure test it as necessary.”
 
 Disposition: implement the bounded priorities, including prospective separation of stable-release and replication-study dependencies while retaining independent human clean-room review, as recorded in [ADR-0005](../../docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md). Preserve historical evidence and apply pressure tests during implementation. This approval does not accept any new source interpretation, assign a score, attest to source review, activate an audit or scorer packet, authorize a premature release, or advance research maturity. The earlier scientific decision queue remains open except for separately recorded decisions.
+
+## AD-004: Evaluation terminology, merge and publication work
+
+Date: 7 October 2026, America/New_York. Recorded by Codex from the author's direction in the working conversation.
+
+The author requested correct terminology for testing and validation, asked whether to continue the existing PR, and authorized committing, merging, cleaning up branches, and documenting and publishing releases.
+
+Disposition: continue PR #31 with the terminology clarification; verify the exact revision before merging; remove only branches whose work is preserved in main. Publication permission authorizes release preparation and publication when the applicable checks and metadata are complete. It does not supply missing research evidence, accept the six pending Ofqual interpretation decisions, attest to independent source review, satisfy an implementation audit, or waive the candidate and stable-release gates. Historical release archives remain version-bound.
