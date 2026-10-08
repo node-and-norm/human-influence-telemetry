@@ -9,14 +9,14 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PUBLISHED_RELEASE = "0.6.5"
-PUBLISHED_DATE = "2026-08-09"
+PUBLISHED_RELEASE = CURRENT_RELEASE
+PUBLISHED_DATE = CURRENT_RELEASE_DATE
 HUMAN_RESULT_RELEASE = "0.6.0"
 PREVIOUS_VERSION_DOI = "10.5281/zenodo.21446142"
-CURRENT_VERSION_DOI = "10.5281/zenodo.21864224"
 SOFTWARE_CONCEPT_DOI = "10.5281/zenodo.21446141"
 ORIGINATING_RESEARCH_DOI = "10.5281/zenodo.21204892"
 NORMATIVE_CONTRACT = "0.4.0"
@@ -56,6 +56,7 @@ def main() -> int:
         "docs/releases/README.md",
         "docs/releases/v0.6.4.md",
         "docs/releases/v0.6.5.md",
+        "docs/releases/v0.6.6.md",
         "docs/releases/v0.7.0-candidate.md",
         "docs/releases/v1.0.0-candidate.md",
         "docs/v1-readiness-plan.md",
@@ -75,24 +76,24 @@ def main() -> int:
 
     required_phrases = {
         "README.md": (
-            "**Current release:** 0.6.5",
+            "**Current release:** 0.6.6",
             "**Human-result release:** 0.6.0",
             "**Concept DOI, all software versions:** [10.5281/zenodo.21446141]",
             "**Originating research DOI:** [10.5281/zenodo.21204892]",
-            "**Version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224]",
+            "**Previous version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224]",
             "**Previous version DOI, exact `v0.6.4` release:** [10.5281/zenodo.21446142]",
             "**Stable target:** `1.0.0`, release prohibited",
             "**Active replication protocol:** `HIT-IRP-HIT040-002`, candidate, scoring prohibited",
             "Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.",
         ),
         "ROADMAP.md": (
-            "0.6.5: Research-integrity controls, current release",
-            "**Current exact-version DOI:** `10.5281/zenodo.21864224`",
+            "0.6.6: Development and reproducibility controls, current release",
+            "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "1.0.0: Stable public contract",
             "Candidate documents do not create a tag, GitHub release, DOI archive, scorer activation, or maturity advancement.",
         ),
         "RESEARCH.md": (
-            "Published repository release: `0.6.5`",
+            "Current repository release: `0.6.6`",
             "Software concept DOI: `10.5281/zenodo.21446141`",
             "Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`",
             "Stable public-contract target: `1.0.0`, gated candidate, release prohibited",
@@ -101,12 +102,12 @@ def main() -> int:
             "HIT-CRI-V100-001",
         ),
         "PROVENANCE.md": (
-            "Public repository release: 0.6.5",
+            "Current repository release: 0.6.6",
             "Originating research DOI: 10.5281/zenodo.21204892",
             "Concept DOI for all HIT software versions: 10.5281/zenodo.21446141",
             "Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142",
             "Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224",
-            "Post-0.6.5 readiness work, unreleased",
+            "0.6.6 development and reproducibility controls",
             "Research maturity: Level 2, Applicable",
         ),
         "LIMITATIONS.md": (
@@ -114,12 +115,13 @@ def main() -> int:
             "Candidate `0.7.0`, `0.9.0`, and `1.0.0` materials do not establish that those versions are released or stable.",
         ),
         "CHANGELOG.md": (
+            "## [0.6.6] - 2026-10-07",
             "## [0.6.5] - 2026-08-09",
             "Exact v0.6.5 DOI: `10.5281/zenodo.21864224`",
             "## [0.6.0] - 2026-07-18",
         ),
         "SECURITY.md": (
-            "`0.6.5`, latest tagged release",
+            "`0.6.6`",
             "The stable `1.0.0` target remains under gated development and is not yet a supported published release.",
         ),
         "GOVERNANCE.md": (
@@ -157,21 +159,27 @@ def main() -> int:
             "**Version-specific software DOI:** [10.5281/zenodo.21864224]",
             "**Human-result release:** `0.6.0`",
         ),
+        "docs/releases/v0.6.6.md": (
+            "**Human-result release:** `0.6.0`",
+            "pending author adjudication",
+            "eight stable-release gates remain unresolved",
+            "**Exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Exact-version DOI:** `{CURRENT_VERSION_DOI}`",
+        ),
         "docs/releases/v0.7.0-candidate.md": (
             "**Status:** Active candidate, release prohibited",
-            "**Current published release:** `0.6.5`",
+            "**Current repository release:** `0.6.6`",
             "**Stable target:** `1.0.0`",
             "selected cases: 0 of 3",
         ),
         "docs/releases/v1.0.0-candidate.md": (
             "**Status:** Candidate outline, release prohibited",
             "**GitHub release:** Not created",
-            "**Current repository release:** `0.6.5`",
+            "**Current repository release:** `0.6.6`",
             "This draft must not be copied to the GitHub Releases page until every gate passes.",
         ),
         "docs/v1-readiness-plan.md": (
-            "**Current repository release:** `0.6.5`",
-            "**Current exact-version DOI:** `10.5281/zenodo.21864224`",
+            "**Current repository release:** `0.6.6`",
+            "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "**Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`",
             "Version `1.0.0` is a compatibility and implementation claim",
             "Withhold `1.0.0`",
@@ -191,15 +199,16 @@ def main() -> int:
     citation = yaml.safe_load(read("CITATION.cff"))
     zenodo = load_json(".zenodo.json")
     v1_lock = load_json("release/v1.0.0/contract-freeze.candidate.json")
+    failures += validate_identity(citation, zenodo, v1_lock)
 
     if citation.get("version") != PUBLISHED_RELEASE:
-        failures.append("CITATION.cff must identify the latest published release 0.6.5")
+        failures.append("CITATION.cff release version mismatch")
     if zenodo.get("version") != PUBLISHED_RELEASE:
-        failures.append(".zenodo.json must identify the latest published release 0.6.5")
+        failures.append(".zenodo.json release version mismatch")
     if citation.get("date-released") != PUBLISHED_DATE:
         failures.append("CITATION.cff release date drifted")
     if citation.get("doi") != CURRENT_VERSION_DOI:
-        failures.append("CITATION.cff must identify the exact v0.6.5 DOI")
+        failures.append("CITATION.cff exact-version DOI mismatch")
     if zenodo.get("publication_date") != PUBLISHED_DATE:
         failures.append(".zenodo.json publication date drifted")
     if zenodo.get("upload_type") != "software":
@@ -264,8 +273,9 @@ def main() -> int:
             print(f"FAIL: {failure}")
         return 1
 
-    print("HIT public release-status validation passed")
-    print("- published release: 0.6.5")
+    print("HIT release-metadata consistency passed; external publication checked separately")
+    print(f"- repository release metadata: {CURRENT_RELEASE}")
+    print(f"- current exact-version DOI: {CURRENT_VERSION_DOI or 'pending verification'}")
     print("- human-result release: 0.6.0")
     print("- software concept DOI: 10.5281/zenodo.21446141")
     print("- originating research DOI: 10.5281/zenodo.21204892")

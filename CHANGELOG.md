@@ -1,16 +1,30 @@
 # Changelog
 
+All notable changes to Human Influence Telemetry are documented here. The project uses Semantic Versioning for the public technical artifact. Research maturity is reported separately.
+
 ## [Unreleased]
 
-### Stable-track readiness, 7 October 2026
+No additional increment is declared here. Candidate study and stable-release work remains governed by its separate gates.
+
+## [0.6.6] - 2026-10-07
+
+Prepared for publication. GitHub publication and the exact-version archive require separate verification.
+
+### Development and reproducibility controls
+
+- Collected the three partial documentary dossiers, retained advisory-model runs, targeted literature and method comparisons, and scoped author decisions developed after 0.6.5. The 9/10 model-label result preserves its unresolved date interpretation disagreement.
+- Refined the README, repository navigation, and status language; preserved historical records during cleanup.
 
 - Adopted ADR-0005's prospective stable/empirical track separation while preserving protected replication rules and independent human implementation review.
 - Repaired the declared migration-guide path and Cigna migration status; reviewed the limits of four existing historical exceptions without accepting them for v1.
 - Added an unresolved stable-gate register, actual artifact-path checks, readiness-blocker reports, and negative tests. Staging success is explicitly distinct from audit and release readiness; future promotion acceptance still requires reviewed implementation.
 - Added a public implementation rehearsal, task catalog, and draft audit-submission schema with an unperformed template.
 - Added an evaluation-methods register that distinguishes software verification, methodological review, exploratory reanalysis, and pending independent evaluation; preserved frozen plans and historical terminology.
+- Added 14 exact-version metadata tests covering stale dates and versions, reused or invented DOIs, missing pending-state declarations, and preservation of the software/research DOI distinction.
 - Froze the exploratory Ofqual complete-record application plan before new dimension findings; added the full draft record, matched baseline, four qualitative reanalyses and eight draft-boundary tests. Scientific judgments remain subject to source-based author adjudication.
-- Preserved the 0.4.0 normative contract, 0.5.0 engine, 0.6.0 human result, published release 0.6.5 and its DOI boundaries. No new release, external audit, or current-contract replication is asserted.
+- Preserved the 0.4.0 normative contract, 0.5.0 engine, 0.6.0 human result, v0.6.5 audit and exact-version DOI boundaries. No normative change, historical rescoring, new external audit, current-contract replication, or maturity promotion follows.
+- Exact-version DOI: pending verification. The prior 0.6.5 DOI must not be used for this release.
+- Disclosed the obsolete pre-0.4 release-readiness check's failure; the current workflow and bounded regression checks are the applicable verification surface.
 
 ## [0.6.5] - 2026-08-09
 
@@ -33,11 +47,9 @@
 - Originating research DOI, separate from the software lineage: `10.5281/zenodo.21204892`.
 - Current-contract external-rater replication: separate, unresolved, and scoring-prohibited.
 
-All notable changes to Human Influence Telemetry are documented here.
+## Historical pre-v1 staging notes
 
-The project uses Semantic Versioning for the public technical artifact. Research maturity is reported separately.
-
-## [Unreleased]
+The following notes were previously under a second Unreleased heading. They describe earlier staging and metadata work, including the then-current 0.6.4 boundary, and are retained as history. They are not a second current release or a claim that the planned study has run.
 
 ### Added
 
@@ -164,7 +176,8 @@ Added three public retrospective case narratives and four actor-specific machine
 
 Established the first public HIT specification, schema, catalog, handbook, fixtures, validator, governance files, and release controls.
 
-[Unreleased]: https://github.com/mj3b/human-influence-telemetry/compare/v0.6.5...HEAD
+[Unreleased]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.6...HEAD
+[0.6.6]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.5...v0.6.6
 [0.6.5]: https://github.com/mj3b/human-influence-telemetry/compare/v0.6.4...v0.6.5
 [0.6.4]: https://github.com/mj3b/human-influence-telemetry/compare/v0.6.0...v0.6.4
 [0.6.0]: https://github.com/mj3b/human-influence-telemetry/compare/v0.5.0...v0.6.0

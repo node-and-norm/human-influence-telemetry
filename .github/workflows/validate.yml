@@ -74,6 +74,9 @@ jobs:
           set -o pipefail
           python scripts/validate_public_release_status.py 2>&1 | tee hit-public-release-status-report.txt
 
+      - name: Test exact-version release metadata boundaries
+        run: python scripts/test_release_metadata.py
+
       - name: Validate v0.6.5 research-integrity package and generated figures
         shell: bash
         run: |

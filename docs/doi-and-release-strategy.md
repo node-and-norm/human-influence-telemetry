@@ -8,6 +8,8 @@ DOI `10.5281/zenodo.21204892` identifies the originating research concept. It is
 
 The standalone HIT software record now exists. Zenodo assigned software concept DOI `10.5281/zenodo.21446141`, version DOI `10.5281/zenodo.21446142` to `v0.6.4`, and version DOI `10.5281/zenodo.21864224` to `v0.6.5`.
 
+Version `0.6.6` is prepared for publication. Its exact-version DOI is pending verification. Neither the presence of updated metadata nor an active repository integration proves that Zenodo has archived this version.
+
 ## Identifier model
 
 1. **Originating research DOI**
@@ -19,7 +21,8 @@ The standalone HIT software record now exists. Zenodo assigned software concept 
    - Identifies the collection of archived HIT releases.
 
 3. **HIT version DOI**
-   - Current exact release: `10.5281/zenodo.21864224` for `v0.6.5`.
+   - Current prepared release `v0.6.6`: exact-version DOI pending verification.
+   - Previous verified archive: `10.5281/zenodo.21864224` for `v0.6.5`.
    - Previous exact release: `10.5281/zenodo.21446142` for `v0.6.4`.
    - Identifies the exact released files and metadata.
 
@@ -31,7 +34,7 @@ The software record should reference the originating research DOI as `isSuppleme
 
 After Zenodo assigns a new version identifier:
 
-- add the software concept DOI and exact version DOI to `CITATION.cff` in a follow-up release;
+- add the verified exact version DOI to `CITATION.cff` in a controlled follow-up pull request, retaining the software concept DOI;
 - retain the originating DOI as a clearly described related identifier;
 - add a DOI badge only after the public record resolves;
 - update release documentation and the changelog;
@@ -39,16 +42,18 @@ After Zenodo assigns a new version identifier:
 
 ## Release sequence
 
-1. Prepare synchronized repository, component, citation, and Zenodo metadata.
+1. Prepare synchronized repository, component, citation, and Zenodo metadata, explicitly identifying publication and archival status.
 2. Run validation on the exact release candidate.
 3. Merge the release pull request.
 4. Create the Git tag and GitHub release from the exact merged commit.
 5. Confirm the Zenodo repository integration state.
 6. Observe the processing record for the release event.
-7. Verify any public concept DOI, version DOI, and metadata.
+7. Verify the new record's version, archive and concept association (`21446141`), together with its exact version DOI and metadata.
 8. Record assigned identifiers in a controlled follow-up pull request.
 
 A missing software DOI does not invalidate the GitHub release. It means archival identity remains incomplete and must be reported accurately.
+
+While archival verification is pending, omit the top-level DOI from `CITATION.cff`; retain the concept DOI as an explicitly cross-version identifier. The release ledger uses `current_software_doi: null` and `current_software_doi_status: pending_verification`. Never copy the 0.6.5 DOI into a 0.6.6 exact-version field. A publication-status follow-up records the GitHub release even when Zenodo remains pending, and a later archival follow-up records the verified new DOI. Neither follow-up moves the original tag.
 
 ## Historical 0.4.0 handling
 
@@ -64,7 +69,7 @@ The repository contains both `CITATION.cff` and `.zenodo.json`. When `.zenodo.js
 
 Current component versions:
 
-- repository release: 0.6.5;
+- repository release: 0.6.6, prepared for publication;
 - specification: 0.4.0;
 - assessment schema: 0.4.0;
 - dimension catalog: 0.4.0;

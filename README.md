@@ -4,7 +4,7 @@
 
 Documentary evidence of practical human authority.
 
-[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Release: v0.6.5](https://img.shields.io/badge/release-v0.6.5-blue)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.5) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
+[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Prepared release: v0.6.6](https://img.shields.io/badge/prepared_release-v0.6.6-blue)](docs/releases/v0.6.6.md) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
 
 </div>
 
@@ -18,13 +18,17 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 | Research checkpoint | Current account |
 | :--- | :--- |
-| Published artifact | Repository release 0.6.5; normative contract 0.4.0; conformance engine 0.5.0 |
+| Release preparation | Repository release 0.6.6; normative contract 0.4.0; conformance engine 0.5.0; publication verified separately |
 | Human evidence | Two independent scorers agreed on 7 of 7 items for one frozen Cigna packet under the earlier 0.1.0 scorer contract |
 | Publication controls | Thirteen mapped claims, five gates, eight negative controls; audit state `PASS_WITH_EXCEPTIONS` |
-| Later development on main | Three partial documentary applications and two advisory model experiments; no new release or maturity promotion |
+| Development evidence | Three partial applications, two retained advisory model experiments, and one complete Ofqual draft pending author review; no maturity promotion |
 | Open questions | Current-contract replication, broader validity, comparative usefulness, novelty, and institutional outcomes remain unresolved |
 
-**Current release:** 0.6.5
+**Current release:** 0.6.6
+
+**Publication state:** Prepared for publication. The [GitHub release](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) must be verified before treating this preparation as a published release.
+
+**Current exact-version DOI:** pending verification
 
 **Human-result release:** 0.6.0
 
@@ -32,7 +36,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current maturity:** Level 2, Applicable
 
-The [working manuscript](paper/manuscript.md) is a methods draft. The [five-priority status](research/strengthening/priority-status.md) distinguishes completed development work from pending research obligations. Main includes unreleased work beyond the archived v0.6.5 package.
+The [working manuscript](paper/manuscript.md) is a methods draft. The [five-priority status](research/strengthening/priority-status.md) distinguishes completed development work from pending research obligations. Release 0.6.6 collects development work beyond the archived v0.6.5 package; distributing those records does not accept their scientific interpretations.
 
 ## Choose your path
 
@@ -85,11 +89,13 @@ Version 0.6.5 connects H1–H9 and four material paper claims to traceability, i
 
 The [audit](audits/v0.6.5/audit-report.md) reports `PASS_WITH_EXCEPTIONS`. That state describes mapped claims and controls; it does not certify every repository statement or external source.
 
-### Unreleased documentary and model work
+### Development documentary and model work
 
 The [development workbench](research/strengthening/README.md) contains three partial applications: Obermeyer, Ofqual, and selected Robodebt inquiry recommendations. The assistant-prepared comparisons propose ties with a capable structured review. The [author decision record](research/strengthening/author-decisions.md) accepts two bounded Obermeyer qualifications while preserving historical scores.
 
 Two separate Jev experiments matched 8/8 and 9/10 assistant-authored reference labels. The [second experiment](research/strengthening/passage-report.md) retains a date-related interpretation disagreement. Its inputs are constructed passages, not full historical documents. These results test advisory model behavior; they supply no independent human ratings or measured user benefit.
+
+The [complete Ofqual draft](research/strengthening/solo-002-complete/README.md) extends the earlier announcement-only dossier. It passes record conformance while source interpretation and responsible-author adjudication remain pending. Its matched baseline proposes a tie. The [release notes](docs/releases/v0.6.6.md) distinguish these development artifacts from the unchanged human result and all eight unresolved stable-release gates.
 
 ## Repository map
 
@@ -120,6 +126,9 @@ python scripts/run_research_integrity_audit.py --check
 python scripts/validate_research_strengthening.py --check
 python scripts/validate_solo_application.py --check
 python scripts/test_research_strengthening.py
+python scripts/validate_solo_complete.py --check
+python scripts/test_solo_complete.py
+python scripts/test_v1_readiness.py
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
 ```
@@ -142,11 +151,15 @@ Contributions should identify the changed proposition, supporting evidence, unce
 
 ## Citation
 
-Cite the exact archived software version you used. Unreleased work on main should also identify its commit; the v0.6.5 DOI does not archive later changes.
+Cite the exact software version and commit you used. For 0.6.6, cite the exact GitHub tag and commit after publication while its archive is pending. The v0.6.5 DOI identifies only that earlier archive and must not be attached to 0.6.6.
+
+**Exact-version DOI:** pending verification
+
+The most recent verified archival citation before this release preparation remains:
 
 > Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.5) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21864224
 
-**Version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
+**Previous version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
 
 **Concept DOI, all software versions:** [10.5281/zenodo.21446141](https://doi.org/10.5281/zenodo.21446141)
 
@@ -174,6 +187,8 @@ Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, a
 | 0.6.0 | Bounded human result; maturity Level 2, Applicable |
 | 0.6.4 | Standalone software archive and DOI metadata |
 | 0.6.5 | Claim-evidence controls and paper workspace |
+
+Version 0.6.6 is prepared as a nonbreaking development and reproducibility release. Its GitHub publication and exact-version archive must be verified separately. It does not activate the study or implementation-audit candidates.
 
 Specification, assessment schema, and dimension catalog remain 0.4.0. The engine remains 0.5.0. See the [release index](docs/releases/README.md) for checkpoint details.
 
