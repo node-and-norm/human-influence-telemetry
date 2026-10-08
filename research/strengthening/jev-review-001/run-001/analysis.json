@@ -1,0 +1,298 @@
+{
+  "status": "ADVISORY_DEVELOPMENT_ONLY",
+  "run_status": "completed",
+  "scheduled": 14,
+  "valid": 14,
+  "invalid": 0,
+  "not_run": 0,
+  "technical_errors": [],
+  "usage": {
+    "input_tokens": 25563,
+    "output_tokens": 749
+  },
+  "rows": [
+    {
+      "id": "N01",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ADVICE",
+      "author_decision_ids": [
+        "SOLO-002-AD2"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.13,
+        "supported": 0.87,
+        "contradicted": 0.0
+      },
+      "confidence": 0.83,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "N02",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-REASONS",
+      "author_decision_ids": [
+        "SOLO-002-AD3"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.04,
+        "supported": 0.96,
+        "contradicted": 0.0
+      },
+      "confidence": 0.95,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "N03",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-REISSUE-REQUIREMENT",
+      "author_decision_ids": [
+        "SOLO-002-AD4",
+        "SOLO-002-AD5"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.02,
+        "supported": 0.98,
+        "contradicted": 0.0
+      },
+      "confidence": 0.97,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "N04",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ISSUE-CORRECTION",
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.02,
+        "supported": 0.98,
+        "contradicted": 0.0
+      },
+      "confidence": 0.97,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "N05",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-EXTERNAL-LIMIT",
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.01,
+        "supported": 0.99,
+        "contradicted": 0.0
+      },
+      "confidence": 0.99,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "N06",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ADMISSIONS-LIMIT",
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.04,
+        "supported": 0.96,
+        "contradicted": 0.0
+      },
+      "confidence": 0.95,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "B01",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD2"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "insufficient",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.96,
+        "supported": 0.01,
+        "contradicted": 0.03
+      },
+      "confidence": 0.95,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "B02",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD3"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "insufficient",
+      "probabilities": {
+        "conflicting": 0.0,
+        "supported": 0.0,
+        "insufficient": 0.85,
+        "contradicted": 0.15
+      },
+      "confidence": 0.8,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "B03",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "contradicted",
+      "probabilities": {
+        "conflicting": 0.0,
+        "supported": 0.0,
+        "insufficient": 0.18,
+        "contradicted": 0.82
+      },
+      "confidence": 0.76,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "B04",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "contradicted",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.03,
+        "supported": 0.0,
+        "contradicted": 0.97
+      },
+      "confidence": 0.96,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "P01",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "period",
+      "status": "valid",
+      "choice": "contradicted",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.01,
+        "supported": 0.0,
+        "contradicted": 0.99
+      },
+      "confidence": 0.99,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "P02-base",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "none",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.01,
+        "supported": 0.99,
+        "contradicted": 0.0
+      },
+      "confidence": 0.99,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "P02",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "conflict",
+      "status": "valid",
+      "choice": "conflicting",
+      "probabilities": {
+        "conflicting": 0.93,
+        "insufficient": 0.0,
+        "supported": 0.06,
+        "contradicted": 0.01
+      },
+      "confidence": 0.91,
+      "errors": [],
+      "human_review_pending": true
+    },
+    {
+      "id": "P03",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "transformation": "formatting",
+      "status": "valid",
+      "choice": "supported",
+      "probabilities": {
+        "conflicting": 0.0,
+        "insufficient": 0.01,
+        "supported": 0.98,
+        "contradicted": 0.01
+      },
+      "confidence": 0.97,
+      "errors": [],
+      "human_review_pending": true
+    }
+  ],
+  "human_review_pending": true,
+  "external_replication": "unresolved"
+}

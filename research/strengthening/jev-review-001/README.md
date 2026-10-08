@@ -1,6 +1,6 @@
 # Jev advisory source-scope rehearsal
 
-Status: prepared; no live inference has been performed for HIT-JEV-REVIEW-001. The author authorized this bounded use of Jev for [v1 priorities two and three](../v1-priorities.md). It prepares questions for human review; it does not produce accepted HIT findings.
+Status: one live advisory batch completed on 7 October 2026, America/New_York. All fourteen responses passed structural checks and remain pending human review. Read the [results and review queue](report.md) and [retained run record](run-001/run.json). The author authorized this bounded use of Jev for [v1 priorities two and three](../v1-priorities.md); it does not produce accepted HIT findings.
 
 Read the [protocol](PROTOCOL.md), [source record](sources.md) and [design](design.json) before interpreting a run. Four official documents supply nine attributed excerpts. The fourteen questions comprise six unchanged draft propositions, four constructed scope probes and four constructed items covering period, conflict and whitespace conditions. Every answer remains advisory. No author reference labels, accuracy statistics or confidence-based approvals are supplied.
 
@@ -10,6 +10,7 @@ Use Python 3.12 or later from the repository root. Offline tests need no API key
 
 ```sh
 python -W error scripts/test_jev_review.py
+python scripts/run_jev_review.py --analyze research/strengthening/jev-review-001/run-001
 python scripts/run_jev_review.py --prepare --output /tmp/hit-jev-review-prepared
 python scripts/run_jev_review.py --analyze /tmp/hit-jev-review-prepared
 ```
@@ -23,7 +24,7 @@ python scripts/run_jev_review.py --live --output /tmp/hit-jev-review-run-001
 python scripts/run_jev_review.py --analyze /tmp/hit-jev-review-run-001
 ```
 
-The live command sends one batch to the fixed TypeSafe endpoint using `jev-1.13.0`; it does not retry. A failed or interrupted attempt must be retained, not replaced. Review and document any amendment before another attempt. Request latency is recorded only as a transport observation, not a measure of researcher effort.
+The live command sends one batch to the fixed TypeSafe endpoint using `jev-1.13.0`; it does not retry. The authorized batch is already complete: these instructions document execution, not authorization for another call. A failed or interrupted attempt must be retained, not replaced. Review and document any amendment before another attempt. Request latency is recorded only as a transport observation, not a measure of researcher effort.
 
 The bundle retains exact request and successful-response bytes, frozen input copies, protected-file copies, hashes, commit, usage and technical status. Replay reconstructs the request and derived analysis offline. Hashes and replay verify consistency of the retained record; they do not authenticate source truth or independently prove that a provider made a response. Raw HTTP error bodies and exception messages are excluded to avoid retaining credentials or private error details.
 

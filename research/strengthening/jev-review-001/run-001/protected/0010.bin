@@ -1,0 +1,98 @@
+{
+  "target_repository_release": "1.0.0",
+  "status": "candidate",
+  "track_id": "HIT-STABLE-V100-001",
+  "governance_decision": "ADR-0005",
+  "gate_register": "release/v1.0.0/gate-register.json",
+  "release_permitted": false,
+  "semantic_version_claim": "stable_public_assessment_contract",
+  "research_maturity_is_separate": true,
+  "current_repository_release": "0.6.6",
+  "current_software_doi": "10.5281/zenodo.23226713",
+  "current_software_doi_status": "verified",
+  "human_result_release": "0.6.0",
+  "current_component_versions": {
+    "specification": "0.4.0",
+    "assessment_schema": "0.4.0",
+    "dimension_catalog": "0.4.0",
+    "application_handbook": "0.4.0",
+    "conformance_engine": "0.5.0"
+  },
+  "target_component_versions": {
+    "specification": "1.0.0",
+    "assessment_schema": "1.0.0",
+    "dimension_catalog": "1.0.0",
+    "application_handbook": "1.0.0",
+    "conformance_engine": "1.0.0"
+  },
+  "current_research_maturity": {
+    "level": 2,
+    "name": "Applicable"
+  },
+  "completed_gates": [
+    "six_dimension_contract_defined",
+    "split_telemetry_integrity_defined",
+    "evidence_state_and_finding_rules_defined",
+    "actor_authority_rules_defined",
+    "repair_trigger_defined",
+    "sampling_and_aggregation_defined",
+    "contradiction_and_locator_rules_defined",
+    "adjacent_system_boundaries_defined",
+    "forty_eight_boundary_fixtures_pass",
+    "complete_assessment_conformance_available",
+    "stable_error_codes_available",
+    "public_cli_available",
+    "deterministic_reports_available",
+    "protected_migration_planning_available",
+    "first_locked_human_exercise_completed",
+    "v0.6.4_standalone_software_archive_published",
+    "v0.6.5_version_specific_software_doi_published",
+    "manual_three_scorer_workbooks_staged"
+  ],
+  "blocking_gates": [
+    "three_public_current_contract_applications_or_documented_migration_exceptions",
+    "standalone_implementation_packet",
+    "clean_room_implementation_audit",
+    "public_v0.9.0_release_candidate",
+    "stable_component_version_promotion",
+    "breaking_change_review",
+    "synchronized_release_metadata",
+    "exact_release_commit_validation"
+  ],
+  "empirical_track": {
+    "track_id": "HIT-EMPIRICAL-HIT040-002",
+    "protocol_id": "HIT-IRP-HIT040-002",
+    "status": "candidate_scoring_prohibited",
+    "blocks_stable_release": false,
+    "blocking_gates": [
+      "signed_human_case_selection",
+      "three_frozen_current_contract_packets",
+      "v0.7.0_locked_protocol_publication"
+    ],
+    "current_contract_replication": "unresolved",
+    "protocol_rules_changed": false
+  },
+  "human_replication_preferred_but_not_semantic_v1_gate": true,
+  "human_replication_claim_rule": "H3 and maturity claims may use only completed eligible independent human evidence available at release time.",
+  "manual_workbook_status": {
+    "contract_id": "HIT-MANUAL-WORKBOOK-HIT040-001",
+    "version": "0.1.0-draft",
+    "scoring_permitted": false,
+    "required_scorers": 3,
+    "required_packets": 3,
+    "packet_ids": []
+  },
+  "prohibited_release_claims": [
+    "causal_effectiveness",
+    "legal_conformity",
+    "certification",
+    "truthful_reasoning",
+    "population_wide_reliability",
+    "independent_institutional_adoption",
+    "runtime_enforcement",
+    "signed_receipt_interoperability",
+    "policy_pack_harmonization",
+    "compliance_automation",
+    "evidence_portability"
+  ]
+}
