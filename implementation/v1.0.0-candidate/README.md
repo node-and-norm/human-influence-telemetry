@@ -10,6 +10,10 @@ This directory defines the standalone public packet that a technically competent
 
 The packet is complete only when every listed artifact is copied or referenced at an exact validated commit and the clean-room audit protocol can be executed from a fresh environment.
 
+The [quickstart](quickstart.md) and [task catalog](task-catalog.json) prepare public implementation tasks. The [submission schema](audit-submission.schema.json) and [pending example](audit-submission.example.json) define records to review before activation. A pending example is not an audit, a signature, or an eligible reviewer record. The manifest's missing-before-activation list includes final review and freeze of these controls even when draft files exist.
+
+The future eligibility file uses the same auditor object defined at `$defs.auditor` in the submission schema. The manifest references that file by repository-relative path and SHA-256. The human supplies the identity, competence, conflicts, prior exposure and independence declarations; a designated human must verify eligibility and the origin of those declarations. Syntax and hash checks cannot authenticate the person. No eligibility file or reviewer is supplied in this candidate.
+
 ## Required normative artifacts
 
 - `SPECIFICATION.md`;
@@ -53,13 +57,18 @@ The auditor must, without private explanation:
 
 A clean-room audit evaluates public implementability and documentation sufficiency. It does not establish inter-rater reliability, evidence truth, causal effectiveness, legal correctness, certification, or institutional adoption.
 
-## Current stop condition
+## Packet activation and completed audit
 
-The packet remains incomplete until:
+The packet remains incomplete and audit activation remains prohibited until:
 
 - the current-contract application path is resolved;
 - final target component versions are selected;
 - exact artifact hashes are recorded;
 - the comparison implementation and reproducible example are final;
-- the audit protocol is run by an independent external reviewer;
-- every release-blocking defect is repaired or explicitly accepted.
+- the submission schema and exact environment are reviewed and frozen;
+- an eligible independent human reviewer is recorded;
+- the exact packet commit passes activation validation and the maintainer authorizes the audit.
+
+After activation, the independent reviewer must run the protocol. All release-blocking defects must be repaired and affected tasks rerun before stable release. An explicitly reasoned nonblocking classification may retain a finding; a maintainer cannot satisfy the gate by accepting an unresolved release-blocking defect.
+
+Run `python scripts/validate_v1_implementation_packet.py` for staging consistency. Use `--mode audit-ready` to inspect unmet readiness requirements; the current candidate must fail that mode. These checks do not establish independent implementability. Future activation requires a reviewed acceptance policy, not a status edit alone.

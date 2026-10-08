@@ -2,6 +2,8 @@
 
 This supplementary workbench tests the usefulness and limits of HIT. It is development work following v0.6.5, with no new release or research-maturity decision. The submitted chapter is outside its scope.
 
+The author approved the [bounded v1 execution priorities](v1-priorities.md) on 7 October 2026. The existing scientific decision queue remains in force. The [Ofqual complete-record extension plan](solo-002-complete/plan.md) was committed before new dimension findings; it is an exploratory, AI-assisted development application with author adjudication pending.
+
 See the [five-priority disposition and author decision queue](priority-status.md) for the current completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
 
 | Priority | Deliverable | Evidence available |

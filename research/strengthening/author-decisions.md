@@ -23,3 +23,11 @@ Following that recommendation, the author directed: “Proceed on P06.” This d
 Disposition: retain the frozen reference label, insufficient, and the observed model label, contradicted. Report P06 as an unresolved event-identity interpretation disagreement. Preserve the original inputs, response, analysis, and 9/10 agreement count. Any experiment that explicitly specifies a unique event requires a new design and result; it must not replace this record.
 
 This closes the immediate handling decision for P06 while leaving its interpretation unresolved. It changes no HIT score, maturity status, publication eligibility, or external-replication claim.
+
+## AD-003: Bounded v1 priorities and prospective track separation
+
+Date: 7 October 2026, America/New_York. Recorded by Codex from the author's direction in the working conversation.
+
+Following the pressure test and five-priority plan, the author directed: “Proceed with the priorities listed. Let's go to work. Let's always make sure to pressure test it as necessary.”
+
+Disposition: implement the bounded priorities, including prospective separation of stable-release and replication-study dependencies while retaining independent human clean-room review, as recorded in [ADR-0005](../../docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md). Preserve historical evidence and apply pressure tests during implementation. This approval does not accept any new source interpretation, assign a score, attest to source review, activate an audit or scorer packet, authorize a premature release, or advance research maturity. The earlier scientific decision queue remains open except for separately recorded decisions.

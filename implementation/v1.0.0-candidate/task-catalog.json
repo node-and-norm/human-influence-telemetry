@@ -1,0 +1,35 @@
+{
+  "catalog_id": "HIT-CRI-V100-TASKS-001",
+  "catalog_version": "0.1.0-candidate",
+  "status": "candidate_unfrozen",
+  "audit_protocol_id": "HIT-CRI-V100-001",
+  "audit_permitted": false,
+  "exact_repository_commit": null,
+  "expected_output_hashes": null,
+  "command_working_directory": "repository root",
+  "guide": "implementation/v1.0.0-candidate/quickstart.md",
+  "inputs": {
+    "canonical_valid": "fixtures/v0.4.0-canonical-example.json",
+    "complete_record_suite": "fixtures/v0.5.0-conformance/complete-record-cases.json",
+    "migration_source": "case-studies/assessments/toeslagenaffaire-harm-period.json",
+    "comparison_sources": ["validation/test-vectors/rater-a.json", "validation/test-vectors/rater-b.json"]
+  },
+  "selected_invalid_vectors": [
+    {"case_id": "CR-CLAIM-REFERENCE-001", "expected_valid": false, "required_error_codes": ["HIT-CLAIM-REFERENCE"]},
+    {"case_id": "CR-INTEGRITY-DERIVATION-001", "expected_valid": false, "required_error_codes": ["HIT-INTEGRITY-DERIVATION"]},
+    {"case_id": "CR-IE-SEARCH-001", "expected_valid": false, "required_error_codes": ["HIT-IE-SEARCH"]}
+  ],
+  "tasks": [
+    {"task_id": "fresh_install", "public_references": ["requirements-dev.txt", "implementation/v1.0.0-candidate/quickstart.md"], "required_evidence": "Fresh checkout, exact commit, environment, original install attempts, elapsed time, warnings, failures, and dependency inventory."},
+    {"task_id": "version_reconstruction", "public_references": ["CITATION.cff", "SPECIFICATION.md", "schema/hit-assessment.schema.json", "schema/hit-dimension-catalog.json", "docs/application-handbook.md", "compatibility/hit-compatibility-manifest.json", "RESEARCH.md"], "required_evidence": "Repository and component versions, maturity, and historical support, each with a public locator."},
+    {"task_id": "valid_assessment_validation", "public_references": ["fixtures/v0.4.0-canonical-example.json", "docs/executable-conformance.md"], "expected_exit_code": 0, "expected_report_valid": true, "required_evidence": "Original command, output, exit code, source and output byte hashes, and comparison with the frozen expected output."},
+    {"task_id": "invalid_vector_error_explanation", "public_references": ["fixtures/v0.5.0-conformance/complete-record-cases.json", "docs/conformance-error-catalog.md", "scripts/validate_v050_cli.py"], "expected_suite_exit_code": 0, "required_evidence": "All three selected derived records must be rejected. Preserve complete issues and explain every returned error code from public documentation."},
+    {"task_id": "rule_reconstruction", "public_references": ["SPECIFICATION.md", "docs/application-handbook.md", "compatibility/hit-compatibility-manifest.json"], "required_evidence": "A public-locator-based account of every invariant listed in protocol Task 5, including contradictions or unresolved ambiguities."},
+    {"task_id": "migration_plan_generation", "public_references": ["case-studies/assessments/toeslagenaffaire-harm-period.json", "docs/migration-guide-v0.1.0-to-v0.4.0.md"], "expected_exit_code": 0, "expected_disposition": "fresh_reassessment_required", "required_evidence": "Non-mutating plan, source hashes before and after, and an explanation of why automatic migration is prohibited."},
+    {"task_id": "comparison_reproduction", "public_references": ["validation/test-vectors/rater-a.json", "validation/test-vectors/rater-b.json", "scripts/compare_raters.py"], "expected_exit_code": 0, "expected_exact_agreements": 6, "expected_items_compared": 7, "expected_critical_disagreement_count": 0, "expected_substantive_dimension_cohens_kappa": 0.76, "required_evidence": "Input byte hashes, original comparison, repeated output, and comparison with the frozen expected output. Synthetic vectors supply no human reliability evidence."},
+    {"task_id": "adjacent_system_boundary_explanation", "public_references": ["docs/adjacent-system-boundaries.md"], "required_evidence": "A public-locator-based explanation of all excluded functions listed in protocol Task 8."},
+    {"task_id": "private_knowledge_register", "public_references": ["implementation/v1.0.0-candidate/audit-protocol.md"], "required_evidence": "Every apparent dependency on private knowledge, with original observations and all coordinator exchanges, including none encountered when that is the auditor's actual observation."},
+    {"task_id": "audit_disposition", "public_references": ["implementation/v1.0.0-candidate/audit-protocol.md", "implementation/v1.0.0-candidate/audit-submission.schema.json"], "required_evidence": "Human-supplied eligibility declarations, signed disposition, all results and unresolved findings; schema validation alone cannot establish audit acceptance."}
+  ],
+  "interpretation_boundary": "This candidate catalog defines proposed implementation checks. It does not record a performed audit, human inter-rater reliability, institutional effectiveness, or permission to release."
+}

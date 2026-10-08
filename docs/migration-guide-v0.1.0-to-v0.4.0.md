@@ -33,7 +33,9 @@ Do not:
 
 ## Current public cases
 
-The migration manifest provides explicit release exceptions for all four released assessments. Three remain `historical_version_bound`. Cigna is `deferred_locked_protocol` until the locked human exercise publishes its original result.
+The migration manifest provides explicit release exceptions for all four released assessments. Three remain `historical_version_bound`. Cigna is `protocol_completed_historical_version_bound`: the completed v0.6.0 exercise used the preserved 0.1.0 contract. A separate current-contract reassessment requires fresh source review and must preserve the published submissions.
+
+These exceptions describe the historical migration disposition. They do not automatically satisfy the v1 stable gate concerning unavailable records. The [exception review](../release/v1.0.0/migration-exception-review.md) records that unresolved distinction.
 
 ## Result-release versioning
 

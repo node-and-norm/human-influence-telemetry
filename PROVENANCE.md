@@ -14,7 +14,7 @@ The public technical instrument is extracted from that program without publishin
 - Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224
 - Current Zenodo software record: https://zenodo.org/records/21864224
 - Source repository: private and retained by the author
-- Canonical public repository: `mj3b/human-influence-telemetry`
+- Canonical public repository: `node-and-norm/human-influence-telemetry`; the former `mj3b` URL redirects after transfer
 - Public repository release: 0.6.5
 - Human-result release: 0.6.0
 - Conformance engine version: 0.5.0
@@ -85,9 +85,11 @@ The public repository now contains:
 - a machine-readable `1.0.0` gate ledger;
 - a candidate clean-room implementation packet;
 - audit protocol `HIT-CRI-V100-001`;
-- a synchronized roadmap through `0.7.0`, `0.8.0`, `0.9.0`, and `1.0.0`.
+- separate stable and empirical tracks under ADR-0005, retaining the planned study-package labels and chronological release controls.
 
-These records establish procedural and release readiness. They do not establish new human agreement evidence, Maturity Level 3, or a stable `1.0.0` contract.
+These records document staged procedures and unresolved readiness requirements. They do not establish completed audit or release readiness, new human agreement evidence, Maturity Level 3, or a stable `1.0.0` contract.
+
+The October 7 work adds real-artifact and premature-promotion checks, a public implementation rehearsal, draft audit-submission controls, and an exploratory complete-record application plan. Its [assistance log](research/strengthening/v1-assistance-log.json) preserves the author/AI boundary. Source interpretations and new assessment proposals require separate author adjudication; independent implementation review remains absent.
 
 ## Human-result lineage
 
@@ -115,10 +117,11 @@ The historical public evidence pack contains four immutable `0.1.0` assessment f
 
 ## Normative decision lineage
 
-- ADR-0001 separates semantic-version stability from research maturity.
+- ADR-0001 records the historical proposal to separate semantic-version stability from research maturity; its original Proposed status remains visible.
 - ADR-0002 approves the `0.4.0` evidence-state and finding rules.
 - ADR-0003 preserves chronological result versioning.
 - ADR-0004 advances HIT to Maturity Level 2 based on the completed locked exercise.
+- ADR-0005 prospectively separates stable and empirical release dependencies and retains independent human implementation review.
 
 ## Stable-contract lineage rule
 

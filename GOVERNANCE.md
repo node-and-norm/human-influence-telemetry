@@ -74,6 +74,8 @@ A `1.0.0` release additionally requires:
 - every gate in `docs/v1-readiness-plan.md`;
 - release language that separates semantic stability from research maturity.
 
+[ADR-0005](docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md), dated 7 October 2026, separates stable track `HIT-STABLE-V100-001` from replication-study track `HIT-EMPIRICAL-HIT040-002`. Study-specific selection, packet freeze, and protocol publication remain requirements for the empirical track; they are not prerequisites for stable release. Independent human clean-room review remains a stable-release requirement. The candidate [gate register](release/v1.0.0/gate-register.json) lists the remaining stable blockers. Passing staging checks does not establish audit or release readiness.
+
 ## Empirical protocol authority
 
 A locked human protocol may not be weakened after results or recruitment difficulty are observed. Any reduced-rater, adaptive, or alternate design requires a prospective numbered amendment or a new protocol.

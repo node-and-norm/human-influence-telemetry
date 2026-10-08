@@ -3,10 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
 from typing import Any
+
+from v1_readiness_checks import checked_path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL_DIR = ROOT / "validation" / "v0.7.0" / "manual-workbooks"
@@ -36,31 +39,38 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def require_file(path: Path, failures: list[str]) -> None:
+def require_file(path: Path, failures: list[str], root: Path = ROOT) -> None:
     if not path.is_file() or path.stat().st_size == 0:
-        failures.append(f"missing or empty file: {path.relative_to(ROOT)}")
+        failures.append(f"missing or empty file: {path.relative_to(root)}")
 
 
-def main() -> int:
+def validate(root: Path = ROOT, mode: str = "staging") -> list[str]:
     failures: list[str] = []
+    manual_dir = root / "validation" / "v0.7.0" / "manual-workbooks"
+    asset_manifest = manual_dir / "candidate-assets-manifest.json"
+    workbook_contract = manual_dir / "manual-workbook-contract.json"
+    v1_lock = root / "release" / "v1.0.0" / "contract-freeze.candidate.json"
+    v1_plan = root / "docs" / "v1-readiness-plan.md"
+    v1_release = root / "docs" / "releases" / "v1.0.0-candidate.md"
+    active_protocol = root / "validation" / "v0.7.0" / "protocol-lock.candidate.json"
+    gate_register = root / "release" / "v1.0.0" / "gate-register.json"
 
     for path in (
-        MANUAL_DIR / "README.md",
-        ASSET_MANIFEST,
-        WORKBOOK_CONTRACT,
-        V1_LOCK,
-        V1_PLAN,
-        V1_RELEASE,
-        ACTIVE_PROTOCOL,
+        manual_dir / "README.md",
+        asset_manifest,
+        workbook_contract,
+        v1_lock,
+        v1_plan,
+        v1_release,
+        active_protocol,
+        gate_register,
     ):
-        require_file(path, failures)
+        require_file(path, failures, root)
 
     if failures:
-        for failure in failures:
-            print(f"FAIL: {failure}")
-        return 1
+        return failures
 
-    assets = load_json(ASSET_MANIFEST)
+    assets = load_json(asset_manifest)
     if assets.get("protocol_id") != "HIT-IRP-HIT040-002":
         failures.append("manual asset manifest protocol ID changed")
     if assets.get("status") != "draft_scoring_prohibited":
@@ -101,13 +111,13 @@ def main() -> int:
             failures.append(f"invalid SHA-256 for {item.get('filename')}")
 
     binary_files = [
-        path for path in MANUAL_DIR.iterdir()
+        path for path in manual_dir.iterdir()
         if path.suffix.lower() in {".docx", ".pdf", ".zip"}
     ]
     if binary_files:
         failures.append("candidate workbook binaries belong in release assets, not the repository tree")
 
-    contract = load_json(WORKBOOK_CONTRACT)
+    contract = load_json(workbook_contract)
     if contract.get("contract_id") != "HIT-MANUAL-WORKBOOK-HIT040-001":
         failures.append("manual workbook contract ID changed")
     if contract.get("status") != "candidate":
@@ -127,7 +137,7 @@ def main() -> int:
     if contract.get("adjudication_may_overwrite_original") is not False:
         failures.append("adjudication may not overwrite original scorer records")
 
-    active = load_json(ACTIVE_PROTOCOL)
+    active = load_json(active_protocol)
     if active.get("status") != "candidate":
         failures.append("active v0.7.0 protocol must remain candidate in this increment")
     if active.get("scoring_permitted") is not False:
@@ -137,7 +147,7 @@ def main() -> int:
     if active.get("packet_ids") != []:
         failures.append("active protocol must not assign packet IDs in this increment")
 
-    v1 = load_json(V1_LOCK)
+    v1 = load_json(v1_lock)
     if v1.get("target_repository_release") != "1.0.0":
         failures.append("v1 target release changed")
     if v1.get("status") != "candidate" or v1.get("release_permitted") is not False:
@@ -161,22 +171,76 @@ def main() -> int:
     if current != expected_current:
         failures.append("v1 readiness current component map is inconsistent")
     target = v1.get("target_component_versions", {})
-    if set(target.values()) != {"1.0.0"}:
-        failures.append("all stable target components must be 1.0.0")
+    if target != {key: "1.0.0" for key in expected_current}:
+        failures.append("stable target must name all five component keys at version 1.0.0")
     blockers = set(v1.get("blocking_gates", []))
     required_blockers = {
-        "signed_human_case_selection",
-        "three_frozen_current_contract_packets",
-        "v0.7.0_locked_protocol_publication",
+        "three_public_current_contract_applications_or_documented_migration_exceptions",
         "standalone_implementation_packet",
         "clean_room_implementation_audit",
         "public_v0.9.0_release_candidate",
+        "stable_component_version_promotion",
+        "breaking_change_review",
+        "synchronized_release_metadata",
         "exact_release_commit_validation",
     }
-    if not required_blockers.issubset(blockers):
-        failures.append("v1 readiness ledger is missing mandatory blockers")
+    if blockers != required_blockers or len(v1.get("blocking_gates", [])) != len(required_blockers):
+        failures.append("stable-track blocker set must contain exactly the eight declared gates")
+    if v1.get("track_id") != "HIT-STABLE-V100-001" or v1.get("governance_decision") != "ADR-0005":
+        failures.append("stable track must identify HIT-STABLE-V100-001 and ADR-0005")
+    if v1.get("gate_register") != "release/v1.0.0/gate-register.json":
+        failures.append("stable track must reference the declared gate register")
+    if v1.get("current_research_maturity") != {"level": 2, "name": "Applicable"}:
+        failures.append("stable readiness work cannot change research maturity")
+    if required_blockers.intersection(v1.get("completed_gates", [])):
+        failures.append("unresolved stable gates cannot also be listed as completed")
+    empirical = v1.get("empirical_track", {})
+    if empirical.get("track_id") != "HIT-EMPIRICAL-HIT040-002":
+        failures.append("empirical track identity changed")
+    if empirical.get("protocol_id") != "HIT-IRP-HIT040-002":
+        failures.append("empirical track must preserve the current-contract protocol")
+    if empirical.get("status") != "candidate_scoring_prohibited":
+        failures.append("empirical track must remain candidate and scoring prohibited")
+    if empirical.get("blocks_stable_release") is not False:
+        failures.append("empirical preparation must not silently become a stable-release dependency")
+    if empirical.get("current_contract_replication") != "unresolved":
+        failures.append("current-contract replication must remain unresolved")
+    if empirical.get("protocol_rules_changed") is not False:
+        failures.append("stable-track amendment must preserve empirical protocol rules")
+    empirical_blockers = {
+        "signed_human_case_selection", "three_frozen_current_contract_packets",
+        "v0.7.0_locked_protocol_publication",
+    }
+    if set(empirical.get("blocking_gates", [])) != empirical_blockers or len(empirical.get("blocking_gates", [])) != len(empirical_blockers):
+        failures.append("empirical track must retain all three replication-preparation safeguards")
+    if v1.get("human_replication_preferred_but_not_semantic_v1_gate") is not True:
+        failures.append("completed replication must remain separate from semantic stability")
 
-    plan = V1_PLAN.read_text(encoding="utf-8")
+    register = load_json(gate_register)
+    if register.get("track_id") != "HIT-STABLE-V100-001" or register.get("governance_decision") != "ADR-0005":
+        failures.append("gate register identity must match the stable track and ADR-0005")
+    if register.get("status") != "candidate_release_prohibited":
+        failures.append("gate register must remain candidate_release_prohibited; completion is unsupported")
+    gates = register.get("gates", [])
+    if not isinstance(gates, list) or any(not isinstance(item, dict) for item in gates):
+        failures.append("gate register gates must be a list of objects")
+        gates = []
+    if {item.get("gate_id") for item in gates} != required_blockers or len(gates) != len(required_blockers):
+        failures.append("gate register must cover each stable blocker exactly once")
+    for item in gates:
+        gate_id = item.get("gate_id")
+        if item.get("status") != "unresolved":
+            failures.append(f"{gate_id}: completion acceptance is unsupported; candidate gate must remain unresolved")
+        paths = item.get("evidence_paths")
+        if not isinstance(paths, list) or not paths:
+            failures.append(f"{gate_id}: supporting evidence_paths must be a nonempty list")
+            continue
+        for path in paths:
+            checked_path(root, path, failures, f"{gate_id} evidence path")
+    # Existing paths demonstrate staging progress, not satisfaction of the gate.
+    # A future acceptance policy must validate the actual evidence and its scope.
+
+    plan = v1_plan.read_text(encoding="utf-8")
     for phrase in (
         "Current repository release:** `0.6.5`",
         "Current exact-version DOI:** `10.5281/zenodo.21864224`",
@@ -190,7 +254,7 @@ def main() -> int:
         if phrase not in plan:
             failures.append(f"v1 readiness plan missing required statement: {phrase}")
 
-    release = V1_RELEASE.read_text(encoding="utf-8")
+    release = v1_release.read_text(encoding="utf-8")
     for phrase in (
         "Status:** Candidate outline, release prohibited",
         "Current repository release:** `0.6.5`",
@@ -202,12 +266,31 @@ def main() -> int:
         if phrase not in release:
             failures.append(f"v1 candidate release outline missing required statement: {phrase}")
 
+    if mode == "release-ready":
+        for gate_id in sorted(required_blockers):
+            failures.append(f"stable release prerequisite unresolved: {gate_id}")
+        failures.append(
+            "release-ready acceptance is not implemented for this candidate: release remains prohibited; "
+            "a reviewed promotion policy and explicit maintainer decision are required"
+        )
+    return failures
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--mode", choices=("staging", "release-ready"), default="staging")
+    parser.add_argument("--root", type=Path, default=ROOT, help="repository root (for isolated checks)")
+    args = parser.parse_args()
+    try:
+        failures = validate(args.root.resolve(), args.mode)
+    except (OSError, ValueError, TypeError, KeyError, AttributeError) as exc:
+        failures = [f"unreadable or malformed candidate controls: {exc}"]
     if failures:
         for failure in failures:
             print(f"FAIL: {failure}")
         return 1
 
-    print("HIT v1 readiness staging validation passed")
+    print("HIT v1 staging consistency passed; not release readiness")
     print("- current repository release: 0.6.5")
     print("- human-result release: 0.6.0")
     print("- software DOI: 10.5281/zenodo.21864224")

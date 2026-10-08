@@ -184,9 +184,9 @@ Specification, assessment schema, and dimension catalog remain 0.4.0. The engine
 
 Version 1.0.0 would make a compatibility and public-implementability commitment. Research maturity remains a separate claim. Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.
 
-The planned sequence is 0.7.0 packet and protocol freeze, 0.8.0 current-contract applications and empirical result or recruitment disposition, and 0.9.0 implementation review and release-candidate freeze before 1.0.0 promotion.
+The stable track leads to 0.9.0 implementation review and release-candidate freeze before 1.0.0 promotion. The planned 0.7.0 packet/protocol package and 0.8.0 empirical-result package belong to the separate study track. Later study publication requires an explicit chronological version allocation if the stable track advances first; protected protocol requirements remain unchanged.
 
-Open gates include human case selection, frozen packets, locked scoring materials, current-contract applications or migration exceptions, a complete implementation packet, clean-room review, a public release candidate, and synchronized component promotion. Draft workbooks remain scoring-prohibited.
+Stable-release gates include current-contract applications or substantiated migration exceptions, a complete implementation packet, independent human clean-room review, a public release candidate, and synchronized component promotion. [ADR-0005](docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md) assigns human case selection, frozen packets, and locked scoring materials to the separate replication track. Draft workbooks remain scoring-prohibited. See the [five-priority execution record](research/strengthening/v1-priorities.md) and [stable gate register](release/v1.0.0/gate-register.json).
 
 The [readiness plan](docs/v1-readiness-plan.md), [candidate release](docs/releases/v1.0.0-candidate.md), and [machine-readable gate ledger](release/v1.0.0/contract-freeze.candidate.json) govern these decisions.
 
