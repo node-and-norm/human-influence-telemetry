@@ -12,11 +12,12 @@ The public technical instrument is extracted from that program without publishin
 - Concept DOI for all HIT software versions: 10.5281/zenodo.21446141
 - Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142
 - Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224
-- Latest verified Zenodo software record before 0.6.6 preparation: https://zenodo.org/records/21864224
+- Version-specific software DOI for `v0.6.6`: 10.5281/zenodo.23226713
+- Current verified Zenodo software record: https://zenodo.org/records/23226713
 - Source repository: private and retained by the author
 - Canonical public repository: `node-and-norm/human-influence-telemetry`; the former `mj3b` URL redirects after transfer
-- Current repository release: 0.6.6, prepared for publication; verify GitHub publication separately
-- Exact-version DOI: pending verification
+- Current repository release: 0.6.6, published on GitHub and Zenodo
+- Exact-version DOI: `10.5281/zenodo.23226713`
 - Human-result release: 0.6.0
 - Conformance engine version: 0.5.0
 - Public specification version: 0.4.0
@@ -26,7 +27,7 @@ The public technical instrument is extracted from that program without publishin
 - Active empirical package: `0.7.0` candidate under `HIT-IRP-HIT040-002`
 - Stable public-contract target: `1.0.0`, gated candidate, release prohibited
 
-The prepared release metadata identifies `0.6.6`. Its GitHub publication and Zenodo archival identity are separate facts to verify. The `0.6.5` DOI remains bound to that earlier archive. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
+The [publication receipt](release/v0.6.6/publication-receipt.json) records the published `0.6.6` tag, exact commit, passing CI and verified Zenodo archive. The original tag retains its prepared metadata; this follow-up records the subsequent publication without moving that tag. The `0.6.5` DOI remains bound to that earlier archive. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
 
 ## DOI lineage
 
@@ -36,6 +37,7 @@ The originating research record and the standalone HIT software record have dist
 - `10.5281/zenodo.21446141` is the HIT software concept DOI and resolves to the latest published software version;
 - `10.5281/zenodo.21446142` is the version-specific DOI for the exact `v0.6.4` archive.
 - `10.5281/zenodo.21864224` is the version-specific DOI for the exact `v0.6.5` archive.
+- `10.5281/zenodo.23226713` is the version-specific DOI for the exact `v0.6.6` archive.
 
 Use the version DOI for reproducible citation of an exact release. Use the concept DOI when referring to HIT as an evolving software project across versions.
 
@@ -75,7 +77,7 @@ Published the standalone software archive and version-specific DOI `10.5281/zeno
 
 Published claim-evidence mapping for H1 through H9 and four paper claims, five research-integrity gates, five fitness dimensions, eight negative controls, lineage and AI-assistance records, a paper workspace, and reproducible claim-gate outputs. Zenodo archived the exact release as `10.5281/zenodo.21864224`. The audit state is `PASS_WITH_EXCEPTIONS`. The release does not revise the normative contract, executable engine, human-result record, H3 decision, or maturity level.
 
-### 0.6.6 development and reproducibility controls, prepared for publication
+### 0.6.6 development and reproducibility controls, published
 
 The public repository now contains:
 
@@ -92,7 +94,7 @@ These records document staged procedures and unresolved readiness requirements. 
 
 The October 7 work adds real-artifact and premature-promotion checks, a public implementation rehearsal, draft audit-submission controls, and an exploratory complete-record application plan. Its [assistance log](research/strengthening/v1-assistance-log.json) preserves the author/AI boundary. Source interpretations and new assessment proposals require separate author adjudication; independent implementation review remains absent.
 
-Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. The full Ofqual draft remains AI-assessed and pending author adjudication. Publishing these files does not promote them into the historical v0.6.5 audit or the manuscript conclusion. No new exact-version DOI is claimed until the public archive has been checked against the released version and the existing software concept lineage.
+Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. The full Ofqual draft remains AI-assessed and pending author adjudication. Publishing these files does not promote them into the historical v0.6.5 audit or the manuscript conclusion. Zenodo record `23226713` identifies version `0.6.6` under software concept `21446141`; all 294 archived tracked files match the released commit byte for byte, as recorded in the publication receipt.
 
 ## Human-result lineage
 

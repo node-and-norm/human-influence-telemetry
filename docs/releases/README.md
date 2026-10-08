@@ -15,13 +15,13 @@ A document in this directory does not create a release. A version becomes public
 | [`0.5.0`](v0.5.0.md) | 2026-07-18 | Complete-record executable conformance | Published |
 | [`0.6.0`](v0.6.0.md) | 2026-07-18 | First bounded independent human result; Maturity Level 2 | Published human-result release |
 | [`0.6.4`](v0.6.4.md) | 2026-07-19 | Standalone software archive and version-specific Zenodo DOI | Published |
-| [`0.6.5`](v0.6.5.md) | 2026-08-09 | Claim-evidence integrity audit and paper workspace | Latest verified archive before 0.6.6 preparation |
+| [`0.6.5`](v0.6.5.md) | 2026-08-09 | Claim-evidence integrity audit and paper workspace | Published |
+| [`0.6.6`](v0.6.6.md) | 2026-10-07 | Development workbench, reproducibility and release-readiness controls | Current published release; archive verified |
 
 ## Active and planned releases
 
 | Version | State | Purpose | Publication condition |
 |---|---|---|---|
-| [`0.6.6`](v0.6.6.md) | Prepared for publication, 2026-10-07 | Development workbench, reproducibility and release-readiness controls | Exact-commit validation, maintainer release acceptance, published tag and GitHub release; archive verified separately |
 | [`0.7.0`](v0.7.0-candidate.md) | Active candidate | Freeze three current-contract packets and the multi-case replication protocol | Human case selection, packet freeze, comparison tooling, locked protocol, exact-commit validation |
 | `0.8.0` | Pending | Publish current-contract applications and empirical result or recruitment disposition | Application records and declared empirical outcome |
 | `0.9.0` | Pending | Stable release candidate and clean-room implementation audit | Complete implementation packet, external audit, no release-blocking defect |
@@ -29,14 +29,15 @@ A document in this directory does not create a release. A version becomes public
 
 ## Current version boundary
 
-- Current repository release: `0.6.6`, prepared for publication
-- Current published release: verify the canonical GitHub Releases page; this preparation does not create a release
-- Exact-version DOI: pending verification
+- Current repository release: `0.6.6`, published on GitHub and Zenodo
+- Current published release: [`v0.6.6`](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6); see the [publication receipt](../../release/v0.6.6/publication-receipt.json)
+- Exact-version DOI: `10.5281/zenodo.23226713`
 - Human-result release: `0.6.0`
 - Concept DOI for all software versions: `10.5281/zenodo.21446141`
 - Originating research DOI: `10.5281/zenodo.21204892`
 - Version-specific software DOI for `v0.6.4`: `10.5281/zenodo.21446142`
 - Version-specific software DOI for `v0.6.5`: `10.5281/zenodo.21864224`
+- Version-specific software DOI for `v0.6.6`: `10.5281/zenodo.23226713`
 - Normative assessment contract: `0.4.0`
 - Conformance engine: `0.5.0`
 - Research maturity: Level 2, Applicable
@@ -62,4 +63,4 @@ The presence of `0.7.0`, `0.9.0`, or `1.0.0` candidate materials in `main` does 
 
 ## Metadata rule
 
-`CITATION.cff` and `.zenodo.json` are prepared for release `0.6.6` through the separate release-preparation process. Publication must be verified on GitHub, and the exact-version DOI remains absent until the public archive is verified. The prior `0.6.5` DOI continues to identify only that archive. Candidate documents may describe future versions, but they must not overwrite published-release metadata.
+`CITATION.cff` now identifies the verified `0.6.6` archive as `10.5281/zenodo.23226713`. The original tag and `.zenodo.json` publication input remain unchanged. This follow-up records publication and archival verification without moving the tag; its added receipt is outside the original archive. The prior `0.6.5` DOI continues to identify only that archive. Candidate documents may describe future versions, but they must not overwrite published-release metadata.

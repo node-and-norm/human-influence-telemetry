@@ -11,7 +11,7 @@
     {"gate_id": "public_v0.9.0_release_candidate", "status": "unresolved", "evidence_paths": ["docs/v1-readiness-plan.md", "docs/releases/README.md"], "limitation": "The public release candidate has not been published and reviewed."},
     {"gate_id": "stable_component_version_promotion", "status": "unresolved", "evidence_paths": ["compatibility/hit-compatibility-manifest.json", "release/v1.0.0/contract-freeze.candidate.json"], "limitation": "Normative components remain 0.4.0 and the engine remains 0.5.0."},
     {"gate_id": "breaking_change_review", "status": "unresolved", "evidence_paths": ["docs/v1-readiness-plan.md"], "limitation": "Final stable-contract compatibility review remains pending."},
-    {"gate_id": "synchronized_release_metadata", "status": "unresolved", "evidence_paths": ["CITATION.cff", ".zenodo.json", "docs/releases/v1.0.0-candidate.md"], "limitation": "Development release metadata is prepared for 0.6.6 with its exact-version DOI pending verification; no v1 release acceptance exists."},
+    {"gate_id": "synchronized_release_metadata", "status": "unresolved", "evidence_paths": ["CITATION.cff", ".zenodo.json", "docs/releases/v1.0.0-candidate.md"], "limitation": "Development release 0.6.6 is published with verified exact-version DOI 10.5281/zenodo.23226713; this does not synchronize or accept v1 release metadata, and no v1 release acceptance exists."},
     {"gate_id": "exact_release_commit_validation", "status": "unresolved", "evidence_paths": [".github/workflows/validate.yml"], "limitation": "No exact stable-release commit has been designated or accepted."}
   ]
 }

@@ -6,9 +6,9 @@ Human Influence Telemetry uses a separate Zenodo software record for successfull
 
 DOI `10.5281/zenodo.21204892` identifies the originating research concept. It is not a version DOI for this standalone software repository.
 
-The standalone HIT software record now exists. Zenodo assigned software concept DOI `10.5281/zenodo.21446141`, version DOI `10.5281/zenodo.21446142` to `v0.6.4`, and version DOI `10.5281/zenodo.21864224` to `v0.6.5`.
+The standalone HIT software record now exists. Zenodo assigned software concept DOI `10.5281/zenodo.21446141`, version DOI `10.5281/zenodo.21446142` to `v0.6.4`, version DOI `10.5281/zenodo.21864224` to `v0.6.5`, and version DOI `10.5281/zenodo.23226713` to `v0.6.6`.
 
-Version `0.6.6` is prepared for publication. Its exact-version DOI is pending verification. Neither the presence of updated metadata nor an active repository integration proves that Zenodo has archived this version.
+Version `0.6.6` is published on GitHub and Zenodo. The [publication receipt](../release/v0.6.6/publication-receipt.json) records its exact commit, successful CI, public archival metadata and byte-for-byte archive comparison. Updated metadata and an active repository integration alone do not prove archival publication.
 
 ## Identifier model
 
@@ -21,7 +21,7 @@ Version `0.6.6` is prepared for publication. Its exact-version DOI is pending ve
    - Identifies the collection of archived HIT releases.
 
 3. **HIT version DOI**
-   - Current prepared release `v0.6.6`: exact-version DOI pending verification.
+   - Current exact release: `10.5281/zenodo.23226713` for `v0.6.6`.
    - Previous verified archive: `10.5281/zenodo.21864224` for `v0.6.5`.
    - Previous exact release: `10.5281/zenodo.21446142` for `v0.6.4`.
    - Identifies the exact released files and metadata.
@@ -55,6 +55,8 @@ A missing software DOI does not invalidate the GitHub release. It means archival
 
 While archival verification is pending, omit the top-level DOI from `CITATION.cff`; retain the concept DOI as an explicitly cross-version identifier. The release ledger uses `current_software_doi: null` and `current_software_doi_status: pending_verification`. Never copy the 0.6.5 DOI into a 0.6.6 exact-version field. A publication-status follow-up records the GitHub release even when Zenodo remains pending, and a later archival follow-up records the verified new DOI. Neither follow-up moves the original tag.
 
+For `0.6.6`, archival verification is complete. The follow-up metadata sets `current_software_doi` to `10.5281/zenodo.23226713` and `current_software_doi_status` to `verified`. The tag retains its original preparation metadata, and the later publication receipt is outside that archive.
+
 ## Historical 0.4.0 handling
 
 Release `0.4.0` was the first planned archival opportunity. Repository, specification, assessment schema, and dimension catalog then identified version `0.4.0`.
@@ -69,7 +71,7 @@ The repository contains both `CITATION.cff` and `.zenodo.json`. When `.zenodo.js
 
 Current component versions:
 
-- repository release: 0.6.6, prepared for publication;
+- repository release: 0.6.6, published on GitHub and Zenodo;
 - specification: 0.4.0;
 - assessment schema: 0.4.0;
 - dimension catalog: 0.4.0;

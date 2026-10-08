@@ -8,7 +8,7 @@ No additional increment is declared here. Candidate study and stable-release wor
 
 ## [0.6.6] - 2026-10-07
 
-Prepared for publication. GitHub publication and the exact-version archive require separate verification.
+Published on GitHub and Zenodo. The [publication receipt](release/v0.6.6/publication-receipt.json) records the exact commit, passing CI and archive verification. The released tag retains its preparation metadata; this publication follow-up does not move the tag or change the original archive.
 
 ### Development and reproducibility controls
 
@@ -23,7 +23,7 @@ Prepared for publication. GitHub publication and the exact-version archive requi
 - Added 14 exact-version metadata tests covering stale dates and versions, reused or invented DOIs, missing pending-state declarations, and preservation of the software/research DOI distinction.
 - Froze the exploratory Ofqual complete-record application plan before new dimension findings; added the full draft record, matched baseline, four qualitative reanalyses and eight draft-boundary tests. Scientific judgments remain subject to source-based author adjudication.
 - Preserved the 0.4.0 normative contract, 0.5.0 engine, 0.6.0 human result, v0.6.5 audit and exact-version DOI boundaries. No normative change, historical rescoring, new external audit, current-contract replication, or maturity promotion follows.
-- Exact-version DOI: pending verification. The prior 0.6.5 DOI must not be used for this release.
+- Exact-version DOI: `10.5281/zenodo.23226713`. The prior 0.6.5 DOI must not be used for this release.
 - Disclosed the obsolete pre-0.4 release-readiness check's failure; the current workflow and bounded regression checks are the applicable verification surface.
 
 ## [0.6.5] - 2026-08-09

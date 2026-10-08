@@ -4,7 +4,7 @@
 
 Documentary evidence of practical human authority.
 
-[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Prepared release: v0.6.6](https://img.shields.io/badge/prepared_release-v0.6.6-blue)](docs/releases/v0.6.6.md) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
+[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Release: v0.6.6](https://img.shields.io/badge/release-v0.6.6-blue)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
 
 </div>
 
@@ -18,7 +18,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 | Research checkpoint | Current account |
 | :--- | :--- |
-| Release preparation | Repository release 0.6.6; normative contract 0.4.0; conformance engine 0.5.0; publication verified separately |
+| Published artifact | Repository release 0.6.6, archived on Zenodo; normative contract 0.4.0; conformance engine 0.5.0 |
 | Human evidence | Two independent scorers agreed on 7 of 7 items for one frozen Cigna packet under the earlier 0.1.0 scorer contract |
 | Publication controls | Thirteen mapped claims, five gates, eight negative controls; audit state `PASS_WITH_EXCEPTIONS` |
 | Development evidence | Three partial applications, two retained advisory model experiments, and one complete Ofqual draft pending author review; no maturity promotion |
@@ -26,9 +26,9 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current release:** 0.6.6
 
-**Publication state:** Prepared for publication. The [GitHub release](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) must be verified before treating this preparation as a published release.
+**Publication state:** Published on [GitHub](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) and [Zenodo](https://zenodo.org/records/23226713). The [publication receipt](release/v0.6.6/publication-receipt.json) records the exact commit, passing validation and archive comparison.
 
-**Current exact-version DOI:** pending verification
+**Current exact-version DOI:** `10.5281/zenodo.23226713`
 
 **Human-result release:** 0.6.0
 
@@ -151,13 +151,13 @@ Contributions should identify the changed proposition, supporting evidence, unce
 
 ## Citation
 
-Cite the exact software version and commit you used. For 0.6.6, cite the exact GitHub tag and commit after publication while its archive is pending. The v0.6.5 DOI identifies only that earlier archive and must not be attached to 0.6.6.
+Cite the exact software version and commit you used. The v0.6.6 DOI identifies the archive at tag `v0.6.6`, commit `6745873a990554cf40303e217865895122494696`. The v0.6.5 DOI identifies only that earlier archive and must not be attached to 0.6.6.
 
-**Exact-version DOI:** pending verification
+**Exact-version DOI:** [10.5281/zenodo.23226713](https://doi.org/10.5281/zenodo.23226713)
 
-The most recent verified archival citation before this release preparation remains:
+Use this citation for the verified v0.6.6 archive:
 
-> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.5) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21864224
+> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.6) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23226713
 
 **Previous version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224](https://doi.org/10.5281/zenodo.21864224)
 
@@ -187,8 +187,9 @@ Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, a
 | 0.6.0 | Bounded human result; maturity Level 2, Applicable |
 | 0.6.4 | Standalone software archive and DOI metadata |
 | 0.6.5 | Claim-evidence controls and paper workspace |
+| 0.6.6 | Development workbench, reproducibility and release-readiness controls |
 
-Version 0.6.6 is prepared as a nonbreaking development and reproducibility release. Its GitHub publication and exact-version archive must be verified separately. It does not activate the study or implementation-audit candidates.
+Version 0.6.6 is published as a nonbreaking development and reproducibility release. Its GitHub release and exact-version archive are verified in the publication receipt. It does not activate the study or implementation-audit candidates.
 
 Specification, assessment schema, and dimension catalog remain 0.4.0. The engine remains 0.5.0. See the [release index](docs/releases/README.md) for checkpoint details.
 

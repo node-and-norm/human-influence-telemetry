@@ -3,9 +3,9 @@
 **Updated:** 7 October 2026
 **Governing decision:** `ADR-0005`, prospectively resolving `ADR-0001`'s historical proposal
 **Current repository release:** `0.6.6`
-**Publication state:** Prepared for publication; verify GitHub publication separately.
+**Publication state:** Published on GitHub and Zenodo; see the [publication receipt](../release/v0.6.6/publication-receipt.json).
 **Human-result release:** `0.6.0`
-**Current exact-version DOI:** pending verification
+**Current exact-version DOI:** `10.5281/zenodo.23226713`
 **Software concept DOI:** `10.5281/zenodo.21446141`
 **Previous exact-version DOI, v0.6.5:** `10.5281/zenodo.21864224`
 **Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`
