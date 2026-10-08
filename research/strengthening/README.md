@@ -2,6 +2,10 @@
 
 This supplementary workbench tests the usefulness and limits of HIT. It is development work following v0.6.5, with no new release or research-maturity decision. The submitted chapter is outside its scope.
 
+The author approved the [bounded v1 execution priorities](v1-priorities.md) on 7 October 2026. The existing scientific decision queue remains in force. The [Ofqual complete-record extension](solo-002-complete/README.md) now includes a draft that passes executable conformance checks, a capable-baseline comparison and four qualitative source-subset/attribution reanalyses. Its plan was committed before new dimension findings. All scientific judgments remain AI-assisted proposals pending author adjudication.
+
+Use the [evaluation-methods register](evaluation-methods.md) to distinguish software verification, documentary review, exploratory comparisons, and the independent evaluations that remain pending. Passing a software check does not validate HIT's scientific claims.
+
 See the [five-priority disposition and author decision queue](priority-status.md) for the current completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
 
 | Priority | Deliverable | Evidence available |
@@ -26,7 +30,7 @@ The [Obermeyer development audit](solo-001/dossier.md) proposes two rationale qu
 
 ## Completion criteria
 
-The workbench contains three partial documentary applications and two model experiments. Its publication path still requires responsible-author adjudication, verified sources and literature comparisons, and full-document evaluation. Claims about other users require participant evidence; independent-review claims require external records. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
+The workbench preserves three partial documentary applications and two model experiments, and now adds one exploratory complete-record draft with qualitative reanalysis. Its publication path still requires responsible-author adjudication, source and literature verification, and the unfinished evaluation conditions. Claims about other users require participant evidence; independent-review claims require external records. Each result must state which criterion it satisfies. Repository size, test count, and model agreement are not proxies for field validity.
 
 ## Assistance and provenance
 

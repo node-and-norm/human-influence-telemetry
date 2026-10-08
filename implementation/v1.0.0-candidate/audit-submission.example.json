@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0-candidate",
+  "protocol_id": "HIT-CRI-V100-001",
+  "record_state": "template",
+  "audit_id": null,
+  "auditor": null,
+  "frozen_packet": null,
+  "environment": null,
+  "tasks": {
+    "fresh_install": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "version_reconstruction": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "valid_assessment_validation": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "invalid_vector_error_explanation": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "rule_reconstruction": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "migration_plan_generation": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "comparison_reproduction": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "adjacent_system_boundary_explanation": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "private_knowledge_register": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []},
+    "audit_disposition": {"outcome": null, "summary": null, "public_references": [], "commands": [], "evidence_files": []}
+  },
+  "findings": [],
+  "coordinator_exchanges": [],
+  "audit_disposition": null,
+  "signature": null
+}

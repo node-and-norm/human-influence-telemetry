@@ -3,6 +3,7 @@
   "status": "candidate_incomplete",
   "audit_protocol_id": "HIT-CRI-V100-001",
   "audit_permitted": false,
+  "independent_human_auditor_required": true,
   "target_release": "0.9.0",
   "target_stable_release": "1.0.0",
   "exact_repository_commit": null,
@@ -14,12 +15,16 @@
     {"path": "schema/hit-dimension-catalog.json", "status": "present_current_0.4.0"},
     {"path": "docs/adjacent-system-boundaries.md", "status": "present"},
     {"path": "compatibility/hit-compatibility-manifest.json", "status": "present"},
-    {"path": "docs/migration-guide-v0.4.0.md", "status": "present"},
+    {"path": "docs/migration-guide-v0.1.0-to-v0.4.0.md", "status": "present"},
     {"path": "docs/conformance-error-catalog.md", "status": "present"},
     {"path": "fixtures/v0.5.0-conformance/complete-record-cases.json", "status": "present"},
     {"path": "RESEARCH.md", "status": "present"},
     {"path": "LIMITATIONS.md", "status": "present"},
-    {"path": "implementation/v1.0.0-candidate/audit-protocol.md", "status": "present_candidate"}
+    {"path": "implementation/v1.0.0-candidate/audit-protocol.md", "status": "present_candidate"},
+    {"path": "implementation/v1.0.0-candidate/quickstart.md", "status": "present_candidate"},
+    {"path": "implementation/v1.0.0-candidate/task-catalog.json", "status": "present_candidate"},
+    {"path": "implementation/v1.0.0-candidate/audit-submission.schema.json", "status": "present_candidate"},
+    {"path": "implementation/v1.0.0-candidate/audit-submission.example.json", "status": "present_pending_template"}
   ],
   "required_runtime_tasks": [
     "fresh_install",

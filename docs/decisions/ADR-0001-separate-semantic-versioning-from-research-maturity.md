@@ -5,6 +5,8 @@
 **Decision owner:** Mark Julius Banasihan  
 **Repository:** Human Influence Telemetry
 
+Historical-status note, 7 October 2026: the original Proposed status and historical context below are preserved. [ADR-0005](ADR-0005-separate-stable-and-empirical-tracks.md) prospectively adopts separate stable and empirical tracks and governs their current dependencies. No earlier adoption date is inferred.
+
 ## Context
 
 Human Influence Telemetry currently uses two different systems to communicate two different properties:

@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/node-and-norm/human-influence-telemetry/blob/main/implementation/v1.0.0-candidate/audit-submission.schema.json",
+  "title": "HIT candidate clean-room audit submission",
+  "description": "A template may contain genuine nulls. Submitted records require human declarations and complete task accounting. Structural validation never verifies identity, independence, signature authenticity, evidence truth, or audit activation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "protocol_id", "record_state", "audit_id", "auditor", "frozen_packet", "environment", "tasks", "findings", "coordinator_exchanges", "audit_disposition", "signature"],
+  "properties": {
+    "schema_version": {"const": "0.1.0-candidate"},
+    "protocol_id": {"const": "HIT-CRI-V100-001"},
+    "record_state": {"enum": ["template", "submitted"]},
+    "audit_id": {"type": ["string", "null"], "minLength": 1},
+    "auditor": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/auditor"}]},
+    "frozen_packet": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/frozen_packet"}]},
+    "environment": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/environment"}]},
+    "tasks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fresh_install", "version_reconstruction", "valid_assessment_validation", "invalid_vector_error_explanation", "rule_reconstruction", "migration_plan_generation", "comparison_reproduction", "adjacent_system_boundary_explanation", "private_knowledge_register", "audit_disposition"],
+      "properties": {
+        "fresh_install": {"$ref": "#/$defs/task"},
+        "version_reconstruction": {"$ref": "#/$defs/task"},
+        "valid_assessment_validation": {"$ref": "#/$defs/task"},
+        "invalid_vector_error_explanation": {"$ref": "#/$defs/task"},
+        "rule_reconstruction": {"$ref": "#/$defs/task"},
+        "migration_plan_generation": {"$ref": "#/$defs/task"},
+        "comparison_reproduction": {"$ref": "#/$defs/task"},
+        "adjacent_system_boundary_explanation": {"$ref": "#/$defs/task"},
+        "private_knowledge_register": {"$ref": "#/$defs/task"},
+        "audit_disposition": {"$ref": "#/$defs/task"}
+      }
+    },
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "coordinator_exchanges": {"type": "array", "items": {"$ref": "#/$defs/exchange"}},
+    "audit_disposition": {"enum": [null, "pass_no_release_blocker", "pass_with_nonblocking_findings", "fail_release_blocking_defect", "invalid_audit_integrity_failure"]},
+    "signature": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/signature"}]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"record_state": {"const": "template"}}},
+      "then": {"properties": {"audit_disposition": {"const": null}, "signature": {"const": null}}}
+    },
+    {
+      "if": {"properties": {"record_state": {"const": "submitted"}}},
+      "then": {
+        "properties": {
+          "audit_id": {"type": "string", "minLength": 1},
+          "auditor": {"$ref": "#/$defs/auditor"},
+          "frozen_packet": {"$ref": "#/$defs/frozen_packet"},
+          "environment": {"$ref": "#/$defs/environment"},
+          "signature": {"$ref": "#/$defs/signature"},
+          "audit_disposition": {"type": "string"},
+          "tasks": {
+            "additionalProperties": {"$ref": "#/$defs/submitted_task"},
+            "properties": {
+              "fresh_install": {"$ref": "#/$defs/executable_task"},
+              "valid_assessment_validation": {"$ref": "#/$defs/executable_task"},
+              "invalid_vector_error_explanation": {"$ref": "#/$defs/executable_task"},
+              "migration_plan_generation": {"$ref": "#/$defs/executable_task"},
+              "comparison_reproduction": {"$ref": "#/$defs/executable_task"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"audit_disposition": {"enum": ["pass_no_release_blocker", "pass_with_nonblocking_findings"]}}},
+      "then": {
+        "properties": {
+          "auditor": {"properties": {"is_human": {"const": true}, "not_hit_author": {"const": true}, "no_material_packet_contribution": {"const": true}, "used_public_material_only": {"const": true}}},
+          "environment": {"properties": {"checkout_clean_before_install": {"const": true}}},
+          "tasks": {"additionalProperties": {"properties": {"outcome": {"const": "pass"}}}},
+          "findings": {"items": {"not": {"properties": {"severity": {"const": "release_blocking"}, "status": {"const": "open"}}, "required": ["severity", "status"]}}}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_state": {"const": "submitted"},
+          "auditor": {
+            "type": "object",
+            "anyOf": [
+              {"properties": {"is_human": {"const": false}}, "required": ["is_human"]},
+              {"properties": {"not_hit_author": {"const": false}}, "required": ["not_hit_author"]},
+              {"properties": {"no_material_packet_contribution": {"const": false}}, "required": ["no_material_packet_contribution"]},
+              {"properties": {"used_public_material_only": {"const": false}}, "required": ["used_public_material_only"]}
+            ]
+          }
+        }
+      },
+      "then": {"properties": {"audit_disposition": {"const": "invalid_audit_integrity_failure"}}}
+    }
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "text": {"type": "string", "minLength": 1},
+    "file": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "digest_method"],
+      "properties": {"path": {"$ref": "#/$defs/text"}, "sha256": {"$ref": "#/$defs/sha256"}, "digest_method": {"enum": ["file_bytes", "canonical_json"]}}
+    },
+    "auditor": {
+      "type": "object", "additionalProperties": false,
+      "required": ["identity", "human_supplied_declarations", "is_human", "not_hit_author", "no_material_packet_contribution", "used_public_material_only", "competence", "conflicts", "prior_exposure"],
+      "properties": {
+        "identity": {"$ref": "#/$defs/text"}, "human_supplied_declarations": {"const": true},
+        "is_human": {"type": "boolean"}, "not_hit_author": {"type": "boolean"}, "no_material_packet_contribution": {"type": "boolean"}, "used_public_material_only": {"type": "boolean"},
+        "competence": {"$ref": "#/$defs/text"}, "conflicts": {"$ref": "#/$defs/text"}, "prior_exposure": {"$ref": "#/$defs/text"}
+      }
+    },
+    "frozen_packet": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository_commit", "packet_digest_sha256", "activation_record", "input_hashes", "expected_output_hashes"],
+      "properties": {
+        "repository_commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"},
+        "packet_digest_sha256": {"$ref": "#/$defs/sha256"}, "activation_record": {"$ref": "#/$defs/file"},
+        "input_hashes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/file"}},
+        "expected_output_hashes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/file"}}
+      }
+    },
+    "environment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operating_system", "python_version", "shell", "dependency_inventory", "checkout_clean_before_install"],
+      "properties": {
+        "operating_system": {"$ref": "#/$defs/text"}, "python_version": {"$ref": "#/$defs/text"}, "shell": {"$ref": "#/$defs/text"},
+        "dependency_inventory": {"$ref": "#/$defs/file"}, "checkout_clean_before_install": {"type": "boolean"}
+      }
+    },
+    "command": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "working_directory", "exit_code", "stdout", "stderr", "elapsed_seconds"],
+      "properties": {
+        "command": {"$ref": "#/$defs/text"}, "working_directory": {"$ref": "#/$defs/text"}, "exit_code": {"type": "integer"},
+        "stdout": {"$ref": "#/$defs/file"}, "stderr": {"$ref": "#/$defs/file"}, "elapsed_seconds": {"type": "number", "minimum": 0}
+      }
+    },
+    "task": {
+      "type": "object", "additionalProperties": false,
+      "required": ["outcome", "summary", "public_references", "commands", "evidence_files"],
+      "properties": {
+        "outcome": {"enum": [null, "pass", "fail", "blocked"]}, "summary": {"type": ["string", "null"], "minLength": 1},
+        "public_references": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+        "commands": {"type": "array", "items": {"$ref": "#/$defs/command"}}, "evidence_files": {"type": "array", "items": {"$ref": "#/$defs/file"}}
+      }
+    },
+    "submitted_task": {
+      "allOf": [{"$ref": "#/$defs/task"}, {"properties": {"outcome": {"enum": ["pass", "fail", "blocked"]}, "summary": {"$ref": "#/$defs/text"}, "public_references": {"minItems": 1}}}]
+    },
+    "executable_task": {
+      "allOf": [
+        {"$ref": "#/$defs/submitted_task"},
+        {"if": {"properties": {"outcome": {"enum": ["pass", "fail"]}}}, "then": {"properties": {"commands": {"minItems": 1}, "evidence_files": {"minItems": 1}}}}
+      ]
+    },
+    "finding": {
+      "type": "object", "additionalProperties": false, "required": ["finding_id", "task_id", "kind", "description", "severity", "status", "evidence_references"],
+      "properties": {
+        "finding_id": {"$ref": "#/$defs/text"}, "task_id": {"$ref": "#/$defs/text"},
+        "kind": {"enum": ["private_knowledge", "missing_artifact", "ambiguous_rule", "unexplained_error", "version_conflict", "inaccessible_source", "nonreproducible_locator", "nondeterministic_output", "other"]},
+        "description": {"$ref": "#/$defs/text"}, "severity": {"enum": ["release_blocking", "nonblocking"]}, "status": {"enum": ["open", "resolved_by_public_amendment"]},
+        "evidence_references": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "exchange": {
+      "type": "object", "additionalProperties": false, "required": ["occurred_at", "participants", "record", "public_resolution"],
+      "properties": {
+        "occurred_at": {"type": "string", "format": "date-time"}, "participants": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/text"}},
+        "record": {"$ref": "#/$defs/file"}, "public_resolution": {"type": ["string", "null"], "minLength": 1}
+      }
+    },
+    "signature": {
+      "type": "object", "additionalProperties": false, "required": ["signed_by", "signed_at", "attestation", "signature_record"],
+      "properties": {
+        "signed_by": {"$ref": "#/$defs/text"}, "signed_at": {"type": "string", "format": "date-time"},
+        "attestation": {"$ref": "#/$defs/text"}, "signature_record": {"$ref": "#/$defs/file"}
+      }
+    }
+  }
+}

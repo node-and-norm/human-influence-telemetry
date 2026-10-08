@@ -1,0 +1,17 @@
+{
+  "track_id": "HIT-STABLE-V100-001",
+  "governance_decision": "ADR-0005",
+  "status": "candidate_release_prohibited",
+  "recorded_date": "2026-10-07",
+  "evidence_path_meaning": "Existing artifacts to inspect; these are not claims of gate satisfaction.",
+  "gates": [
+    {"gate_id": "three_public_current_contract_applications_or_documented_migration_exceptions", "status": "unresolved", "evidence_paths": ["research/strengthening/solo-series.md", "case-studies/migrations/v0.4.0/migration-manifest.json", "release/v1.0.0/migration-exception-review.md"], "limitation": "Partial dossiers and historical exceptions do not yet establish this gate."},
+    {"gate_id": "standalone_implementation_packet", "status": "unresolved", "evidence_paths": ["implementation/v1.0.0-candidate/manifest.candidate.json", "implementation/v1.0.0-candidate/README.md"], "limitation": "Exact packet freeze, expected-output hashes, environment and activation acceptance remain pending."},
+    {"gate_id": "clean_room_implementation_audit", "status": "unresolved", "evidence_paths": ["implementation/v1.0.0-candidate/audit-protocol.md"], "limitation": "No eligible independent human audit has been conducted."},
+    {"gate_id": "public_v0.9.0_release_candidate", "status": "unresolved", "evidence_paths": ["docs/v1-readiness-plan.md", "docs/releases/README.md"], "limitation": "The public release candidate has not been published and reviewed."},
+    {"gate_id": "stable_component_version_promotion", "status": "unresolved", "evidence_paths": ["compatibility/hit-compatibility-manifest.json", "release/v1.0.0/contract-freeze.candidate.json"], "limitation": "Normative components remain 0.4.0 and the engine remains 0.5.0."},
+    {"gate_id": "breaking_change_review", "status": "unresolved", "evidence_paths": ["docs/v1-readiness-plan.md"], "limitation": "Final stable-contract compatibility review remains pending."},
+    {"gate_id": "synchronized_release_metadata", "status": "unresolved", "evidence_paths": ["CITATION.cff", ".zenodo.json", "docs/releases/v1.0.0-candidate.md"], "limitation": "Published metadata correctly identifies 0.6.5; no v1 release acceptance exists."},
+    {"gate_id": "exact_release_commit_validation", "status": "unresolved", "evidence_paths": [".github/workflows/validate.yml"], "limitation": "No exact stable-release commit has been designated or accepted."}
+  ]
+}

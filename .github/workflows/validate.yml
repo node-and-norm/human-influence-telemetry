@@ -53,17 +53,20 @@ jobs:
           set -o pipefail
           python scripts/validate_v070_recruitment_contingency.py 2>&1 | tee hit-v070-recruitment-contingency-report.txt
 
-      - name: Validate HIT v1 readiness and manual workbook controls
+      - name: Check HIT v1 staging consistency and manual workbook controls
         shell: bash
         run: |
           set -o pipefail
           python scripts/validate_v1_readiness.py 2>&1 | tee hit-v1-readiness-report.txt
 
-      - name: Validate HIT v1 clean-room implementation packet candidate
+      - name: Check HIT v1 implementation packet staging consistency
         shell: bash
         run: |
           set -o pipefail
           python scripts/validate_v1_implementation_packet.py 2>&1 | tee hit-v1-implementation-packet-report.txt
+
+      - name: Test readiness failure boundaries
+        run: python scripts/test_v1_readiness.py
 
       - name: Validate public release and v1 status surfaces
         shell: bash
@@ -87,6 +90,8 @@ jobs:
           python scripts/validate_research_strengthening.py --check
           python scripts/test_research_strengthening.py
           python scripts/validate_solo_application.py --check
+          python scripts/validate_solo_complete.py --check
+          python scripts/test_solo_complete.py
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
 

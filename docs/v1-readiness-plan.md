@@ -1,7 +1,7 @@
 # Human Influence Telemetry v1.0.0 Readiness Plan
 
-**Updated:** 9 August 2026
-**Governing decision:** `ADR-0001`
+**Updated:** 7 October 2026
+**Governing decision:** `ADR-0005`, prospectively resolving `ADR-0001`'s historical proposal
 **Current repository release:** `0.6.5`
 **Human-result release:** `0.6.0`
 **Current exact-version DOI:** `10.5281/zenodo.21864224`
@@ -60,7 +60,11 @@ Research maturity remains governed by `RESEARCH.md`. A stable `1.0.0` contract m
 - public `v0.9.0` stable release candidate;
 - final breaking-change review and `1.0.0` contract promotion.
 
-## 3. Version sequence
+## 3. Separate release and empirical tracks
+
+Stable track `HIT-STABLE-V100-001` and empirical track `HIT-EMPIRICAL-HIT040-002` have separate dependencies under [ADR-0005](decisions/ADR-0005-separate-stable-and-empirical-tracks.md). The study-specific 0.7.0 selection, packet-freeze, and publication obligations below remain in force for the empirical protocol. They do not block stable release. The [gate register](../release/v1.0.0/gate-register.json) identifies stable blockers and their current evidence surfaces.
+
+The 0.7.0 and 0.8.0 labels are planned study-package labels, not promises about the order of future tags. If the stable track advances first, study publication requires an explicit chronological version allocation and any required prospective protocol amendment. No protected protocol is activated by this plan.
 
 ### `0.7.0`: frozen current-contract replication package
 
@@ -112,7 +116,7 @@ Required:
 - public `v0.9.0` release candidate published;
 - no release-blocking defect remains open.
 
-A technically competent independent human reviewer is preferred for the clean-room audit. Model implementation audits may supplement this work, but model outputs remain development evidence and do not count as human reliability evidence.
+A technically competent independent human reviewer is required for the clean-room audit under HIT-CRI-V100-001. The reviewer must be someone other than the author and must have made no material contribution to the packet. Model implementation audits may supplement this work, but model outputs remain development evidence and do not satisfy auditor eligibility or count as human reliability evidence.
 
 ### `1.0.0`: stable public contract
 
@@ -164,6 +168,8 @@ The stable release promotes the reviewed contract to version `1.0.0` only when t
 - author-scored applications are not represented as independent replication;
 - historical `0.1.0` records remain immutable;
 - automatic migration remains prohibited when fresh judgment is required.
+
+The four historical migration exceptions already exist. Their adequacy for this gate remains unresolved: absent structured fields or unfinished source review does not by itself establish unavailable records. A new assistant-prepared record remains pending until responsible-author interpretation review. Neither three partial dossiers nor structural validation alone satisfies this gate.
 
 ### F. Release integrity
 
@@ -230,14 +236,18 @@ Withhold `1.0.0` when any condition remains true:
 
 ## 9. Immediate execution order
 
-1. Complete and sign the human case-selection decision.
-2. Freeze three packet boundaries and source manifests.
-3. Finalize the manual workbooks with packet IDs and exact hashes.
-4. Complete deterministic comparison code and synthetic vectors.
-5. Publish `v0.7.0`.
-6. Run the preferred three-scorer replication or publish the declared recruitment disposition.
-7. Produce three current-contract applications with explicit provenance.
-8. Assemble the standalone implementation packet.
-9. Run the clean-room implementation audit.
-10. Publish `v0.9.0` and correct release-blocking defects.
-11. Promote synchronized stable components to `1.0.0` only after every gate passes.
+1. Reconcile stable-track controls and test missing-artifact and premature-promotion failures.
+2. Complete a full current-contract documentary application with explicit source and author/AI provenance; finish the selected series or disclose incompleteness. Resolve the application-or-migration-exception gate separately.
+3. Compare identical evidence with a capable structured review; preserve ties, losses, and full-document sensitivity failures.
+4. Assemble and freeze the standalone implementation packet, environment, expected results, submission schema, and eligible reviewer record.
+5. Run the independent human clean-room implementation audit; preserve failures and public amendments.
+6. Publish `v0.9.0` and correct release-blocking defects.
+7. Promote synchronized stable components to `1.0.0` only after every stable gate passes and the maintainer explicitly accepts the release.
+
+On the separate empirical track, complete human case selection, freeze three packets, lock materials, publish the approved protocol package, and run the original three-scorer design or report recruitment failure. Current-contract H3 replication and Level 3 remain unresolved. No AI-generated source selection may enter the protected slots.
+
+## 10. Readiness checks and scope control
+
+The default v1 validators check staging consistency and must report release/audit prohibition. Explicit `--mode audit-ready` and `--mode release-ready` checks fail while required evidence or a reviewed promotion policy is absent. A green staging run is not evidence of completed readiness.
+
+The [execution record](../research/strengthening/v1-priorities.md) tracks owners, dependencies, and remaining decisions. Operational dashboards, runtime integrations, new dimensions, multi-sector effectiveness claims, and additional small model batches are outside the v1 critical path. An informative findings-and-actions template may be tested without changing the normative contract.

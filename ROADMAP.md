@@ -5,7 +5,8 @@
 **Current exact-version DOI:** `10.5281/zenodo.21864224`
 **Software concept DOI:** `10.5281/zenodo.21446141`
 **Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`
-**Active workstream:** `0.7.0` candidate
+**Active stable workstream:** `HIT-STABLE-V100-001`, candidate
+**Separate empirical workstream:** `HIT-EMPIRICAL-HIT040-002`, `0.7.0` candidate, scoring prohibited
 **Stable release candidate:** `0.9.0` pending
 **Stable public-contract target:** `1.0.0`, release prohibited
 
@@ -14,6 +15,12 @@ See the [release index](docs/releases/README.md), [v1 readiness plan](docs/v1-re
 This roadmap treats semantic versions as public compatibility claims. Research maturity remains an evidence claim governed by `RESEARCH.md`.
 
 Dates are secondary. A milestone is complete only when its artifacts and tests exist publicly.
+
+## Current execution priorities
+
+[ADR-0005](docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md) separates stable release from study-preparation dependencies prospectively. One independent human implementation audit remains required. The [five-priority execution record](research/strengthening/v1-priorities.md) tracks the work: reconcile release controls; complete documentary applications; test the capable-baseline comparison and sensitivity; finish and independently audit the implementation packet; then review v0.9.0 and accept v1.0.0 only when its gates pass.
+
+The 0.7.0 and 0.8.0 headings below retain the planned empirical packages. They are not prerequisites for the stable track. If stable release advances first, later empirical publication requires an explicit chronological version allocation and any required prospective protocol amendment. Study identities and protected controls remain unchanged.
 
 ## Release principles
 
@@ -98,7 +105,7 @@ Completed:
 
 Release `0.6.5` does not alter the `0.4.0` normative contract, `0.5.0` conformance engine, `0.6.0` human result, H3 boundary, or Level 2 maturity decision. Current-contract external-rater replication remains unresolved.
 
-## 0.7.0: Current-contract replication package, active workstream
+## 0.7.0: Current-contract replication package, separate empirical workstream
 
 Required:
 
@@ -143,7 +150,7 @@ Required:
 - specification, schema, catalog, handbook, validator, and implementation package synchronized;
 - at least three public current-contract assessments, or documented evidence that migration requires unavailable records;
 - public implementation packet usable without private author explanation;
-- clean-room implementation audit with original outputs preserved;
+- independent human clean-room implementation audit with original outputs preserved;
 - citation and archival metadata synchronized;
 - no release-blocking defect.
 
