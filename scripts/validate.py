@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
-"""Validate the HIT 0.6.0 human result, 0.6.5 release metadata, and preserved contracts."""
+"""Validate the HIT 0.6.0 human result, current release metadata, and preserved contracts."""
 from __future__ import annotations
 import hashlib, importlib.util, json, subprocess, sys
 from pathlib import Path
 from typing import Any
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from src.validation.assessment import validate_assessment
 
 RESULT_RELEASE = "0.6.0"
-CURRENT_RELEASE = "0.6.5"
-CURRENT_RELEASE_DATE = "2026-08-09"
 ENGINE, CONTRACT, LEGACY = "0.5.0", "0.4.0", "0.1.0"
 SOFTWARE_CONCEPT_DOI = "10.5281/zenodo.21446141"
-CURRENT_VERSION_DOI = "10.5281/zenodo.21864224"
 ORIGINATING_RESEARCH_DOI = "10.5281/zenodo.21204892"
 PREVIOUS_VERSION_DOI = "10.5281/zenodo.21446142"
 A_SHA = "9c90e2eaf0785cd83f4962058d622a948c2ba60c1de830e06a2474eb85542a33"
@@ -168,6 +166,7 @@ def validate() -> list[str]:
     if load(P["preservation"]).get("release_asset_bundle",{}).get("sha256") != BUNDLE_SHA: f.append("preservation bundle hash incorrect")
 
     citation, zenodo = yaml.safe_load(read("CITATION.cff")), load(".zenodo.json")
+    f += validate_identity(citation, zenodo, load("release/v1.0.0/contract-freeze.candidate.json"))
     if citation.get("version") != CURRENT_RELEASE or citation.get("date-released") != CURRENT_RELEASE_DATE: f.append("citation metadata incorrect")
     if citation.get("doi") != CURRENT_VERSION_DOI: f.append("citation exact-version DOI incorrect")
     dois = {str(x.get("value")) for x in citation.get("identifiers",[]) if x.get("type") == "doi"}
@@ -176,11 +175,11 @@ def validate() -> list[str]:
     related_identifiers = zenodo.get("related_identifiers", [])
     if {"identifier": ORIGINATING_RESEARCH_DOI, "relation": "isSupplementTo", "resource_type": "dataset"} not in related_identifiers: f.append("Zenodo originating research relation incorrect")
     phrases = {
-      "README.md":["**Current release:** 0.6.5","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","10.5281/zenodo.21446141","10.5281/zenodo.21864224","10.5281/zenodo.21204892","10.5281/zenodo.21446142","7 of 7 exact agreements"],
-      "RESEARCH.md":["Published repository release: `0.6.5`","Software concept DOI: `10.5281/zenodo.21446141`","Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`","Supported for one frozen Cigna packet","Level 2, Applicable"],
-      "ROADMAP.md":["0.6.5: Research-integrity controls, current release"],
+      "README.md":["**Current release:** 0.6.6","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","10.5281/zenodo.21446141","10.5281/zenodo.21864224","10.5281/zenodo.21204892","10.5281/zenodo.21446142","7 of 7 exact agreements"],
+      "RESEARCH.md":["Current repository release: `0.6.6`","Software concept DOI: `10.5281/zenodo.21446141`","Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`","Supported for one frozen Cigna packet","Level 2, Applicable"],
+      "ROADMAP.md":["0.6.6: Development and reproducibility controls, current release"],
       "LIMITATIONS.md":["Narrow reliability evidence","Kappa indeterminacy"],
-      "PROVENANCE.md":["Public repository release: 0.6.5","Originating research DOI: 10.5281/zenodo.21204892","Concept DOI for all HIT software versions: 10.5281/zenodo.21446141","Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224","Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142","Research maturity: Level 2, Applicable"],
+      "PROVENANCE.md":["Current repository release: 0.6.6","Originating research DOI: 10.5281/zenodo.21204892","Concept DOI for all HIT software versions: 10.5281/zenodo.21446141","Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224","Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142","Research maturity: Level 2, Applicable"],
       "CHANGELOG.md":["## [0.6.5] - 2026-08-09","## [0.6.4] - 2026-07-19","## [0.6.0] - 2026-07-18","Exact agreements: 7 of 7"],
       "docs/releases/v0.6.0.md":["Maturity Level 2, Applicable","Conformance engine: `0.5.0`"],
       "docs/releases/v0.6.4.md":["Concept DOI, all software versions","10.5281/zenodo.21446141","10.5281/zenodo.21446142","Human-result release: `0.6.0`"],
@@ -201,8 +200,9 @@ def main() -> int:
     if failures:
         for item in failures: print(f"FAIL: {item}")
         return 1
-    print("HIT 0.6.0 result package and 0.6.5 release metadata validation passed")
-    print("- current repository release: 0.6.5; human-result release: 0.6.0")
+    print("HIT 0.6.0 result package and current release metadata checks passed")
+    print(f"- current repository release metadata: {CURRENT_RELEASE}; human-result release: 0.6.0")
+    print(f"- current exact-version DOI: {CURRENT_VERSION_DOI or 'pending verification'}")
     print("- software concept DOI: 10.5281/zenodo.21446141")
     print("- originating research DOI: 10.5281/zenodo.21204892")
     print("- v0.6.5 version DOI: 10.5281/zenodo.21864224")

@@ -7,8 +7,9 @@
   "release_permitted": false,
   "semantic_version_claim": "stable_public_assessment_contract",
   "research_maturity_is_separate": true,
-  "current_repository_release": "0.6.5",
-  "current_software_doi": "10.5281/zenodo.21864224",
+  "current_repository_release": "0.6.6",
+  "current_software_doi": null,
+  "current_software_doi_status": "pending_verification",
   "human_result_release": "0.6.0",
   "current_component_versions": {
     "specification": "0.4.0",
@@ -44,8 +45,8 @@
     "deterministic_reports_available",
     "protected_migration_planning_available",
     "first_locked_human_exercise_completed",
-    "standalone_software_archive_published",
-    "version_specific_software_doi_published",
+    "v0.6.4_standalone_software_archive_published",
+    "v0.6.5_version_specific_software_doi_published",
     "manual_three_scorer_workbooks_staged"
   ],
   "blocking_gates": [

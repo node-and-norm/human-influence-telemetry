@@ -1,6 +1,6 @@
 # Research strengthening workbench
 
-This supplementary workbench tests the usefulness and limits of HIT. It is development work following v0.6.5, with no new release or research-maturity decision. The submitted chapter is outside its scope.
+This supplementary workbench examines the usefulness and limits of HIT. Release 0.6.6 prepares these development artifacts for distribution without accepting pending scientific interpretations or changing research maturity. See the [release record](../../docs/releases/v0.6.6.md) for publication and archival status. The submitted chapter is outside its scope.
 
 The author approved the [bounded v1 execution priorities](v1-priorities.md) on 7 October 2026. The existing scientific decision queue remains in force. The [Ofqual complete-record extension](solo-002-complete/README.md) now includes a draft that passes executable conformance checks, a capable-baseline comparison and four qualitative source-subset/attribution reanalyses. Its plan was committed before new dimension findings. All scientific judgments remain AI-assisted proposals pending author adjudication.
 

@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from v1_readiness_checks import checked_path
+from release_metadata import CURRENT_RELEASE, CURRENT_VERSION_DOI, DOI_STATUS
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL_DIR = ROOT / "validation" / "v0.7.0" / "manual-workbooks"
@@ -31,8 +32,7 @@ EXPECTED_FILENAMES = {
     "HIT-IRP-HIT040-002-manual-scorer-workbook-template.docx",
     "HIT-IRP-HIT040-002-manual-scorer-workbook-template.pdf",
 }
-CURRENT_RELEASE = "0.6.5"
-SOFTWARE_DOI = "10.5281/zenodo.21864224"
+SOFTWARE_DOI = CURRENT_VERSION_DOI
 
 
 def load_json(path: Path) -> Any:
@@ -155,9 +155,11 @@ def validate(root: Path = ROOT, mode: str = "staging") -> list[str]:
     if v1.get("research_maturity_is_separate") is not True:
         failures.append("v1 semantic stability must remain separate from research maturity")
     if v1.get("current_repository_release") != CURRENT_RELEASE:
-        failures.append("v1 readiness baseline must identify repository release 0.6.5")
-    if v1.get("current_software_doi") != SOFTWARE_DOI:
-        failures.append("v1 readiness baseline must identify the current v0.6.5 software DOI")
+        failures.append("v1 readiness baseline must identify repository release 0.6.6")
+    if "current_software_doi" not in v1 or v1["current_software_doi"] != SOFTWARE_DOI:
+        failures.append("v1 readiness baseline exact-version DOI mismatch")
+    if v1.get("current_software_doi_status") != DOI_STATUS:
+        failures.append("v1 readiness baseline must distinguish pending from verified DOI")
     if v1.get("human_result_release") != "0.6.0":
         failures.append("v1 readiness baseline must preserve the 0.6.0 human-result release")
     current = v1.get("current_component_versions", {})
@@ -242,8 +244,8 @@ def validate(root: Path = ROOT, mode: str = "staging") -> list[str]:
 
     plan = v1_plan.read_text(encoding="utf-8")
     for phrase in (
-        "Current repository release:** `0.6.5`",
-        "Current exact-version DOI:** `10.5281/zenodo.21864224`",
+        "Current repository release:** `0.6.6`",
+        "Current exact-version DOI:** pending verification" if SOFTWARE_DOI is None else f"Current exact-version DOI:** `{SOFTWARE_DOI}`",
         "Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`",
         "Current research maturity:** Level 2, Applicable",
         "Version `1.0.0` is a compatibility and implementation claim",
@@ -257,7 +259,7 @@ def validate(root: Path = ROOT, mode: str = "staging") -> list[str]:
     release = v1_release.read_text(encoding="utf-8")
     for phrase in (
         "Status:** Candidate outline, release prohibited",
-        "Current repository release:** `0.6.5`",
+        "Current repository release:** `0.6.6`",
         "Current normative contract:** `0.4.0`",
         "Current conformance engine:** `0.5.0`",
         "public `v0.9.0` release candidate",
@@ -291,9 +293,9 @@ def main() -> int:
         return 1
 
     print("HIT v1 staging consistency passed; not release readiness")
-    print("- current repository release: 0.6.5")
+    print(f"- current repository release metadata: {CURRENT_RELEASE}")
     print("- human-result release: 0.6.0")
-    print("- software DOI: 10.5281/zenodo.21864224")
+    print(f"- current exact-version DOI: {SOFTWARE_DOI or 'pending verification'}")
     print("- current normative contract: 0.4.0")
     print("- current conformance engine: 0.5.0")
     print("- manual workbooks: 3 scorer-specific plus 1 master, DOCX and PDF")

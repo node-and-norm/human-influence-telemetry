@@ -2,10 +2,12 @@
 
 **Updated:** 7 October 2026
 **Governing decision:** `ADR-0005`, prospectively resolving `ADR-0001`'s historical proposal
-**Current repository release:** `0.6.5`
+**Current repository release:** `0.6.6`
+**Publication state:** Prepared for publication; verify GitHub publication separately.
 **Human-result release:** `0.6.0`
-**Current exact-version DOI:** `10.5281/zenodo.21864224`
+**Current exact-version DOI:** pending verification
 **Software concept DOI:** `10.5281/zenodo.21446141`
+**Previous exact-version DOI, v0.6.5:** `10.5281/zenodo.21864224`
 **Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`
 **Current normative contract:** specification, assessment schema, dimension catalog, and handbook `0.4.0`
 **Current conformance engine:** `0.5.0`
@@ -43,7 +45,7 @@ Research maturity remains governed by `RESEARCH.md`. A stable `1.0.0` contract m
 - two eligible independent scorers, two preserved submissions, 7 of 7 exact agreements, and zero critical disagreements;
 - bounded H3 support and Maturity Level 2 decision;
 - standalone software archive and version-specific DOI `10.5281/zenodo.21446142`;
-- current exact-version archive DOI `10.5281/zenodo.21864224`;
+- preserved v0.6.5 exact-version archive DOI `10.5281/zenodo.21864224`;
 - candidate current-contract replication architecture;
 - candidate source-audit controls;
 - candidate recruitment contingency;

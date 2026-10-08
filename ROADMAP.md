@@ -1,9 +1,11 @@
 # Roadmap to Human Influence Telemetry 1.0.0
 
-**Current published release:** `0.6.5`
+**Current repository release:** `0.6.6`
+**Publication state:** Prepared for publication; GitHub publication must be verified separately.
 **Human-result release:** `0.6.0`
-**Current exact-version DOI:** `10.5281/zenodo.21864224`
+**Current exact-version DOI:** pending verification
 **Software concept DOI:** `10.5281/zenodo.21446141`
+**Previous exact-version DOI, v0.6.5:** `10.5281/zenodo.21864224`
 **Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`
 **Active stable workstream:** `HIT-STABLE-V100-001`, candidate
 **Separate empirical workstream:** `HIT-EMPIRICAL-HIT040-002`, `0.7.0` candidate, scoring prohibited
@@ -90,7 +92,7 @@ Completed:
 
 Release `0.6.4` does not alter the `0.4.0` normative contract, `0.5.0` conformance engine, `0.6.0` human result, H3 boundary, or Level 2 maturity decision.
 
-## 0.6.5: Research-integrity controls, current release
+## 0.6.5: Research-integrity controls, archived release
 
 Completed:
 
@@ -104,6 +106,12 @@ Completed:
 - exact-version archive DOI `10.5281/zenodo.21864224`.
 
 Release `0.6.5` does not alter the `0.4.0` normative contract, `0.5.0` conformance engine, `0.6.0` human result, H3 boundary, or Level 2 maturity decision. Current-contract external-rater replication remains unresolved.
+
+## 0.6.6: Development and reproducibility controls, current release
+
+Prepared for publication on 7 October 2026. This nonbreaking development release collects the documentary and advisory-model workbench, author-decision records, reader navigation, separate stable/empirical controls, public implementation preparation, and a complete Ofqual draft pending author adjudication. The [release notes](docs/releases/v0.6.6.md) state its exact scope and known check limitation.
+
+All eight stable-release gates remain unresolved. The preserved v0.6.5 audit does not automatically cover new interpretations. No historical score, normative rule, engine version, human result, or maturity decision changes. GitHub publication and the new exact-version DOI require separate verification.
 
 ## 0.7.0: Current-contract replication package, separate empirical workstream
 

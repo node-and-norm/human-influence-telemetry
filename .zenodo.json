@@ -1,6 +1,6 @@
 {
   "title": "Human Influence Telemetry",
-  "description": "An open documentary assurance method for evaluating whether human authority retained practical force in AI-mediated institutional decisions. Version 0.6.5 adds claim-evidence mapping, five research-integrity gates, eight negative controls, a paper workspace, and reproducible claim-gate figures while preserving the 0.4.0 normative contract, 0.5.0 conformance engine, bounded 0.6.0 human result, and Level 2 research maturity.",
+  "description": "An open documentary assurance method for evaluating whether human authority retained practical force in AI-mediated institutional decisions. Version 0.6.6 collects exploratory documentary applications, preserved advisory-model runs, research-boundary reviews, and tested stable-release preparation controls. It preserves normative contract 0.4.0, conformance engine 0.5.0, the bounded 0.6.0 human result, and Level 2 research maturity. The complete Ofqual draft remains AI-assessed and pending author adjudication. Publication does not establish current-contract replication, independent implementability, comparative benefit, or satisfaction of any v1 stable-release gate. The v0.6.5 claim-evidence audit remains version-bound and does not automatically cover the added research judgments.",
   "creators": [
     {
       "name": "Banasihan, Mark Julius",
@@ -8,12 +8,12 @@
       "affiliation": "Node & Norm"
     }
   ],
-  "version": "0.6.5",
+  "version": "0.6.6",
   "upload_type": "software",
   "access_right": "open",
   "license": "Apache-2.0",
   "language": "eng",
-  "publication_date": "2026-08-09",
+  "publication_date": "2026-10-07",
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.21204892",

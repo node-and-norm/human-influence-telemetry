@@ -12,10 +12,11 @@ The public technical instrument is extracted from that program without publishin
 - Concept DOI for all HIT software versions: 10.5281/zenodo.21446141
 - Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142
 - Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224
-- Current Zenodo software record: https://zenodo.org/records/21864224
+- Latest verified Zenodo software record before 0.6.6 preparation: https://zenodo.org/records/21864224
 - Source repository: private and retained by the author
 - Canonical public repository: `node-and-norm/human-influence-telemetry`; the former `mj3b` URL redirects after transfer
-- Public repository release: 0.6.5
+- Current repository release: 0.6.6, prepared for publication; verify GitHub publication separately
+- Exact-version DOI: pending verification
 - Human-result release: 0.6.0
 - Conformance engine version: 0.5.0
 - Public specification version: 0.4.0
@@ -25,7 +26,7 @@ The public technical instrument is extracted from that program without publishin
 - Active empirical package: `0.7.0` candidate under `HIT-IRP-HIT040-002`
 - Stable public-contract target: `1.0.0`, gated candidate, release prohibited
 
-Published-release metadata is bound to `0.6.5`. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
+The prepared release metadata identifies `0.6.6`. Its GitHub publication and Zenodo archival identity are separate facts to verify. The `0.6.5` DOI remains bound to that earlier archive. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
 
 ## DOI lineage
 
@@ -74,7 +75,7 @@ Published the standalone software archive and version-specific DOI `10.5281/zeno
 
 Published claim-evidence mapping for H1 through H9 and four paper claims, five research-integrity gates, five fitness dimensions, eight negative controls, lineage and AI-assistance records, a paper workspace, and reproducible claim-gate outputs. Zenodo archived the exact release as `10.5281/zenodo.21864224`. The audit state is `PASS_WITH_EXCEPTIONS`. The release does not revise the normative contract, executable engine, human-result record, H3 decision, or maturity level.
 
-### Post-0.6.5 readiness work, unreleased
+### 0.6.6 development and reproducibility controls, prepared for publication
 
 The public repository now contains:
 
@@ -90,6 +91,8 @@ The public repository now contains:
 These records document staged procedures and unresolved readiness requirements. They do not establish completed audit or release readiness, new human agreement evidence, Maturity Level 3, or a stable `1.0.0` contract.
 
 The October 7 work adds real-artifact and premature-promotion checks, a public implementation rehearsal, draft audit-submission controls, and an exploratory complete-record application plan. Its [assistance log](research/strengthening/v1-assistance-log.json) preserves the author/AI boundary. Source interpretations and new assessment proposals require separate author adjudication; independent implementation review remains absent.
+
+Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. The full Ofqual draft remains AI-assessed and pending author adjudication. Publishing these files does not promote them into the historical v0.6.5 audit or the manuscript conclusion. No new exact-version DOI is claimed until the public archive has been checked against the released version and the existing software concept lineage.
 
 ## Human-result lineage
 

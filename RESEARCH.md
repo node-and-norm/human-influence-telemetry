@@ -6,9 +6,10 @@ Human Influence Telemetry is a design-science research artifact that operational
 
 ## Current program state
 
-- Published repository release: `0.6.5`
+- Current repository release: `0.6.6`, prepared for publication; verify GitHub publication separately
 - Human-result release: `0.6.0`
 - Software concept DOI: `10.5281/zenodo.21446141`
+- Exact-version DOI: pending verification
 - Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`
 - Previous version DOI for v0.6.4: `10.5281/zenodo.21446142`
 - Originating research DOI: `10.5281/zenodo.21204892`
@@ -19,6 +20,8 @@ Human Influence Telemetry is a design-science research artifact that operational
 - Stable public-contract target: `1.0.0`, gated candidate, release prohibited
 
 Version `1.0.0` is a future compatibility and public-implementability claim. It does not become an empirical reliability claim unless new eligible independent human evidence separately satisfies the active protocol.
+
+Version 0.6.6 distributes supplementary development work and release-readiness controls. The new complete assessment remains an AI-assistant draft pending source-based author adjudication. Publication creates no new independent ratings, H3 replication, H9 implementation result, outcome finding, or maturity advancement. The v0.6.5 audit below remains limited to its mapped claims; new interpretations require their own support and publication review.
 
 ## v0.6.5 research-integrity layer
 
