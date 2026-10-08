@@ -10,7 +10,11 @@ from pathlib import Path
 
 import yaml
 
-from release_metadata import validate_identity, validate_publication_receipt
+from release_metadata import (
+    CURRENT_RELEASE, CURRENT_VERSION_DOI, HISTORICAL_VERSION_DOIS,
+    ORIGINATING_RESEARCH_DOI, SOFTWARE_CONCEPT_DOI,
+    validate_citation_guidance, validate_identity, validate_publication_receipt,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -112,6 +116,52 @@ class ReleaseMetadataTests(unittest.TestCase):
     def test_origin_relationship_must_be_preserved(self) -> None:
         self.zenodo["related_identifiers"] = []
         self.assertTrue(self.errors())
+
+
+class CitationGuidanceTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.readme = (ROOT / "README.md").read_text()
+        self.guide = (ROOT / "docs/citation.md").read_text()
+
+    def test_current_navigation_and_version_mappings(self) -> None:
+        self.assertEqual([], validate_citation_guidance(self.readme, self.guide))
+
+    def test_missing_or_wrong_navigation_links_rejected(self) -> None:
+        for target in ("docs/citation.md", "CITATION.cff"):
+            with self.subTest(target=target):
+                changed = self.readme.replace(f"]({target})", "](missing-file.md)")
+                self.assertTrue(validate_citation_guidance(changed, self.guide))
+
+    def test_wrong_current_citation_version_or_doi_rejected(self) -> None:
+        changes = [(f"(Version {CURRENT_RELEASE})", "(Version 0.6.5)")]
+        changes += [(f"](https://doi.org/{CURRENT_VERSION_DOI})", f"](https://doi.org/{doi})")
+                    for doi in (*HISTORICAL_VERSION_DOIS.values(), SOFTWARE_CONCEPT_DOI, ORIGINATING_RESEARCH_DOI)]
+        for before, after in changes:
+            with self.subTest(after=after):
+                self.assertTrue(validate_citation_guidance(self.readme.replace(before, after), self.guide))
+
+    def test_other_dois_must_stay_out_of_readme_citation_section(self) -> None:
+        for doi in (*HISTORICAL_VERSION_DOIS.values(), SOFTWARE_CONCEPT_DOI, ORIGINATING_RESEARCH_DOI):
+            with self.subTest(doi=doi):
+                changed = self.readme.replace("## Citation\n", f"## Citation\n\nPrevious DOI: {doi}\n")
+                self.assertTrue(validate_citation_guidance(changed, self.guide))
+
+    def test_missing_guide_and_swapped_mappings_rejected(self) -> None:
+        self.assertTrue(validate_citation_guidance(self.readme, ""))
+        for version, doi in {CURRENT_RELEASE: CURRENT_VERSION_DOI, **HISTORICAL_VERSION_DOIS}.items():
+            with self.subTest(version=version):
+                changed = self.guide.replace(f"| {version} | [{doi}]", f"| 0.0.0 | [{doi}]")
+                self.assertTrue(validate_citation_guidance(self.readme, changed))
+        changed = self.guide.replace("| 0.6.4 |", "| TEMP |").replace("| 0.6.5 |", "| 0.6.4 |").replace("| TEMP |", "| 0.6.5 |")
+        self.assertTrue(validate_citation_guidance(self.readme, changed))
+
+    def test_concept_and_origin_roles_cannot_be_interchanged(self) -> None:
+        for label in ("software concept", "originating research"):
+            with self.subTest(label=label):
+                changed = self.guide.replace(f"The {label} DOI,", "The exact-version DOI,")
+                self.assertTrue(validate_citation_guidance(self.readme, changed))
+        changed = self.guide.replace(ORIGINATING_RESEARCH_DOI, SOFTWARE_CONCEPT_DOI)
+        self.assertTrue(validate_citation_guidance(self.readme, changed))
 
 
 if __name__ == "__main__":

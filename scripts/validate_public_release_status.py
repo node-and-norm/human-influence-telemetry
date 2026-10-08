@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity, validate_publication_receipt
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_citation_guidance, validate_identity, validate_publication_receipt
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,6 +54,7 @@ def main() -> int:
         "CITATION.cff",
         ".zenodo.json",
         "docs/releases/README.md",
+        "docs/citation.md",
         "docs/releases/v0.6.4.md",
         "docs/releases/v0.6.5.md",
         "docs/releases/v0.6.6.md",
@@ -80,10 +81,6 @@ def main() -> int:
             "**Current release:** 0.6.6",
             "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "**Human-result release:** 0.6.0",
-            "**Concept DOI, all software versions:** [10.5281/zenodo.21446141]",
-            "**Originating research DOI:** [10.5281/zenodo.21204892]",
-            "**Previous version DOI, exact `v0.6.5` release:** [10.5281/zenodo.21864224]",
-            "**Previous version DOI, exact `v0.6.4` release:** [10.5281/zenodo.21446142]",
             "**Stable target:** `1.0.0`, release prohibited",
             "**Active replication protocol:** `HIT-IRP-HIT040-002`, candidate, scoring prohibited",
             "Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.",
@@ -204,6 +201,8 @@ def main() -> int:
     failures += validate_identity(citation, zenodo, v1_lock)
     receipt = load_json("release/v0.6.6/publication-receipt.json")
     failures += validate_publication_receipt(receipt)
+    failures += validate_citation_guidance(read("README.md"), read("docs/citation.md"))
+    require(failures, "docs/citation.md", f"commit `{receipt.get('release_commit')}`")
     # The checks above compare recorded declarations. They do not contact GitHub
     # or Zenodo and cannot independently authenticate the recorded observations.
 
