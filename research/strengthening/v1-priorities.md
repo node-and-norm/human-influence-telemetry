@@ -16,6 +16,8 @@ The [stable gate register](../../release/v1.0.0/gate-register.json) gives each u
 
 Keep operational dashboards, runtime integrations, new dimensions, sector-wide claims, and further small model batches outside this sequence. An informative findings-and-actions template may support future operational testing without changing assessment semantics.
 
+The author's subsequent authorization of Jev assistance permits one narrow exception: [HIT-JEV-REVIEW-001](jev-review-001/README.md), an advisory source-scope rehearsal for priorities two and three. Its [separate protocol](jev-review-001/PROTOCOL.md) preserves exposed development status, all six pending author decisions and the original full-record reanalysis requirements. Preparing or running this screen does not complete either priority or reopen a programme of small agreement demonstrations.
+
 Pause the affected claim or promotion when a source cannot support a material finding, an ambiguity changes its category without a governing rule, a required artifact cannot be reproduced, or implementation needs private interpretation. Retain uncertainty, ties, losses, failed tasks, and inconvenient cases. A source-supported decision to take no further action is an admissible outcome.
 
 One complete author-reviewed application can support bounded documentary feasibility. A single independent implementation audit can support its stated implementation tasks. Neither establishes population reliability, current-contract independent scoring, construct validity, institutional adoption, or improved outcomes. H3 replication, Level 3, and H9 remain governed by their own evidence conditions.

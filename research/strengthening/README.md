@@ -6,6 +6,8 @@ The author approved the [bounded v1 execution priorities](v1-priorities.md) on 7
 
 Use the [evaluation-methods register](evaluation-methods.md) to distinguish software verification, documentary review, exploratory comparisons, and the independent evaluations that remain pending. Passing a software check does not validate HIT's scientific claims.
 
+The separately authorized [Jev advisory rehearsal](jev-review-001/README.md) prepares source-scope questions for the Ofqual author review and three bounded robustness conditions. Its status and retained inputs are separate from the two historical model experiments. No model response accepts an author decision or completes the original documentary comparison.
+
 See the [five-priority disposition and author decision queue](priority-status.md) for the current completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
 
 | Priority | Deliverable | Evidence available |

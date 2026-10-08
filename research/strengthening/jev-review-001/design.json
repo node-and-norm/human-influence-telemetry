@@ -1,0 +1,228 @@
+{
+  "design_id": "HIT-JEV-REVIEW-001",
+  "model": "jev-1.13.0",
+  "mode": "advisory_development",
+  "source_packet": "research/strengthening/jev-review-001/sources.json",
+  "protocol": "research/strengthening/jev-review-001/PROTOCOL.md",
+  "protected_paths": [
+    "research/strengthening/solo-002-complete/plan.md",
+    "research/strengthening/solo-002-complete/assessment.draft.json",
+    "research/strengthening/solo-002-complete/review-status.json",
+    "research/strengthening/solo-002-complete/baseline-and-review.md",
+    "research/strengthening/solo-002-complete/sensitivity.md",
+    "research/strengthening/solo-002-complete/record-check.json",
+    "CITATION.cff",
+    ".zenodo.json",
+    "release/v0.6.6/publication-receipt.json",
+    "release/v1.0.0/gate-register.json",
+    "release/v1.0.0/contract-freeze.candidate.json",
+    "evidence/claim-evidence-map.json",
+    "SPECIFICATION.md",
+    "scripts/run_jev_claim_pilot.py"
+  ],
+  "items": [
+    {
+      "id": "N01",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ADVICE",
+      "author_decision_ids": [
+        "SOLO-002-AD2"
+      ],
+      "claim": "A technical advisory group informed the Ofqual Board during summer 2020 preparations.",
+      "passage_ids": [
+        "OFQ-02-advice"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "N02",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-REASONS",
+      "author_decision_ids": [
+        "SOLO-002-AD3"
+      ],
+      "claim": "The Chair's published reasons weigh distress, public confidence and appeal burdens in deciding to change the grading approach.",
+      "passage_ids": [
+        "OFQ-01-statement"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "N03",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-REISSUE-REQUIREMENT",
+      "author_decision_ids": [
+        "SOLO-002-AD4",
+        "SOLO-002-AD5"
+      ],
+      "claim": "Ofqual reports requiring exam boards to reissue AS/A level grades and recalculate GCSE grades.",
+      "passage_ids": [
+        "OFQ-03-direction"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "N04",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ISSUE-CORRECTION",
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Government guidance reports replacement AS/A level grades sent to centres on 19 August after the earlier calculated awards.",
+      "passage_ids": [
+        "DFE-01-results"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "N05",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-EXTERNAL-LIMIT",
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "claim": "The guidance says some external candidates could not receive a summer grade.",
+      "passage_ids": [
+        "DFE-01-external"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "N06",
+      "kind": "natural_claim",
+      "source_claim_id": "EC-ADMISSIONS-LIMIT",
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "claim": "The guidance permits alternative courses or deferred places when university capacity is exhausted.",
+      "passage_ids": [
+        "DFE-01-admissions"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "B01",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD2"
+      ],
+      "claim": "The supplied annual-report passages identify the specific underlying evidence accessed by Ofqual's Board before its 17 August 2020 decision to replace the grading rule.",
+      "passage_ids": [
+        "OFQ-02-advice",
+        "OFQ-02-results"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "B02",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD3"
+      ],
+      "claim": "The Chair's public statement supplies internal deliberation or voting records for Ofqual's 17 August 2020 grading-rule decision.",
+      "passage_ids": [
+        "OFQ-01-statement"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "B03",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Ofqual's Board itself operated every exam board's grade-issuing process when the replacement AS/A level grades were issued in August 2020.",
+      "passage_ids": [
+        "OFQ-02-board",
+        "OFQ-03-direction",
+        "DFE-01-results"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "B04",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD5"
+      ],
+      "claim": "The revised summer 2020 grading arrangements completely restored educational opportunities for every affected candidate.",
+      "passage_ids": [
+        "DFE-01-results",
+        "DFE-01-external",
+        "DFE-01-admissions",
+        "DFE-01-appeals"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "P01",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Government guidance reports that the same replacement AS/A level grades which replaced the calculated awards issued on 13 August 2020 were sent to centres on 12 August 2020.",
+      "passage_ids": [
+        "DFE-01-results"
+      ],
+      "transformation": "period",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "P02-base",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Replacement AS/A level grades were sent to schools and colleges on 19 August 2020.",
+      "passage_ids": [
+        "DFE-01-results"
+      ],
+      "transformation": "none",
+      "synthetic_evidence": null
+    },
+    {
+      "id": "P02",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Replacement AS/A level grades were sent to schools and colleges on 19 August 2020.",
+      "passage_ids": [
+        "DFE-01-results"
+      ],
+      "transformation": "conflict",
+      "synthetic_evidence": "Constructed scenario only, not a historical document: a second account of the same replacement AS/A level grade-issue event says that no replacement grades were sent to any schools or colleges on 19 August 2020. For this scenario both accounts are admissible and neither has precedence; no reconciliation is supplied."
+    },
+    {
+      "id": "P03",
+      "kind": "constructed_diagnostic",
+      "source_claim_id": null,
+      "author_decision_ids": [
+        "SOLO-002-AD4"
+      ],
+      "claim": "Government guidance reports replacement AS/A level grades sent to centres on 19 August after the earlier calculated awards.",
+      "passage_ids": [
+        "DFE-01-results"
+      ],
+      "transformation": "formatting",
+      "synthetic_evidence": null
+    }
+  ]
+}
