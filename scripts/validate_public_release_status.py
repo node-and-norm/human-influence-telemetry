@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_identity, validate_publication_receipt
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -57,6 +57,7 @@ def main() -> int:
         "docs/releases/v0.6.4.md",
         "docs/releases/v0.6.5.md",
         "docs/releases/v0.6.6.md",
+        "release/v0.6.6/publication-receipt.json",
         "docs/releases/v0.7.0-candidate.md",
         "docs/releases/v1.0.0-candidate.md",
         "docs/v1-readiness-plan.md",
@@ -77,6 +78,7 @@ def main() -> int:
     required_phrases = {
         "README.md": (
             "**Current release:** 0.6.6",
+            "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "**Human-result release:** 0.6.0",
             "**Concept DOI, all software versions:** [10.5281/zenodo.21446141]",
             "**Originating research DOI:** [10.5281/zenodo.21204892]",
@@ -200,6 +202,10 @@ def main() -> int:
     zenodo = load_json(".zenodo.json")
     v1_lock = load_json("release/v1.0.0/contract-freeze.candidate.json")
     failures += validate_identity(citation, zenodo, v1_lock)
+    receipt = load_json("release/v0.6.6/publication-receipt.json")
+    failures += validate_publication_receipt(receipt)
+    # The checks above compare recorded declarations. They do not contact GitHub
+    # or Zenodo and cannot independently authenticate the recorded observations.
 
     if citation.get("version") != PUBLISHED_RELEASE:
         failures.append("CITATION.cff release version mismatch")

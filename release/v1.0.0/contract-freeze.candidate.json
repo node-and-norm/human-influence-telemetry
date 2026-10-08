@@ -8,8 +8,8 @@
   "semantic_version_claim": "stable_public_assessment_contract",
   "research_maturity_is_separate": true,
   "current_repository_release": "0.6.6",
-  "current_software_doi": null,
-  "current_software_doi_status": "pending_verification",
+  "current_software_doi": "10.5281/zenodo.23226713",
+  "current_software_doi_status": "verified",
   "human_result_release": "0.6.0",
   "current_component_versions": {
     "specification": "0.4.0",

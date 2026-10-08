@@ -6,10 +6,10 @@ Human Influence Telemetry is a design-science research artifact that operational
 
 ## Current program state
 
-- Current repository release: `0.6.6`, prepared for publication; verify GitHub publication separately
+- Current repository release: `0.6.6`, published on GitHub and Zenodo; see the [publication receipt](release/v0.6.6/publication-receipt.json)
 - Human-result release: `0.6.0`
 - Software concept DOI: `10.5281/zenodo.21446141`
-- Exact-version DOI: pending verification
+- Exact-version DOI: `10.5281/zenodo.23226713`
 - Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`
 - Previous version DOI for v0.6.4: `10.5281/zenodo.21446142`
 - Originating research DOI: `10.5281/zenodo.21204892`

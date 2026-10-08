@@ -5,11 +5,12 @@ from __future__ import annotations
 import copy
 import json
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import yaml
 
-from release_metadata import CURRENT_VERSION_DOI, validate_identity
+from release_metadata import validate_identity, validate_publication_receipt
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,8 +24,27 @@ class ReleaseMetadataTests(unittest.TestCase):
     def errors(self) -> list[str]:
         return validate_identity(self.citation, self.zenodo, self.ledger)
 
-    def test_current_identity_is_consistent(self) -> None:
+    def test_current_identity_and_receipt_are_consistent(self) -> None:
         self.assertEqual([], self.errors())
+        receipt = json.loads((ROOT / "release/v0.6.6/publication-receipt.json").read_text())
+        self.assertEqual([], validate_publication_receipt(receipt))
+        for section, key, value in (
+            (None, "release", "0.6.5"), (None, "release_commit", None),
+            ("zenodo", "doi", "10.5281/zenodo.21864224"),
+            ("zenodo", "all_tracked_file_bytes_match", False),
+            ("zenodo", "extra_files", ["untracked.txt"]),
+            ("zenodo", "missing_files", None),
+            ("zenodo", "archive_files", 0),
+            ("zenodo", "git_tracked_blobs", 1),
+            ("github", "ci_head_sha", None),
+            ("github", "ci_conclusion", "failure"),
+            ("github", "draft", True),
+            ("github", "remote_tag_commit_verified", False),
+        ):
+            with self.subTest(section=section, key=key):
+                invalid = copy.deepcopy(receipt)
+                (invalid[section] if section else invalid)[key] = value
+                self.assertTrue(validate_publication_receipt(invalid))
 
     def test_citation_rejects_other_identifiers_as_exact_doi(self) -> None:
         for value in ("10.5281/zenodo.21864224", "10.5281/zenodo.21446142",
@@ -35,10 +55,13 @@ class ReleaseMetadataTests(unittest.TestCase):
                 self.assertTrue(self.errors())
 
     def test_pending_citation_requires_absent_field_not_null(self) -> None:
-        if CURRENT_VERSION_DOI is not None:
-            self.skipTest("the current archive has an observed DOI")
-        self.citation["doi"] = None
-        self.assertTrue(self.errors())
+        self.citation.pop("doi", None)
+        self.ledger["current_software_doi"] = None
+        self.ledger["current_software_doi_status"] = "pending_verification"
+        with patch("release_metadata.CURRENT_VERSION_DOI", None), patch("release_metadata.DOI_STATUS", "pending_verification"):
+            self.assertEqual([], self.errors())
+            self.citation["doi"] = None
+            self.assertTrue(self.errors())
 
     def test_zenodo_must_not_reuse_exact_doi(self) -> None:
         for value in (None, "10.5281/zenodo.21864224", "10.5281/zenodo.99999999"):

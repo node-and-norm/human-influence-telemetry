@@ -4,8 +4,8 @@ from __future__ import annotations
 
 CURRENT_RELEASE = "0.6.6"
 CURRENT_RELEASE_DATE = "2026-10-07"
-CURRENT_VERSION_DOI = None
-DOI_STATUS = "pending_verification"
+CURRENT_VERSION_DOI = "10.5281/zenodo.23226713"
+DOI_STATUS = "verified"
 SOFTWARE_CONCEPT_DOI = "10.5281/zenodo.21446141"
 ORIGINATING_RESEARCH_DOI = "10.5281/zenodo.21204892"
 HISTORICAL_VERSION_DOIS = {
@@ -49,4 +49,27 @@ def validate_identity(citation: dict, zenodo: dict, ledger: dict) -> list[str]:
     origin = {"identifier": ORIGINATING_RESEARCH_DOI, "relation": "isSupplementTo", "resource_type": "dataset"}
     if origin not in zenodo.get("related_identifiers", []):
         failures.append("originating research relationship must remain separate")
+    return failures
+
+
+def validate_publication_receipt(receipt: dict) -> list[str]:
+    """Check internal consistency of recorded observations, not live publication."""
+    archive, github = receipt.get("zenodo", {}), receipt.get("github", {})
+    failures = []
+    if receipt.get("release") != CURRENT_RELEASE or archive.get("version") != CURRENT_RELEASE:
+        failures.append("publication receipt release version mismatch")
+    if archive.get("doi") != CURRENT_VERSION_DOI or archive.get("software_concept_doi") != SOFTWARE_CONCEPT_DOI:
+        failures.append("publication receipt DOI identity mismatch")
+    if archive.get("all_tracked_file_bytes_match") is not True or any(archive.get(key) != [] for key in ("missing_files", "extra_files", "byte_mismatches")):
+        failures.append("publication receipt does not retain an exact archive comparison")
+    count = archive.get("archive_files")
+    if type(count) is not int or count <= 0 or archive.get("git_tracked_blobs") != count:
+        failures.append("publication receipt archive counts are inconsistent")
+    commit = receipt.get("release_commit")
+    if not isinstance(commit, str) or len(commit) != 40 or any(char not in "0123456789abcdef" for char in commit):
+        failures.append("publication receipt requires an exact Git commit")
+    if github.get("ci_head_sha") != commit or github.get("ci_conclusion") != "success":
+        failures.append("publication receipt CI must pass on the release commit")
+    if github.get("draft") is not False or github.get("remote_tag_commit_verified") is not True:
+        failures.append("publication receipt must distinguish published and verified from draft")
     return failures

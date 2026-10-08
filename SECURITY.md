@@ -7,12 +7,11 @@ Security and integrity fixes are applied to `main` and the latest tagged release
 | Version | Supported |
 |---|---|
 | `main`, pre-`1.0.0` stabilization | Yes |
-| `0.6.6`, prepared development release | Supported on publication; verify the GitHub release |
-| `0.6.5`, latest verified tagged release before this preparation | Yes |
+| `0.6.6`, latest tagged release | Yes |
 | Earlier tagged releases | Best effort |
 | Candidate `0.7.0`, `0.9.0`, and `1.0.0` documents | Development artifacts, not release channels |
 
-The prepared 0.6.6 metadata does not itself create a supported tag. Its publication status is checked on the canonical GitHub Releases page. This release adds validation defenses while retaining all limits on institutional suitability and scientific assurance.
+Version 0.6.6 is published on the [canonical GitHub Releases page](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6). This release adds validation defenses while retaining all limits on institutional suitability and scientific assurance.
 
 ## Reporting a vulnerability
 
