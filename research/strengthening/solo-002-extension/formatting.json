@@ -1,0 +1,437 @@
+{
+  "study_id": "HIT-SOLO-002-EXTENSION-001",
+  "condition_id": "S07",
+  "source_packet_path": "research/strengthening/jev-review-001/sources.json",
+  "source_packet_sha256": "69b66c02bbe76e1a70c03049b108957684e0121849359c71e1496f51c1afaa98",
+  "packet_scope": "Nine selected primary-source passages from four GOV.UK HTML documents. This advisory-model rehearsal excludes OCR-01 and OFQ-04 and is not the full six-document HIT-SOLO-002 packet.",
+  "original_passage_order": [
+    "OFQ-01-statement",
+    "OFQ-02-advice",
+    "OFQ-02-board",
+    "OFQ-02-results",
+    "OFQ-03-direction",
+    "DFE-01-results",
+    "DFE-01-external",
+    "DFE-01-admissions",
+    "DFE-01-appeals"
+  ],
+  "passages": [
+    {
+      "source": {
+        "id": "DFE-01",
+        "url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+        "title": "Taking exams during the coronavirus (COVID-19) outbreak",
+        "publisher": "Department for Education",
+        "publication_date": "2020-03-20",
+        "updated_date": "2020-08-27",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:withdrawn": "withdrawn",
+          "govuk:first-published-at": "2020-03-20T20:22:26+00:00",
+          "govuk:updated-at": "2026-09-24T16:50:40+01:00",
+          "govuk:public-updated-at": "2020-08-27T14:53:42+01:00",
+          "govuk:primary-publishing-organisation": "Department for Education"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": true,
+        "withdrawn_at": "2021-02-25T11:36:37Z",
+        "withdrawal_notice": "This guidance was withdrawn on 25 February 2021 This guidance was about the awarding of GCSEs, AS and A levels and other qualifications in summer 2020. Information on awarding qualifications in summer 2021 is available.",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Department for Education, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 112576,
+          "raw_body_sha256": "15b079a82b9dfec29b72a7fb79795fc54f18176f3ebb64e0fced44a21212021f",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "DFE-01-appeals",
+      "locator": "Arrangements for summer 2020 appeals plus the complete following Bias and discrimination subsection; ends before Arrangements for autumn series of GCSE, A and AS level exams in 2020",
+      "original_text_sha256": "5ad0e3d1d907895f0178133273b5f46b6e3333fad3b808061b057b8c4857742d",
+      "text": "In\n  light\n  of\n  the\n  Secretary\n  of\n  State’s\n  announcement\n  on\n  17\n  August,\n  appeals\n  against\n  A\n  and\n  AS\n  level\n  and\n  GCSE\n  grades\n  will\n  now\n  only\n  be\n  accepted\n  from\n  schools\n  or\n  colleges\n  where\n  they\n  think\n  the\n  exam\n  board\n  did\n  not\n  apply\n  its\n  procedures\n  properly\n  and\n  fairly\n  or\n  where\n  the\n  data\n  used\n  by\n  the\n  exam\n  board\n  to\n  calculate\n  results\n  contained\n  an\n  error.\n  Examples\n  of\n  cases\n  where\n  an\n  appeal\n  might\n  be\n  appropriate\n  are\n  contained\n  in\n  the\n  Ofqual\n  guidance\n  on\n  appeals,\n  malpractice\n  and\n  maladministration\n  complaints\n  for\n  GCSE,\n  AS\n  and\n  A\n  level\n  grades\n  in\n  England.\n  A\n  student\n  cannot\n  appeal\n  because\n  they\n  disagree\n  with\n  their\n  school’s\n  or\n  college’s\n  professional\n  judgement\n  of\n  the\n  grade\n  the\n  student\n  would\n  most\n  likely\n  have\n  achieved\n  if\n  exams\n  had\n  taken\n  place.\n  In\n  addition,\n  students\n  cannot\n  appeal\n  on\n  the\n  basis\n  of\n  their\n  mock\n  exam\n  results,\n  as\n  these\n  will\n  have\n  been\n  taken\n  into\n  account\n  in\n  arriving\n  at\n  the\n  centre\n  assessment\n  grade.\n  However,\n  as\n  set\n  out\n  in\n  the\n  section\n  below,\n  if\n  a\n  student\n  has\n  concerns\n  that\n  their\n  school\n  or\n  college\n  did\n  not\n  behave\n  with\n  care\n  or\n  integrity\n  when\n  determining\n  their\n  centre\n  assessment\n  grade\n  they\n  are\n  able\n  to\n  raise\n  a\n  complaint.\n  For\n  VTQs,\n  individual\n  awarding\n  organisations\n  have\n  their\n  own\n  appeals\n  processes.\n  Students\n  should\n  look\n  at\n  the\n  individual\n  websites\n  for\n  details\n  of\n  the\n  relevant\n  awarding\n  organisation’s\n  appeals\n  process\n  and\n  their\n  grounds\n  for\n  appeal.\n  Bias\n  and\n  discrimination\n  If\n  a\n  student\n  has\n  concerns\n  about\n  bias,\n  discrimination\n  or\n  any\n  other\n  factor\n  that\n  suggests\n  that\n  their\n  school\n  or\n  college\n  did\n  not\n  behave\n  with\n  care\n  or\n  integrity\n  when\n  determining\n  their\n  centre\n  assessment\n  grade\n  they\n  should\n  first\n  raise\n  these\n  concerns\n  with\n  their\n  school\n  or\n  college,\n  which\n  must\n  have\n  a\n  procedure\n  in\n  place\n  to\n  deal\n  with\n  such\n  complaints.\n  If\n  there\n  is\n  evidence\n  of\n  serious\n  malpractice\n  on\n  the\n  part\n  of\n  the\n  school\n  or\n  college,\n  it\n  may\n  be\n  appropriate\n  to\n  bring\n  those\n  concerns\n  directly\n  to\n  the\n  exam\n  board\n  initially\n  instead.\n  Ofqual\n  has\n  published\n  guidance\n  for\n  students\n  on\n  appeals,\n  malpractice\n  and\n  maladministration\n  complaints\n  for\n  summer\n  2020."
+    },
+    {
+      "source": {
+        "id": "DFE-01",
+        "url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+        "title": "Taking exams during the coronavirus (COVID-19) outbreak",
+        "publisher": "Department for Education",
+        "publication_date": "2020-03-20",
+        "updated_date": "2020-08-27",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:withdrawn": "withdrawn",
+          "govuk:first-published-at": "2020-03-20T20:22:26+00:00",
+          "govuk:updated-at": "2026-09-24T16:50:40+01:00",
+          "govuk:public-updated-at": "2020-08-27T14:53:42+01:00",
+          "govuk:primary-publishing-organisation": "Department for Education"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": true,
+        "withdrawn_at": "2021-02-25T11:36:37Z",
+        "withdrawal_notice": "This guidance was withdrawn on 25 February 2021 This guidance was about the awarding of GCSEs, AS and A levels and other qualifications in summer 2020. Information on awarding qualifications in summer 2021 is available.",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Department for Education, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 112576,
+          "raw_body_sha256": "15b079a82b9dfec29b72a7fb79795fc54f18176f3ebb64e0fced44a21212021f",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "DFE-01-admissions",
+      "locator": "Results and university entry in 2020 > Universities, colleges and sixth forms and grade acceptance; complete subsection before Students participating in the autumn series of exams",
+      "original_text_sha256": "9419e0a4d008b81e3f58c5bcae6ed51b8bc7762dbf2d7f713f0100c7f7a0d0b6",
+      "text": "The\n  grades\n  awarded\n  this\n  summer\n  will\n  be\n  formal\n  grades,\n  with\n  the\n  same\n  status\n  as\n  grades\n  awarded\n  in\n  any\n  other\n  year.\n  They\n  will\n  therefore\n  be\n  accepted\n  by\n  all\n  institutions.\n  We\n  are\n  working\n  closely\n  with\n  the\n  further\n  and\n  higher\n  education\n  sectors\n  to\n  ensure\n  that\n  everything\n  is\n  done\n  to\n  support\n  students\n  and\n  ensure\n  they\n  can\n  progress\n  to\n  further\n  or\n  higher\n  education.\n  We\n  have\n  taken\n  a\n  number\n  of\n  steps\n  to\n  increase\n  capacity\n  in\n  Higher\n  Education,\n  so\n  that\n  universities\n  are\n  able\n  to\n  honour\n  offers\n  to\n  students\n  who\n  meet\n  their\n  conditions\n  this\n  coming\n  year\n  wherever\n  possible.\n  Or\n  if\n  maximum\n  capacity\n  is\n  reached,\n  to\n  offer\n  an\n  alternative\n  course\n  or\n  a\n  deferred\n  place\n  at\n  the\n  same\n  university."
+    },
+    {
+      "source": {
+        "id": "DFE-01",
+        "url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+        "title": "Taking exams during the coronavirus (COVID-19) outbreak",
+        "publisher": "Department for Education",
+        "publication_date": "2020-03-20",
+        "updated_date": "2020-08-27",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:withdrawn": "withdrawn",
+          "govuk:first-published-at": "2020-03-20T20:22:26+00:00",
+          "govuk:updated-at": "2026-09-24T16:50:40+01:00",
+          "govuk:public-updated-at": "2020-08-27T14:53:42+01:00",
+          "govuk:primary-publishing-organisation": "Department for Education"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": true,
+        "withdrawn_at": "2021-02-25T11:36:37Z",
+        "withdrawal_notice": "This guidance was withdrawn on 25 February 2021 This guidance was about the awarding of GCSEs, AS and A levels and other qualifications in summer 2020. Information on awarding qualifications in summer 2021 is available.",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Department for Education, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 112576,
+          "raw_body_sha256": "15b079a82b9dfec29b72a7fb79795fc54f18176f3ebb64e0fced44a21212021f",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "DFE-01-external",
+      "locator": "External candidates in 2020 > Arrangements for home-educated students and other external candidates; complete subsection before Vocational and technical qualifications (VTQs) in 2020",
+      "original_text_sha256": "f3f22a543edf18150728491ca58dabb632bc050337980f88c5f57de561350e29",
+      "text": "Where\n  schools\n  and\n  colleges\n  had\n  accepted\n  entries\n  from\n  external\n  candidates\n  (students\n  who\n  they\n  have\n  not\n  taught\n  themselves\n  because\n  they\n  have\n  been\n  home-educated,\n  following\n  distance-learning\n  programmes\n  or\n  studying\n  independently),\n  those\n  students\n  should\n  have\n  been\n  taken\n  account\n  of\n  in\n  the\n  process\n  of\n  producing\n  centre\n  assessment\n  grades,\n  where\n  the\n  headteacher\n  or\n  principal\n  was\n  confident\n  that\n  they\n  and\n  their\n  staff\n  had\n  seen\n  sufficient\n  evidence\n  of\n  the\n  student’s\n  achievement\n  to\n  make\n  an\n  objective\n  judgement.\n  Ofqual\n  and\n  the\n  exam\n  boards\n  explored\n  the\n  options\n  for\n  those\n  students\n  who\n  did\n  not\n  have\n  an\n  existing\n  relationship\n  with\n  an\n  exam\n  centre\n  and\n  who\n  needed\n  results\n  this\n  summer\n  for\n  progression\n  purposes.\n  The\n  Joint\n  Council\n  for\n  Qualifications\n  published\n  guidance\n  for\n  exam\n  centres\n  on\n  accepting\n  private\n  candidates\n  which\n  set\n  out\n  the\n  options\n  that\n  would\n  be\n  available.\n  Unfortunately,\n  not\n  all\n  external\n  candidates\n  were\n  able\n  to\n  be\n  awarded\n  a\n  grade\n  this\n  summer\n  because\n  some\n  will\n  not\n  have\n  been\n  in\n  a\n  position\n  to\n  provide\n  sufficient\n  evidence\n  to\n  enable\n  their\n  exam\n  centre\n  to\n  include\n  them\n  in\n  their\n  centre\n  assessment\n  grades\n  and\n  rankings.\n  Students\n  in\n  this\n  position\n  will\n  need\n  to\n  sit\n  exams\n  to\n  get\n  their\n  grades,\n  either\n  in\n  the\n  autumn\n  or\n  in\n  summer\n  2021.\n  Ofqual\n  and\n  the\n  government\n  have\n  asked\n  organisations\n  that\n  represent\n  higher\n  and\n  further\n  education\n  providers\n  to\n  consider\n  the\n  steps\n  that\n  they\n  could\n  take\n  when\n  making\n  admissions\n  decisions\n  this\n  summer\n  for\n  any\n  external\n  candidates\n  who\n  do\n  not\n  receive\n  a\n  grade.\n  We\n  have\n  asked\n  institutions\n  to\n  consider\n  a\n  range\n  of\n  other\n  evidence\n  and\n  information\n  for\n  these\n  students\n  to\n  allow\n  them\n  to\n  progress\n  wherever\n  possible."
+    },
+    {
+      "source": {
+        "id": "DFE-01",
+        "url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+        "title": "Taking exams during the coronavirus (COVID-19) outbreak",
+        "publisher": "Department for Education",
+        "publication_date": "2020-03-20",
+        "updated_date": "2020-08-27",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:withdrawn": "withdrawn",
+          "govuk:first-published-at": "2020-03-20T20:22:26+00:00",
+          "govuk:updated-at": "2026-09-24T16:50:40+01:00",
+          "govuk:public-updated-at": "2020-08-27T14:53:42+01:00",
+          "govuk:primary-publishing-organisation": "Department for Education"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": true,
+        "withdrawn_at": "2021-02-25T11:36:37Z",
+        "withdrawal_notice": "This guidance was withdrawn on 25 February 2021 This guidance was about the awarding of GCSEs, AS and A levels and other qualifications in summer 2020. Information on awarding qualifications in summer 2021 is available.",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Department for Education, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 112576,
+          "raw_body_sha256": "15b079a82b9dfec29b72a7fb79795fc54f18176f3ebb64e0fced44a21212021f",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "DFE-01-results",
+      "locator": "Results and university entry in 2020 > Results days; complete subsection before Universities, colleges and sixth forms and grade acceptance",
+      "original_text_sha256": "c7aeee9191ff982d5d4fdd1526bcbd450935393b695b516156a34fd4ac6924c3",
+      "text": "Results\n  days\n  for\n  A\n  and\n  AS\n  levels\n  and\n  GCSE\n  this\n  year\n  were\n  the\n  same\n  as\n  originally\n  planned:\n  13\n  August\n  and\n  20\n  August\n  respectively.\n  This\n  will\n  enable\n  progression\n  to\n  higher\n  and\n  further\n  education\n  to\n  take\n  place\n  in\n  the\n  normal\n  way.\n  It\n  will\n  also\n  allow\n  students\n  time\n  to\n  decide\n  whether\n  they\n  wish\n  to\n  sit\n  exams\n  in\n  the\n  autumn,\n  and\n  to\n  prepare\n  for\n  those\n  exams\n  if\n  necessary.\n  The\n  GCSE\n  results\n  that\n  students\n  received\n  on\n  20\n  August\n  were\n  final\n  –\n  that\n  is,\n  they\n  were\n  based\n  on\n  the\n  higher\n  of\n  the\n  centre\n  assessment\n  grade\n  or\n  calculated\n  grades.\n  Revised\n  A\n  and\n  AS\n  level\n  grades\n  went\n  to\n  schools\n  and\n  colleges\n  on\n  19\n  August,\n  replacing\n  the\n  calculated\n  grades\n  that\n  were\n  issued\n  on\n  13\n  August.\n  Results\n  days\n  for\n  qualifications\n  other\n  than\n  A\n  and\n  AS\n  level\n  and\n  GCSEs\n  are\n  set\n  by\n  individual\n  awarding\n  organisations.\n  Results\n  for\n  many\n  vocational\n  and\n  technical\n  qualifications\n  used\n  for\n  progression\n  to\n  further\n  or\n  higher\n  education\n  have\n  been\n  available\n  on\n  the\n  same\n  days\n  as\n  A\n  level\n  and\n  GCSE\n  results.\n  However,\n  as\n  set\n  out\n  in\n  the\n  section\n  –\n  Vocational\n  and\n  Technical\n  Qualifications\n  2020\n  –\n  some\n  results\n  have\n  been\n  delayed.\n  These\n  are\n  being\n  issued\n  as\n  quickly\n  as\n  possible.\n  Students\n  who\n  are\n  taking\n  such\n  qualifications\n  should\n  check\n  the\n  planned\n  results\n  day\n  with\n  their\n  school\n  or\n  college."
+    },
+    {
+      "source": {
+        "id": "OFQ-03",
+        "url": "https://www.gov.uk/government/publications/ofquals-regulatory-burden-statement/regulatory-burden-statement-april-2021",
+        "title": "Regulatory Burden Statement – April 2021",
+        "publisher": "Ofqual",
+        "publication_date": "2021-04-30",
+        "updated_date": "2024-04-11",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:first-published-at": "2021-04-30T09:30:07+01:00",
+          "govuk:updated-at": "2026-03-19T09:37:08+00:00",
+          "govuk:public-updated-at": "2024-04-11T09:30:08+01:00",
+          "govuk:primary-publishing-organisation": "Ofqual"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": false,
+        "withdrawn_at": null,
+        "withdrawal_notice": null,
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Ofqual, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/ofquals-regulatory-burden-statement/regulatory-burden-statement-april-2021",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 120064,
+          "raw_body_sha256": "970ae0a1e56f707f29bc72c88dfc122acceca8218a9579a6305e3d36aab2187f",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "OFQ-03-direction",
+      "locator": "2.3 Monitoring awarding and results in 2020; complete subsection before 2.4 Engagement with awarding organisations",
+      "original_text_sha256": "20a3b2c55f8466a9d23c68dcf0a544fcc605baae6c273600c61a7907ca87015f",
+      "text": "The\n  government’s\n  policy\n  was\n  to\n  ensure\n  that\n  results\n  were\n  issued\n  to\n  as\n  many\n  learners\n  as\n  possible\n  in\n  spring\n  and\n  summer\n  2020.\n  In\n  order\n  that\n  we\n  could\n  understand\n  the\n  approaches\n  VTQ\n  awarding\n  organisations\n  were\n  taking\n  to\n  their\n  qualifications,\n  we\n  required\n  them\n  to\n  categorise\n  their\n  qualifications\n  available\n  to\n  learners\n  on\n  our\n  Register\n  and\n  tell\n  us\n  which\n  qualifications\n  would\n  receive\n  calculated\n  results,\n  which\n  would\n  be\n  adapted\n  and\n  which\n  would\n  be\n  delayed.\n  We\n  repeated\n  a\n  similar\n  process\n  in\n  spring\n  2021\n  to\n  understand\n  their\n  approaches\n  towards\n  awarding\n  under\n  the\n  new\n  VTQ\n  Contingency\n  Regulatory\n  Framework\n  (VCRF).\n  Our\n  monitoring\n  activity\n  and\n  requirements\n  sought\n  that\n  results\n  for\n  summer\n  2020\n  were\n  based\n  on\n  evidence\n  and\n  were\n  sufficiently\n  valid.\n  We\n  monitored\n  awarding\n  organisations’\n  activity\n  through\n  2020\n  to\n  understand\n  what\n  they\n  were\n  doing\n  in\n  response\n  to\n  the\n  coronavirus\n  (COVID-19)\n  pandemic.\n  This\n  included\n  looking\n  at\n  a\n  sample\n  of\n  awarding\n  organisations\n  record\n  keeping\n  activities\n  for\n  those\n  offering\n  calculated\n  results\n  or\n  adaptations\n  in\n  2020.\n  We\n  undertook\n  a\n  series\n  of\n  ‘Readiness\n  Reviews’\n  with\n  a\n  number\n  of\n  awarding\n  organisations\n  offering\n  high\n  stakes\n  qualifications\n  to\n  understand\n  whether\n  they\n  had\n  the\n  right\n  systems\n  and\n  processes\n  in\n  place\n  for\n  awarding\n  in\n  2020.\n  This\n  was\n  in\n  advance\n  of\n  awarding\n  in\n  2020\n  and\n  we\n  are\n  currently\n  undertaking\n  the\n  same\n  activity\n  in\n  March/April\n  2021.\n  A\n  number\n  of\n  VTQ\n  awarding\n  organisations\n  implemented\n  remote\n  assessment\n  and\n  remote\n  invigilation\n  as\n  a\n  consequence\n  of\n  the\n  coronavirus\n  (COVID-19)\n  pandemic\n  and\n  updated\n  their\n  IT\n  systems\n  as\n  a\n  consequence.\n  This\n  was\n  not\n  without\n  cost.\n  Awarding\n  organisations\n  also\n  needed\n  to\n  develop\n  their\n  IT\n  systems\n  to\n  be\n  able\n  to\n  issue\n  calculated\n  results\n  in\n  summer\n  2020.\n  Following\n  the\n  decision\n  in\n  August\n  2020\n  that\n  all\n  students\n  should\n  receive\n  their\n  centre\n  assessment\n  grade\n  or\n  calculated\n  grade\n  (whichever\n  was\n  the\n  higher),\n  we\n  required\n  exam\n  boards\n  to\n  re-issue\n  AS\n  and\n  A\n  level\n  grades\n  in\n  a\n  short\n  space\n  of\n  time\n  and\n  then\n  to\n  recalculate\n  GCSE\n  grades.\n  While\n  the\n  same\n  model\n  was\n  not\n  used\n  in\n  the\n  majority\n  of\n  VTQs,\n  we\n  asked\n  a\n  small\n  number\n  of\n  VTQ\n  awarding\n  organisations,\n  that\n  did\n  use\n  a\n  similar\n  approach\n  to\n  the\n  A\n  Level\n  and\n  GCSE\n  model,\n  to\n  review\n  their\n  approach.\n  A\n  small\n  proportion\n  of\n  VTQ\n  results\n  were\n  reissued."
+    },
+    {
+      "source": {
+        "id": "OFQ-02",
+        "url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+        "title": "Annual Report and Accounts 2020 to 2021",
+        "publisher": "Ofqual",
+        "publication_date": "2021-07-20",
+        "updated_date": "2021-07-20",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:first-published-at": "2021-07-20T13:23:41+01:00",
+          "govuk:updated-at": "2026-03-19T09:37:03+00:00",
+          "govuk:public-updated-at": "2021-07-20T13:23:39+01:00",
+          "govuk:primary-publishing-organisation": "Ofqual"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": false,
+        "withdrawn_at": null,
+        "withdrawal_notice": null,
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Ofqual, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 775150,
+          "raw_body_sha256": "a7a4d5353c59204898f1b6823479cd065b6d0e7a7262d08d212e06ce7acf9824",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "OFQ-02-results",
+      "locator": "Regulating GCSE, AS and A levels in response to Covid-19 > Public confidence and results days; complete subsection before Outcomes",
+      "original_text_sha256": "da81b513438f69e3a16a20a3a20c77e97547e0e5c54139c39071e3f3dfe42f66",
+      "text": "Following\n  the\n  release\n  of\n  Scottish\n  Highers\n  results\n  on\n  4\n  August\n  2020,\n  public\n  concerns\n  about\n  the\n  fairness\n  of\n  results\n  generated\n  without\n  exams\n  grew\n  significantly.\n  On\n  A\n  level\n  results\n  day,\n  13\n  August\n  2020,\n  we\n  issued\n  an\n  interim\n  report\n  on\n  the\n  awarding\n  of\n  GCSE,\n  AS,\n  A\n  level,\n  advanced\n  extension\n  awards\n  and\n  extended\n  project\n  qualifications\n  in\n  summer\n  2020.\n  This\n  set\n  out\n  the\n  principles\n  behind\n  the\n  decisions\n  made,\n  explicit\n  details\n  of\n  the\n  model\n  used\n  and\n  a\n  summary\n  of\n  the\n  equalities\n  analysis,\n  which\n  confirmed\n  our\n  initial\n  analyses\n  that\n  there\n  was\n  no\n  systematic\n  bias\n  in\n  the\n  process\n  of\n  producing\n  calculated\n  grades.\n  The\n  exam\n  boards\n  issued\n  centres\n  with\n  information\n  to\n  help\n  centres\n  understand\n  how\n  grades\n  had\n  been\n  calculated\n  for\n  their\n  centre.\n  Notwithstanding\n  this,\n  concerns\n  about\n  fairness\n  grew\n  significantly\n  following\n  A\n  level\n  results\n  day,\n  including\n  from\n  parents,\n  students,\n  teachers,\n  tutors,\n  schools\n  and\n  college\n  leaders,\n  stakeholders\n  and\n  in\n  public\n  opinion\n  more\n  widely.\n  In\n  response\n  to\n  this\n  lack\n  of\n  confidence\n  in\n  standardised\n  grades,\n  the\n  Ofqual\n  Board\n  took\n  the\n  decision\n  to\n  award\n  students\n  and\n  learners\n  the\n  higher\n  of\n  the\n  CAG\n  or\n  calculated\n  grade\n  for\n  AS\n  and\n  A\n  levels.\n  GCSE\n  results\n  were\n  issued\n  on\n  this\n  basis\n  on\n  20\n  August\n  2020.\n  We\n  recognised\n  that\n  the\n  approach\n  we\n  took\n  in\n  summer\n  2020\n  was\n  ultimately\n  not\n  widely\n  accepted\n  and\n  had\n  a\n  detrimental\n  impact\n  on\n  public\n  trust\n  and\n  confidence\n  in\n  qualifications.\n  Our\n  Chair\n  apologised\n  publicly\n  for\n  our\n  part\n  in\n  this\n  and\n  set\n  out\n  lessons\n  learned,\n  which\n  have\n  informed\n  our\n  approach\n  to\n  awarding\n  grades\n  in\n  summer\n  2021.\n  We\n  quickly\n  put\n  measures\n  in\n  place\n  to\n  increase\n  our\n  public\n  enquiries\n  capacity\n  to\n  make\n  sure\n  that\n  people\n  could\n  contact\n  us,\n  receiving\n  over\n  7,000\n  phone\n  calls\n  in\n  August\n  alone."
+    },
+    {
+      "source": {
+        "id": "OFQ-02",
+        "url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+        "title": "Annual Report and Accounts 2020 to 2021",
+        "publisher": "Ofqual",
+        "publication_date": "2021-07-20",
+        "updated_date": "2021-07-20",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:first-published-at": "2021-07-20T13:23:41+01:00",
+          "govuk:updated-at": "2026-03-19T09:37:03+00:00",
+          "govuk:public-updated-at": "2021-07-20T13:23:39+01:00",
+          "govuk:primary-publishing-organisation": "Ofqual"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": false,
+        "withdrawn_at": null,
+        "withdrawal_notice": null,
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Ofqual, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 775150,
+          "raw_body_sha256": "a7a4d5353c59204898f1b6823479cd065b6d0e7a7262d08d212e06ce7acf9824",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "OFQ-02-board",
+      "locator": "Governance statement > Overview, first paragraph; then Secretary of State Directions, complete subsection before Board and executive team response. These are two non-contiguous excerpts; intervening overview text and figure are omitted.",
+      "original_text_sha256": "812f1e43edc18fe91b0e360b343bfd163744c6b0b844fcdf42c28ccd8bedf9f2",
+      "text": "The\n  Ofqual\n  Board\n  is\n  the\n  legal\n  authority\n  responsible\n  for\n  the\n  regulation\n  of\n  qualifications,\n  exams\n  and\n  assessments.\n  The\n  Board\n  provides\n  leadership\n  and\n  direction,\n  setting\n  our\n  strategic\n  aims,\n  values\n  and\n  standards.\n  Its\n  work\n  is\n  governed\n  by\n  the\n  ‘Ofqual\n  Governance\n  Framework’,\n  available\n  on\n  gov.uk.\n  The\n  Chief\n  Regulator\n  has\n  delegated\n  responsibility\n  from\n  the\n  Board\n  for\n  leading\n  the\n  organisation\n  on\n  a\n  day-to-day\n  basis\n  through\n  Ofqual’s\n  executive\n  team,\n  the\n  SMG.\n  Further\n  details\n  about\n  the\n  members\n  and\n  activities\n  of\n  the\n  Board,\n  its\n  sub-committees\n  and\n  SMG\n  are\n  provided\n  from\n  page\n  58\n  onwards.\n  Secretary\n  of\n  State\n  Directions\n  The\n  Secretary\n  of\n  State\n  issued\n  three\n  Directions\n  to\n  Ofqual\n  regarding\n  2020\n  awarding,\n  as\n  follows:\n  31\n  March\n  2020:\n  regarding\n  the\n  government’s\n  policy\n  on\n  GCSE,\n  AS\n  and\n  A\n  levels\n  that\n  students\n  and\n  learners\n  should\n  be\n  issued\n  with\n  calculated\n  results\n  based\n  on\n  their\n  exam\n  centres’\n  judgements\n  of\n  their\n  ability,\n  and\n  that,\n  to\n  mitigate\n  the\n  risk\n  to\n  standards,\n  the\n  approach\n  should\n  be\n  standardised\n  across\n  centres\n  9\n  April\n  2020:\n  regarding\n  the\n  government’s\n  policy\n  on\n  vocational\n  and\n  technical\n  qualifications,\n  and\n  other\n  general\n  qualifications,\n  that\n  a\n  flexible\n  framework\n  be\n  developed\n  to\n  handle\n  awarding\n  across\n  the\n  wide\n  range\n  of\n  qualifications\n  in\n  this\n  group\n  in\n  a\n  pragmatic\n  and\n  fair\n  way\n  13\n  August\n  2020:\n  regarding\n  the\n  government’s\n  policy\n  on\n  appeals\n  relating\n  to\n  GCSEs,\n  AS\n  and\n  A\n  levels\n  in\n  the\n  context\n  of\n  calculated\n  results\n  Ofqual\n  is\n  subject\n  to\n  a\n  number\n  of\n  statutory\n  duties,\n  and\n  one\n  such\n  duty\n  is\n  contained\n  at\n  section\n  129(6)\n  of\n  the\n  Apprenticeships,\n  Skills,\n  Children\n  and\n  Learning\n  Act\n  2009.\n  That\n  section\n  sets\n  out\n  that\n  in\n  performing\n  its\n  functions,\n  Ofqual\n  ‘must\n  also\n  have\n  regard\n  to\n  such\n  aspects\n  of\n  government\n  policy\n  as\n  the\n  Secretary\n  of\n  State\n  may\n  direct’.\n  The\n  Ofqual\n  Board\n  consciously\n  considered\n  the\n  above\n  Directions\n  and\n  the\n  implications\n  of\n  them\n  when\n  making\n  decisions\n  in\n  2020\n  in\n  furtherance\n  of\n  our\n  statutory\n  objectives,\n  mindful\n  of\n  the\n  Secretary\n  of\n  State\n  making\n  it\n  clear\n  that\n  students\n  and\n  learners\n  who\n  would\n  have\n  sat\n  their\n  exams\n  that\n  summer\n  should\n  not\n  be\n  disadvantaged,\n  should\n  still\n  be\n  able\n  to\n  progress,\n  and\n  should\n  be\n  awarded\n  with\n  a\n  grade\n  that\n  reflected\n  their\n  abilities\n  in\n  the\n  subjects\n  they\n  studied."
+    },
+    {
+      "source": {
+        "id": "OFQ-02",
+        "url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+        "title": "Annual Report and Accounts 2020 to 2021",
+        "publisher": "Ofqual",
+        "publication_date": "2021-07-20",
+        "updated_date": "2021-07-20",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:first-published-at": "2021-07-20T13:23:41+01:00",
+          "govuk:updated-at": "2026-03-19T09:37:03+00:00",
+          "govuk:public-updated-at": "2021-07-20T13:23:39+01:00",
+          "govuk:primary-publishing-organisation": "Ofqual"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": false,
+        "withdrawn_at": null,
+        "withdrawal_notice": null,
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3",
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Ofqual, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/publications/ofqual-annual-report-for-the-period-1-april-2020-to-31-march-2021/annual-report-and-accounts-2020-to-2021",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 775150,
+          "raw_body_sha256": "a7a4d5353c59204898f1b6823479cd065b6d0e7a7262d08d212e06ce7acf9824",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "OFQ-02-advice",
+      "locator": "Regulating GCSE, AS and A levels in response to Covid-19 > External Advisory Group and quality assurance; complete subsection before Communications and engagement",
+      "original_text_sha256": "99840a14d88fdfb92ab9dbeb1d4ce2b96ebddbc1ecd1bd64581988ec374ea3ce",
+      "text": "Shortly\n  after\n  the\n  decision\n  by\n  the\n  government\n  that\n  the\n  summer\n  2020\n  exams\n  and\n  assessments\n  would\n  not\n  go\n  ahead,\n  Ofqual\n  established\n  an\n  External\n  Advisory\n  Group\n  (EAG)\n  to\n  consider\n  technical\n  matters\n  relating\n  to\n  the\n  awarding\n  of\n  grades\n  in\n  GCSE,\n  AS\n  and\n  A\n  level\n  qualifications\n  in\n  2020\n  and\n  to\n  advise\n  the\n  Ofqual\n  Board\n  on\n  the\n  related\n  issues.\n  We\n  appointed\n  10\n  independent\n  members\n  from\n  the\n  statistical\n  and\n  assessment\n  communities\n  to\n  the\n  EAG,\n  three\n  of\n  whom\n  were\n  members\n  of\n  the\n  Royal\n  Statistical\n  Society.\n  Two\n  Ofqual\n  Board\n  members\n  were\n  also\n  on\n  the\n  EAG,\n  including\n  Ofqual’s\n  Chair.\n  The\n  EAG\n  considered\n  matters\n  including\n  the\n  principles\n  for\n  grading\n  GCSE,\n  AS\n  and\n  A\n  level\n  qualifications\n  in\n  summer\n  2020,\n  the\n  approach\n  to\n  testing\n  the\n  most\n  appropriate\n  technical\n  model\n  and\n  quality\n  assurance\n  of\n  outcomes.\n  The\n  model\n  that\n  was\n  chosen\n  performed\n  most\n  accurately\n  using\n  test\n  data\n  from\n  summer\n  2019.\n  This\n  included\n  testing\n  to\n  ensure\n  that\n  the\n  model\n  did\n  not\n  introduce\n  bias,\n  which\n  it\n  did\n  not.\n  Exam\n  boards\n  and\n  Ofqual\n  carried\n  out\n  a\n  range\n  of\n  quality\n  assurance\n  processes\n  across\n  different\n  stages\n  of\n  the\n  process,\n  data\n  collection\n  and\n  analysis.\n  Exam\n  boards\n  worked\n  closely\n  together\n  to\n  ensure\n  a\n  consistent\n  approach\n  was\n  taken\n  by\n  each\n  of\n  them.\n  Quality\n  assurance\n  activity\n  included\n  requiring\n  Head\n  of\n  Centre\n  declarations\n  to\n  confirm\n  judgements\n  were\n  accurate\n  and\n  final\n  quality\n  assurance\n  checks\n  at\n  ‘Maintenance\n  of\n  Standards’\n  meetings\n  with\n  exam\n  boards,\n  Ofqual\n  and\n  regulators\n  in\n  Wales\n  and\n  Northern\n  Ireland.\n  The\n  provision\n  of\n  an\n  appeals\n  process\n  and\n  the\n  autumn\n  exam\n  series\n  were\n  also\n  important\n  components\n  of\n  the\n  process\n  to\n  support\n  the\n  provision\n  of\n  grades\n  that\n  were\n  as\n  accurate\n  as\n  possible\n  in\n  the\n  circumstances.\n  To\n  ensure\n  compliance\n  with\n  data\n  protection\n  legislation\n  and\n  relevant\n  guidance\n  from\n  the\n  Information\n  Commissioner’s\n  Office\n  (ICO),\n  we\n  completed\n  a\n  Data\n  Protection\n  Impact\n  Assessment,\n  published\n  a\n  privacy\n  notice\n  and\n  engaged\n  directly\n  with\n  the\n  ICO.\n  We\n  subsequently\n  published\n  a\n  privacy\n  impact\n  statement\n  on\n  our\n  website\n  to\n  enable\n  all\n  stakeholders\n  to\n  understand\n  in\n  plain\n  language\n  the\n  processing\n  of\n  personal\n  data\n  that\n  was\n  taking\n  place\n  in\n  relation\n  to\n  2020\n  grades.\n  Our\n  communications\n  set\n  out\n  that\n  grades\n  would\n  be\n  awarded\n  using\n  a\n  combination\n  of\n  human\n  judgement\n  (in\n  the\n  form\n  of\n  rankings\n  and,\n  or,\n  CAGs)\n  and\n  statistical\n  standardisation,\n  including\n  the\n  data\n  on\n  which\n  the\n  standardisation\n  process\n  would\n  be\n  based."
+    },
+    {
+      "source": {
+        "id": "OFQ-01",
+        "url": "https://www.gov.uk/government/news/statement-from-roger-taylor-chair-ofqual",
+        "title": "Statement from Roger Taylor, Chair, Ofqual",
+        "publisher": "Ofqual",
+        "publication_date": "2020-08-17",
+        "updated_date": "2020-08-17",
+        "retrieved_at": "2026-10-08T02:22:27+00:00",
+        "retrieved_local": "2026-10-07T22:22:27-04:00",
+        "govuk_metadata": {
+          "govuk:first-published-at": "2020-08-17T16:01:00+01:00",
+          "govuk:updated-at": "2026-03-19T09:35:51+00:00",
+          "govuk:public-updated-at": "2020-08-17T16:01:00+01:00",
+          "govuk:primary-publishing-organisation": "Ofqual"
+        },
+        "date_basis": "publication_date uses govuk:first-published-at; updated_date uses govuk:public-updated-at. govuk:updated-at is separate technical metadata, not an authenticated date of substantive wording change.",
+        "withdrawn": false,
+        "withdrawn_at": null,
+        "withdrawal_notice": null,
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+          "observed_page_links": [
+            "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          ],
+          "attribution": "Source: Ofqual, GOV.UK. Contains public sector information licensed under the Open Government Licence v3.0.",
+          "scope": "Selected government-authored prose only. Logos, images, third-party linked documents and third-party rights are excluded. No endorsement is implied."
+        },
+        "retrieval": {
+          "method": "HTTPS GET without authentication; UTF-8 HTML; no browser script execution",
+          "final_url": "https://www.gov.uk/government/news/statement-from-roger-taylor-chair-ofqual",
+          "content_type": "text/html; charset=utf-8",
+          "raw_body_bytes": 69636,
+          "raw_body_sha256": "0c8d3ea845e61aaa2dd9284b4ddbd4a90fd1f69c970dd0e02be9baa762cbe157",
+          "raw_html_retained": false,
+          "hash_limit": "Raw response hashes include page markup and may change without prose changes. They identify this retrieval, not a publication-day copy."
+        },
+        "source_independence": "Institutional primary self-report. Ofqual sources share one publisher; DfE is a separate publisher involved in the same response. Neither establishes independently verified institutional outcomes."
+      },
+      "id": "OFQ-01-statement",
+      "locator": "Complete statement body, paragraphs 1–6 after the image",
+      "original_text_sha256": "a8c6b495ceb816b1619fb476a613ae623b8f44148a09446a573eb6f855e0050e",
+      "text": "We\n  understand\n  this\n  has\n  been\n  a\n  distressing\n  time\n  for\n  students,\n  who\n  were\n  awarded\n  exam\n  results\n  last\n  week\n  for\n  exams\n  they\n  never\n  took.\n  The\n  pandemic\n  has\n  created\n  circumstances\n  no\n  one\n  could\n  have\n  ever\n  imagined\n  or\n  wished\n  for.\n  We\n  want\n  to\n  now\n  take\n  steps\n  to\n  remove\n  as\n  much\n  stress\n  and\n  uncertainty\n  for\n  young\n  people\n  as\n  possible\n  -\n  and\n  to\n  free\n  up\n  heads\n  and\n  teachers\n  to\n  work\n  towards\n  the\n  important\n  task\n  of\n  getting\n  all\n  schools\n  open\n  in\n  two\n  weeks.\n  After\n  reflection,\n  we\n  have\n  decided\n  that\n  the\n  best\n  way\n  to\n  do\n  this\n  is\n  to\n  award\n  grades\n  on\n  the\n  basis\n  of\n  what\n  teachers\n  submitted.\n  The\n  switch\n  to\n  centre\n  assessment\n  grades\n  will\n  apply\n  to\n  both\n  AS\n  and\n  A\n  levels\n  and\n  to\n  the\n  GCSE\n  results\n  which\n  students\n  will\n  receive\n  later\n  this\n  week.\n  There\n  was\n  no\n  easy\n  solution\n  to\n  the\n  problem\n  of\n  awarding\n  exam\n  results\n  when\n  no\n  exams\n  have\n  taken\n  place.\n  Ofqual\n  was\n  asked\n  by\n  the\n  Secretary\n  of\n  State\n  to\n  develop\n  a\n  system\n  for\n  awarding\n  calculated\n  grades,\n  which\n  maintained\n  standards\n  and\n  ensured\n  that\n  grades\n  were\n  awarded\n  broadly\n  in\n  line\n  with\n  previous\n  years.\n  Our\n  goal\n  has\n  always\n  been\n  to\n  protect\n  the\n  trust\n  that\n  the\n  public\n  rightly\n  has\n  in\n  educational\n  qualifications.\n  But\n  we\n  recognise\n  that\n  while\n  the\n  approach\n  we\n  adopted\n  attempted\n  to\n  achieve\n  these\n  goals\n  we\n  also\n  appreciate\n  that\n  it\n  has\n  also\n  caused\n  real\n  anguish\n  and\n  damaged\n  public\n  confidence.\n  Expecting\n  schools\n  to\n  submit\n  appeals\n  where\n  grades\n  were\n  incorrect\n  placed\n  a\n  burden\n  on\n  teachers\n  when\n  they\n  need\n  to\n  be\n  preparing\n  for\n  the\n  new\n  term\n  and\n  has\n  created\n  uncertainty\n  and\n  anxiety\n  for\n  students.\n  For\n  all\n  of\n  that,\n  we\n  are\n  extremely\n  sorry.\n  We\n  have\n  therefore\n  decided\n  that\n  students\n  be\n  awarded\n  their\n  centre\n  assessment\n  for\n  this\n  summer\n  -\n  that\n  is,\n  the\n  grade\n  their\n  school\n  or\n  college\n  estimated\n  was\n  the\n  grade\n  they\n  would\n  most\n  likely\n  have\n  achieved\n  in\n  their\n  exam\n  -\n  or\n  the\n  moderated\n  grade,\n  whichever\n  is\n  higher.\n  The\n  path\n  forward\n  we\n  now\n  plan\n  to\n  implement\n  will\n  provide\n  urgent\n  clarity.\n  We\n  are\n  already\n  working\n  with\n  the\n  Department\n  for\n  Education,\n  universities\n  and\n  everyone\n  else\n  affected\n  by\n  this\n  issue."
+    }
+  ]
+}

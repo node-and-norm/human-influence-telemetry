@@ -1,0 +1,214 @@
+{
+  "binding_id": "HIT-RESEARCH-INTEGRITY-BINDINGS-001",
+  "prepared_date": "2026-10-08",
+  "base_commit": "9af12f6cb891288f692990366e54b85bd21d9e24",
+  "check_kind": "file_and_dependency_consistency_only",
+  "claim_map": {
+    "path": "evidence/claim-evidence-map.json",
+    "sha256": "43b46e42f3ad54e0e6cbbc95b15a1284a37dbf1661a0f02e99d4f231d6ad97ff"
+  },
+  "evidence_bindings": [
+    {
+      "claim_id": "H1",
+      "evidence_id": "H1-SCHEMA",
+      "path": "schema/hit-assessment.schema.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H1",
+      "evidence_id": "H1-CATALOG",
+      "path": "schema/hit-dimension-catalog.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H2",
+      "evidence_id": "H2-FIXTURES",
+      "path": "fixtures/v0.4.0-boundaries/rubric-boundary-fixtures.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H2",
+      "evidence_id": "H2-RULES",
+      "path": "src/rubric/rules_v040.py",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H3",
+      "evidence_id": "H3-RESULT",
+      "path": "validation/results/pre-adjudication-comparison.json",
+      "integrity_declaration": "locked_digest"
+    },
+    {
+      "claim_id": "H3",
+      "evidence_id": "H3-BOUNDARY",
+      "path": "validation/results/H3-maturity-decision.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H4",
+      "evidence_id": "H4-CASE",
+      "path": "case-studies/assessments/cigna-pxdx.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H4",
+      "evidence_id": "H4-LIMIT",
+      "path": "LIMITATIONS.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H5",
+      "evidence_id": "H5-REGISTER",
+      "path": "RESEARCH.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H6",
+      "evidence_id": "H6-SPEC",
+      "path": "SPECIFICATION.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H7",
+      "evidence_id": "H7-BOUNDARY",
+      "path": "docs/adjacent-system-boundaries.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H8",
+      "evidence_id": "H8-REGISTER",
+      "path": "RESEARCH.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "H9",
+      "evidence_id": "H9-PACKET",
+      "path": "implementation/v1.0.0-candidate/audit-protocol.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C01",
+      "evidence_id": "PC01-COMPAT",
+      "path": "compatibility/hit-compatibility-manifest.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C02",
+      "evidence_id": "PC02-RESULT",
+      "path": "docs/releases/v0.6.0.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C02",
+      "evidence_id": "PC02-REPLICATION",
+      "path": "validation/v0.7.0/recruitment-contingency.md",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C03",
+      "evidence_id": "PC03-AUDIT",
+      "path": "audits/v0.6.5/audit-results.json",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C03",
+      "evidence_id": "PC03-CODE",
+      "path": "scripts/run_research_integrity_audit.py",
+      "integrity_declaration": "git_tracked"
+    },
+    {
+      "claim_id": "PAPER-C04",
+      "evidence_id": "PC04-CONTINGENCY",
+      "path": "validation/v0.7.0/recruitment-contingency.md",
+      "integrity_declaration": "git_tracked"
+    }
+  ],
+  "files": [
+    {
+      "path": "LIMITATIONS.md",
+      "sha256": "07d0921b1d6e88231ebb73fe222ad7883a2b361ed621bd87f2fca596324d4836"
+    },
+    {
+      "path": "RESEARCH.md",
+      "sha256": "8ab21bb2707790d075ee7f70c06c61064e6b396034c2b344b85425e3f5b4fc2f"
+    },
+    {
+      "path": "SPECIFICATION.md",
+      "sha256": "00cc5813bec33c0425f6b43827f0522599ff6d5b9e64223f759d868f3dab8184"
+    },
+    {
+      "path": "audits/v0.6.5/audit-results.json",
+      "sha256": "b707e1c2b6658a7e00314fe9a690a99ca9dcda36890cbf40c0a43c907417a583"
+    },
+    {
+      "path": "case-studies/assessments/cigna-pxdx.json",
+      "sha256": "6eaa7335bcc275806b485deea99caa36ba41fc94bea3d51625ebaf51cd56da48"
+    },
+    {
+      "path": "compatibility/hit-compatibility-manifest.json",
+      "sha256": "b3651bc8fe5d1520cac8685648a25b386208d1ac8ae3a3d576b6253e59bf7d3f"
+    },
+    {
+      "path": "docs/adjacent-system-boundaries.md",
+      "sha256": "53004854854e6067bbc28a739b2e2848d9d8a4a845cc8fe596285237fbb4b9ef"
+    },
+    {
+      "path": "docs/releases/v0.6.0.md",
+      "sha256": "57048d09f36113c41086fba4c810ca0317d26754e0d21436604c38473a371c7d"
+    },
+    {
+      "path": "fixtures/v0.4.0-boundaries/rubric-boundary-fixtures.json",
+      "sha256": "e1bd25e10bb787f535d6dbc7624e9752999a679f7eda157d56133bd9b9829a81"
+    },
+    {
+      "path": "implementation/v1.0.0-candidate/audit-protocol.md",
+      "sha256": "df6db63e0c944f026441ed5c24b011183d7041ac744473987bf7b09d0b69e8df"
+    },
+    {
+      "path": "schema/hit-assessment.schema.json",
+      "sha256": "bddfaccc4b6ced6bd8d586a5d846efa0234b66185f37ff5d7611b9d619769740"
+    },
+    {
+      "path": "schema/hit-dimension-catalog.json",
+      "sha256": "6e81ff42630175e6f370f9f73bff18be78eaad5fa2e38c9e8376121db945774f"
+    },
+    {
+      "path": "scripts/run_research_integrity_audit.py",
+      "sha256": "6fb04b7dacbb7223bc77b075124130db2e5f69ae8c12812a276999a08336cea5"
+    },
+    {
+      "path": "src/rubric/rules_v040.py",
+      "sha256": "09464280f224e28d67e4bd3fc19691106b25683c83476bdb5e3b3758d17a3a30"
+    },
+    {
+      "path": "validation/results/H3-maturity-decision.md",
+      "sha256": "787f289691e59ecf95735f403d539a053e7bbbb64a9eca186e0deaec3d85c82d"
+    },
+    {
+      "path": "validation/results/pre-adjudication-comparison.json",
+      "sha256": "91b28ec23f6f446be3ccd4868d9975a7f143da917de87ab5c2f5ac0123b3ced2"
+    },
+    {
+      "path": "validation/results/pre-adjudication-execution-record.json",
+      "sha256": "b52cb8c9bfc189b762c719c5f8704d94c50eb63af030d494b2f789ebe114d92e"
+    },
+    {
+      "path": "validation/results/preservation-manifest.json",
+      "sha256": "a8ae79ada73f0a36761fa07d5f3eb5a05b4daafc91521663bceb9141d4aa8ed0"
+    },
+    {
+      "path": "validation/v0.7.0/recruitment-contingency.md",
+      "sha256": "31f179be578830b3f444ad4108ae6687e363cccf8fe2895dab50bd4da5745373"
+    }
+  ],
+  "locked_comparison": {
+    "path": "validation/results/pre-adjudication-comparison.json",
+    "sha256": "91b28ec23f6f446be3ccd4868d9975a7f143da917de87ab5c2f5ac0123b3ced2",
+    "preservation_record": "validation/results/preservation-manifest.json",
+    "execution_record": "validation/results/pre-adjudication-execution-record.json"
+  },
+  "human_support_review_validated": false,
+  "evidence_fitness_validated": false,
+  "source_truth_validated": false,
+  "conclusion_eligibility_recomputed": false
+}

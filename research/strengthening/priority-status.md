@@ -2,6 +2,8 @@
 
 The October 3 priorities below remain historical workbench and author-decision records. The author approved a new bounded execution sequence on October 7; see [v1 priorities](v1-priorities.md). That sequence does not close the scientific decisions below by implication.
 
+For the latest development increment and next decisions, use the [8 October publication-readiness record](solo-publication-readiness.md). The historical no-new-release statement below describes 3 October; software version 0.6.6 has since been archived, while the newest manuscript and supplements remain development records outside that archive.
+
 Status as of 3 October 2026. This workbench records completed development work and unresolved research obligations separately. No priority is declared scientifically complete merely because files and tests exist.
 
 | Priority | Completed within this workbench | Remaining obligation |

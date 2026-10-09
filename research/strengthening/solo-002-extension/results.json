@@ -1,0 +1,342 @@
+{
+  "study_id": "HIT-SOLO-002-EXTENSION-001",
+  "protocol_commit": "1b17bbe77cb3726f50559fd392b1e22ff1bcda77",
+  "assessor_type": "ai_assistant",
+  "status": "completed_pending_author_review",
+  "independent_review": false,
+  "release_gate_satisfied": false,
+  "author_adjudication": "pending_for_extension",
+  "scientific_conclusion_eligible": false,
+  "conditions": [
+    {
+      "id": "S05",
+      "questions": [
+        {
+          "id": "Q1",
+          "baseline_answer": "The retrospective governance account still identifies Ofqual's Board and executive delegation, including government directions predating 16 August. The changed grading rule and regulator-to-board implementation chain concern the later intervention. They do not establish that this intervention was exercised on 16 August.",
+          "hit_answer": "Retain the named actors and the distinction between standing authority and observed exercise. The event-specific Command justification cannot be transferred unchanged to 16 August; generic regulatory authority alone does not resolve process-specific practical control on that date.",
+          "comparison": "tie",
+          "reason": "Both accounts retain institutional identity while refusing to backdate the exercise. Neither concludes that the Board lacked authority before the reversal.",
+          "evidence_refs": ["EC-BOARD", "EC-GOVERNMENT-ROLE", "EC-DECISION", "EC-REISSUE-REQUIREMENT"]
+        },
+        {
+          "id": "Q2",
+          "baseline_answer": "The seasonal advisory route remains relevant background. The Chair's public reasons describe the later reversal, and the record does not date the underlying deliberation or evidence access specifically to 16 August. Reflection may have begun earlier, but this packet does not establish its timing.",
+          "hit_answer": "Counsel's access-and-timing uncertainty persists. The original Judgment rationale is tied to the published reasons and changed path of the 17 August event; it cannot establish independent reasoning within the substituted date without a dated link. Missing linkage does not establish ceremonial review or absent reasoning.",
+          "comparison": "tie",
+          "reason": "Both distinguish a seasonal route, undated preparation and a dated public account. No method-specific resolution of the earlier reasoning is found.",
+          "evidence_refs": ["EC-ADVICE", "EC-REASONS", "EC-DECISION"]
+        },
+        {
+          "id": "Q3",
+          "baseline_answer": "The record describes initial calculated awards on 13 August, the later rule reversal, replacement AS/A issue on 19 August and GCSE issue on 20 August. None of those later changes becomes an exercised reversal on 16 August. The retained observations do not establish a separate earlier exercise of the same replacement intervention.",
+          "hit_answer": "Correction and Reform lose the temporal applicability of the original exercise-and-follow-through chain. The underlying historical propositions remain recorded. No follow-up period permits the 19 or 20 August issue evidence to supply exercise in S05, and no automatic absent finding follows.",
+          "comparison": "tie",
+          "reason": "Both preserve the actual event dates and identify the same gap in an earlier-exercise claim.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-REPLACEMENT", "EC-ISSUE-CORRECTION", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM"]
+        },
+        {
+          "id": "Q4",
+          "baseline_answer": "The 17 August statement retrospectively describes distress following the earlier awards. Its later publication does not erase its relevance to earlier harm, although the selected account does not isolate all harm to 16 August. The later direction and issue reports do not establish a remedy exercised within the substituted date.",
+          "hit_answer": "Reconsider the harm trigger's temporal applicability separately from the remedy action. Retrospective formal acknowledgement can bear on earlier harm; this analysis does not automatically mark the trigger unestablished because the apology was later. The operationally directed remedy used by the original Repair rationale remains a later act and cannot be credited to 16 August.",
+          "comparison": "tie",
+          "reason": "Both preserve retrospective harm evidence while withholding the later remedy from the earlier exercise boundary. A new Repair category is not adjudicated.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR", "EC-EXTERNAL-LIMIT", "EC-ADMISSIONS-LIMIT"]
+        },
+        {
+          "id": "Q5",
+          "baseline_answer": "The same source dependence, unauthenticated historical versions and absent internal records remain. The substitution creates an additional applicability problem: a source publication date is not its event date, and a summer-level statement does not necessarily establish a fact on 16 August. The revised appeal restrictions explicitly linked to the 17 August announcement cannot simply be assigned to the previous day.",
+          "hit_answer": "Separate evidentiary timing from institutional-record integrity and assessment-packet integrity. No changed or missing historical bytes are inferred. The packet's completeness for the new date must be reconsidered, and affected substantive rationales must name the missing temporal link instead of converting that gap into an integrity or absence score.",
+          "comparison": "tie",
+          "reason": "Both identify temporal applicability as a local evidentiary issue. HIT names two integrity objects, but this analysis finds no additional substantive conclusion from that representation.",
+          "evidence_refs": ["EC-PACKET", "EC-APPEALS-LIMIT", "EC-GOVERNMENT-ROLE", "EC-EXTERNAL-LIMIT"]
+        },
+        {
+          "id": "Q6",
+          "baseline_answer": "Before asserting earlier practical exercise, request a dated authority or instruction record, pre-decision access and deliberation material, and evidence of any action within 16 August. Clarify the harm interval if the proposed conclusion depends on it. The available record warrants a bounded statement that later exercise does not establish earlier exercise.",
+          "hit_answer": "Record those same unresolved propositions and targeted requests before producing any replacement assessment. Preserve the original 17 August application. No request has been sent, and no present-day institutional intervention follows from this constructed date substitution.",
+          "comparison": "tie",
+          "reason": "Both produce the same proportionate evidence request without pretending that the new boundary has been fully assessed or that missing evidence establishes failure.",
+          "evidence_refs": ["EC-BOARD", "EC-ADVICE", "EC-REASONS", "EC-HARM", "EC-PACKET"]
+        }
+      ],
+      "impacts": [
+        {
+          "dimension": "counsel",
+          "disposition": "unresolved",
+          "reason": "The seasonal advice route survives as background, but actual access, relevant underlying material and event-specific timing remain unresolved. The earlier cutoff does not resolve the original formal-route interpretation or establish absent access. The author's unresolved base decision is not an accepted category.",
+          "evidence_refs": ["EC-ADVICE"]
+        },
+        {
+          "dimension": "judgment",
+          "disposition": "reassess",
+          "reason": "The public reasons support a claim about the later reversal. No retained observation dates that evaluation to 16 August. The original rationale therefore cannot be reused unchanged, even though the public account and its limits remain evidence about the actual later event.",
+          "evidence_refs": ["EC-REASONS", "EC-DECISION", "EC-BIAS-LIMIT"]
+        },
+        {
+          "dimension": "command",
+          "disposition": "reassess",
+          "reason": "The Board's standing role and earlier policy setting remain visible. The exercise, implementation requirement and downstream consequences cited for the original intervention occur later or lack a link to 16 August. They do not supply the original practical-control justification for S05; they also do not establish that intervention was impossible earlier.",
+          "evidence_refs": ["EC-BOARD", "EC-GOVERNMENT-ROLE", "EC-DECISION", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-COMMAND"]
+        },
+        {
+          "dimension": "correction",
+          "disposition": "reassess",
+          "reason": "The systemic reconsideration and replacement-issue chain concerns the later event. The selected record does not establish its substantive use on 16 August. Nor do the post-announcement appeal restrictions establish the exact preceding day's channel or outcome. No replacement category is assigned.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-ISSUE-CORRECTION", "EC-APPEALS-LIMIT"]
+        },
+        {
+          "dimension": "repair",
+          "disposition": "reassess",
+          "reason": "The later acknowledgement can retrospectively substantiate earlier distress, subject to the unresolved day-specific harm interval. It does not move the subsequent remedial direction or grade issue to 16 August. Trigger timing and action timing need separate treatment; neither a uniform downgrade nor a new trigger state is imposed.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR"]
+        },
+        {
+          "dimension": "reform",
+          "disposition": "reassess",
+          "reason": "The identifiable award-rule change and its reported 20 August use fall after the substituted event date. With no follow-up period, the original linked-change justification cannot establish exercise within S05. The packet does not thereby establish that reform authority was absent on 16 August.",
+          "evidence_refs": ["EC-REPLACEMENT", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM", "EC-GOVERNMENT-ROLE"]
+        },
+        {
+          "dimension": "institutional_record_integrity",
+          "disposition": "unchanged",
+          "reason": "Changing the assessment date supplies no new evidence about institutional edit controls, retention, provenance or tampering. Existing limitations remain. Failure to establish an earlier exercise is a substantive support issue, not an automatic change in the integrity of the institution's records.",
+          "evidence_refs": ["EC-PACKET"]
+        },
+        {
+          "dimension": "assessment_packet_integrity",
+          "disposition": "reassess",
+          "reason": "The source identities and preserved observations remain the same, but their completeness and applicability for the earlier date must be stated afresh. The original packet was selected around the later reversal. The transparent date substitution does not establish corruption or cure missing internal records, and no new component status is assigned.",
+          "evidence_refs": ["EC-PACKET", "EC-ADVICE", "EC-APPEALS-LIMIT"]
+        }
+      ],
+      "overall_interpretation": "The earlier boundary removes the temporal support for attributing the later intervention and follow-through to 16 August. Standing institutional context survives; retrospective evidence of earlier harm remains relevant. Both assistant-authored methods retain those distinctions. The proposed comparison is a tie, not an empirical equivalence result, and no replacement eight-component assessment is issued.",
+      "limitations": [
+        "This is a constructed temporal-applicability audit of the original argument, not a newly sourced assessment of everything that happened on 16 August.",
+        "The analyst knew the original event, draft findings, author decisions and Jev responses; no blind or independent reconstruction occurred.",
+        "No fresh source search, institutional request or source authentication was performed. All date-specific gaps remain visible.",
+        "All new condition answers and impact narratives await author review; acceptance of the original event-level findings does not accept this substitution."
+      ]
+    },
+    {
+      "id": "S06",
+      "questions": [
+        {
+          "id": "Q1",
+          "baseline_answer": "Ofqual's Board remains the named regulatory actor, and the reported requirement to exam boards remains in the scenario. The new denial creates a conflict about the 19 August AS/A issue event. It does not deny the direction, identify a different directing actor or contradict the separate 20 August GCSE issue.",
+          "hit_answer": "Retain the actor relationships while narrowing the downstream-consequence account. The AS/A delivery branch cannot be reported as resolved historical occurrence within this scenario. The direction branch and the distinct GCSE consequence remain available for a bounded Command argument; direct operation of board software is still unestablished.",
+          "comparison": "tie",
+          "reason": "Both distinguish actor and direction evidence from one disputed consequence. The contradiction is not silently propagated to every proposition in the chain.",
+          "evidence_refs": ["EC-BOARD", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-COMMAND", "EC-ISSUE-REFORM", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "id": "Q2",
+          "baseline_answer": "The constructed denial contains no proposition about pre-decision access or the Chair's reasons. The seasonal advice route, missing event-specific access record and public-account limitation remain as before.",
+          "hit_answer": "The Counsel uncertainty and the bounded public-reasons argument for Judgment are unchanged by this particular conflict. Neither a new access record nor internal deliberation is supplied. The original author decisions about those matters remain separate from this condition's analysis.",
+          "comparison": "tie",
+          "reason": "Both restrict the effect of the denial to its stated event rather than treating a delivery conflict as evidence about all prior reasoning.",
+          "evidence_refs": ["EC-ADVICE", "EC-REASONS", "EC-BIAS-LIMIT"]
+        },
+        {
+          "id": "Q3",
+          "baseline_answer": "The documented reconsideration, announced replacement rule and report of 20 August GCSE issue remain. The same-event AS/A accounts are incompatible and unresolved by stipulation. The fact that DFE-01 reports issue remains true of the document even though occurrence of that issue event cannot be resolved in the scenario.",
+          "hit_answer": "Reassess the Correction rationale that used AS/A replacement as an outcome, preserving the separate evidence of substantive reconsideration and authority to change the rule. Specification 6.4 does not require a completed reversal when those elements are otherwise established. The original Reform rationale retains its distinct GCSE implementation evidence. No new category is fixed merely by that alternative route.",
+          "comparison": "tie",
+          "reason": "Both preserve the local conflict and the remaining change evidence. HIT makes the category-relevance question explicit; the capable baseline can express the same distinction.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-REPLACEMENT", "EC-ISSUE-CORRECTION", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM"]
+        },
+        {
+          "id": "Q4",
+          "baseline_answer": "Acknowledged harm and the reported direction to correct grade records remain. AS/A receipt through the disputed 19 August event is unresolved. The synthetic statement neither denies the direction nor settles the original exclusions, individual outcomes or adequacy of remedy; the separate GCSE issue report survives.",
+          "hit_answer": "Preserve the harm trigger evidence and distinguish delivery from operational direction under specification 6.5. The scenario weakens a delivered-AS/A-record claim without by itself defeating the original operational-direction route. Whether the remaining harm-to-remedy link supports a determinate finding remains an author-review question; no universal repair claim follows.",
+          "comparison": "tie",
+          "reason": "Both keep the directed-remedy claim separate from disputed delivery and unmeasured person-level outcomes.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR", "EC-EXTERNAL-LIMIT", "EC-ADMISSIONS-LIMIT"]
+        },
+        {
+          "id": "Q5",
+          "baseline_answer": "The denial is explicitly constructed and has no discovered-source status. Within the scenario both event accounts are admissible and neither controls, so the original source cannot win merely because the real publication has a URL. The conflict is local to AS/A issue on 19 August; the original institutional dependencies and missing private records remain.",
+          "hit_answer": "Apply specification 10 to the affected proposition and consider materiality for each finding. If the unresolved event conflict could change the supported category or actor attribution, IE is required for that affected finding. Separately assess whether a disputed record is unsafe for a particular use. The synthetic addition supplies no evidence of tampering by the actual institution and does not automatically make either real integrity component unreliable.",
+          "comparison": "tie",
+          "reason": "Both retain the scenario's conflict without either dismissing it as synthetic inside the exercise or misrepresenting it as historical evidence outside the exercise.",
+          "evidence_refs": ["EC-PACKET", "EC-ISSUE-CORRECTION", "EC-ISSUE-COMMAND", "EC-ISSUE-REPAIR"]
+        },
+        {
+          "id": "Q6",
+          "baseline_answer": "Within the scenario, request the dated AS/A distribution record, its scope, centre acknowledgements and a reconciliation of the two accounts. Until then, distinguish unresolved AS/A delivery from supported reports of direction and GCSE implementation. No historical source request is claimed to have been sent.",
+          "hit_answer": "Record the same conflicting proposition and requested evidence, then review only findings whose categories depend on resolving it. The original assessment remains unchanged. This exercise does not justify a real allegation of nondelivery or present-day institutional action.",
+          "comparison": "tie",
+          "reason": "Both propose a targeted reconciliation request and a bounded report, without converting a constructed denial into a factual allegation.",
+          "evidence_refs": ["EC-ISSUE-CORRECTION", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-REFORM", "EC-PACKET"]
+        }
+      ],
+      "impacts": [
+        {
+          "dimension": "counsel",
+          "disposition": "unchanged",
+          "reason": "The synthetic denial supplies no new proposition about the advisory route, underlying evidence access or pre-decision timing. The original uncertainty remains; unchanged support does not mean an accepted Counsel category.",
+          "evidence_refs": ["EC-ADVICE"]
+        },
+        {
+          "dimension": "judgment",
+          "disposition": "unchanged",
+          "reason": "The public reasons and decision account are not contradicted by a denial of later AS/A issue. Missing internal deliberation and the distinction between public justification and private reasoning remain. No broader inference about the quality of judgment is added.",
+          "evidence_refs": ["EC-REASONS", "EC-DECISION", "EC-BIAS-LIMIT"]
+        },
+        {
+          "dimension": "command",
+          "disposition": "reassess",
+          "reason": "One consequence branch is disputed, so the original combined direction-and-issue justification needs qualification. The authority, reported requirement and separate GCSE consequence survive. A conflict about one outcome does not automatically establish that regulatory direction lacked practical effect; a new category requires review of the remaining bounded chain.",
+          "evidence_refs": ["EC-BOARD", "EC-DECISION", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-COMMAND", "EC-ISSUE-REFORM"]
+        },
+        {
+          "dimension": "correction",
+          "disposition": "reassess",
+          "reason": "The AS/A replacement event cannot serve as an uncontested outcome. The documented reconsideration and authority to alter the award rule remain relevant under specification 6.4, which does not require a reversal in every case. The record must explain whether that remaining support resolves the category; otherwise the material conflict requires IE. This analysis does not choose the replacement category.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-ISSUE-CORRECTION", "EC-DECISION", "EC-APPEALS-LIMIT"]
+        },
+        {
+          "dimension": "repair",
+          "disposition": "reassess",
+          "reason": "The AS/A delivery portion of EC-ISSUE-REPAIR is contested. The formal acknowledgement and operationally directed correction route remain, and GCSE issue is not denied. The original direction-based rationale therefore retains a possible basis under specification 6.5, subject to its harm linkage and scope; the condition cannot be used to assert successful delivery to every affected person.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR", "EC-EXTERNAL-LIMIT", "EC-ADMISSIONS-LIMIT"]
+        },
+        {
+          "dimension": "reform",
+          "disposition": "unchanged",
+          "reason": "The changed rule, linked regulatory intervention and separate 20 August GCSE implementation propositions used by the original Reform rationale remain. The denial adds no contradiction to that branch. This unchanged bounded support does not resolve AS/A delivery or establish every board's technical configuration.",
+          "evidence_refs": ["EC-REPLACEMENT", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "dimension": "institutional_record_integrity",
+          "disposition": "reassess",
+          "reason": "Inside the constructed scenario, the competing event accounts require a use-specific reliability review for the AS/A issue claim. The stipulated conflict cannot be ignored, but it supplies no real-world evidence of institutional tampering, defective retention or an unsafe entire archive. No historical integrity status or automatic global downgrade is inferred.",
+          "evidence_refs": ["EC-PACKET", "EC-ISSUE-CORRECTION"]
+        },
+        {
+          "dimension": "assessment_packet_integrity",
+          "disposition": "reassess",
+          "reason": "The extension preserves the added statement's synthetic origin and the original source attribution. That transparent transformation permits inspection but does not reconcile the event conflict. The packet must identify its conditional scope and affected uses; disclosed construction is neither an authentic new source nor evidence that the original packet was corrupted.",
+          "evidence_refs": ["EC-PACKET", "EC-ISSUE-CORRECTION", "EC-ISSUE-REPAIR"]
+        }
+      ],
+      "overall_interpretation": "The constructed conflict makes occurrence of the 19 August AS/A issue event unresolved within S06, while leaving the fact of DFE reporting, regulatory direction and separate GCSE implementation intact. Command, Correction and Repair arguments require local reassessment; no automatic all-IE or integrity downgrade follows. The two assistant-authored methods preserve the same distinctions and evidence request. A determinate replacement category is not asserted.",
+      "limitations": [
+        "The denial is a predeclared synthetic input, not a newly discovered historical record or an allegation that grades were not issued.",
+        "Equal admissibility and absence of precedence are scenario assumptions; the exercise does not measure real-world source-credibility adjudication.",
+        "Remaining direction and GCSE evidence do not resolve the specific AS/A event conflict. The impact on a final category remains for author review.",
+        "The same exposed assistant produced both method answers and judged their relation. The proposed ties do not establish reliability, comparative equivalence or an institutional outcome."
+      ]
+    },
+    {
+      "id": "S07",
+      "questions": [
+        {
+          "id": "Q1",
+          "baseline_answer": "Reading the reversed, whitespace-changed extracts with the full record still identifies the Board's regulatory role, executive delegation and direction to exam boards. The OCR acknowledgement and public-code limitation remain available through the unchanged six-source record. No authority transfers to a new actor because its passage appears earlier or later.",
+          "hit_answer": "Actor IDs, authority relationships and the Command support chain retain the same proposed interpretation. The transformed source metadata and locators preserve attribution. This condition adds no evidence that Ofqual directly operated an exam board's software.",
+          "comparison": "tie",
+          "reason": "No substantive attribution change was identified after inspecting the transformed passages and complete record.",
+          "evidence_refs": ["EC-BOARD", "EC-REISSUE-REQUIREMENT", "EC-OCR-ACK", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "id": "Q2",
+          "baseline_answer": "The advice route, public reasons and missing event-specific access and deliberation records retain their meaning. Later placement of the Chair statement and earlier placement of the advice passage do not establish a different chronology of access or reasoning.",
+          "hit_answer": "The Counsel uncertainty and the bounded Judgment justification remain. Wording questions about the advisory group having informed the Board are not resolved by typography. No new category or internal-reasoning record is produced.",
+          "comparison": "tie",
+          "reason": "Both preserve the access-versus-advice and public-versus-internal-reasoning distinctions under the changed layout.",
+          "evidence_refs": ["EC-ADVICE", "EC-REASONS"]
+        },
+        {
+          "id": "Q3",
+          "baseline_answer": "The source text still distinguishes the original calculated awards, the reversal and the dated follow-through. The reported replacement AS/A issue and 20 August GCSE implementation retain their original actors and dates. Presentation order supplies no new chronology or independently corroborating record.",
+          "hit_answer": "Correction and Reform retain their original bounded evidence paths. The complete assessment's separate propositions remain available for reconsideration, replacement issue and operative rule use, even where they share one source paragraph.",
+          "comparison": "tie",
+          "reason": "No changed proposition or practical-change conclusion was identified in this inspection; source reuse still requires separate reasoning.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-REPLACEMENT", "EC-ISSUE-CORRECTION", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM"]
+        },
+        {
+          "id": "Q4",
+          "baseline_answer": "The apology, directed grade-record correction, reported issue, excluded candidates and admissions contingencies remain together in the available record. Moving the limitation passages to the beginning changes their location without eliminating the remedy evidence or making the remedy universal.",
+          "hit_answer": "The harm-to-direction route and its limits retain their original proposed interpretation. Remedy direction remains distinct from person-level receipt and restored opportunity. The changed typography supplies no new basis for resolving those unmeasured outcomes.",
+          "comparison": "tie",
+          "reason": "Both methods retain the same bounded remedy claim and the same counterevidence after the presentation change.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR", "EC-EXTERNAL-LIMIT", "EC-ADMISSIONS-LIMIT"]
+        },
+        {
+          "id": "Q5",
+          "baseline_answer": "Source identities, publication and update dates, withdrawn status, locators and dependence qualifications survive the transformation. Nine passages remain extracts from four documents, within the larger six-document record. Source order creates no additional independent evidence and does not authenticate a historical version.",
+          "hit_answer": "Institutional-record limitations and assessment-packet limitations remain distinct. Retained original text hashes and the deterministic transformation make this presentation change inspectable; they do not improve source independence, source truth or completeness. Missing internal and recipient-level records remain missing.",
+          "comparison": "tie",
+          "reason": "Both preserve the same provenance limits. The byte-preservation check concerns the transformation, not the correctness of either interpretation.",
+          "evidence_refs": ["EC-PACKET", "EC-EXTERNAL-LIMIT", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "id": "Q6",
+          "baseline_answer": "The same targeted requests remain: the event's evidence-access and deliberation records, original operational instruction and execution reconciliation, and recipient-linked remedy evidence where a stronger conclusion requires them. No new institutional action follows from changing the layout.",
+          "hit_answer": "Retain those requests and the original author-review boundaries. Preserve the transformed input as a development artifact rather than replacing the original packet. No additional source collection, timing claim or model call is warranted by this observed invariance alone.",
+          "comparison": "tie",
+          "reason": "No changed next-evidence request or additional substantive distinction was identified. Human effort under the new layout was not measured.",
+          "evidence_refs": ["EC-ADVICE", "EC-REASONS", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-REPAIR", "EC-PACKET"]
+        }
+      ],
+      "impacts": [
+        {
+          "dimension": "counsel",
+          "disposition": "unchanged",
+          "reason": "The same advisory-route evidence and missing event-specific access record remain. Reordered source presentation does not resolve the timing or scope uncertainty, and no new Counsel category is inferred.",
+          "evidence_refs": ["EC-ADVICE"]
+        },
+        {
+          "dimension": "judgment",
+          "disposition": "unchanged",
+          "reason": "The published reasons retain their wording, attribution and limits. The inspection identified no changed inference about the documented public account and produced no internal deliberation evidence.",
+          "evidence_refs": ["EC-REASONS", "EC-BIAS-LIMIT"]
+        },
+        {
+          "dimension": "command",
+          "disposition": "unchanged",
+          "reason": "The Board, reported requirement and consequence chain retain their source relationships and event boundaries. The public-code and actor-operation limits remain available through the unchanged complete record.",
+          "evidence_refs": ["EC-BOARD", "EC-DECISION", "EC-REISSUE-REQUIREMENT", "EC-ISSUE-COMMAND", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "dimension": "correction",
+          "disposition": "unchanged",
+          "reason": "The systemic reconsideration and reported replacement outcome retain the same evidentiary meaning. The appeal restrictions now appear earlier in the transformed display but still limit generalisation to person-level contestability.",
+          "evidence_refs": ["EC-RECONSIDERATION", "EC-ISSUE-CORRECTION", "EC-APPEALS-LIMIT"]
+        },
+        {
+          "dimension": "repair",
+          "disposition": "unchanged",
+          "reason": "Formal acknowledgement, operationally directed record correction and reported issue remain qualified by exclusions and unknown individual outcomes. No different harm trigger or remedy interpretation was identified in the changed presentation.",
+          "evidence_refs": ["EC-HARM", "EC-REMEDY-DIRECTION", "EC-ISSUE-REPAIR", "EC-EXTERNAL-LIMIT", "EC-ADMISSIONS-LIMIT"]
+        },
+        {
+          "dimension": "reform",
+          "disposition": "unchanged",
+          "reason": "The identifiable changed rule and its reported operation within the declared follow-up retain their original support. Passage order cannot convert implementation dates into earlier dates or establish every production configuration.",
+          "evidence_refs": ["EC-REPLACEMENT", "EC-IMPLEMENTATION", "EC-ISSUE-REFORM", "EC-CODE-BOUNDARY"]
+        },
+        {
+          "dimension": "institutional_record_integrity",
+          "disposition": "unchanged",
+          "reason": "The presentation operation occurs in the assessor's retained extracts, not in the institution's systems. It supplies no new evidence about institutional retention, edit controls, underlying records or historical authenticity.",
+          "evidence_refs": ["EC-PACKET"]
+        },
+        {
+          "dimension": "assessment_packet_integrity",
+          "disposition": "unchanged",
+          "reason": "The declared reversal of passage order and whitespace change preserve normalized wording, attribution, dates and locators, with original text hashes retained. This adds an inspectable transformation record while leaving the original packet's source-selection, completeness and independence limits unchanged. No higher integrity status is inferred.",
+          "evidence_refs": ["EC-PACKET"]
+        }
+      ],
+      "overall_interpretation": "Inspection of the transformed nine-passage subset with the complete 23-claim assessment and six-source ledger available identified no substantive change in any of the six paired answers or eight impact narratives. The proposed ties and unchanged support describe this unblinded assistant analysis only. The unchanged contextual record and prior memory could have preserved the answers despite the altered display.",
+      "limitations": [
+        "Only nine retained passages from four GOV.UK documents were transformed. OCR-01 and OFQ-04 remained available through the unchanged original record; this is not a six-document full-text formatting test.",
+        "The full original argument remained available, so this condition does not isolate the effect of presentation or reproduce an unexposed assessor's work.",
+        "The analyst already knew the expected invariance, earlier case analysis and Jev formatting response. No general robustness, repeatability or performance estimate follows.",
+        "The transformation checker establishes byte-level construction consistency. It cannot recompute the qualitative interpretation, measure reader effort or adjudicate a finding."
+      ]
+    }
+  ]
+}

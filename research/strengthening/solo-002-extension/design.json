@@ -1,0 +1,105 @@
+{
+  "study_id": "HIT-SOLO-002-EXTENSION-001",
+  "prepared_date": "2026-10-08",
+  "timezone": "America/New_York",
+  "base_commit": "9af12f6cb891288f692990366e54b85bd21d9e24",
+  "status": "prepared_inputs_only",
+  "assessor_type": "ai_assistant",
+  "prior_jev_results_exposure": true,
+  "independent_review": false,
+  "release_gate_satisfied": false,
+  "source_ids": [
+    "OFQ-01",
+    "OCR-01",
+    "OFQ-02",
+    "OFQ-03",
+    "DFE-01",
+    "OFQ-04"
+  ],
+  "claim_ids": [
+    "EC-REASONS",
+    "EC-HARM",
+    "EC-DECISION",
+    "EC-REPLACEMENT",
+    "EC-ANNOUNCEMENT-LIMIT",
+    "EC-OCR-ACK",
+    "EC-ADVICE",
+    "EC-BOARD",
+    "EC-RECONSIDERATION",
+    "EC-IMPLEMENTATION",
+    "EC-BIAS-LIMIT",
+    "EC-GOVERNMENT-ROLE",
+    "EC-REISSUE-REQUIREMENT",
+    "EC-REMEDY-DIRECTION",
+    "EC-ISSUE-COMMAND",
+    "EC-ISSUE-CORRECTION",
+    "EC-ISSUE-REPAIR",
+    "EC-ISSUE-REFORM",
+    "EC-EXTERNAL-LIMIT",
+    "EC-ADMISSIONS-LIMIT",
+    "EC-APPEALS-LIMIT",
+    "EC-CODE-BOUNDARY",
+    "EC-PACKET"
+  ],
+  "conditions": [
+    {
+      "id": "S05",
+      "kind": "period",
+      "period": {
+        "start": "2020-08-16",
+        "end": "2020-08-16"
+      },
+      "follow_up_period": null,
+      "rule": "Preserve historical event dates; later reporting may establish earlier facts, but later exercise cannot be backdated."
+    },
+    {
+      "id": "S06",
+      "kind": "constructed_conflict",
+      "period": {
+        "start": "2020-08-17",
+        "end": "2020-08-17"
+      },
+      "follow_up_period": {
+        "start": "2020-08-18",
+        "end": "2020-08-20"
+      },
+      "synthetic_evidence": "Constructed scenario only, not a historical document: a second account of the same replacement AS/A level grade-issue event states that no replacement AS/A level grades were sent to any schools or colleges on 19 August 2020. Both event accounts are admissible for this scenario, neither has precedence, and no reconciliation is supplied.",
+      "preserved_propositions": [
+        "DFE-01 reports issue",
+        "regulatory direction to exam boards",
+        "20 August GCSE issue"
+      ],
+      "rule": "Reassess material effects; no automatic score or integrity downgrade."
+    },
+    {
+      "id": "S07",
+      "kind": "reverse_order_and_whitespace",
+      "formatting_path": "research/strengthening/solo-002-extension/formatting.json",
+      "rule": "All nine retained passages change presentation only; the complete record and six-source ledger remain available."
+    }
+  ],
+  "protected_sha256": {
+    "research/strengthening/solo-002-complete/plan.md": "786799a1fb27f40e58a144e60910813dd75217bc9c713bef72cdd8083a06fc66",
+    "research/strengthening/solo-002-complete/assessment.draft.json": "020ae6d8c4a33cc6294891886fccef1bef51d471e1b0376d9995a78d369e182c",
+    "research/strengthening/solo-002-complete/source-ledger.md": "54876920f18ee731c96ab20e7706eac95514d3dbd9ef0d7ef2a5b578c86163b0",
+    "research/strengthening/solo-002-complete/baseline-and-review.md": "0d03d09b6a5bb5d013850611fb3af7806f9fd138784566dba3776c9866ac962c",
+    "research/strengthening/solo-002-complete/sensitivity.md": "c3d0ac09bdbb57e51aa29dfe8d9ba564c3b14490cb8c4c83eeb233d789fba6c9",
+    "research/strengthening/solo-002-complete/review-status.json": "a890d64eb54c13386be956ba0dccd2c7889aa74d74f82779b019aa2fcf63b9e8",
+    "research/strengthening/solo-002-complete/record-check.json": "a85d1a882277f7cd7a21e93310b295032d5c9328a94aaff0a1c4bb81738a318e",
+    "research/strengthening/jev-review-001/sources.json": "69b66c02bbe76e1a70c03049b108957684e0121849359c71e1496f51c1afaa98",
+    "research/strengthening/jev-review-001/design.json": "61e38da4e6863b7136aa873ad94909501ab06e01268097a1c45ac9b2c2d1d22f",
+    "research/strengthening/jev-review-001/PROTOCOL.md": "994167c8551a3e0f90ecbb67f0b8ce91af71c6093a39cd36995a9f3c83ec1077",
+    "research/strengthening/jev-review-001/report.md": "6a9e5dc79c782760db5fd20a7245ca5ba52c4a8f914a5fae99d7f5d425912f1f",
+    "research/strengthening/jev-review-001/run-001/run.json": "4f70f7d06d024c09116c9a10c836e760bbded4d93d7f6777e145669f25be5c6b",
+    "research/strengthening/jev-review-001/run-001/analysis.json": "d0e95d6c266530f4ac86b6af8ef1ff62916463903b7f24b9ae18d6a5d2c616cc",
+    "SPECIFICATION.md": "00cc5813bec33c0425f6b43827f0522599ff6d5b9e64223f759d868f3dab8184",
+    "schema/hit-assessment.schema.json": "bddfaccc4b6ced6bd8d586a5d846efa0234b66185f37ff5d7611b9d619769740",
+    "docs/application-handbook.md": "a5d20ac579162632ec33f9f1284fe3a9c8772e0fe23ed2b865b6bfe81435c3a5",
+    "CITATION.cff": "ed25cfa3e0fc496d051596afc30cf659ae679342316374a80ba69f6ba3d0aef2",
+    ".zenodo.json": "ca9d546c0ea1296485d7845d56df9c36b4f2f8f51eea57ce7eaff5e3c14e34b4",
+    "evidence/claim-evidence-map.json": "43b46e42f3ad54e0e6cbbc95b15a1284a37dbf1661a0f02e99d4f231d6ad97ff",
+    "release/v1.0.0/gate-register.json": "d0107f70bba23bc65bf0a2b68d0cae772c08cc8e0db634f59ccf5efbbddb2421"
+  },
+  "protocol_sha256": "3a387275692a79c5a0da420bdf3ed1c6f83072153aba8105599592c4889daa80",
+  "formatting_sha256": "82fee2d3a0189731b3431f91ad0101194c06273abb83e115a4721e815a9b09f6"
+}
