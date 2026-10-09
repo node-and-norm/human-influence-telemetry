@@ -4,11 +4,11 @@ All notable changes to Human Influence Telemetry are documented here. The projec
 
 ## [Unreleased]
 
-Release-facing changes merged after the next published tag belong here. Candidate study and stable-release work remains governed by its separate gates.
+Release-facing changes merged after the current published tag belong here. Candidate study and stable-release work remains governed by its separate gates.
 
 ## [0.6.7] - 2026-10-08
 
-Prepared for publication; GitHub publication and the exact-version DOI remain pending verification. The [release notes](docs/releases/v0.6.7.md) and [acceptance record](release/v0.6.7/acceptance.md) define this nonbreaking development increment.
+Published on GitHub and Zenodo with exact-version DOI `10.5281/zenodo.23252877`. The [publication receipt](release/v0.6.7/publication-receipt.json) records the exact commit, passing CI and a byte-for-byte comparison of all 382 archived files. The [release notes](docs/releases/v0.6.7.md) and [acceptance record](release/v0.6.7/acceptance.md) define this nonbreaking development increment. The tag retains its preparation metadata; this later publication record does not move the tag or change the archive.
 
 - Retained fourteen Jev advisory responses and their replay record from PR #35.
 - Recorded partial Ofqual author adjudication, a challenge to the proposed comparison tie, three additional qualitative conditions, a working manuscript and file/dependency checks from PR #36. Counsel and the overall comparison remain unresolved.

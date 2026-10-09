@@ -6,11 +6,10 @@ Human Influence Telemetry is a design-science research artifact that operational
 
 ## Current program state
 
-- Current repository release: `0.6.7`, prepared; publication and exact-version archival verification pending
-- Latest verified published release: `0.6.6`; see the [publication receipt](release/v0.6.6/publication-receipt.json)
+- Current repository release: `0.6.7`, published on GitHub and Zenodo; see the [publication receipt](release/v0.6.7/publication-receipt.json)
 - Human-result release: `0.6.0`
 - Software concept DOI: `10.5281/zenodo.21446141`
-- Exact-version DOI: pending verification for `0.6.7`
+- Exact-version DOI: `10.5281/zenodo.23252877`
 - Version-specific software DOI for v0.6.6: `10.5281/zenodo.23226713`
 - Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`
 - Previous version DOI for v0.6.4: `10.5281/zenodo.21446142`
@@ -23,7 +22,7 @@ Human Influence Telemetry is a design-science research artifact that operational
 
 Version `1.0.0` is a future compatibility and public-implementability claim. It does not become an empirical reliability claim unless new eligible independent human evidence separately satisfies the active protocol.
 
-Version 0.6.6 distributes supplementary development work and release-readiness controls. The prepared 0.6.7 package adds a separate Ofqual author-review supplement, with five bounded substantive findings and both limited integrity states accepted. Counsel and the overall comparison remain unresolved; the original assistant assessment stays preserved. The package also includes qualitative reanalysis, source-binding checks, a synthetic evidence-update rehearsal, and a working manuscript with three reproducible exhibits.
+Version 0.6.6 distributes supplementary development work and release-readiness controls. The published 0.6.7 package adds a separate Ofqual author-review supplement, with five bounded substantive findings and both limited integrity states accepted. Counsel and the overall comparison remain unresolved; the original assistant assessment stays preserved. The package also includes qualitative reanalysis, source-binding checks, a synthetic evidence-update rehearsal, and a working manuscript with three reproducible exhibits.
 
 Both assistant responses identified the four injected changes in the synthetic rehearsal, with no scored difference. This small, highly cued exercise establishes no comparative advantage or measured human usefulness. Publication creates no new independent ratings, H3 replication, H9 implementation result, institutional outcome finding, or maturity advancement. The v0.6.5 audit below remains limited to its mapped claims; new interpretations require their own support and publication review.
 

@@ -6,11 +6,11 @@ Human Influence Telemetry uses a separate Zenodo software record for successfull
 
 DOI `10.5281/zenodo.21204892` identifies the originating research concept. It is not a version DOI for this standalone software repository.
 
-The standalone HIT software record now exists. Zenodo assigned software concept DOI `10.5281/zenodo.21446141`, version DOI `10.5281/zenodo.21446142` to `v0.6.4`, version DOI `10.5281/zenodo.21864224` to `v0.6.5`, and version DOI `10.5281/zenodo.23226713` to `v0.6.6`.
+The standalone HIT software record now exists. Zenodo assigned software concept DOI `10.5281/zenodo.21446141`, version DOI `10.5281/zenodo.21446142` to `v0.6.4`, version DOI `10.5281/zenodo.21864224` to `v0.6.5`, version DOI `10.5281/zenodo.23226713` to `v0.6.6`, and version DOI `10.5281/zenodo.23252877` to `v0.6.7`.
 
 Version `0.6.6` is published on GitHub and Zenodo. The [publication receipt](../release/v0.6.6/publication-receipt.json) records its exact commit, successful CI, public archival metadata and byte-for-byte archive comparison. Updated metadata and an active repository integration alone do not prove archival publication.
 
-Version `0.6.7` is prepared for the later author-review, evidence-update and manuscript increment. Its GitHub publication and new exact-version DOI require separate verification. The 0.6.6 archive remains unchanged.
+Version `0.6.7` is published for the later author-review, evidence-update and manuscript increment. Its [publication receipt](../release/v0.6.7/publication-receipt.json) verifies the new exact-version DOI and all 382 archived files against commit `4336b8acd16d571ef9b5ab1d8ca1ecc2ea0eb01e`. The 0.6.6 archive remains unchanged.
 
 ## Identifier model
 
@@ -23,8 +23,8 @@ Version `0.6.7` is prepared for the later author-review, evidence-update and man
    - Identifies the collection of archived HIT releases.
 
 3. **HIT version DOI**
-   - Prepared release `v0.6.7`: exact-version DOI pending verification.
-   - Latest verified archive: `10.5281/zenodo.23226713` for `v0.6.6`.
+   - Latest verified archive: `10.5281/zenodo.23252877` for `v0.6.7`.
+   - Previous verified archive: `10.5281/zenodo.23226713` for `v0.6.6`.
    - Previous verified archive: `10.5281/zenodo.21864224` for `v0.6.5`.
    - Previous exact release: `10.5281/zenodo.21446142` for `v0.6.4`.
    - Identifies the exact released files and metadata.
@@ -58,7 +58,7 @@ A missing software DOI does not invalidate the GitHub release. It means archival
 
 While archival verification is pending, omit the top-level DOI from `CITATION.cff`; retain the concept DOI as an explicitly cross-version identifier. The release ledger uses `current_software_doi: null` and `current_software_doi_status: pending_verification`. Never copy an older DOI into a newer release's exact-version field. A publication-status follow-up records the GitHub release even when Zenodo remains pending, and a later archival follow-up records the verified new DOI. Neither follow-up moves the original tag.
 
-For `0.6.6`, archival verification is complete. The follow-up metadata sets `current_software_doi` to `10.5281/zenodo.23226713` and `current_software_doi_status` to `verified`. The tag retains its original preparation metadata, and the later publication receipt is outside that archive.
+For `0.6.7`, archival verification is complete. The follow-up metadata sets `current_software_doi` to `10.5281/zenodo.23252877` and `current_software_doi_status` to `verified`. The tag retains its original preparation metadata, and the later publication receipt is outside that archive. The equivalent historical follow-up for `0.6.6` remains bound to its own DOI and commit.
 
 ## Historical 0.4.0 handling
 
@@ -74,7 +74,7 @@ The repository contains both `CITATION.cff` and `.zenodo.json`. When `.zenodo.js
 
 Current component versions:
 
-- repository release metadata: 0.6.7, prepared; publication and archival verification pending;
+- repository release metadata: 0.6.7, published; archive verified;
 - specification: 0.4.0;
 - assessment schema: 0.4.0;
 - dimension catalog: 0.4.0;

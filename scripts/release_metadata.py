@@ -8,8 +8,8 @@ CURRENT_RELEASE = "0.6.7"
 CURRENT_RELEASE_DATE = "2026-10-08"
 CURRENT_RELEASE_TITLE = "Author review, evidence-update rehearsal and manuscript exhibits"
 CURRENT_RELEASE_URL = f"https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v{CURRENT_RELEASE}"
-CURRENT_VERSION_DOI = None
-DOI_STATUS = "pending_verification"
+CURRENT_VERSION_DOI = "10.5281/zenodo.23252877"
+DOI_STATUS = "verified"
 SOFTWARE_CONCEPT_DOI = "10.5281/zenodo.21446141"
 ORIGINATING_RESEARCH_DOI = "10.5281/zenodo.21204892"
 HISTORICAL_VERSION_DOIS = {
@@ -25,6 +25,11 @@ VERIFIED_RECEIPT_BINDINGS = {
         "doi": "10.5281/zenodo.23226713",
         "tag": "v0.6.6",
         "release_commit": "6745873a990554cf40303e217865895122494696",
+    },
+    "0.6.7": {
+        "doi": "10.5281/zenodo.23252877",
+        "tag": "v0.6.7",
+        "release_commit": "4336b8acd16d571ef9b5ab1d8ca1ecc2ea0eb01e",
     },
 }
 
