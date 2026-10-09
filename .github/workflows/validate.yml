@@ -97,6 +97,8 @@ jobs:
           python scripts/test_solo_complete.py
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
           python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
+          python -W error scripts/test_jev_review.py
+          python scripts/run_jev_review.py --analyze research/strengthening/jev-review-001/run-001
 
       - name: Smoke-test public CLI commands
         run: python scripts/validate_v050_cli.py

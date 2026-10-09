@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Cite version 0.6.6 using its verified exact-version DOI, 10.5281/zenodo.23226713. Record the exact tag and commit used; use the concept DOI only for Human Influence Telemetry across versions."
+title: "Human Influence Telemetry"
+type: software
+version: "0.6.6"
+doi: "10.5281/zenodo.23226713"
+date-released: "2026-10-07"
+authors:
+  - family-names: Banasihan
+    given-names: Mark Julius
+    orcid: "https://orcid.org/0009-0001-8121-2878"
+    affiliation: "Node & Norm"
+abstract: "An open documentary assurance method for evaluating whether human authority retained practical force in AI-mediated institutional decisions."
+license: Apache-2.0
+repository-code: "https://github.com/node-and-norm/human-influence-telemetry"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21446141"
+    description: "Concept DOI representing all published software versions of Human Influence Telemetry."
+  - type: url
+    value: "https://github.com/node-and-norm/human-influence-telemetry"
+    description: "Canonical public software repository."
+keywords:
+  - AI governance
+  - human oversight
+  - decision accountability
+  - AI assurance
+  - algorithmic accountability
+  - institutional decision-making
+  - human influence telemetry
+  - documentary evidence
+  - inter-rater agreement
