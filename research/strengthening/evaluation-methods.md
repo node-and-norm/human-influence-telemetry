@@ -4,6 +4,8 @@ Date: 7 October 2026, America/New_York. Scope: the supplementary workbench and b
 
 Updated 8 October for the additive author review, qualitative reanalysis and file-binding checks. Original plans, results and pending-review records remain preserved at their earlier revisions.
 
+A later 8 October increment adds a controlled evidence-update rehearsal and source-bound development exhibits. Neither adds independent human evidence or closes a release gate.
+
 “Pressure test” is an informal request to examine weaknesses, not a research method or acceptance criterion. In research reporting, name the procedure, assessment object, executor, inputs, result, and inference limit. Use **verification** for checks against specified requirements. Qualify **validation** by the intended use and evidence examined; do not describe HIT as validated on the strength of passing software tests. This distinction draws on the systems-engineering definitions collected by NIST, not on a claim that NIST has evaluated HIT. See [verification](https://csrc.nist.gov/glossary/term/verification) and [validation](https://csrc.nist.gov/glossary/term/validation), consulted 7 October 2026.
 
 ## Procedure register
@@ -25,6 +27,14 @@ Updated 8 October for the additive author review, qualitative reanalysis and fil
 | Construct validity and operational usefulness evaluation | Not established by this increment. These require explicit intended-use questions, suitable comparisons, and evidence from the relevant settings and users. | Do not infer that HIT measures the construct adequately across settings, improves decisions, reduces harm, or supports sector-wide deployment. Operational use would need its own evaluation design and safeguards. |
 
 ## Reporting rule for subsequent work
+
+### Additional development procedures
+
+The [evidence-update protocol](evidence-update-001/PROTOCOL.md) compares a HIT-inspired typed graph with a capable table containing the same propositions and relationships. Two separate assistant passes receive four injected changes and an unchanged control, after a committed and pushed design freeze. This is a synthetic representation rehearsal, not a full HIT workflow or human-utility study. The report separates affected-proposition detection, documentary-state agreement, qualification enums and narrow token checks. Automated agreement cannot verify the meaning of response prose; responsible-author review remains pending.
+
+The [development exhibits](../../figures/development-2026-10-08/README.md) visualize existing conceptual and documentary distinctions. Saved-file checks bind their data, sources, generator and outputs; a separate check regenerates SVGs in the pinned rendering environment. These procedures test artifact integrity and rendering repeatability, not historical authenticity or scientific validity.
+
+### Reporting and preservation
 
 Before execution, identify the question, version or commit, unit of analysis, selection rule, procedure, executor's relationship to HIT, expected result or decision rule, and known source exposure. After execution, retain inputs, outputs, failures, deviations, and unresolved interpretations. Distinguish planned, executed, reviewed, and accepted work. Use the existing record for each procedure rather than duplicating results in this register.
 

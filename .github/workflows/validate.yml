@@ -23,10 +23,12 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements-dev.txt
+          cache-dependency-path: |
+            requirements-dev.txt
+            requirements-figures.txt
 
       - name: Install validation dependencies
-        run: python -m pip install --requirement requirements-dev.txt
+        run: python -m pip install --requirement requirements-dev.txt --requirement requirements-figures.txt
 
       - name: Check deterministic fixture formatting
         run: python scripts/check_fixture_format.py
@@ -114,6 +116,19 @@ jobs:
       - name: Smoke-test public CLI commands
         run: python scripts/validate_v050_cli.py
 
+      - name: Verify development exhibits and rendering
+        run: |
+          python scripts/render_development_figures.py --check
+          python scripts/render_development_figures.py --render-check
+          python -W error scripts/test_development_figures.py
+
+      - name: Replay the frozen evidence-update rehearsal
+        run: |
+          python scripts/run_evidence_update_benchmark.py --prepare
+          python -W error scripts/test_evidence_update_benchmark.py
+          python scripts/run_evidence_update_benchmark.py --analyze > hit-evidence-update-report.json
+          diff -u research/strengthening/evidence-update-001/analysis.json hit-evidence-update-report.json
+
       - name: Upload validation reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -129,4 +144,5 @@ jobs:
             hit-public-release-status-report.txt
             hit-v065-research-integrity-report.txt
             hit-conformance-report.json
+            hit-evidence-update-report.json
           if-no-files-found: error

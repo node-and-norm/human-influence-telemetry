@@ -153,6 +153,26 @@
       "boundary": "The author requested a challenge, not acceptance of a tie or a loss. Inspectable omission from selected fields does not demonstrate full-method inferiority, reader error, comparative burden or net benefit. No such outcomes were measured.",
       "author_review": "pending",
       "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C15",
+      "section": "3.1 and 4.2",
+      "claim": "Three source-bound development exhibits distinguish assessment structure, event and publication timing, and qualification preservation in a restricted projection and fuller records.",
+      "kind": "conceptual_and_documentary_exhibits",
+      "evidence": [{"path": "figures/development-2026-10-08/data.json", "locator": "HIT-DEVELOPMENT-FIGURES-2026-10-08"}, {"path": "research/strengthening/solo-002-complete/source-ledger.md", "locator": "## Independence and temporal checks"}, {"path": "research/strengthening/solo-002-comparison-challenge.md", "locator": "## 1. Category projection omits interpretive alternatives and remedy routes"}],
+      "boundary": "The figures add no empirical observations, independent historical verification, reader-performance result or scientific acceptance. Visual completeness cannot establish source completeness or method validity.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C16",
+      "section": "4.4",
+      "claim": "Two retained first-attempt assistant responses to equivalent-content synthetic packets each identified four injected changes, with no scored difference between the graph and table.",
+      "kind": "synthetic_representation_rehearsal",
+      "evidence": [{"path": "research/strengthening/evidence-update-001/analysis.json", "locator": "affected_true_positive"}, {"path": "research/strengthening/evidence-update-001/PROTOCOL.md", "locator": "## Design fixed before trial"}, {"path": "research/strengthening/evidence-update-001/report.md", "locator": "## Execution and provenance"}],
+      "boundary": "A highly cued eight-proposition task, one response per representation and dependent decisions establish no equivalence, comparative utility, human reliability, model-wide accuracy or release readiness. Automated enum/token agreement leaves prose review pending; the exact serving-model version was not exposed.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
     }
   ]
 }

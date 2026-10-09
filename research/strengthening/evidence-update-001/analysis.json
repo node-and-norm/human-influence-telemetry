@@ -1,0 +1,158 @@
+{
+  "study_id": "HIT-EU-001",
+  "protocol_commit": "7a3b3d96e3cc477f6bae9efa8dbda5aa1d33a7fa",
+  "response_sha256": {
+    "research/strengthening/evidence-update-001/responses/hit_graph.json": "3cdd6e541c54ab2de1daf429aacec7128d53ac4ac5d2f46c4bf84eb19ed9d6ed",
+    "research/strengthening/evidence-update-001/responses/structured_table.json": "682bcbe9298ba014727ecc49cbd92677300a5b77aab482c2b3810b264230562f"
+  },
+  "status": "completed_pending_author_review",
+  "executor": "ai_assistant",
+  "independent_review": false,
+  "semantic_prose_validated": false,
+  "historical_truth_validated": false,
+  "comparative_utility_established": false,
+  "release_gate_satisfied": false,
+  "scientific_conclusion_eligible": false,
+  "methods": {
+    "hit_graph": {
+      "denominators": {
+        "affected": 4,
+        "unchanged": 36,
+        "claim_states": 40,
+        "qualification_states": 35,
+        "content_token_checks": 2
+      },
+      "counts": {
+        "affected_true_positive": 4,
+        "affected_missed": 0,
+        "unaffected_false_positive": 0,
+        "unaffected_correctly_retained": 36,
+        "claim_state_matches": 40,
+        "qualification_state_matches": 35,
+        "content_token_matches": 2
+      },
+      "scenarios": [
+        {
+          "id": "U00",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U01",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U02",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": [
+            {
+              "item": "corrected_direction_date",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "id": "U03",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U04",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": [
+            {
+              "item": "five_recipient_identifiers",
+              "matches": true
+            }
+          ]
+        }
+      ]
+    },
+    "structured_table": {
+      "denominators": {
+        "affected": 4,
+        "unchanged": 36,
+        "claim_states": 40,
+        "qualification_states": 35,
+        "content_token_checks": 2
+      },
+      "counts": {
+        "affected_true_positive": 4,
+        "affected_missed": 0,
+        "unaffected_false_positive": 0,
+        "unaffected_correctly_retained": 36,
+        "claim_state_matches": 40,
+        "qualification_state_matches": 35,
+        "content_token_matches": 2
+      },
+      "scenarios": [
+        {
+          "id": "U00",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U01",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U02",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": [
+            {
+              "item": "corrected_direction_date",
+              "matches": true
+            }
+          ]
+        },
+        {
+          "id": "U03",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": []
+        },
+        {
+          "id": "U04",
+          "missed_claims": [],
+          "false_positive_claims": [],
+          "wrong_claim_states": [],
+          "wrong_qualification_states": [],
+          "narrow_content_checks": [
+            {
+              "item": "five_recipient_identifiers",
+              "matches": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
