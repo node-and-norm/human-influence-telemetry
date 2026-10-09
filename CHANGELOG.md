@@ -4,7 +4,19 @@ All notable changes to Human Influence Telemetry are documented here. The projec
 
 ## [Unreleased]
 
-No additional increment is declared here. Candidate study and stable-release work remains governed by its separate gates.
+Release-facing changes merged after the next published tag belong here. Candidate study and stable-release work remains governed by its separate gates.
+
+## [0.6.7] - 2026-10-08
+
+Prepared for publication; GitHub publication and the exact-version DOI remain pending verification. The [release notes](docs/releases/v0.6.7.md) and [acceptance record](release/v0.6.7/acceptance.md) define this nonbreaking development increment.
+
+- Retained fourteen Jev advisory responses and their replay record from PR #35.
+- Recorded partial Ofqual author adjudication, a challenge to the proposed comparison tie, three additional qualitative conditions, a working manuscript and file/dependency checks from PR #36. Counsel and the overall comparison remain unresolved.
+- Added three source-bound manuscript exhibits and a frozen synthetic evidence-update rehearsal from PR #37. Both first-attempt assistant responses identified four injected changes, with no scored difference between the graph and table.
+- Preserved the simplified citation guidance from PR #34 and synchronized release metadata for a new archive. The 0.6.6 DOI identifies only its original contents.
+- Kept contract 0.4.0, engine 0.5.0, human result 0.6.0, Level 2, historical evidence and all unresolved stable/replication gates unchanged. Pending manuscript claims and AI-assisted results gain no scientific approval through packaging.
+- Added a pull-request release-note checklist and a release-index maintenance rule so merged release-facing work is recorded before publication.
+- Added an explicit three-file historical-context amendment so new release metadata can change while earlier claim bindings and qualitative-experiment inputs remain byte-bound to their original revision.
 
 ## [0.6.6] - 2026-10-07
 
@@ -176,7 +188,8 @@ Added three public retrospective case narratives and four actor-specific machine
 
 Established the first public HIT specification, schema, catalog, handbook, fixtures, validator, governance files, and release controls.
 
-[Unreleased]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.6...HEAD
+[Unreleased]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.7...HEAD
+[0.6.7]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.6...v0.6.7
 [0.6.6]: https://github.com/node-and-norm/human-influence-telemetry/compare/v0.6.5...v0.6.6
 [0.6.5]: https://github.com/mj3b/human-influence-telemetry/compare/v0.6.4...v0.6.5
 [0.6.4]: https://github.com/mj3b/human-influence-telemetry/compare/v0.6.0...v0.6.4

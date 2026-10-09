@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 
 import validate_solo_extension as check
+import frozen_release_context as context
 
 
 class ExtensionTests(unittest.TestCase):
@@ -16,6 +17,11 @@ class ExtensionTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         self.originals = {path: check.read(check.ROOT, path) for path in (*check.PROTECTED, *check.INPUTS)}
+        for path in (context.AMENDMENT_PATH, *(item[0] for item in context.SNAPSHOTS.values())):
+            self.originals[path] = check.read(check.ROOT, path)
+        self.base_originals = {**self.originals,
+                               **{path: self.originals[snapshot] for path, (snapshot, _) in context.SNAPSHOTS.items()}}
+        self.untracked = set()
         for path, raw in self.originals.items():
             target = self.root / path
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -23,11 +29,22 @@ class ExtensionTests(unittest.TestCase):
         self.freeze = "f" * 40
         def committed(_, commit, path):
             if (commit == check.BASE_COMMIT and path in check.PROTECTED) or (commit == self.freeze and path in check.INPUTS):
-                return self.originals[path]
+                return self.base_originals[path] if commit == check.BASE_COMMIT else self.originals[path]
             raise subprocess.CalledProcessError(128, "mock git show")
         self.patcher = patch.object(check, "committed", committed)
         self.patcher.start()
         self.addCleanup(self.patcher.stop)
+        def git(_, *args):
+            if args[0] == "show":
+                commit, path = args[1].split(":", 1)
+                if commit == check.BASE_COMMIT and path in self.base_originals:
+                    return self.base_originals[path]
+            elif args[0] == "ls-files" and args[-1] not in self.untracked:
+                return f"100644 {'0' * 40} 0\t{args[-1]}\n".encode()
+            raise subprocess.CalledProcessError(128, "mock git read")
+        patcher = patch.object(context, "git", git)
+        patcher.start()
+        self.addCleanup(patcher.stop)
 
     def write(self, name, value):
         (self.root / check.BASE / name).write_bytes(check.encoded(value))
@@ -55,6 +72,30 @@ class ExtensionTests(unittest.TestCase):
         self.assertFalse(report["source_truth_validated"])
         self.assertFalse(report["interpretations_recomputed"])
         self.assertFalse(report["release_gate_satisfied"])
+        self.assertEqual(report["historical_snapshot_paths"], [".zenodo.json", "CITATION.cff"])
+        self.assertFalse(report["current_release_metadata_validated_here"])
+
+    def test_current_metadata_updates_leave_original_extension_design_unchanged(self):
+        before = (self.root / check.BASE / "design.json").read_bytes()
+        for path in ("CITATION.cff", ".zenodo.json"):
+            (self.root / path).write_bytes(b"Current release metadata, checked separately.\n")
+        self.assertFalse(check.evaluate(self.root)["current_release_metadata_validated_here"])
+        self.assertEqual(before, (self.root / check.BASE / "design.json").read_bytes())
+
+    def test_snapshot_failure_is_not_hidden_by_current_metadata(self):
+        snapshot = context.SNAPSHOTS["CITATION.cff"][0]
+        (self.root / snapshot).write_bytes(b"Altered snapshot")
+        with self.assertRaisesRegex(ValueError, "snapshot digest"):
+            check.evaluate(self.root)
+
+    def test_normative_and_other_protected_paths_remain_strict(self):
+        for path in ("SPECIFICATION.md", "evidence/claim-evidence-map.json", "release/v1.0.0/gate-register.json"):
+            with self.subTest(path=path):
+                target = self.root / path
+                target.write_bytes(self.originals[path] + b"\n")
+                with self.assertRaisesRegex(ValueError, "Protected base input changed"):
+                    check.evaluate(self.root)
+                target.write_bytes(self.originals[path])
 
     def test_complete_fixture_retains_pending_review(self):
         self.with_results()

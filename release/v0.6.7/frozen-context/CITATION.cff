@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "Version 0.6.7 is prepared for publication. Its exact-version DOI is pending verification. Cite the exact GitHub tag and commit after publication; do not reuse an older version DOI."
+message: "Cite version 0.6.6 using its verified exact-version DOI, 10.5281/zenodo.23226713. Record the exact tag and commit used; use the concept DOI only for Human Influence Telemetry across versions."
 title: "Human Influence Telemetry"
 type: software
-version: "0.6.7"
-date-released: "2026-10-08"
+version: "0.6.6"
+doi: "10.5281/zenodo.23226713"
+date-released: "2026-10-07"
 authors:
   - family-names: Banasihan
     given-names: Mark Julius

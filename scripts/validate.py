@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
-from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_citation_guidance, validate_identity
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_RELEASE_TITLE, CURRENT_VERSION_DOI, validate_citation_guidance, validate_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -176,11 +176,11 @@ def validate() -> list[str]:
     related_identifiers = zenodo.get("related_identifiers", [])
     if {"identifier": ORIGINATING_RESEARCH_DOI, "relation": "isSupplementTo", "resource_type": "dataset"} not in related_identifiers: f.append("Zenodo originating research relation incorrect")
     phrases = {
-      "README.md":["**Current release:** 0.6.6","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","7 of 7 exact agreements"],
-      "RESEARCH.md":["Current repository release: `0.6.6`","Software concept DOI: `10.5281/zenodo.21446141`","Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`","Supported for one frozen Cigna packet","Level 2, Applicable"],
-      "ROADMAP.md":["0.6.6: Development and reproducibility controls, current release"],
+      "README.md":[f"**Current release:** {CURRENT_RELEASE}","**Human-result release:** 0.6.0","**Conformance engine version:** 0.5.0","**Current maturity:** Level 2, Applicable","7 of 7 exact agreements"],
+      "RESEARCH.md":[f"Current repository release: `{CURRENT_RELEASE}`","Software concept DOI: `10.5281/zenodo.21446141`","Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`","Supported for one frozen Cigna packet","Level 2, Applicable"],
+      "ROADMAP.md":[f"{CURRENT_RELEASE}: {CURRENT_RELEASE_TITLE}, current release"],
       "LIMITATIONS.md":["Narrow reliability evidence","Kappa indeterminacy"],
-      "PROVENANCE.md":["Current repository release: 0.6.6","Originating research DOI: 10.5281/zenodo.21204892","Concept DOI for all HIT software versions: 10.5281/zenodo.21446141","Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224","Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142","Research maturity: Level 2, Applicable"],
+      "PROVENANCE.md":[f"Current repository release: {CURRENT_RELEASE}","Originating research DOI: 10.5281/zenodo.21204892","Concept DOI for all HIT software versions: 10.5281/zenodo.21446141","Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224","Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142","Research maturity: Level 2, Applicable"],
       "CHANGELOG.md":["## [0.6.5] - 2026-08-09","## [0.6.4] - 2026-07-19","## [0.6.0] - 2026-07-18","Exact agreements: 7 of 7"],
       "docs/releases/v0.6.0.md":["Maturity Level 2, Applicable","Conformance engine: `0.5.0`"],
       "docs/releases/v0.6.4.md":["Concept DOI, all software versions","10.5281/zenodo.21446141","10.5281/zenodo.21446142","Human-result release: `0.6.0`"],

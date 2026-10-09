@@ -11,7 +11,7 @@ from pathlib import Path
 import yaml
 
 from release_metadata import (
-    CURRENT_RELEASE, CURRENT_VERSION_DOI, HISTORICAL_VERSION_DOIS,
+    CURRENT_RELEASE, CURRENT_RELEASE_URL, CURRENT_VERSION_DOI, HISTORICAL_VERSION_DOIS,
     ORIGINATING_RESEARCH_DOI, SOFTWARE_CONCEPT_DOI,
     validate_citation_guidance, validate_identity, validate_publication_receipt,
 )
@@ -28,12 +28,14 @@ class ReleaseMetadataTests(unittest.TestCase):
     def errors(self) -> list[str]:
         return validate_identity(self.citation, self.zenodo, self.ledger)
 
-    def test_current_identity_and_receipt_are_consistent(self) -> None:
+    def test_current_identity_and_historical_receipt_are_consistent(self) -> None:
         self.assertEqual([], self.errors())
         receipt = json.loads((ROOT / "release/v0.6.6/publication-receipt.json").read_text())
-        self.assertEqual([], validate_publication_receipt(receipt))
+        self.assertEqual([], validate_publication_receipt(receipt, expected_release="0.6.6"))
         for section, key, value in (
             (None, "release", "0.6.5"), (None, "release_commit", None),
+            (None, "tag", "v0.6.7"), (None, "tag_moved", True),
+            ("zenodo", "version", "0.6.7"),
             ("zenodo", "doi", "10.5281/zenodo.21864224"),
             ("zenodo", "all_tracked_file_bytes_match", False),
             ("zenodo", "extra_files", ["untracked.txt"]),
@@ -48,10 +50,25 @@ class ReleaseMetadataTests(unittest.TestCase):
             with self.subTest(section=section, key=key):
                 invalid = copy.deepcopy(receipt)
                 (invalid[section] if section else invalid)[key] = value
-                self.assertTrue(validate_publication_receipt(invalid))
+                self.assertTrue(validate_publication_receipt(invalid, expected_release="0.6.6"))
+
+    def test_historical_receipt_remains_bound_when_current_version_changes(self) -> None:
+        receipt = json.loads((ROOT / "release/v0.6.6/publication-receipt.json").read_text())
+        with patch("release_metadata.CURRENT_RELEASE", "9.9.9"), patch("release_metadata.CURRENT_VERSION_DOI", None):
+            self.assertEqual([], validate_publication_receipt(receipt, expected_release="0.6.6"))
+        receipt["release_commit"] = "a" * 40
+        receipt["github"]["ci_head_sha"] = "a" * 40
+        self.assertTrue(validate_publication_receipt(receipt, expected_release="0.6.6"))
+
+    def test_unreviewed_current_receipt_rejected(self) -> None:
+        receipt = json.loads((ROOT / "release/v0.6.6/publication-receipt.json").read_text())
+        receipt["release"] = "0.6.7"
+        receipt["zenodo"]["version"] = "0.6.7"
+        receipt["zenodo"]["doi"] = "10.5281/zenodo.99999999"
+        self.assertTrue(validate_publication_receipt(receipt, expected_release="0.6.7"))
 
     def test_citation_rejects_other_identifiers_as_exact_doi(self) -> None:
-        for value in ("10.5281/zenodo.21864224", "10.5281/zenodo.21446142",
+        for value in (*HISTORICAL_VERSION_DOIS.values(),
                       "10.5281/zenodo.21446141", "10.5281/zenodo.21204892",
                       "10.5281/zenodo.99999999", "pending", 123, []):
             with self.subTest(value=value):
@@ -66,6 +83,23 @@ class ReleaseMetadataTests(unittest.TestCase):
             self.assertEqual([], self.errors())
             self.citation["doi"] = None
             self.assertTrue(self.errors())
+
+    def test_pending_doi_cannot_claim_verified(self) -> None:
+        self.citation.pop("doi", None)
+        self.ledger["current_software_doi"] = None
+        with patch("release_metadata.CURRENT_VERSION_DOI", None), patch("release_metadata.DOI_STATUS", "verified"):
+            self.ledger["current_software_doi_status"] = "verified"
+            self.assertTrue(self.errors())
+
+    def test_verified_doi_requires_a_reviewed_matching_binding(self) -> None:
+        test_doi = "10.5281/zenodo.99999999"
+        self.citation["doi"] = test_doi
+        self.ledger["current_software_doi"] = test_doi
+        self.ledger["current_software_doi_status"] = "verified"
+        with patch("release_metadata.CURRENT_VERSION_DOI", test_doi), patch("release_metadata.DOI_STATUS", "verified"):
+            self.assertTrue(self.errors())
+            with patch("release_metadata.VERIFIED_RECEIPT_BINDINGS", {CURRENT_RELEASE: {"doi": test_doi}}):
+                self.assertEqual([], self.errors())
 
     def test_zenodo_must_not_reuse_exact_doi(self) -> None:
         for value in (None, "10.5281/zenodo.21864224", "10.5281/zenodo.99999999"):
@@ -134,26 +168,67 @@ class CitationGuidanceTests(unittest.TestCase):
 
     def test_wrong_current_citation_version_or_doi_rejected(self) -> None:
         changes = [(f"(Version {CURRENT_RELEASE})", "(Version 0.6.5)")]
-        changes += [(f"](https://doi.org/{CURRENT_VERSION_DOI})", f"](https://doi.org/{doi})")
+        current_url = CURRENT_RELEASE_URL if CURRENT_VERSION_DOI is None else f"https://doi.org/{CURRENT_VERSION_DOI}"
+        changes += [(f"]({current_url})", f"](https://doi.org/{doi})")
                     for doi in (*HISTORICAL_VERSION_DOIS.values(), SOFTWARE_CONCEPT_DOI, ORIGINATING_RESEARCH_DOI)]
+        changes.append((f"]({current_url})", "](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6)"))
         for before, after in changes:
             with self.subTest(after=after):
                 self.assertTrue(validate_citation_guidance(self.readme.replace(before, after), self.guide))
 
     def test_other_dois_must_stay_out_of_readme_citation_section(self) -> None:
-        for doi in (*HISTORICAL_VERSION_DOIS.values(), SOFTWARE_CONCEPT_DOI, ORIGINATING_RESEARCH_DOI):
+        for doi in (*HISTORICAL_VERSION_DOIS.values(), SOFTWARE_CONCEPT_DOI, ORIGINATING_RESEARCH_DOI, "10.1234/invented"):
             with self.subTest(doi=doi):
                 changed = self.readme.replace("## Citation\n", f"## Citation\n\nPrevious DOI: {doi}\n")
                 self.assertTrue(validate_citation_guidance(changed, self.guide))
 
     def test_missing_guide_and_swapped_mappings_rejected(self) -> None:
         self.assertTrue(validate_citation_guidance(self.readme, ""))
-        for version, doi in {CURRENT_RELEASE: CURRENT_VERSION_DOI, **HISTORICAL_VERSION_DOIS}.items():
+        for version, doi in HISTORICAL_VERSION_DOIS.items():
             with self.subTest(version=version):
                 changed = self.guide.replace(f"| {version} | [{doi}]", f"| 0.0.0 | [{doi}]")
                 self.assertTrue(validate_citation_guidance(self.readme, changed))
         changed = self.guide.replace("| 0.6.4 |", "| TEMP |").replace("| 0.6.5 |", "| 0.6.4 |").replace("| TEMP |", "| 0.6.5 |")
         self.assertTrue(validate_citation_guidance(self.readme, changed))
+
+    def test_pending_mapping_cannot_reuse_a_verified_historical_doi(self) -> None:
+        before = f"| {CURRENT_RELEASE} | Pending verification |"
+        readme = (
+            "## Citation\n\n"
+            f"> Test (Version {CURRENT_RELEASE}) [Software]. GitHub. [v{CURRENT_RELEASE}]({CURRENT_RELEASE_URL})\n\n"
+            "[citation guide](docs/citation.md) [CITATION.cff](CITATION.cff)\n"
+        )
+        guide = "\n".join(line for line in self.guide.splitlines() if not line.startswith(f"| {CURRENT_RELEASE} |"))
+        guide += f"\n{before} Test fixture |\n"
+        with patch("release_metadata.CURRENT_VERSION_DOI", None):
+            self.assertEqual([], validate_citation_guidance(readme, guide))
+            for replacement in ("Published", "10.5281/zenodo.23226713", ""):
+                with self.subTest(replacement=replacement):
+                    after = f"| {CURRENT_RELEASE} | {replacement} |"
+                    self.assertTrue(validate_citation_guidance(readme, guide.replace(before, after)))
+
+    def test_readme_requires_exactly_one_citation(self) -> None:
+        section = self.readme.partition("## Citation\n")[2].split("\n## ", 1)[0]
+        quote = next(line for line in section.splitlines() if line.startswith("> "))
+        for replacement in ("", f"{quote}\n{quote}"):
+            with self.subTest(replacement=replacement):
+                self.assertTrue(validate_citation_guidance(self.readme.replace(quote, replacement), self.guide))
+
+    def test_verified_citation_branch_requires_its_exact_version_doi(self) -> None:
+        # This identifier is a test value only; patching does not record publication.
+        test_doi = "10.5281/zenodo.99999999"
+        doi_url = f"https://doi.org/{test_doi}"
+        readme = (
+            "## Citation\n\n"
+            f"> Test (Version {CURRENT_RELEASE}) [Software]. Zenodo. [{doi_url}]({doi_url})\n\n"
+            "[citation guide](docs/citation.md) [CITATION.cff](CITATION.cff)\n"
+        )
+        guide = "\n".join(line for line in self.guide.splitlines() if not line.startswith(f"| {CURRENT_RELEASE} |"))
+        guide += f"\n| {CURRENT_RELEASE} | [{test_doi}]({doi_url}) | Test fixture |\n"
+        with patch("release_metadata.CURRENT_VERSION_DOI", test_doi):
+            self.assertEqual([], validate_citation_guidance(readme, guide))
+            changed = readme.replace(test_doi, HISTORICAL_VERSION_DOIS["0.6.6"])
+            self.assertTrue(validate_citation_guidance(changed, guide))
 
     def test_concept_and_origin_roles_cannot_be_interchanged(self) -> None:
         for label in ("software concept", "originating research"):

@@ -1,0 +1,27 @@
+{
+  "amendment_id": "HIT-FROZEN-RELEASE-CONTEXT-067-001",
+  "release": "0.6.7",
+  "base_commit": "9af12f6cb891288f692990366e54b85bd21d9e24",
+  "scope": "Resolve only the three named historical inputs through exact tracked snapshots of the original base. This amendment does not rehash or replace the original research bindings, extension design or outputs.",
+  "resolution": "The historical checks validate the frozen context. Current RESEARCH.md, CITATION.cff and .zenodo.json remain subject to separate current-release metadata checks; this amendment does not validate their present contents.",
+  "historical_bindings_and_outputs_unchanged": true,
+  "current_release_metadata_validated_here": false,
+  "scientific_acceptance_conferred": false,
+  "snapshots": [
+    {
+      "original_path": "RESEARCH.md",
+      "snapshot_path": "release/v0.6.7/frozen-context/RESEARCH.md",
+      "sha256": "8ab21bb2707790d075ee7f70c06c61064e6b396034c2b344b85425e3f5b4fc2f"
+    },
+    {
+      "original_path": "CITATION.cff",
+      "snapshot_path": "release/v0.6.7/frozen-context/CITATION.cff",
+      "sha256": "ed25cfa3e0fc496d051596afc30cf659ae679342316374a80ba69f6ba3d0aef2"
+    },
+    {
+      "original_path": ".zenodo.json",
+      "snapshot_path": "release/v0.6.7/frozen-context/.zenodo.json",
+      "sha256": "ca9d546c0ea1296485d7845d56df9c36b4f2f8f51eea57ce7eaff5e3c14e34b4"
+    }
+  ]
+}
