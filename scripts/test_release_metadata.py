@@ -12,7 +12,7 @@ import yaml
 
 from release_metadata import (
     CURRENT_RELEASE, CURRENT_RELEASE_URL, CURRENT_VERSION_DOI, HISTORICAL_VERSION_DOIS,
-    ORIGINATING_RESEARCH_DOI, SOFTWARE_CONCEPT_DOI,
+    ORIGINATING_RESEARCH_DOI, SOFTWARE_CONCEPT_DOI, VERIFIED_RECEIPT_BINDINGS,
     validate_citation_guidance, validate_identity, validate_publication_receipt,
 )
 
@@ -60,12 +60,35 @@ class ReleaseMetadataTests(unittest.TestCase):
         receipt["github"]["ci_head_sha"] = "a" * 40
         self.assertTrue(validate_publication_receipt(receipt, expected_release="0.6.6"))
 
-    def test_unreviewed_current_receipt_rejected(self) -> None:
+    def test_each_published_receipt_is_bound_to_its_own_version(self) -> None:
+        for version, binding in VERIFIED_RECEIPT_BINDINGS.items():
+            receipt = json.loads((ROOT / f"release/v{version}/publication-receipt.json").read_text())
+            with self.subTest(version=version):
+                self.assertEqual([], validate_publication_receipt(receipt, expected_release=version))
+                self.assertEqual(binding["release_commit"], receipt["release_commit"])
+            for other_version, other in VERIFIED_RECEIPT_BINDINGS.items():
+                if other_version == version:
+                    continue
+                with self.subTest(version=version, wrong_binding=other_version):
+                    self.assertTrue(validate_publication_receipt(receipt, expected_release=other_version))
+                for section, key, value in (
+                    (None, "tag", other["tag"]),
+                    ("zenodo", "doi", other["doi"]),
+                    (None, "release_commit", other["release_commit"]),
+                ):
+                    with self.subTest(version=version, section=section, key=key):
+                        invalid = copy.deepcopy(receipt)
+                        (invalid[section] if section else invalid)[key] = value
+                        if key == "release_commit":
+                            invalid["github"]["ci_head_sha"] = value
+                        self.assertTrue(validate_publication_receipt(invalid, expected_release=version))
+
+    def test_unreviewed_release_receipt_rejected(self) -> None:
         receipt = json.loads((ROOT / "release/v0.6.6/publication-receipt.json").read_text())
-        receipt["release"] = "0.6.7"
-        receipt["zenodo"]["version"] = "0.6.7"
+        receipt["release"] = "9.9.9"
+        receipt["zenodo"]["version"] = "9.9.9"
         receipt["zenodo"]["doi"] = "10.5281/zenodo.99999999"
-        self.assertTrue(validate_publication_receipt(receipt, expected_release="0.6.7"))
+        self.assertTrue(validate_publication_receipt(receipt, expected_release="9.9.9"))
 
     def test_citation_rejects_other_identifiers_as_exact_doi(self) -> None:
         for value in (*HISTORICAL_VERSION_DOIS.values(),

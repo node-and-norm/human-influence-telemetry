@@ -7,12 +7,11 @@ Security and integrity fixes are applied to `main` and the latest tagged release
 | Version | Supported |
 |---|---|
 | `main`, pre-`1.0.0` stabilization | Yes |
-| `0.6.7`, prepared publication checkpoint | Covered through `main`; tag publication pending |
-| `0.6.6`, latest tagged release | Yes |
+| `0.6.7`, latest tagged release | Yes |
 | Earlier tagged releases | Best effort |
 | Candidate `0.7.0`, `0.9.0`, and `1.0.0` documents | Development artifacts, not release channels |
 
-Version 0.6.7 is prepared for publication; its [release notes](docs/releases/v0.6.7.md) identify the checks and preserved boundaries. Version 0.6.6 remains the latest verified published tag on the [canonical GitHub Releases page](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6). These development checkpoints retain all limits on institutional suitability and scientific assurance.
+Version 0.6.7 is published on the [canonical GitHub Releases page](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.7). Its [release notes](docs/releases/v0.6.7.md) and [publication receipt](release/v0.6.7/publication-receipt.json) identify the checks and verified archive. This development checkpoint retains all limits on institutional suitability and scientific assurance.
 
 ## Reporting a vulnerability
 

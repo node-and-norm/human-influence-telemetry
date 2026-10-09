@@ -3,9 +3,9 @@
 **Updated:** 8 October 2026
 **Governing decision:** `ADR-0005`, prospectively resolving `ADR-0001`'s historical proposal
 **Current repository release:** `0.6.7`
-**Publication state:** Prepared; GitHub publication and Zenodo archival verification pending. Latest verified published release: `0.6.6`.
+**Publication state:** Published on GitHub and Zenodo; see the [publication receipt](../release/v0.6.7/publication-receipt.json).
 **Human-result release:** `0.6.0`
-**Current exact-version DOI:** pending verification for `0.6.7`
+**Current exact-version DOI:** `10.5281/zenodo.23252877`
 **Software concept DOI:** `10.5281/zenodo.21446141`
 **Previous exact-version DOI, v0.6.6:** `10.5281/zenodo.23226713`
 **Previous exact-version DOI, v0.6.5:** `10.5281/zenodo.21864224`
@@ -53,7 +53,7 @@ Research maturity remains governed by `RESEARCH.md`. A stable `1.0.0` contract m
 - draft manual workbooks for three future scorers.
 - v0.6.5 claim-evidence integrity controls, paper workspace, and reproducible claim-gate figure.
 
-The prepared 0.6.7 package records further development work: partial Ofqual author review, a comparison challenge, additional qualitative reanalysis, source-binding verification, a synthetic evidence-update rehearsal, and three manuscript exhibits. These additions preserve all eight unresolved stable gates. The same scored outcome for both assistant responses does not establish comparative advantage or human usefulness; manuscript and reanalysis interpretations remain subject to their stated review requirements.
+The published 0.6.7 package records further development work: partial Ofqual author review, a comparison challenge, additional qualitative reanalysis, source-binding verification, a synthetic evidence-update rehearsal, and three manuscript exhibits. These additions preserve all eight unresolved stable gates. The same scored outcome for both assistant responses does not establish comparative advantage or human usefulness; manuscript and reanalysis interpretations remain subject to their stated review requirements.
 
 ### Pending
 

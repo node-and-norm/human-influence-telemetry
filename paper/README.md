@@ -4,7 +4,7 @@ Read the [current development manuscript](development-manuscript.md) for the met
 
 This directory contains a working research-paper package. It is not a submitted or accepted paper.
 
-The prepared [v0.6.7 development release](../docs/releases/v0.6.7.md) includes this workspace and its source-bound exhibits. Release publication, archive verification and scientific approval remain distinct; the release note records their status.
+The published [v0.6.7 development release](../docs/releases/v0.6.7.md), archived at [10.5281/zenodo.23252877](https://doi.org/10.5281/zenodo.23252877), includes this workspace and its source-bound exhibits. Software publication and archive verification are complete; responsible-author review and manuscript submission approval remain pending.
 
 The manuscript now includes [three reproducible development exhibits](../figures/development-2026-10-08/README.md): assessment architecture, Ofqual event/source timing, and qualification preservation. Their captions distinguish conceptual structure and documentary inspection from empirical performance. The older claim-gate figure remains version-bound.
 

@@ -1,9 +1,9 @@
 # Roadmap to Human Influence Telemetry 1.0.0
 
 **Current repository release:** `0.6.7`
-**Publication state:** Prepared; GitHub publication and Zenodo archival verification are pending. The latest verified published release is `0.6.6`.
+**Publication state:** Published on GitHub and Zenodo; the [publication receipt](release/v0.6.7/publication-receipt.json) records verification.
 **Human-result release:** `0.6.0`
-**Current exact-version DOI:** pending verification for `0.6.7`
+**Current exact-version DOI:** `10.5281/zenodo.23252877`
 **Software concept DOI:** `10.5281/zenodo.21446141`
 **Previous exact-version DOI, v0.6.6:** `10.5281/zenodo.23226713`
 **Previous exact-version DOI, v0.6.5:** `10.5281/zenodo.21864224`
@@ -116,7 +116,7 @@ All eight stable-release gates remain unresolved. The preserved v0.6.5 audit doe
 
 ## 0.6.7: Author review, evidence-update rehearsal and manuscript exhibits, current release
 
-Prepared on 8 October 2026, America/New_York. This checkpoint collects the partial Ofqual author review, comparison challenge, three added qualitative reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the working manuscript with three reproducible exhibits. GitHub publication and the exact-version DOI remain pending verification. See the [release notes](docs/releases/v0.6.7.md).
+Published on 8 October 2026, America/New_York. This checkpoint collects the partial Ofqual author review, comparison challenge, three added qualitative reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the working manuscript with three reproducible exhibits. Its exact-version DOI is `10.5281/zenodo.23252877`; the publication receipt records the verified archive. See the [release notes](docs/releases/v0.6.7.md).
 
 Both assistant responses identified the four injected changes in the synthetic rehearsal, with no scored difference. These observations establish no comparative advantage, independent human usefulness, or regulatory-sandbox participation. Counsel and the overall Ofqual comparison remain unresolved, manuscript interpretation review remains pending, and all eight stable-release gates remain unresolved. The release retains contract 0.4.0, engine 0.5.0, the 0.6.0 human result, and maturity Level 2.
 

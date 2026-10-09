@@ -13,11 +13,12 @@ The public technical instrument is extracted from that program without publishin
 - Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142
 - Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224
 - Version-specific software DOI for `v0.6.6`: 10.5281/zenodo.23226713
-- Latest verified Zenodo software record, v0.6.6: https://zenodo.org/records/23226713
+- Version-specific software DOI for `v0.6.7`: 10.5281/zenodo.23252877
+- Current verified Zenodo software record: https://zenodo.org/records/23252877
 - Source repository: private and retained by the author
 - Canonical public repository: `node-and-norm/human-influence-telemetry`; the former `mj3b` URL redirects after transfer
-- Current repository release: 0.6.7, prepared; publication and archival verification pending
-- Exact-version DOI for v0.6.7: pending verification
+- Current repository release: 0.6.7, published on GitHub and Zenodo
+- Exact-version DOI for v0.6.7: `10.5281/zenodo.23252877`
 - Human-result release: 0.6.0
 - Conformance engine version: 0.5.0
 - Public specification version: 0.4.0
@@ -27,7 +28,7 @@ The public technical instrument is extracted from that program without publishin
 - Active empirical package: `0.7.0` candidate under `HIT-IRP-HIT040-002`
 - Stable public-contract target: `1.0.0`, gated candidate, release prohibited
 
-The [publication receipt](release/v0.6.6/publication-receipt.json) records the published `0.6.6` tag, exact commit, passing CI and verified Zenodo archive. That tag retains its prepared metadata; the subsequent receipt records publication without moving the tag. The prepared `0.6.7` package has no verified exact-version DOI yet. Earlier DOIs remain bound to their own archives. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
+The [0.6.7 publication receipt](release/v0.6.7/publication-receipt.json) records the published tag, exact commit, passing CI and verified Zenodo archive. The original tag retains its prepared metadata; this follow-up records subsequent publication without moving that tag. The [0.6.6 receipt](release/v0.6.6/publication-receipt.json) and all earlier DOIs remain bound to their own archives. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
 
 ## DOI lineage
 
@@ -38,6 +39,7 @@ The originating research record and the standalone HIT software record have dist
 - `10.5281/zenodo.21446142` is the version-specific DOI for the exact `v0.6.4` archive.
 - `10.5281/zenodo.21864224` is the version-specific DOI for the exact `v0.6.5` archive.
 - `10.5281/zenodo.23226713` is the version-specific DOI for the exact `v0.6.6` archive.
+- `10.5281/zenodo.23252877` is the version-specific DOI for the exact `v0.6.7` archive.
 
 Use the version DOI for reproducible citation of an exact release. Use the concept DOI when referring to HIT as an evolving software project across versions.
 
@@ -96,11 +98,13 @@ The October 7 work adds real-artifact and premature-promotion checks, a public i
 
 Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. At that release, the full Ofqual draft was AI-assessed and pending author adjudication. Publishing those files did not promote them into the historical v0.6.5 audit or the manuscript conclusion. Zenodo record `23226713` identifies version `0.6.6` under software concept `21446141`; all 294 archived tracked files match the released commit byte for byte, as recorded in the publication receipt.
 
-### 0.6.7 author review, evidence-update rehearsal and manuscript exhibits, prepared
+### 0.6.7 author review, evidence-update rehearsal and manuscript exhibits, published
 
-Prepared on 8 October 2026, America/New_York. The package includes the separate [Ofqual author-review record](research/strengthening/solo-002-author-review.md), the comparison challenge, three additional qualitative reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the methods/resource manuscript with three reproducible exhibits. The first assistant responses and the pre-response benchmark design remain preserved. Both responses identified four injected changes, with no scored difference; this observation supplies no evidence of HIT superiority or human usefulness.
+Published on 8 October 2026, America/New_York. The package includes the separate [Ofqual author-review record](research/strengthening/solo-002-author-review.md), the comparison challenge, three additional qualitative reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the methods/resource manuscript with three reproducible exhibits. The first assistant responses and the pre-response benchmark design remain preserved. Both responses identified four injected changes, with no scored difference; this observation supplies no evidence of HIT superiority or human usefulness.
 
-The package records five accepted bounded substantive Ofqual findings and limited status for both integrity components. Counsel and the overall comparison remain unresolved. Manuscript interpretation review, independent implementation review, and current-contract replication remain pending. Neither repository publication nor exact-byte verification constitutes scientific acceptance, regulatory-sandbox participation, or a stable `1.0.0` contract. The original `0.6.5` audit and manuscript retain their own scope; the prepared release changes no normative rule, historical score, human result, or maturity decision.
+The package records five accepted bounded substantive Ofqual findings and limited status for both integrity components. Counsel and the overall comparison remain unresolved. Manuscript interpretation review, independent implementation review, and current-contract replication remain pending. Neither repository publication nor exact-byte verification constitutes scientific acceptance, regulatory-sandbox participation, or a stable `1.0.0` contract. The original `0.6.5` audit and manuscript retain their own scope; the release changes no normative rule, historical score, human result, or maturity decision.
+
+Zenodo record `23252877` identifies version `0.6.7` under software concept `21446141`. All 382 archived tracked files match released commit `4336b8acd16d571ef9b5ab1d8ca1ecc2ea0eb01e` byte for byte. GitHub CI run `37877332245` passed on that commit. The publication receipt records these checks; it and this documentation follow-up are outside the original archive.
 
 ## Human-result lineage
 
