@@ -13,11 +13,11 @@ The public technical instrument is extracted from that program without publishin
 - Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142
 - Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224
 - Version-specific software DOI for `v0.6.6`: 10.5281/zenodo.23226713
-- Current verified Zenodo software record: https://zenodo.org/records/23226713
+- Latest verified Zenodo software record, v0.6.6: https://zenodo.org/records/23226713
 - Source repository: private and retained by the author
 - Canonical public repository: `node-and-norm/human-influence-telemetry`; the former `mj3b` URL redirects after transfer
-- Current repository release: 0.6.6, published on GitHub and Zenodo
-- Exact-version DOI: `10.5281/zenodo.23226713`
+- Current repository release: 0.6.7, prepared; publication and archival verification pending
+- Exact-version DOI for v0.6.7: pending verification
 - Human-result release: 0.6.0
 - Conformance engine version: 0.5.0
 - Public specification version: 0.4.0
@@ -27,7 +27,7 @@ The public technical instrument is extracted from that program without publishin
 - Active empirical package: `0.7.0` candidate under `HIT-IRP-HIT040-002`
 - Stable public-contract target: `1.0.0`, gated candidate, release prohibited
 
-The [publication receipt](release/v0.6.6/publication-receipt.json) records the published `0.6.6` tag, exact commit, passing CI and verified Zenodo archive. The original tag retains its prepared metadata; this follow-up records the subsequent publication without moving that tag. The `0.6.5` DOI remains bound to that earlier archive. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
+The [publication receipt](release/v0.6.6/publication-receipt.json) records the published `0.6.6` tag, exact commit, passing CI and verified Zenodo archive. That tag retains its prepared metadata; the subsequent receipt records publication without moving the tag. The prepared `0.6.7` package has no verified exact-version DOI yet. Earlier DOIs remain bound to their own archives. Candidate `0.7.0`, `0.9.0`, and `1.0.0` files record prospective controls and do not create a release.
 
 ## DOI lineage
 
@@ -94,7 +94,13 @@ These records document staged procedures and unresolved readiness requirements. 
 
 The October 7 work adds real-artifact and premature-promotion checks, a public implementation rehearsal, draft audit-submission controls, and an exploratory complete-record application plan. Its [assistance log](research/strengthening/v1-assistance-log.json) preserves the author/AI boundary. Source interpretations and new assessment proposals require separate author adjudication; independent implementation review remains absent.
 
-Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. The full Ofqual draft remains AI-assessed and pending author adjudication. Publishing these files does not promote them into the historical v0.6.5 audit or the manuscript conclusion. Zenodo record `23226713` identifies version `0.6.6` under software concept `21446141`; all 294 archived tracked files match the released commit byte for byte, as recorded in the publication receipt.
+Version 0.6.6 also collects the earlier three partial dossiers, retained model requests and responses, targeted methods comparison, author-decision records, and repository cleanup. These are attributable development artifacts. At that release, the full Ofqual draft was AI-assessed and pending author adjudication. Publishing those files did not promote them into the historical v0.6.5 audit or the manuscript conclusion. Zenodo record `23226713` identifies version `0.6.6` under software concept `21446141`; all 294 archived tracked files match the released commit byte for byte, as recorded in the publication receipt.
+
+### 0.6.7 author review, evidence-update rehearsal and manuscript exhibits, prepared
+
+Prepared on 8 October 2026, America/New_York. The package includes the separate [Ofqual author-review record](research/strengthening/solo-002-author-review.md), the comparison challenge, three additional qualitative reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the methods/resource manuscript with three reproducible exhibits. The first assistant responses and the pre-response benchmark design remain preserved. Both responses identified four injected changes, with no scored difference; this observation supplies no evidence of HIT superiority or human usefulness.
+
+The package records five accepted bounded substantive Ofqual findings and limited status for both integrity components. Counsel and the overall comparison remain unresolved. Manuscript interpretation review, independent implementation review, and current-contract replication remain pending. Neither repository publication nor exact-byte verification constitutes scientific acceptance, regulatory-sandbox participation, or a stable `1.0.0` contract. The original `0.6.5` audit and manuscript retain their own scope; the prepared release changes no normative rule, historical score, human result, or maturity decision.
 
 ## Human-result lineage
 
@@ -118,7 +124,7 @@ Telemetry Integrity is cross-cutting and has two visible components: institution
 
 ## Case-study lineage
 
-The historical public evidence pack contains four immutable `0.1.0` assessment files. The Cigna locked protocol is complete. The supplementary [Ofqual 0.4.0 draft](research/strengthening/solo-002-complete/README.md) records AI-assisted proposals pending author adjudication. It is neither an accepted author application nor independent scoring evidence, and it closes no release gate.
+The historical public evidence pack contains four immutable `0.1.0` assessment files. The Cigna locked protocol is complete. The supplementary [Ofqual 0.4.0 draft](research/strengthening/solo-002-complete/README.md) preserves the original AI-assisted proposals. Its separate [author-review supplement](research/strengthening/solo-002-author-review.md) records partial adjudication while leaving Counsel and the overall comparison unresolved. The complete assessment remains unaccepted as a whole, supplies no independent scoring evidence, and closes no release gate.
 
 ## Normative decision lineage
 

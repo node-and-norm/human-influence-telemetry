@@ -22,6 +22,7 @@ A document in this directory does not create a release. A version becomes public
 
 | Version | State | Purpose | Publication condition |
 |---|---|---|---|
+| [`0.6.7`](v0.6.7.md) | Prepared | Author review, evidence-update rehearsal and manuscript exhibits | Exact-commit validation, GitHub publication, separate Zenodo archival verification |
 | [`0.7.0`](v0.7.0-candidate.md) | Active candidate | Freeze three current-contract packets and the multi-case replication protocol | Human case selection, packet freeze, comparison tooling, locked protocol, exact-commit validation |
 | `0.8.0` | Pending | Publish current-contract applications and empirical result or recruitment disposition | Application records and declared empirical outcome |
 | `0.9.0` | Pending | Stable release candidate and clean-room implementation audit | Complete implementation packet, external audit, no release-blocking defect |
@@ -29,9 +30,9 @@ A document in this directory does not create a release. A version becomes public
 
 ## Current version boundary
 
-- Current repository release: `0.6.6`, published on GitHub and Zenodo
+- Current repository release: `0.6.7`, prepared; GitHub publication and archival verification pending
 - Current published release: [`v0.6.6`](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6); see the [publication receipt](../../release/v0.6.6/publication-receipt.json)
-- Exact-version DOI: `10.5281/zenodo.23226713`
+- Exact-version DOI for `0.6.7`: pending verification
 - Human-result release: `0.6.0`
 - Concept DOI for all software versions: `10.5281/zenodo.21446141`
 - Originating research DOI: `10.5281/zenodo.21204892`
@@ -48,7 +49,7 @@ Use the version-specific DOI for an exact release citation. Use the concept DOI 
 
 Release `0.6.5` adds research-integrity and paper controls. It does not alter the `0.4.0` contract, `0.5.0` engine, `0.6.0` human result, H3 boundary, or Level 2 maturity decision.
 
-Version 0.6.6 collects the subsequent development record without changing those boundaries. The complete Ofqual draft remains pending author adjudication. All eight stable-release gates and current-contract replication remain unresolved; publishing the development archive does not satisfy them.
+Version 0.6.6 collected the subsequent development record without changing those boundaries. Its complete Ofqual draft was pending author adjudication at release. The prepared 0.6.7 package includes a separate partial author-review record, additional reanalysis conditions, source-binding verification, a synthetic evidence-update rehearsal, and the working manuscript with three reproducible exhibits. Counsel and the overall comparison remain unresolved. All eight stable-release gates and current-contract replication remain unresolved; publishing a development archive does not satisfy them.
 
 The presence of `0.7.0`, `0.9.0`, or `1.0.0` candidate materials in `main` does not authorize a tag, release, DOI archive, scorer activation, or maturity advancement.
 
@@ -63,4 +64,10 @@ The presence of `0.7.0`, `0.9.0`, or `1.0.0` candidate materials in `main` does 
 
 ## Metadata rule
 
-`CITATION.cff` now identifies the verified `0.6.6` archive as `10.5281/zenodo.23226713`. The original tag and `.zenodo.json` publication input remain unchanged. This follow-up records publication and archival verification without moving the tag; its added receipt is outside the original archive. The prior `0.6.5` DOI continues to identify only that archive. Candidate documents may describe future versions, but they must not overwrite published-release metadata.
+`CITATION.cff` and `.zenodo.json` prepare version `0.6.7` without assigning it a DOI. The existing `0.6.6` DOI, `10.5281/zenodo.23226713`, continues to identify that exact archive. Earlier tags, release records and archival identifiers remain preserved. An exact-version DOI enters current citation metadata only after the new archive has been verified.
+
+Candidate documents may describe future versions, but they must not overwrite published-release metadata.
+
+## Release maintenance
+
+Merged changes intended for the next release update the `Unreleased` section of [CHANGELOG.md](../../CHANGELOG.md). Each published tag receives release notes tied to its exact validated commit and a verification record. GitHub publication and Zenodo archival verification are recorded separately; a DOI receipt must identify the archive actually checked. A merged pull request alone does not establish a new published version.

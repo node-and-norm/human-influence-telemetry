@@ -4,7 +4,7 @@
 
 Documentary evidence of practical human authority.
 
-[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Release: v0.6.6](https://img.shields.io/badge/release-v0.6.6-blue)](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
+[![HIT Validation](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml/badge.svg)](https://github.com/node-and-norm/human-influence-telemetry/actions/workflows/validate.yml) [![Release: v0.6.7 prepared](https://img.shields.io/badge/release-v0.6.7%20prepared-blue)](docs/releases/v0.6.7.md) [![Maturity: Level 2](https://img.shields.io/badge/maturity-Level%202-orange)](RESEARCH.md) [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE) [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--8121--2878-brightgreen)](https://orcid.org/0009-0001-8121-2878)
 
 </div>
 
@@ -18,17 +18,17 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 | Research checkpoint | Current account |
 | :--- | :--- |
-| Published artifact | Repository release 0.6.6, archived on Zenodo; normative contract 0.4.0; conformance engine 0.5.0 |
+| Release checkpoint | Repository release 0.6.7 prepared; latest verified published archive 0.6.6; normative contract 0.4.0; conformance engine 0.5.0 |
 | Human evidence | Two independent scorers agreed on 7 of 7 items for one frozen Cigna packet under the earlier 0.1.0 scorer contract |
 | Publication controls | Thirteen mapped claims, five gates, eight negative controls; audit state `PASS_WITH_EXCEPTIONS` |
 | Development evidence | Three partial applications; an Ofqual draft with partial author adjudication and seven qualitative reanalysis conditions; three separate model-development runs; no maturity promotion |
 | Open questions | Current-contract replication, broader validity, comparative usefulness, novelty, and institutional outcomes remain unresolved |
 
-**Current release:** 0.6.6
+**Current release:** 0.6.7
 
-**Publication state:** Published on [GitHub](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.6) and [Zenodo](https://zenodo.org/records/23226713). The [publication receipt](release/v0.6.6/publication-receipt.json) records the exact commit, passing validation and archive comparison.
+**Publication state:** Prepared for publication; the [0.6.7 release notes](docs/releases/v0.6.7.md) describe the checkpoint. GitHub publication and the exact-version Zenodo archive remain unverified. The latest verified published release is [0.6.6](docs/releases/v0.6.6.md).
 
-**Current exact-version DOI:** `10.5281/zenodo.23226713`
+**Current exact-version DOI:** pending verification for 0.6.7. Earlier DOIs identify only their own archives.
 
 **Human-result release:** 0.6.0
 
@@ -36,7 +36,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current maturity:** Level 2, Applicable
 
-The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [current publication-readiness record](research/strengthening/solo-publication-readiness.md) distinguishes completed development work from pending research obligations. This draft and the latest supplements postdate release 0.6.6; they are not included in its DOI archive. The [earlier manuscript](paper/manuscript.md) remains preserved.
+The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [current publication-readiness record](research/strengthening/solo-publication-readiness.md) distinguishes completed development work from pending research obligations. This draft and the latest supplements are included in the prepared 0.6.7 package; they remain outside the 0.6.6 DOI archive. Repository distribution does not constitute paper submission or peer review. The [earlier manuscript](paper/manuscript.md) remains preserved.
 
 ## Choose your path
 
@@ -170,11 +170,11 @@ Contributions should identify the changed proposition, supporting evidence, unce
 
 ## Citation
 
-For the current published release, use:
+For the prepared 0.6.7 checkpoint, the citation is:
 
-> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.6) [Software]. Zenodo. [https://doi.org/10.5281/zenodo.23226713](https://doi.org/10.5281/zenodo.23226713)
+> Banasihan, M. J. (2026). *Human Influence Telemetry* (Version 0.6.7) [Software]. GitHub. [v0.6.7](https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.7)
 
-Cite the version you actually used. For an older release, the project across versions, or the originating research, follow the [citation guide](docs/citation.md). Machine-readable metadata is in [CITATION.cff](CITATION.cff).
+Cite the version you actually used. The 0.6.7 release link is the intended publication location; while publication is pending, record the exact commit used. Its DOI will be added only after archival verification. For a published older release, the project across versions, or the originating research, follow the [citation guide](docs/citation.md). Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 
 ## Author
 
@@ -197,6 +197,8 @@ Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, a
 | 0.6.6 | Development workbench, reproducibility and release-readiness controls |
 
 Version 0.6.6 is published as a nonbreaking development and reproducibility release. Its GitHub release and exact-version archive are verified in the publication receipt. It does not activate the study or implementation-audit candidates.
+
+The prepared [0.6.7 checkpoint](docs/releases/v0.6.7.md) collects partial Ofqual author review, additional reanalysis conditions, the synthetic evidence-update rehearsal, source-binding checks, and the working manuscript with three reproducible exhibits. All eight stable-release gates remain unresolved.
 
 Specification, assessment schema, and dimension catalog remain 0.4.0. The engine remains 0.5.0. See the [release index](docs/releases/README.md) for checkpoint details.
 

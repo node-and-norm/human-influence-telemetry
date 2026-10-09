@@ -8,6 +8,8 @@ import json
 from pathlib import Path, PurePosixPath
 import subprocess
 
+from frozen_release_context import disclosure, load_context
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE_COMMIT = "9af12f6cb891288f692990366e54b85bd21d9e24"
 MAP = "evidence/claim-evidence-map.json"
@@ -115,13 +117,14 @@ def check_locked(comparison, preservation, execution):
 
 def build(root=ROOT):
     root = root.resolve()
+    historical = load_context(root, BASE_COMMIT)
     raw_map = tracked_bytes(root, MAP)
     bindings = inspect_map(decoded(raw_map))  # Check cycles directly before frozen-map comparison.
     require(raw_map == git(root, "show", f"{BASE_COMMIT}:{MAP}"), "claim map differs from frozen base")
     paths = sorted({item["path"] for item in bindings} | {PRESERVATION, EXECUTION, COMPARISON})
     raw_files = {}
     for path in paths:
-        raw = tracked_bytes(root, path)
+        raw = historical[path] if path == "RESEARCH.md" else tracked_bytes(root, path)
         require(raw == git(root, "show", f"{BASE_COMMIT}:{path}"), "evidence differs from frozen base")
         raw_files[path] = raw
     check_locked(raw_files[COMPARISON], decoded(raw_files[PRESERVATION]), decoded(raw_files[EXECUTION]))
@@ -145,7 +148,8 @@ def evaluate(root=ROOT, prepare=False):
     return {"check_kind": "file_and_dependency_consistency_only", "claim_count": len({b["claim_id"] for b in bindings["evidence_bindings"]}),
             "evidence_binding_count": len(bindings["evidence_bindings"]), "file_count": len(bindings["files"]),
             "human_support_review_validated": False, "evidence_fitness_validated": False,
-            "source_truth_validated": False, "conclusion_eligibility_recomputed": False}
+            "source_truth_validated": False, "conclusion_eligibility_recomputed": False,
+            **disclosure(["RESEARCH.md"])}
 
 
 def main():
@@ -160,6 +164,7 @@ def main():
         print(f"FAIL: {type(exc).__name__}; inspect tracked file bindings and claim dependencies")
         return 1
     print(f"File and dependency consistency only: PASS; {result['claim_count']} claims, {result['evidence_binding_count']} evidence bindings; human review and fitness were not validated")
+    print("Historical RESEARCH.md resolved through the v0.6.7 snapshot amendment; current release metadata is checked separately")
     return 0
 
 

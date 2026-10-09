@@ -9,6 +9,8 @@ from pathlib import Path
 import re
 import subprocess
 
+from frozen_release_context import disclosure, load_context
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "research/strengthening/solo-002-extension"
 ORIGINAL = "research/strengthening/solo-002-complete"
@@ -97,12 +99,13 @@ def formatting(root):
 
 
 def expected_design(root, transformed):
+    historical = load_context(root, BASE_COMMIT)
     original = load(root / ORIGINAL / "assessment.draft.json")
     claims = [c["claim_id"] for c in original["evidence_claims"]]
     require(len(claims) == 23 and len(set(claims)) == 23, "Expected full 23-claim original record")
     originals = {}
     for path in PROTECTED:
-        raw = read(root, path)
+        raw = historical[path] if path in ("CITATION.cff", ".zenodo.json") else read(root, path)
         require(raw == committed(root, BASE_COMMIT, path), "Protected base input changed")
         originals[path] = sha(raw)
     return {"study_id": STUDY, "prepared_date": "2026-10-08", "timezone": "America/New_York",
@@ -170,7 +173,8 @@ def evaluate(root=ROOT, prepare=False):
         require(read(root, f"{BASE}/report.md").strip(), "Missing narrative report")
     return {"check_kind": "qualitative_record_consistency_only", "results_present": results_path.exists(),
             "condition_count": 3, "source_truth_validated": False, "interpretations_recomputed": False,
-            "independent_review": False, "author_adjudication": "pending_for_extension", "release_gate_satisfied": False}
+            "independent_review": False, "author_adjudication": "pending_for_extension", "release_gate_satisfied": False,
+            **disclosure(["CITATION.cff", ".zenodo.json"])}
 
 
 def main():
@@ -186,6 +190,7 @@ def main():
         return 1
     state = "assistant results present" if report["results_present"] else "prepared inputs only; no results"
     print(f"Extension consistency: PASS; {state}; interpretation and author review remain pending")
+    print("Historical citation and Zenodo inputs resolved through the v0.6.7 snapshot amendment; current release metadata is checked separately")
     return 0
 
 

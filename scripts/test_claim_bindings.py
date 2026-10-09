@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 
 import validate_claim_bindings as check
+import frozen_release_context as context
 
 
 class BindingTests(unittest.TestCase):
@@ -17,7 +18,11 @@ class BindingTests(unittest.TestCase):
         self.root = Path(self.temp.name).resolve()
         manifest = check.decoded((check.ROOT / check.BINDINGS).read_bytes())
         self.paths = {check.MAP, check.BINDINGS, *(f["path"] for f in manifest["files"])}
+        self.paths |= {context.AMENDMENT_PATH, *context.SNAPSHOTS,
+                       *(item[0] for item in context.SNAPSHOTS.values())}
         self.originals = {path: (check.ROOT / path).read_bytes() for path in self.paths}
+        self.base_originals = {**self.originals,
+                               **{path: self.originals[snapshot] for path, (snapshot, _) in context.SNAPSHOTS.items()}}
         self.untracked = set()
         for path, raw in self.originals.items():
             target = self.root / path
@@ -26,12 +31,15 @@ class BindingTests(unittest.TestCase):
         def git(_, *args):
             if args[0] == "show":
                 commit, path = args[1].split(":", 1)
-                if commit == check.BASE_COMMIT and path in self.originals:
-                    return self.originals[path]
+                if commit == check.BASE_COMMIT and path in self.base_originals:
+                    return self.base_originals[path]
             elif args[0] == "ls-files" and args[-1] not in self.untracked:
                 return f"100644 {'0' * 40} 0\t{args[-1]}\n".encode()
             raise subprocess.CalledProcessError(128, "mock git read")
         patcher = patch.object(check, "git", git)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        patcher = patch.object(context, "git", git)
         patcher.start()
         self.addCleanup(patcher.stop)
         self.data = check.decoded(self.originals[check.MAP])
@@ -43,6 +51,67 @@ class BindingTests(unittest.TestCase):
         self.assertEqual(result["check_kind"], "file_and_dependency_consistency_only")
         for field in ("human_support_review_validated", "evidence_fitness_validated", "source_truth_validated", "conclusion_eligibility_recomputed"):
             self.assertFalse(result[field])
+        self.assertEqual(result["historical_snapshot_paths"], ["RESEARCH.md"])
+        self.assertFalse(result["current_release_metadata_validated_here"])
+
+    def test_current_release_files_are_not_relabelled_historical_evidence(self):
+        for path in context.SNAPSHOTS:
+            (self.root / path).write_bytes(b"Changed current release metadata, validated separately.\n")
+        self.assertEqual(check.evaluate(self.root)["historical_snapshot_paths"], ["RESEARCH.md"])
+
+    def test_changed_claim_map_is_not_exempted_by_amendment(self):
+        (self.root / check.MAP).write_bytes(self.originals[check.MAP] + b"\n")
+        with self.assertRaisesRegex(ValueError, "claim map differs from frozen base"):
+            check.evaluate(self.root)
+
+    def test_missing_altered_untracked_and_symlink_snapshots_rejected(self):
+        for original, (snapshot, _) in context.SNAPSHOTS.items():
+            target = self.root / snapshot
+            for mutation in ("missing", "altered", "untracked", "symlink"):
+                with self.subTest(original=original, mutation=mutation):
+                    target.unlink()
+                    if mutation == "symlink":
+                        target.symlink_to(self.root / original)
+                    elif mutation != "missing":
+                        target.write_bytes(b"altered" if mutation == "altered" else self.originals[snapshot])
+                    if mutation == "untracked":
+                        self.untracked.add(snapshot)
+                    with self.assertRaises((ValueError, subprocess.CalledProcessError)):
+                        check.evaluate(self.root)
+                    self.untracked.discard(snapshot)
+                    if target.exists() or target.is_symlink():
+                        target.unlink()
+                    target.write_bytes(self.originals[snapshot])
+
+    def test_unknown_amendment_cannot_expand_paths_or_rewrite_digests(self):
+        mutations = [lambda d: d.update(amendment_id="UNKNOWN"),
+                     lambda d: d.update(base_commit="f" * 40),
+                     lambda d: d.update(historical_bindings_and_outputs_unchanged=1),
+                     lambda d: d["snapshots"].append({"original_path": "SPECIFICATION.md", "snapshot_path": "elsewhere", "sha256": "0" * 64}),
+                     lambda d: d["snapshots"][0].update(sha256=check.sha(b"altered")),
+                     lambda d: d["snapshots"][0].update(snapshot_path="RESEARCH.md")]
+        for mutate in mutations:
+            data = copy.deepcopy(context.EXPECTED_AMENDMENT)
+            mutate(data)
+            (self.root / context.AMENDMENT_PATH).write_bytes(check.encoded(data))
+            with self.subTest(mutation=mutate), self.assertRaisesRegex(ValueError, "amendment"):
+                check.evaluate(self.root)
+
+    def test_snapshot_requires_base_byte_equality_in_addition_to_digest(self):
+        self.base_originals["RESEARCH.md"] += b"\n"
+        with self.assertRaisesRegex(ValueError, "snapshot differs from frozen base"):
+            check.evaluate(self.root)
+
+    def test_amendment_itself_must_be_tracked_regular_file(self):
+        self.untracked.add(context.AMENDMENT_PATH)
+        with self.assertRaises(subprocess.CalledProcessError):
+            check.evaluate(self.root)
+        self.untracked.clear()
+        target = self.root / context.AMENDMENT_PATH
+        target.unlink()
+        target.symlink_to(self.root / check.MAP)
+        with self.assertRaisesRegex(ValueError, "symlink"):
+            check.evaluate(self.root)
 
     def test_cycles_are_checked_directly_before_map_hash(self):
         self.data["claims"][0]["dependencies"] = ["H2"]

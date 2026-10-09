@@ -6,6 +6,8 @@ The [development manuscript](development-manuscript.md) is a working methods/res
 
 Software archive 0.6.6 is already published. That archive does not establish that the current draft or later advisory records were included, nor does it approve their interpretations. Cite the exact software DOI and the actual development revision separately.
 
+The prepared [0.6.7 development release](../docs/releases/v0.6.7.md) packages this working draft and its three exhibits, with software publication and archival verification still pending. Packaging does not grant preprint or journal submission approval. Cite its actual release identity only after publication; no new DOI is asserted here.
+
 Responsible-author source verification, manuscript claim review, literature positioning, declaration confirmation and publication approval remain open. The [additive Ofqual decisions](../research/strengthening/solo-002-author-review.json) accept bounded event-level findings and limited status for both integrity components while retaining Counsel and the comparative outcome as unresolved. The request to examine a missed distinction or loss accepts neither the proposed tie nor a demonstrated loss. These decisions preserve the original draft and do not attest independent source re-reading or approve the manuscript. Unaccepted interpretations can be reported as proposals if their status is explicit, but cannot become accepted findings through manuscript wording.
 
 ## Three publication decisions

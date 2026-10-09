@@ -43,3 +43,5 @@ On 7 October 2026, a separately authorized request returned fourteen advisory so
 The [8 October assistance record](solo-publication-assistance.json) discloses the later AI-assisted reanalysis, author-decision recording, manuscript preparation and software review. No additional Jev request, external invitation or independent rating was produced by that increment.
 
 The subsequent [evidence-update rehearsal and assistance disclosure](evidence-update-001/report.md) records two first-attempt assistant responses after a design freeze. Both representations produced the same scored outcomes on the synthetic task; no comparative benefit was established. Three [source-bound exhibits](../../figures/development-2026-10-08/README.md) now support the working manuscript. These additions remain pending author review and postdate the 0.6.6 archive.
+
+The [v0.6.7 release preparation](../../docs/releases/v0.6.7.md) packages these later records together. Dated reports retain the publication status observed when they were written; consult that release note for subsequent packaging and archival status. Packaging does not resolve their scientific review queues.

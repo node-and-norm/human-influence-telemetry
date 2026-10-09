@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_VERSION_DOI, validate_citation_guidance, validate_identity, validate_publication_receipt
+from release_metadata import CURRENT_RELEASE, CURRENT_RELEASE_DATE, CURRENT_RELEASE_TITLE, CURRENT_VERSION_DOI, HISTORICAL_VERSION_DOIS, VERIFIED_RECEIPT_BINDINGS, validate_citation_guidance, validate_identity, validate_publication_receipt
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -59,6 +59,7 @@ def main() -> int:
         "docs/releases/v0.6.5.md",
         "docs/releases/v0.6.6.md",
         "release/v0.6.6/publication-receipt.json",
+        f"docs/releases/v{CURRENT_RELEASE}.md",
         "docs/releases/v0.7.0-candidate.md",
         "docs/releases/v1.0.0-candidate.md",
         "docs/v1-readiness-plan.md",
@@ -78,7 +79,7 @@ def main() -> int:
 
     required_phrases = {
         "README.md": (
-            "**Current release:** 0.6.6",
+            f"**Current release:** {CURRENT_RELEASE}",
             "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "**Human-result release:** 0.6.0",
             "**Stable target:** `1.0.0`, release prohibited",
@@ -86,13 +87,13 @@ def main() -> int:
             "Candidate and future-version documents in the repository are planning and release-control artifacts. They are not published releases.",
         ),
         "ROADMAP.md": (
-            "0.6.6: Development and reproducibility controls, current release",
+            f"{CURRENT_RELEASE}: {CURRENT_RELEASE_TITLE}, current release",
             "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "1.0.0: Stable public contract",
             "Candidate documents do not create a tag, GitHub release, DOI archive, scorer activation, or maturity advancement.",
         ),
         "RESEARCH.md": (
-            "Current repository release: `0.6.6`",
+            f"Current repository release: `{CURRENT_RELEASE}`",
             "Software concept DOI: `10.5281/zenodo.21446141`",
             "Version-specific software DOI for v0.6.5: `10.5281/zenodo.21864224`",
             "Stable public-contract target: `1.0.0`, gated candidate, release prohibited",
@@ -101,12 +102,12 @@ def main() -> int:
             "HIT-CRI-V100-001",
         ),
         "PROVENANCE.md": (
-            "Current repository release: 0.6.6",
+            f"Current repository release: {CURRENT_RELEASE}",
             "Originating research DOI: 10.5281/zenodo.21204892",
             "Concept DOI for all HIT software versions: 10.5281/zenodo.21446141",
             "Version-specific software DOI for `v0.6.4`: 10.5281/zenodo.21446142",
             "Version-specific software DOI for `v0.6.5`: 10.5281/zenodo.21864224",
-            "0.6.6 development and reproducibility controls",
+            f"{CURRENT_RELEASE} author review, evidence-update rehearsal and manuscript exhibits",
             "Research maturity: Level 2, Applicable",
         ),
         "LIMITATIONS.md": (
@@ -114,13 +115,14 @@ def main() -> int:
             "Candidate `0.7.0`, `0.9.0`, and `1.0.0` materials do not establish that those versions are released or stable.",
         ),
         "CHANGELOG.md": (
+            f"## [{CURRENT_RELEASE}] - {CURRENT_RELEASE_DATE}",
             "## [0.6.6] - 2026-10-07",
             "## [0.6.5] - 2026-08-09",
             "Exact v0.6.5 DOI: `10.5281/zenodo.21864224`",
             "## [0.6.0] - 2026-07-18",
         ),
         "SECURITY.md": (
-            "`0.6.6`",
+            f"`{CURRENT_RELEASE}`",
             "The stable `1.0.0` target remains under gated development and is not yet a supported published release.",
         ),
         "GOVERNANCE.md": (
@@ -162,22 +164,27 @@ def main() -> int:
             "**Human-result release:** `0.6.0`",
             "pending author adjudication",
             "eight stable-release gates remain unresolved",
+            f"**Exact-version DOI:** `{HISTORICAL_VERSION_DOIS['0.6.6']}`",
+        ),
+        f"docs/releases/v{CURRENT_RELEASE}.md": (
+            "**Human-result release:** `0.6.0`",
+            "eight stable-release gates remain unresolved",
             "**Exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Exact-version DOI:** `{CURRENT_VERSION_DOI}`",
         ),
         "docs/releases/v0.7.0-candidate.md": (
             "**Status:** Active candidate, release prohibited",
-            "**Current repository release:** `0.6.6`",
+            f"**Current repository release:** `{CURRENT_RELEASE}`",
             "**Stable target:** `1.0.0`",
             "selected cases: 0 of 3",
         ),
         "docs/releases/v1.0.0-candidate.md": (
             "**Status:** Candidate outline, release prohibited",
             "**GitHub release:** Not created",
-            "**Current repository release:** `0.6.6`",
+            f"**Current repository release:** `{CURRENT_RELEASE}`",
             "This draft must not be copied to the GitHub Releases page until every gate passes.",
         ),
         "docs/v1-readiness-plan.md": (
-            "**Current repository release:** `0.6.6`",
+            f"**Current repository release:** `{CURRENT_RELEASE}`",
             "**Current exact-version DOI:** pending verification" if CURRENT_VERSION_DOI is None else f"**Current exact-version DOI:** `{CURRENT_VERSION_DOI}`",
             "**Previous exact-version DOI, v0.6.4:** `10.5281/zenodo.21446142`",
             "Version `1.0.0` is a compatibility and implementation claim",
@@ -199,10 +206,21 @@ def main() -> int:
     zenodo = load_json(".zenodo.json")
     v1_lock = load_json("release/v1.0.0/contract-freeze.candidate.json")
     failures += validate_identity(citation, zenodo, v1_lock)
-    receipt = load_json("release/v0.6.6/publication-receipt.json")
-    failures += validate_publication_receipt(receipt)
+    for version in VERIFIED_RECEIPT_BINDINGS:
+        receipt_path = f"release/v{version}/publication-receipt.json"
+        if not (ROOT / receipt_path).is_file():
+            failures.append(f"missing verified publication receipt: {receipt_path}")
+            continue
+        receipt = load_json(receipt_path)
+        failures += validate_publication_receipt(receipt, expected_release=version)
+        require(failures, "docs/citation.md", f"commit `{receipt.get('release_commit')}`")
+    current_receipt_path = f"release/v{CURRENT_RELEASE}/publication-receipt.json"
+    if CURRENT_RELEASE not in VERIFIED_RECEIPT_BINDINGS:
+        if CURRENT_VERSION_DOI is not None:
+            failures.append("current DOI requires a reviewed publication receipt binding")
+        if (ROOT / current_receipt_path).exists():
+            failures += validate_publication_receipt(load_json(current_receipt_path), expected_release=CURRENT_RELEASE)
     failures += validate_citation_guidance(read("README.md"), read("docs/citation.md"))
-    require(failures, "docs/citation.md", f"commit `{receipt.get('release_commit')}`")
     # The checks above compare recorded declarations. They do not contact GitHub
     # or Zenodo and cannot independently authenticate the recorded observations.
 
