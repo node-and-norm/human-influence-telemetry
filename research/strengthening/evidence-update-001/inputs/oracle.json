@@ -1,0 +1,134 @@
+{
+  "study_id": "HIT-EU-001",
+  "scope": "Expected effects of constructed updates only; not historical truth or normative finding validity.",
+  "scenarios": [
+    {
+      "id": "U00",
+      "affected_claims": [],
+      "claim_states": {
+        "P01": "supported",
+        "P02": "supported",
+        "P03": "supported",
+        "P04": "limited_support",
+        "P05": "unresolved",
+        "P06": "supported",
+        "P07": "unresolved",
+        "P08": "unresolved"
+      },
+      "qualification_states": {
+        "Q01": "synthetic_only",
+        "Q02": "direction_only",
+        "Q03": "cohort_a_with_estimates_only",
+        "Q04": "no_verified_receipts",
+        "Q05": "all_harm_repair_unestablished",
+        "Q06": "predecision_access_unresolved",
+        "Q07": "single_report_occurrence_qualified"
+      },
+      "expected_content": "No proposition changes."
+    },
+    {
+      "id": "U01",
+      "affected_claims": [
+        "P06"
+      ],
+      "claim_states": {
+        "P01": "supported",
+        "P02": "supported",
+        "P03": "supported",
+        "P04": "limited_support",
+        "P05": "unresolved",
+        "P06": "unsupported",
+        "P07": "unresolved",
+        "P08": "unresolved"
+      },
+      "qualification_states": {
+        "Q01": "synthetic_only",
+        "Q02": "direction_only",
+        "Q03": "cohort_a_with_estimates_only",
+        "Q04": "no_verified_receipts",
+        "Q05": "all_harm_repair_unestablished",
+        "Q06": "predecision_access_unresolved",
+        "Q07": "single_report_occurrence_qualified"
+      },
+      "expected_content": "P06 loses admissible support; do not assert that the advice panel did not exist. P07 stays unresolved."
+    },
+    {
+      "id": "U02",
+      "affected_claims": [
+        "P01"
+      ],
+      "claim_states": {
+        "P01": "supported",
+        "P02": "supported",
+        "P03": "supported",
+        "P04": "limited_support",
+        "P05": "unresolved",
+        "P06": "supported",
+        "P07": "unresolved",
+        "P08": "unresolved"
+      },
+      "qualification_states": {
+        "Q01": "synthetic_only",
+        "Q02": "direction_only",
+        "Q03": "cohort_a_with_estimates_only",
+        "Q04": "no_verified_receipts",
+        "Q05": "all_harm_repair_unestablished",
+        "Q06": "predecision_access_unresolved",
+        "Q07": "single_report_occurrence_qualified"
+      },
+      "expected_content": "P01 must state 18 August 2040 as the corrected direction date, distinct from the correction's 21 August publication."
+    },
+    {
+      "id": "U03",
+      "affected_claims": [
+        "P04"
+      ],
+      "claim_states": {
+        "P01": "supported",
+        "P02": "supported",
+        "P03": "supported",
+        "P04": "conflicted",
+        "P05": "unresolved",
+        "P06": "supported",
+        "P07": "unresolved",
+        "P08": "unresolved"
+      },
+      "qualification_states": {
+        "Q01": "synthetic_only",
+        "Q02": "direction_only",
+        "Q03": "cohort_a_with_estimates_only",
+        "Q04": "no_verified_receipts",
+        "Q05": "all_harm_repair_unestablished",
+        "Q06": "predecision_access_unresolved",
+        "Q07": "conflicting_occurrence_accounts_report_retained"
+      },
+      "expected_content": "P04 occurrence is conflicted; P03 fact of reporting remains supported."
+    },
+    {
+      "id": "U04",
+      "affected_claims": [
+        "P05"
+      ],
+      "claim_states": {
+        "P01": "supported",
+        "P02": "supported",
+        "P03": "supported",
+        "P04": "limited_support",
+        "P05": "supported",
+        "P06": "supported",
+        "P07": "unresolved",
+        "P08": "unresolved"
+      },
+      "qualification_states": {
+        "Q01": "synthetic_only",
+        "Q02": "direction_only",
+        "Q03": "cohort_a_with_estimates_only",
+        "Q04": "five_named_receipts_only",
+        "Q05": "all_harm_repair_unestablished",
+        "Q06": "predecision_access_unresolved",
+        "Q07": "single_report_occurrence_qualified"
+      },
+      "expected_content": "P05 establishes receipt for A01–A05 only on 23 August. P08 remains unresolved."
+    }
+  ]
+}

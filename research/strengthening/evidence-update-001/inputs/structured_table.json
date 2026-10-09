@@ -1,0 +1,117 @@
+{
+  "method_id": "structured_table",
+  "representation": "Capable structured-review table with equivalent propositions and links",
+  "review_rows": [
+    {
+      "id": "P01",
+      "text": "Agency A issued its grading direction on 17 August 2040.",
+      "initial_status": "supported",
+      "evidence_refs": [
+        "S01"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q02"
+      ],
+      "navigation": "Direction and scope"
+    },
+    {
+      "id": "P02",
+      "text": "The direction requires Board B to use the higher grade for Cohort A candidates with a centre estimate; candidates without one are excluded.",
+      "initial_status": "supported",
+      "evidence_refs": [
+        "S01"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q02",
+        "Q03"
+      ],
+      "navigation": "Direction and scope"
+    },
+    {
+      "id": "P03",
+      "text": "Board B published a report that it issued corrected records on 19 August 2040.",
+      "initial_status": "supported",
+      "evidence_refs": [
+        "S02"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q07"
+      ],
+      "navigation": "Reported and actual issuance"
+    },
+    {
+      "id": "P04",
+      "text": "Corrected records were issued by Board B on 19 August 2040, on the strength of Board B's account alone.",
+      "initial_status": "limited_support",
+      "evidence_refs": [
+        "S02"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q03",
+        "Q04",
+        "Q07"
+      ],
+      "navigation": "Reported and actual issuance"
+    },
+    {
+      "id": "P05",
+      "text": "Receipt of a corrected record by any named candidate is not established in the admissible packet.",
+      "initial_status": "unresolved",
+      "evidence_refs": [
+        "S02",
+        "S04"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q03",
+        "Q04"
+      ],
+      "navigation": "Delivery and remaining harm"
+    },
+    {
+      "id": "P06",
+      "text": "A formal technical advice panel existed before the grading direction.",
+      "initial_status": "supported",
+      "evidence_refs": [
+        "S03"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q06"
+      ],
+      "navigation": "Advice and material access"
+    },
+    {
+      "id": "P07",
+      "text": "Actual access to underlying material before the direction is unresolved.",
+      "initial_status": "unresolved",
+      "evidence_refs": [
+        "S03"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q06"
+      ],
+      "navigation": "Advice and material access"
+    },
+    {
+      "id": "P08",
+      "text": "Repair of all consequential harm is not established.",
+      "initial_status": "unresolved",
+      "evidence_refs": [
+        "S01",
+        "S04"
+      ],
+      "qualification_refs": [
+        "Q01",
+        "Q03",
+        "Q05"
+      ],
+      "navigation": "Delivery and remaining harm"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "method_id": "hit_graph",
+  "representation": "HIT-inspired typed relation graph; not a complete normative HIT assessment",
+  "propositions": [
+    {
+      "id": "P01",
+      "text": "Agency A issued its grading direction on 17 August 2040.",
+      "initial_status": "supported",
+      "navigation": "Command and Reform evidence"
+    },
+    {
+      "id": "P02",
+      "text": "The direction requires Board B to use the higher grade for Cohort A candidates with a centre estimate; candidates without one are excluded.",
+      "initial_status": "supported",
+      "navigation": "Command and Reform evidence"
+    },
+    {
+      "id": "P03",
+      "text": "Board B published a report that it issued corrected records on 19 August 2040.",
+      "initial_status": "supported",
+      "navigation": "Correction evidence"
+    },
+    {
+      "id": "P04",
+      "text": "Corrected records were issued by Board B on 19 August 2040, on the strength of Board B's account alone.",
+      "initial_status": "limited_support",
+      "navigation": "Correction evidence"
+    },
+    {
+      "id": "P05",
+      "text": "Receipt of a corrected record by any named candidate is not established in the admissible packet.",
+      "initial_status": "unresolved",
+      "navigation": "Repair evidence"
+    },
+    {
+      "id": "P06",
+      "text": "A formal technical advice panel existed before the grading direction.",
+      "initial_status": "supported",
+      "navigation": "Counsel evidence"
+    },
+    {
+      "id": "P07",
+      "text": "Actual access to underlying material before the direction is unresolved.",
+      "initial_status": "unresolved",
+      "navigation": "Counsel evidence"
+    },
+    {
+      "id": "P08",
+      "text": "Repair of all consequential harm is not established.",
+      "initial_status": "unresolved",
+      "navigation": "Repair evidence"
+    }
+  ],
+  "relations": [
+    {
+      "from": "P01",
+      "type": "evidence",
+      "to": "S01"
+    },
+    {
+      "from": "P01",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P01",
+      "type": "qualification",
+      "to": "Q02"
+    },
+    {
+      "from": "P02",
+      "type": "evidence",
+      "to": "S01"
+    },
+    {
+      "from": "P02",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P02",
+      "type": "qualification",
+      "to": "Q02"
+    },
+    {
+      "from": "P02",
+      "type": "qualification",
+      "to": "Q03"
+    },
+    {
+      "from": "P03",
+      "type": "evidence",
+      "to": "S02"
+    },
+    {
+      "from": "P03",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P03",
+      "type": "qualification",
+      "to": "Q07"
+    },
+    {
+      "from": "P04",
+      "type": "evidence",
+      "to": "S02"
+    },
+    {
+      "from": "P04",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P04",
+      "type": "qualification",
+      "to": "Q03"
+    },
+    {
+      "from": "P04",
+      "type": "qualification",
+      "to": "Q04"
+    },
+    {
+      "from": "P04",
+      "type": "qualification",
+      "to": "Q07"
+    },
+    {
+      "from": "P05",
+      "type": "evidence",
+      "to": "S02"
+    },
+    {
+      "from": "P05",
+      "type": "evidence",
+      "to": "S04"
+    },
+    {
+      "from": "P05",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P05",
+      "type": "qualification",
+      "to": "Q03"
+    },
+    {
+      "from": "P05",
+      "type": "qualification",
+      "to": "Q04"
+    },
+    {
+      "from": "P06",
+      "type": "evidence",
+      "to": "S03"
+    },
+    {
+      "from": "P06",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P06",
+      "type": "qualification",
+      "to": "Q06"
+    },
+    {
+      "from": "P07",
+      "type": "evidence",
+      "to": "S03"
+    },
+    {
+      "from": "P07",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P07",
+      "type": "qualification",
+      "to": "Q06"
+    },
+    {
+      "from": "P08",
+      "type": "evidence",
+      "to": "S01"
+    },
+    {
+      "from": "P08",
+      "type": "evidence",
+      "to": "S04"
+    },
+    {
+      "from": "P08",
+      "type": "qualification",
+      "to": "Q01"
+    },
+    {
+      "from": "P08",
+      "type": "qualification",
+      "to": "Q03"
+    },
+    {
+      "from": "P08",
+      "type": "qualification",
+      "to": "Q05"
+    }
+  ]
+}

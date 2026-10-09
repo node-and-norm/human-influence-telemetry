@@ -1,0 +1,66 @@
+{
+  "study_id": "HIT-EU-001",
+  "application": "Each scenario independently starts from the original packet. Never accumulate changes across scenarios.",
+  "scenarios": [
+    {
+      "id": "U00",
+      "label": "Unchanged control",
+      "change": "No source or proposition changes. Reinspect the packet without adding evidence.",
+      "new_sources": [],
+      "withdrawn_sources": []
+    },
+    {
+      "id": "U01",
+      "label": "Source withdrawal",
+      "change": "S03 is withdrawn from the admissible evidence set because its supplied content cannot be authenticated. No replacement evidence is supplied. This is withdrawal of support, not evidence that the panel never existed. The original packet remains available as a change-history record, not as admissible support for S03's claims.",
+      "new_sources": [],
+      "withdrawn_sources": [
+        "S03"
+      ]
+    },
+    {
+      "id": "U02",
+      "label": "Corrected event date",
+      "change": "Replace S01 with its correction S01R. Only the direction's issuance date changes, from 17 August to 18 August 2040. The correction does not change the actor, authority, eligibility, grading rule, or the other source accounts.",
+      "new_sources": [
+        {
+          "id": "S01R",
+          "title": "Corrected Agency A direction notice",
+          "published": "2040-08-21",
+          "text": "Agency A corrects its notice: the direction was issued on 18 August 2040, not 17 August. Every other statement in S01 remains unchanged. The publication date of this correction is not the issuance date of the direction."
+        }
+      ],
+      "withdrawn_sources": [
+        "S01"
+      ]
+    },
+    {
+      "id": "U03",
+      "label": "Equally admissible implementation conflict",
+      "change": "Add S05 as an equally admissible account of the same Board B issuance event. Neither account has precedence in this exercise. This conflict concerns occurrence on 19 August, not whether Board B published S02, the direction's existence, receipt evidence, or all later events.",
+      "new_sources": [
+        {
+          "id": "S05",
+          "title": "Board B counter-account",
+          "published": "2040-08-22",
+          "text": "An equally admissible Board B implementation account states that no corrected records for the covered Cohort A were issued on 19 August 2040. It accepts that S02 was published and reported issuance. The two occurrence accounts cannot both be correct; this packet provides no adjudicating evidence."
+        }
+      ],
+      "withdrawn_sources": []
+    },
+    {
+      "id": "U04",
+      "label": "Restricted delivered-remedy evidence",
+      "change": "Add S06. Treat the receipts as admissible evidence of receipt by the five named candidates only. Do not extrapolate to other candidates or to repair of consequential harm.",
+      "new_sources": [
+        {
+          "id": "S06",
+          "title": "Five candidate receipt acknowledgements",
+          "published": "2040-08-23",
+          "text": "Authenticated acknowledgements establish that eligible Cohort A candidates A01, A02, A03, A04 and A05 each received a corrected record on 23 August 2040. These acknowledgements do not determine when Board B first issued records, identify outcomes for other candidates, or establish repair of consequential harm."
+        }
+      ],
+      "withdrawn_sources": []
+    }
+  ]
+}
