@@ -3,7 +3,7 @@
 | Source | Construct or method | Current use | Review state | Claim limit |
 |---|---|---|---|---|
 | NIST AI RMF 1.0 | Govern, map, measure, and manage functions | Adjacent governance vocabulary | Source identified; claim-level review pending | No conformity claim |
-| ISO/IEC 42001:2023 | AI management systems | Adjacent institutional governance | Bibliographic entry recorded; licensed text review pending | No certification claim |
+| ISO/IEC 42001:2023 | AI management systems | Adjacent institutional governance | Standard identified; licensed text review pending | No certification claim |
 | EU AI Act, Regulation (EU) 2024/1689 | Human oversight duties for defined systems | Legal adjacency | Primary text identified; qualified legal review pending | No legal compliance claim |
 | Green, 2022 | Human-algorithm interaction and discretion | Construct comparison | Full-text review pending | No equivalence claim |
 | Buçinca et al., 2021 | Cognitive forcing and overreliance | Human judgment mechanism | Full-text review pending | No outcome inference for HIT |

@@ -1,0 +1,158 @@
+{
+  "register_id": "HIT-PAPER-DEVELOPMENT-2026-10-08",
+  "manuscript_path": "paper/development-manuscript.md",
+  "status": "working_draft_pending_author_review",
+  "purpose": "Descriptive provenance and review queue for the current development manuscript; not a new publication-eligibility audit.",
+  "historical_audit": {
+    "path": "audits/v0.6.5/audit-results.json",
+    "scope": "The preserved v0.6.5 map only.",
+    "eligibility_inherited": false
+  },
+  "register_confers_scientific_acceptance": false,
+  "author_decision_record": "research/strengthening/solo-002-author-review.json",
+  "release_gate_satisfied": false,
+  "review_semantics": "Evidence locators identify material for inspection. A recorded result, passing software check, author scope decision or model classification does not establish support for a broader scientific claim. Every manuscript claim below still requires responsible-author review for this draft.",
+  "claims": [
+    {
+      "id": "DEV-C01",
+      "section": "3.1",
+      "claim": "The released contract represents six substantive dimensions plus institutional-record integrity and assessment-packet integrity, using dimension-specific finding rules.",
+      "kind": "artifact_description",
+      "evidence": [{"path": "SPECIFICATION.md", "locator": "## 6. Substantive dimensions"}, {"path": "SPECIFICATION.md", "locator": "## 7. Telemetry Integrity"}],
+      "boundary": "Implementation does not establish that the dimensions adequately measure practical control.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C02",
+      "section": "3.2",
+      "claim": "The historical audit reports six eligible mapped claims and detects eight specified corruptions; its implementation aggregates recorded judgments.",
+      "kind": "historical_software_observation",
+      "evidence": [{"path": "audits/v0.6.5/audit-results.json", "locator": "negative_controls"}, {"path": "scripts/run_research_integrity_audit.py", "locator": "def evaluate"}],
+      "boundary": "Recorded integrity/support states are not independently authenticated by their declaration; fitness is not automatically measured. No eligibility transfers to this draft.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C03",
+      "section": "4.1",
+      "claim": "Two eligible independent scorers agreed on seven items in one frozen Cigna packet under scorer contract 0.1.0.",
+      "kind": "preserved_human_observation",
+      "evidence": [{"path": "docs/releases/v0.6.0.md", "locator": "7 of 7"}],
+      "boundary": "One case, two scorers and one substantive category pattern; no population reliability, construct validity or current-contract replication.",
+      "author_review": "pending_for_current_manuscript_reuse",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C04",
+      "section": "4.2",
+      "claim": "The Ofqual complete-record application is an exploratory automation-boundary example with source and period restrictions.",
+      "kind": "development_design_description",
+      "evidence": [{"path": "research/strengthening/solo-002-complete/plan.md", "locator": "## Assessment boundary"}, {"path": "research/strengthening/solo-002-complete/source-ledger.md", "locator": "## Independence and temporal checks"}],
+      "boundary": "Acceptance of suitability as a bounded example does not accept scores, interpretations or comparative outcomes.",
+      "author_review": "pending_for_current_manuscript_reuse",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C05",
+      "section": "4.2",
+      "claim": "The preserved AI draft has an additive author adjudication: bounded positive findings and limited status for both integrity components are accepted; Counsel and the comparison remain unresolved.",
+      "kind": "proposal_and_author_decision_description",
+      "evidence": [{"path": "research/strengthening/solo-002-complete/review-status.json", "locator": "draft_pending_author"}, {"path": "research/strengthening/solo-002-complete/baseline-and-review.md", "locator": "proposed ties"}, {"path": "research/strengthening/solo-002-author-review.json", "locator": "SOLO-002-AD3"}, {"path": "research/strengthening/solo-002-author-review.json", "locator": "SOLO-002-AD6"}, {"path": "research/strengthening/solo-002-author-review.json", "locator": "SOLO-002-AD7"}],
+      "boundary": "Acceptance covers stated event-level and limited-integrity interpretations only. The request to examine a missed distinction or loss accepts neither a tie nor an established loss. No independent source review, manuscript approval, publication eligibility, equivalence result or user benefit follows.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C06",
+      "section": "4.2",
+      "claim": "Four retained within-assistant reanalyses are supplemented by three separately frozen period, conflict and formatting argument analyses; the extension records eighteen proposed paired ties pending author review.",
+      "kind": "development_procedure_description",
+      "evidence": [{"path": "research/strengthening/solo-002-complete/sensitivity.md", "locator": "## Disposition"}, {"path": "research/strengthening/solo-002-extension/report.md", "locator": "## Comparison and author disposition"}, {"path": "research/strengthening/solo-002-extension/results.json", "locator": "completed_pending_author_review"}],
+      "boundary": "No independent rescoring, statistical sensitivity estimate, replacement categories or empirical equivalence. No new evaluation API call occurred; contributing-assistant reasoning did. The selected-passage model screen remains separate.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C07",
+      "section": "4.3",
+      "claim": "The first retained model batch matched eight assistant-authored expectations in eight exposed development items.",
+      "kind": "model_development_observation",
+      "evidence": [{"path": "research/strengthening/jev-report.md", "locator": "All eight matched"}, {"path": "research/strengthening/jev-live-001/analysis.json", "locator": "\"matches\": 8"}],
+      "boundary": "No independently adjudicated accuracy estimate, human-time saving or HIT validation.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C08",
+      "section": "4.3",
+      "claim": "The second batch matched nine of ten frozen expectations; the date disagreement remains unresolved.",
+      "kind": "model_development_observation",
+      "evidence": [{"path": "research/strengthening/passage-report.md", "locator": "nine of ten"}, {"path": "research/strengthening/author-decisions.md", "locator": "## AD-002"}],
+      "boundary": "The handling decision does not establish a model error or settle event identity.",
+      "author_review": "pending_for_current_manuscript_reuse",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C09",
+      "section": "4.3",
+      "claim": "The Ofqual advisory run returned fourteen valid responses, with six natural propositions classified supported and declared paired relations observed once.",
+      "kind": "model_development_observation",
+      "evidence": [{"path": "research/strengthening/jev-review-001/report.md", "locator": "## Paired conditions"}, {"path": "research/strengthening/jev-review-001/run-001/analysis.json", "locator": "\"scheduled\": 14"}],
+      "boundary": "No human reference labels, pooled accuracy, full-document assessment, general robustness or scientific acceptance; classification reservations remain.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C10",
+      "section": "2",
+      "claim": "Reviewed adjacent research already addresses oversight limits, practical ability and authority, audit artifacts and claim-evidence arguments.",
+      "kind": "targeted_literature_synthesis",
+      "evidence": [{"path": "research/strengthening/literature-review.md", "locator": "## Search record"}, {"path": "research/strengthening/closest-methods.md", "locator": "## Operational comparison"}],
+      "primary_urls": ["https://doi.org/10.1016/j.clsr.2022.105681", "https://doi.org/10.1007/s43681-022-00167-3", "https://arxiv.org/html/2001.00973v1", "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/annexe-5-argument-based-assurance-cases/"],
+      "boundary": "Purposive reviewed passages, not systematic coverage or evidence that other methods lack particular features. Source-level author review remains pending.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C11",
+      "section": "5",
+      "claim": "Version 0.6.6 has a verified exact-version archive; later records require their own revision identification.",
+      "kind": "publication_provenance",
+      "evidence": [{"path": "release/v0.6.6/publication-receipt.json", "locator": "23226713"}],
+      "boundary": "Archival publication is not acceptance of scientific judgments or evidence that this development manuscript was included in that archive.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C12",
+      "section": "6",
+      "claim": "Current-contract replication, independent implementation, construct validity and comparative benefit remain unresolved.",
+      "kind": "limitation",
+      "evidence": [{"path": "release/v1.0.0/contract-freeze.candidate.json", "locator": "current_contract_replication"}, {"path": "research/strengthening/evaluation-methods.md", "locator": "Construct validity and operational usefulness evaluation"}],
+      "boundary": "Software completion, archival publication and authorization to proceed do not close these obligations.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C13",
+      "section": "3.2",
+      "claim": "An additive file/dependency check binds the historical map's thirteen claims and nineteen evidence references to actual tracked files and a pinned base without recomputing scientific eligibility.",
+      "kind": "software_verification_description",
+      "evidence": [{"path": "evidence/research-integrity-bindings.json", "locator": "file_and_dependency_consistency_only"}, {"path": "scripts/validate_claim_bindings.py", "locator": "def build"}, {"path": "scripts/test_claim_bindings.py", "locator": "test_cycles_are_checked_directly_before_map_hash"}],
+      "boundary": "File identity and graph consistency do not establish source truth, human support review, evidence fitness or publication eligibility. The historical evaluator and audit remain unchanged.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    },
+    {
+      "id": "DEV-C14",
+      "section": "4.2",
+      "claim": "An additive comparison challenge identifies distinctions omitted by a restricted category projection but retained in the full HIT rationales; the baseline shares HIT evidence infrastructure.",
+      "kind": "representation_inspection_pending_author_review",
+      "evidence": [{"path": "research/strengthening/solo-002-comparison-challenge.md", "locator": "## 1. Category projection omits interpretive alternatives and remedy routes"}, {"path": "research/strengthening/solo-002-comparison-challenge.md", "locator": "## 3. The baseline shares HIT's evidence infrastructure"}, {"path": "research/strengthening/solo-002-author-review.json", "locator": "Identify a missed distinction or loss"}],
+      "boundary": "The author requested a challenge, not acceptance of a tie or a loss. Inspectable omission from selected fields does not demonstrate full-method inferiority, reader error, comparative burden or net benefit. No such outcomes were measured.",
+      "author_review": "pending",
+      "scientific_conclusion_eligible": false
+    }
+  ]
+}

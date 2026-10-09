@@ -21,7 +21,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 | Published artifact | Repository release 0.6.6, archived on Zenodo; normative contract 0.4.0; conformance engine 0.5.0 |
 | Human evidence | Two independent scorers agreed on 7 of 7 items for one frozen Cigna packet under the earlier 0.1.0 scorer contract |
 | Publication controls | Thirteen mapped claims, five gates, eight negative controls; audit state `PASS_WITH_EXCEPTIONS` |
-| Development evidence | Three partial applications, two retained advisory model experiments, and one complete Ofqual draft pending author review; no maturity promotion |
+| Development evidence | Three partial applications; an Ofqual draft with partial author adjudication and seven qualitative reanalysis conditions; three separate model-development runs; no maturity promotion |
 | Open questions | Current-contract replication, broader validity, comparative usefulness, novelty, and institutional outcomes remain unresolved |
 
 **Current release:** 0.6.6
@@ -36,7 +36,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current maturity:** Level 2, Applicable
 
-The [working manuscript](paper/manuscript.md) is a methods draft. The [five-priority status](research/strengthening/priority-status.md) distinguishes completed development work from pending research obligations. Release 0.6.6 collects development work beyond the archived v0.6.5 package; distributing those records does not accept their scientific interpretations.
+The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [current publication-readiness record](research/strengthening/solo-publication-readiness.md) distinguishes completed development work from pending research obligations. This draft and the latest supplements postdate release 0.6.6; they are not included in its DOI archive. The [earlier manuscript](paper/manuscript.md) remains preserved.
 
 ## Choose your path
 
@@ -60,9 +60,9 @@ HIT assesses what records establish about a named actor's influence. It does not
 | Judgment | Did the authority independently evaluate reasons, alternatives, uncertainty, and context? |
 | Command | Could the authority practically approve, reject, modify, stop, or escalate? |
 | Correction | Could a decision be contested, reconsidered, modified, reversed, or appealed in practice? |
-| Repair | After qualifying harm, did a named actor own and deliver remediation to affected persons? |
+| Repair | After qualifying harm, did a named actor deliver or operationally direct a remedy tied to that harm? |
 | Reform | Did a named authority exercise power to change the decision architecture? |
-| Telemetry Integrity | What do process coverage and packet integrity establish about the assessment's documentary basis? |
+| Telemetry Integrity | What do institutional-record integrity and assessment-packet integrity establish about the documentary basis? |
 
 The [specification](SPECIFICATION.md) controls the exact thresholds and evidence routes. These questions are a reading guide.
 
@@ -89,13 +89,17 @@ Version 0.6.5 connects H1–H9 and four material paper claims to traceability, i
 
 The [audit](audits/v0.6.5/audit-report.md) reports `PASS_WITH_EXCEPTIONS`. That state describes mapped claims and controls; it does not certify every repository statement or external source.
 
+The historical evaluator aggregates declared integrity, support-review and fitness states. An additive [verification layer](docs/research-integrity-verification.md) checks actual tracked-file bytes, locked digests and dependency structure. Neither layer independently establishes source truth or validates the new manuscript's conclusions.
+
 ### Development documentary and model work
 
 The [development workbench](research/strengthening/README.md) contains three partial applications: Obermeyer, Ofqual, and selected Robodebt inquiry recommendations. The assistant-prepared comparisons propose ties with a capable structured review. The [author decision record](research/strengthening/author-decisions.md) accepts two bounded Obermeyer qualifications while preserving historical scores.
 
 Two separate Jev experiments matched 8/8 and 9/10 assistant-authored reference labels. The [second experiment](research/strengthening/passage-report.md) retains a date-related interpretation disagreement. Its inputs are constructed passages, not full historical documents. These results test advisory model behavior; they supply no independent human ratings or measured user benefit.
 
-The [complete Ofqual draft](research/strengthening/solo-002-complete/README.md) extends the earlier announcement-only dossier. It passes record conformance while source interpretation and responsible-author adjudication remain pending. Its matched baseline proposes a tie. The [release notes](docs/releases/v0.6.6.md) distinguish these development artifacts from the unchanged human result and all eight unresolved stable-release gates.
+The [complete Ofqual draft](research/strengthening/solo-002-complete/README.md) extends the earlier announcement-only dossier. The [author-review supplement](research/strengthening/solo-002-author-review.md) accepts five bounded substantive findings and limited status for both integrity components; Counsel remains unresolved. The author requested a [challenge to the proposed comparison tie](research/strengthening/solo-002-comparison-challenge.md). Three [additional qualitative conditions](research/strengthening/solo-002-extension/report.md) now supplement the four original reanalyses, with their interpretations still awaiting author review.
+
+The separate [Ofqual advisory screen](research/strengthening/jev-review-001/report.md) returned fourteen responses on selected passages. It supplied review prompts, not independent evidence or a completed documentary assessment. No development result changes the preserved human exercise or satisfies the eight unresolved stable-release gates.
 
 ## Repository map
 
@@ -113,7 +117,7 @@ The [complete Ofqual draft](research/strengthening/solo-002-complete/README.md) 
 
 ## Reproduce the checks
 
-Use Python 3.12, matching CI. From a local clone, create and activate a virtual environment, then install the pinned dependencies:
+Use Python 3.12, matching CI, and a full Git clone: the supplementary checks compare files with retained historical commits. A source-only archive or shallow clone cannot run those Git-history checks. Create and activate a virtual environment, then install the pinned dependencies:
 
 ```bash
 git clone https://github.com/node-and-norm/human-influence-telemetry.git
@@ -123,14 +127,21 @@ source .venv/bin/activate
 python -m pip install --requirement requirements-dev.txt
 python -m src conformance --all
 python scripts/run_research_integrity_audit.py --check
+python scripts/validate_claim_bindings.py --check
+python -W error scripts/test_claim_bindings.py
 python scripts/validate_research_strengthening.py --check
 python scripts/validate_solo_application.py --check
 python scripts/test_research_strengthening.py
 python scripts/validate_solo_complete.py --check
 python scripts/test_solo_complete.py
+python scripts/validate_solo_extension.py --check
+python -W error scripts/test_solo_extension.py
+python scripts/validate_development_review.py
+python -W error scripts/test_development_review.py
 python scripts/test_v1_readiness.py
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
+python scripts/run_jev_review.py --analyze research/strengthening/jev-review-001/run-001
 ```
 
 On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. These checks and model replays require no API key or live inference. The [CI workflow](.github/workflows/validate.yml) lists the additional release, replication-candidate, and implementation-readiness checks.

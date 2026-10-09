@@ -39,3 +39,11 @@ Date: 7 October 2026, America/New_York. Recorded by Codex from the author's dire
 The author requested correct terminology for testing and validation, asked whether to continue the existing PR, and authorized committing, merging, cleaning up branches, and documenting and publishing releases.
 
 Disposition: continue PR #31 with the terminology clarification; verify the exact revision before merging; remove only branches whose work is preserved in main. Publication permission authorizes release preparation and publication when the applicable checks and metadata are complete. It does not supply missing research evidence, accept the six pending Ofqual interpretation decisions, attest to independent source review, satisfy an implementation audit, or waive the candidate and stable-release gates. Historical release archives remain version-bound.
+
+## AD-005: Partial Ofqual author adjudication
+
+Date: 8 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly to stated questions in the working conversation. Recorded by Codex.
+
+The [author-review supplement](solo-002-author-review.md) and [exact question-and-response record](solo-002-author-review.json) preserve each disposition. The author accepted bounded exploratory case use, Judgment 2 on the public account, Command 2, Correction 2 and Reform 2 for the regulatory event, and Repair 2 on the operational-direction route only. The questions expressly excluded ordinary-period oversight, operation of each board's software, universal receipt and complete repair of harm.
+
+The author left Counsel unresolved. This is not acceptance of the original proposed IE. For the comparison, the author responded “Identify a missed distinction or loss”; the proposed tie remains unaccepted and a follow-up challenge examines candidate omissions. The author accepted limited status for both institutional-record integrity and assessment-packet integrity. These collaborative judgments do not attest independent source re-reading, accept the subsequent conditional reanalyses or approve the entire manuscript. Original proposals remain unchanged; no scientific-conclusion eligibility, release gate or replication claim is promoted.

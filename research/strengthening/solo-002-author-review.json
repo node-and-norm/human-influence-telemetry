@@ -1,0 +1,92 @@
+{
+  "review_id": "HIT-SOLO-002-AUTHOR-001",
+  "recorded_date": "2026-10-08",
+  "date_timezone": "America/New_York",
+  "author": "Mark Julius Banasihan",
+  "recorded_by": "OpenAI Codex",
+  "review_mode": "collaborative_ai_assisted_author_adjudication",
+  "source": "Direct responses to the stated questions in the working conversation",
+  "original_assessment": "research/strengthening/solo-002-complete/assessment.draft.json",
+  "original_draft_preserved": true,
+  "independent_review": false,
+  "pre_model_reference": false,
+  "scientific_conclusion_eligible": false,
+  "release_gate_satisfied": false,
+  "limits": [
+    "Acceptance records the stated scope only; no independent re-reading of all primary documents is attested.",
+    "The earlier draft and its pending status remain preserved as proposal history.",
+    "A technical or scientific review disposition does not confer v0.6.5 map eligibility or satisfy a v1 release gate."
+  ],
+  "decisions": [
+    {
+      "decision_id": "SOLO-002-AD1",
+      "disposition": "accept",
+      "question": "First Ofqual author decision: do you accept retaining the 17 August 2020 grading reversal as an exploratory, event-level development example? It concerns statistical standardisation and a regulator’s exceptional intervention, not ordinary oversight, every student’s outcome, or general validation of AI governance. The six substantive findings would still require separate review.",
+      "verbatim_response": "Accept this bounded exploratory use",
+      "accepted_values": {
+        "case_use": "bounded_exploratory_event_example"
+      },
+      "recorded_scope": "The exceptional regulatory event may remain an exploratory development example. Individual findings require separate decisions."
+    },
+    {
+      "decision_id": "SOLO-002-AD2",
+      "disposition": "unresolved",
+      "question": "Ofqual decision 2, Counsel: the annual report documents a technical advice group with Board participation, but not the specific material accessed before the reversal. HIT allows 1 for an applicable formal route without shown retrieval, and IE when timing or scope cannot be determined. Which interpretation do you adopt for this event?",
+      "verbatim_response": "Leave this decision unresolved",
+      "accepted_values": null,
+      "recorded_scope": "No Counsel category is accepted. The original proposed IE and alternative 1 remain visible; the author's unresolved disposition is not an accepted IE finding."
+    },
+    {
+      "decision_id": "SOLO-002-AD3",
+      "disposition": "accept",
+      "question": "Ofqual decision 3, Judgment: the Chair’s statement gives reasons involving distress, public confidence and appeal burdens, and announces a changed grading rule. HIT allows 2 for direct reasoning capable of affecting the path. Do you accept event-level Judgment 2 on this public account, while acknowledging that internal deliberation is unavailable?",
+      "verbatim_response": "Accept 2 with those public-record limitations",
+      "accepted_values": {
+        "Judgment": 2
+      },
+      "recorded_scope": "Event-level reasoning on the published account; internal deliberation remains unavailable."
+    },
+    {
+      "decision_id": "SOLO-002-AD4",
+      "disposition": "accept",
+      "question": "Ofqual decision 4: do you accept Command 2, Correction 2 and Reform 2 for the bounded regulatory event, based on the changed grading rule, Ofqual’s reported requirement to exam boards and reported follow-through? This does not credit Ofqual with operating each board’s software, establish normal-period oversight, or prove every candidate received a corrected result.",
+      "verbatim_response": "Accept those three event-level findings with these limits",
+      "accepted_values": {
+        "Command": 2,
+        "Correction": 2,
+        "Reform": 2
+      },
+      "recorded_scope": "The regulator's event-level direction and reported follow-through only, without individual-board operation, normal-period control or universal receipt."
+    },
+    {
+      "decision_id": "SOLO-002-AD5",
+      "disposition": "accept",
+      "question": "Ofqual decision 5, Repair: HIT permits 2 when a named actor operationally directs record correction tied to formally acknowledged harm. Do you accept Repair 2 on that limited route here, preserving the documented exclusions and unknown individual outcomes? This does not mean every harm was repaired.",
+      "verbatim_response": "Accept Repair 2 on the operational-direction route only",
+      "accepted_values": {
+        "Repair": 2,
+        "route": "operational_direction"
+      },
+      "recorded_scope": "The operationally directed record-correction route tied to acknowledged harm; individual outcomes, exclusions and adequacy of remedy remain bounded."
+    },
+    {
+      "decision_id": "SOLO-002-AD6",
+      "disposition": "unresolved",
+      "question": "Ofqual decision 6: do you accept the comparison as a proposed substantive tie with a capable structured review? Both approaches identify the same source limits and evidence requests. HIT adds a fixed, inspectable representation, but this exercise demonstrates no superior decisions or reduced effort. The same assistant prepared both outputs.",
+      "verbatim_response": "Identify a missed distinction or loss",
+      "accepted_values": null,
+      "recorded_scope": "The author requested further examination for a missed distinction or loss. This does not accept the proposed tie or identify an adjudicated substantive loss. The additive comparison challenge records the follow-up."
+    },
+    {
+      "decision_id": "SOLO-002-AD7",
+      "disposition": "accept",
+      "question": "One additional author check: do you accept limited institutional-record integrity and limited assessment-packet integrity? The sources are traceable but mainly connected institutions’ reports; internal records and publication-day snapshots are unavailable. This judgment does not establish source truth or make the current packet independently verified.",
+      "verbatim_response": "Accept limited for both integrity components",
+      "accepted_values": {
+        "institutional_record_integrity": "limited",
+        "assessment_packet_integrity": "limited"
+      },
+      "recorded_scope": "Both integrity components are accepted as limited within the stated institutional-source, unavailable-internal-record and historical-snapshot constraints. This does not establish source truth or independent packet verification."
+    }
+  ]
+}
