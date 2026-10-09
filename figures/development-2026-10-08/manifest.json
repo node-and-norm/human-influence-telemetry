@@ -1,0 +1,34 @@
+{
+  "exhibit_set": "HIT-DEVELOPMENT-FIGURES-2026-10-08",
+  "font": "Matplotlib-bundled DejaVu Sans; SVG glyphs converted to paths.",
+  "inputs": {
+    "figures/development-2026-10-08/data.json": "e24e400f48c69db83118168e0f7545ede801cfcad8315429e32077bb9b1882ec",
+    "requirements-figures.txt": "be268070cfe620d6fc96fbe176d938d75e63320e8b882089fc589a70fdbd8ef3",
+    "scripts/render_development_figures.py": "4bbb95618742307d0ea79662b60dc5ee0ac79a95fb761ab25aa5ee1a0fb03dbc"
+  },
+  "outputs": {
+    "figures/development-2026-10-08/assessment-architecture.png": "6e3890c48d70d3a2cbbaac3c5dd078183a17126a1a77c327e166aefa8e0e5f0d",
+    "figures/development-2026-10-08/assessment-architecture.svg": "c352c7f5426cb606cee7ff2dfa028b1a52d036869c95fbf2745050d409c635ce",
+    "figures/development-2026-10-08/ofqual-actor-time.png": "d247555c15a9b2ff1b9a0ba28adc73ceb015602250431e79a37b30a699a35f3f",
+    "figures/development-2026-10-08/ofqual-actor-time.svg": "40fe7a1ee2d8bb7c65518748249c0088b4fe5b203122338bb71ba881939e25a5",
+    "figures/development-2026-10-08/qualification-preservation.png": "5d48b82abd7e17e5b8b7c78a1b462d681f4b421bb81ef8086c2bc795e376542d",
+    "figures/development-2026-10-08/qualification-preservation.svg": "b026310ba487f71782401e2df3b1639ba5d4ef711c354bf58f1e685c66c1127e"
+  },
+  "render_reproduction_check": "Strict regenerated SVG bytes with pinned Python dependencies; PNG hashes identify saved previews and are not a cross-platform pixel-reproduction claim.",
+  "runtime_versions": {
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.1",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.7",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  },
+  "saved_artifact_check": "SHA-256 of authored inputs, source bindings and all six saved outputs.",
+  "schema_version": 1,
+  "scope": "Saved artifact integrity and optional SVG render reproduction; no scientific adjudication."
+}

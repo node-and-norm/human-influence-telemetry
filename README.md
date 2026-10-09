@@ -99,6 +99,8 @@ Two separate Jev experiments matched 8/8 and 9/10 assistant-authored reference l
 
 The [complete Ofqual draft](research/strengthening/solo-002-complete/README.md) extends the earlier announcement-only dossier. The [author-review supplement](research/strengthening/solo-002-author-review.md) accepts five bounded substantive findings and limited status for both integrity components; Counsel remains unresolved. The author requested a [challenge to the proposed comparison tie](research/strengthening/solo-002-comparison-challenge.md). Three [additional qualitative conditions](research/strengthening/solo-002-extension/report.md) now supplement the four original reanalyses, with their interpretations still awaiting author review.
 
+A separate [synthetic evidence-update rehearsal](research/strengthening/evidence-update-001/report.md) retained first responses to equivalent graph and table packets. Both assistants identified four injected changes with no scored difference. This small, highly cued task establishes neither HIT superiority nor human usefulness. Its inputs, scoring rules and first responses remain available for inspection.
+
 The separate [Ofqual advisory screen](research/strengthening/jev-review-001/report.md) returned fourteen responses on selected passages. It supplied review prompts, not independent evidence or a completed documentary assessment. No development result changes the preserved human exercise or satisfies the eight unresolved stable-release gates.
 
 ## Repository map
@@ -138,6 +140,10 @@ python scripts/validate_solo_extension.py --check
 python -W error scripts/test_solo_extension.py
 python scripts/validate_development_review.py
 python -W error scripts/test_development_review.py
+python scripts/run_evidence_update_benchmark.py --prepare
+python scripts/run_evidence_update_benchmark.py --analyze
+python -W error scripts/test_evidence_update_benchmark.py
+python scripts/render_development_figures.py --check
 python scripts/test_v1_readiness.py
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-001
 python scripts/run_jev_claim_pilot.py --analyze research/strengthening/jev-live-002
@@ -145,6 +151,8 @@ python scripts/run_jev_review.py --analyze research/strengthening/jev-review-001
 ```
 
 On Windows, activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell. These checks and model replays require no API key or live inference. The [CI workflow](.github/workflows/validate.yml) lists the additional release, replication-candidate, and implementation-readiness checks.
+
+The [three development exhibits](figures/development-2026-10-08/README.md) separate assessment structure, event timing and retained qualifications. To regenerate and compare their SVGs, install `requirements-figures.txt` and run `python scripts/render_development_figures.py --render-check`. The standard-library `--check` above verifies stored artifacts without rendering them.
 
 To inspect your own record, run `python -m src conformance --path assessment.json`. For a historical record, `python -m src migration-plan --path historical-assessment.json` produces a non-mutating migration plan. Conformance checks record structure and declared rules; it does not verify source truth.
 

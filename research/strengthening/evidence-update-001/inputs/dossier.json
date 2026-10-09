@@ -1,0 +1,91 @@
+{
+  "study_id": "HIT-EU-001",
+  "synthetic": true,
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Agency A direction notice",
+      "published": "2040-08-17",
+      "text": "Agency A issued a binding direction on 17 August 2040. Board B must use the higher of the calculated grade and the centre estimate for Cohort A candidates with a centre estimate. Candidates without a centre estimate fall outside this route. Agency A directs the grading rule; this notice does not show Agency A operating Board B's software."
+    },
+    {
+      "id": "S02",
+      "title": "Board B issue bulletin",
+      "published": "2040-08-19",
+      "text": "Board B reports that it issued corrected records on 19 August 2040 for Cohort A candidates covered by Agency A's direction. This is Board B's account of issuance. The bulletin contains no recipient acknowledgements and does not establish that any named candidate received a corrected record."
+    },
+    {
+      "id": "S03",
+      "title": "Agency A advice-panel record",
+      "published": "2040-08-20",
+      "text": "A formal technical advice panel existed before 17 August 2040 and included Agency A board members. This record does not identify which underlying material those members accessed before the grading direction."
+    },
+    {
+      "id": "S04",
+      "title": "Agency A harm acknowledgement",
+      "published": "2040-08-17",
+      "text": "Agency A acknowledges that the grading process caused distress and uncertainty. It has no complete individual-outcome or remedy record. A changed grade or a corrected record does not, by itself, establish that all consequential harm was repaired."
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "Q01",
+      "text": "All actors, dates, sources and events in this packet are constructed. They are not new historical evidence about Ofqual.",
+      "allowed_states": [
+        "synthetic_only",
+        "historical_evidence"
+      ]
+    },
+    {
+      "id": "Q02",
+      "text": "Agency A's demonstrated role is regulatory direction. Its operation of Board B's software is not established.",
+      "allowed_states": [
+        "direction_only",
+        "direct_software_operation"
+      ]
+    },
+    {
+      "id": "Q03",
+      "text": "The direction covers Cohort A candidates with a centre estimate. It excludes candidates without one.",
+      "allowed_states": [
+        "cohort_a_with_estimates_only",
+        "all_candidates"
+      ]
+    },
+    {
+      "id": "Q04",
+      "text": "A report of issuance alone does not establish recipient receipt. Any later signed receipts establish receipt only for the specifically named recipients.",
+      "allowed_states": [
+        "no_verified_receipts",
+        "five_named_receipts_only",
+        "all_candidates_received"
+      ]
+    },
+    {
+      "id": "Q05",
+      "text": "Repair of every consequential harm remains unestablished, including when some corrected records have been received.",
+      "allowed_states": [
+        "all_harm_repair_unestablished",
+        "all_harm_repaired"
+      ]
+    },
+    {
+      "id": "Q06",
+      "text": "Actual access to underlying material before the direction remains unresolved. A formal advice route does not establish retrieval.",
+      "allowed_states": [
+        "predecision_access_unresolved",
+        "predecision_access_established",
+        "no_access_proven"
+      ]
+    },
+    {
+      "id": "Q07",
+      "text": "The fact that Board B reported issuance and the occurrence of issuance are different propositions. An equally admissible contrary account creates a conflict about occurrence without erasing the original report.",
+      "allowed_states": [
+        "single_report_occurrence_qualified",
+        "conflicting_occurrence_accounts_report_retained",
+        "original_report_erased"
+      ]
+    }
+  ]
+}

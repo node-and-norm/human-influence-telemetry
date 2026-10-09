@@ -4,6 +4,8 @@
 
 ## What changed
 
+A later same-day increment adds three [development exhibits](../../figures/development-2026-10-08/README.md) and a [frozen evidence-update rehearsal](evidence-update-001/report.md). Both first-attempt assistant responses identified all four injected changes; no scored difference distinguished the equivalent graph and table packets. This is a highly cued synthetic task, not evidence of comparative utility or human performance. The current manuscript reports it separately; new claims remain pending author review. The verification counts below describe the earlier increment, not this later addition.
+
 | Priority | Completed in this increment | Still open |
 | :--- | :--- | :--- |
 | Release and evidence controls | Jev PR #35 merged; retained evidence bindings now checked against actual Git bytes and dependency structure | Stable-release gates remain unresolved; no new DOI archive covers this increment |

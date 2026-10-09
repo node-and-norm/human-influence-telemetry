@@ -4,6 +4,8 @@ Read the [current development manuscript](development-manuscript.md) for the met
 
 This directory contains a working research-paper package. It is not a submitted or accepted paper.
 
+The manuscript now includes [three reproducible development exhibits](../figures/development-2026-10-08/README.md): assessment architecture, Ofqual event/source timing, and qualification preservation. Their captions distinguish conceptual structure and documentary inspection from empirical performance. The older claim-gate figure remains version-bound.
+
 The [research strengthening workbench](../research/strengthening/README.md) supplies targeted literature comparisons, documentary proposals and separate model-development records. Consult its [claim audit](../research/strengthening/claim-audit.md) before reusing historical findings as current-contract claims. Passing checks, merging development work and publishing a software archive do not accept a source interpretation.
 
 The historical crosswalk controls the older manuscript's mapped assertions. The development register is a descriptive review queue, not a replacement eligibility engine. The literature matrix and search log distinguish reviewed sources from planned searches; the novelty audit limits contribution claims. The development manuscript links sources at the claim. The existing bibliography retains historical citations and still requires reconciliation before submission. [Submission notes](submission-notes.md) distinguish repository archiving, a possible author-approved preprint and journal submission.

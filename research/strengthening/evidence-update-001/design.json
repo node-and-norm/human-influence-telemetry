@@ -1,0 +1,19 @@
+{
+  "study_id": "HIT-EU-001",
+  "design_type": "controlled_evidence_update_representation_rehearsal",
+  "synthetic": true,
+  "executor": "ai_assistant",
+  "independent_review": false,
+  "frozen_sha256": {
+    "research/strengthening/evidence-update-001/PROTOCOL.md": "b003769b775774093267707b8a516eaa34d236c1bc02260ef5d14a893b6d9351",
+    "research/strengthening/evidence-update-001/README.md": "5a05089199104ced03a43356227bc5d361ecbe497839bbdcf90e64bd1e2ea9a4",
+    "research/strengthening/evidence-update-001/inputs/instructions.md": "b6ea627629d6fa0bbd7b230b3a28de06d23da4577ec5767518815ba23dcf65de",
+    "research/strengthening/evidence-update-001/inputs/dossier.json": "b08c53de022f1f6758fc052b03a9e30e48820f09556f08c71ab004800dd49a4b",
+    "research/strengthening/evidence-update-001/inputs/updates.json": "a25a42aec482bc9660ea225ea388d91eefb18f667c787c56149ec75ab3a01c67",
+    "research/strengthening/evidence-update-001/inputs/hit_graph.json": "ffaf9e9eb8a2e1d61587cb0cf0836d0c881b46b0b3ecc0d3013b03b467e1417e",
+    "research/strengthening/evidence-update-001/inputs/structured_table.json": "769cb809b61c7d6e18422b9fbf1041b887c87fba531f6d2b73cdd5bafa5ec209",
+    "research/strengthening/evidence-update-001/inputs/oracle.json": "43c899ad5c573fd6e1d50502e794c0a2c4e81ffff8045390bce674c22a97f2bc",
+    "scripts/run_evidence_update_benchmark.py": "9a799cfc688088bb8689b93e87e86dddcec14a7c3940762826f792b5e384d0f8",
+    "scripts/test_evidence_update_benchmark.py": "a1d0234e9d85f284f8c3805d26cd5141f5fefc58cbb6c49b0576abfcc3c2ab12"
+  }
+}

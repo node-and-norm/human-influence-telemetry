@@ -1,0 +1,92 @@
+{
+  "exhibit_set": "HIT-DEVELOPMENT-FIGURES-2026-10-08",
+  "status": "assistant_prepared_development_exhibits_pending_author_review",
+  "adds_empirical_observations": false,
+  "independent_review": false,
+  "release_gate_satisfied": false,
+  "scientific_conclusion_eligible": false,
+  "source_bindings": [
+    {"path": "SPECIFICATION.md", "sha256": "00cc5813bec33c0425f6b43827f0522599ff6d5b9e64223f759d868f3dab8184", "locator": "Sections 2–7 and 11"},
+    {"path": "schema/hit-assessment.schema.json", "sha256": "bddfaccc4b6ced6bd8d586a5d846efa0234b66185f37ff5d7611b9d619769740", "locator": "$defs.finding and $defs.telemetryIntegrity"},
+    {"path": "research/strengthening/solo-002-complete/assessment.draft.json", "sha256": "020ae6d8c4a33cc6294891886fccef1bef51d471e1b0376d9995a78d369e182c", "locator": "actors; evidence_claims EC-DECISION, EC-REISSUE-REQUIREMENT, EC-ISSUE-COMMAND, EC-ISSUE-REPAIR; substantive_findings[0] and [4]"},
+    {"path": "research/strengthening/solo-002-complete/source-ledger.md", "sha256": "54876920f18ee731c96ab20e7706eac95514d3dbd9ef0d7ef2a5b578c86163b0", "locator": "Documents and observations; Independence and temporal checks; Material missing records and contrary possibilities"},
+    {"path": "research/strengthening/solo-002-complete/baseline-and-review.md", "sha256": "0d03d09b6a5bb5d013850611fb3af7806f9fd138784566dba3776c9866ac962c", "locator": "Capable structured review Q2 and Q4; HIT comparison Counsel and Repair; introductory shared-authorship disclosure"},
+    {"path": "research/strengthening/solo-002-author-review.json", "sha256": "b3ae2f3f57c34c6018e8ba48bdf1479f0491db192bb648440f20a8727fa4aaa4", "locator": "AD2, AD5, AD6 and AD7"},
+    {"path": "research/strengthening/solo-002-comparison-challenge.md", "sha256": "11d40b85ce4a169254c0b4efbe3359d245d4df6e232479b8b22a8654b0000a37", "locator": "Sections 1 and 3; Disposition for the author"},
+    {"path": "docs/research-integrity-verification.md", "sha256": "28ef97d7261fd597254c635dae9221be82aa152602ace96f3ac7f288e569f1a8", "locator": "Declared judgments and checked files"},
+    {"path": "research/strengthening/jev-review-001/sources.json", "sha256": "69b66c02bbe76e1a70c03049b108957684e0121849359c71e1496f51c1afaa98", "locator": "OFQ-01 publication_date; OFQ-02 publication_date; OFQ-03 updated_date; DFE-01 updated_date and results-day passage"}
+  ],
+  "figures": [
+    {
+      "id": "assessment-architecture",
+      "title": "An inspectable record separates judgment from checks",
+      "subtitle": "Conceptual architecture  |  HIT contract 0.4.0  |  Development exhibit 1",
+      "alt_text": "A conceptual diagram separates human interpretation from automated checks. An assessor bounds the process, selects sources, states evidence propositions and interprets findings. The complete record retains Counsel, Judgment, Command, Correction, Repair and Reform, plus institutional-record and assessment-packet integrity. Software checks declared structure, references, derivation and bound file identity. It does not establish source truth or validate the assessor's interpretation.",
+      "caption": "HIT represents a bounded documentary judgment in a complete record. Human interpretation assigns substantive and integrity findings; software checks specified structural and file-consistency properties. The diagram summarizes the specification and additive integrity-checking clarification. It is neither an empirical process-effectiveness result nor a claim that human review has occurred for every record.",
+      "source_refs": [0, 1, 7],
+      "human_label": "ASSESSOR: INTERPRETATION AND ACCOUNTABILITY",
+      "steps": [
+        {"title": "Bound the process", "body": "Name the actor, decision, period,\nrecord universe and exclusions.\nSelect and disclose sources."},
+        {"title": "State evidence propositions", "body": "Keep source, locator, actor and date.\nDistinguish support, contradiction\nand limits; disclose dependence."},
+        {"title": "Interpret the record", "body": "Apply evidence states and rubric.\nRecord reasoning, alternatives\nand missing evidence."}
+      ],
+      "record_title": "COMPLETE ASSESSMENT RECORD",
+      "dimensions": ["Counsel", "Judgment", "Command", "Correction", "Repair", "Reform"],
+      "integrity_title": "Two integrity components remain visible",
+      "integrity": "Institutional-record integrity  +  assessment-packet integrity",
+      "record_footer": "Retain evidence links, scope, rationale, limitations and unresolved propositions.",
+      "limits_title": "Meaning remains bounded",
+      "limits": "0, 1 and 2 are rubric findings.\nIE is non-ordinal uncertainty.\nA finding is not an overall\ninstitutional performance score.",
+      "checks_label": "SOFTWARE: SPECIFIED CHECKS, NOT SUBSTANTIVE ADJUDICATION",
+      "checks": [
+        {"title": "Contract checks", "body": "Required fields, finding routes,\nreferences and integrity derivation"},
+        {"title": "File and dependency checks", "body": "Bound file bytes, declared digests\nand dependency consistency"},
+        {"title": "Limits of a pass", "body": "No certification of source truth,\ninterpretation or practical usefulness"}
+      ],
+      "footer": "Sources: specification §§2–7, 11; assessment schema; research-integrity verification note. See data.json for locators and hashes."
+    },
+    {
+      "id": "ofqual-actor-time",
+      "title": "Regulatory direction and reported issue occupy different records",
+      "subtitle": "Ofqual, England  |  Event: 17 August 2020; follow-up: 18–20 August  |  Development exhibit 2",
+      "alt_text": "Two lanes separate events from publication and update dates. On 17 August 2020 the Ofqual Board announced a changed grading rule. DfE later reported revised AS and A level grades sent to centres on 19 August and GCSE results on 20 August. Source dates include the 17 August statement, guidance updated 27 August 2020, an April 2021 burden statement whose accessible version was updated in 2024, and a July 2021 annual report. Counsel remains unresolved. Accepted Repair 2 concerns operational direction, not established remedy for every candidate.",
+      "caption": "The event lane shows the bounded intervention and institutional reports of follow-through. The source lane shows when accounts were published or updated; it does not date the Board's exercise of authority. Connected institutional reports are not independent verification of every recipient's outcome. Current public copies were retrieved in October 2026, without authenticated publication-day snapshots.",
+      "source_refs": [2, 3, 5, 8],
+      "event_label": "EVENT LANE: ORDERED EVENTS, SPACING DOES NOT REPRESENT DURATION",
+      "events": [
+        {"date": "17 AUG 2020", "actor": "Ofqual Board", "body": "Announces the changed rule.\nRegulatory direction is distinct\nfrom each board's software.", "refs": "OFQ-01; OFQ-02; OFQ-03"},
+        {"date": "19 AUG 2020", "actor": "AS/A issue to centres", "body": "DfE reports revised AS/A level\ngrades sent to schools\nand colleges.", "refs": "DFE-01, Results days"},
+        {"date": "20 AUG 2020", "actor": "GCSE result issue", "body": "DfE and Ofqual report GCSE\nresults issued under the\nreplacement arrangements.", "refs": "DFE-01; OFQ-02"}
+      ],
+      "source_label": "SOURCE LANE: PUBLICATION OR UPDATE DATES, NOT DATES OF AUTHORITY",
+      "publications": [
+        {"date": "17 AUG 2020", "body": "Chair's statement\nOFQ-01\nPublic announcement"},
+        {"date": "27 AUG 2020", "body": "DfE guidance updated\nDFE-01\nReports the earlier issue"},
+        {"date": "APRIL 2021", "body": "Burden statement title\nOFQ-03\nAccessible version updated\n11 April 2024"},
+        {"date": "20 JULY 2021", "body": "Annual report published\nOFQ-02\nRetrospective account"}
+      ],
+      "boundaries": [
+        {"title": "Counsel remains unresolved", "body": "A seasonal advice route is documented.\nEvent-specific evidence access is not resolved."},
+        {"title": "Repair 2 has a bounded route", "body": "Author accepts operationally directed record correction.\nIndividual receipt and full repair remain unestablished."}
+      ],
+      "footer": "Six-document ledger and author-review supplement govern scope. Public copies retrieved October 2026; no publication-day snapshots."
+    },
+    {
+      "id": "qualification-preservation",
+      "title": "A restricted projection omits qualifications retained in full records",
+      "subtitle": "Descriptive artifact inspection, not a reader study  |  Ofqual development example  |  Exhibit 3",
+      "alt_text": "A table compares two qualifications across a restricted five-field projection, the full HIT record and a capable structured review. The projection omits the Counsel alternative of 1 and the Repair operational-direction route and individual-delivery limitation. The complete HIT record preserves these in rationale and evidence. Baseline Q2 preserves the advice-route versus actual-access distinction without assigning a HIT category; Q4 preserves directed correction versus full repair. No reader errors, effort differences or whole-method advantage or loss were measured.",
+      "caption": "The comparison unit is an explicit five-field projection of the original draft, not HIT's complete record. It omits the stated alternative category and remedy-route qualification. The baseline preserves the underlying distinctions in prose; Q2 does not itself name category 1. The same assistant prepared the draft and baseline using shared evidence infrastructure. This inspection does not demonstrate whole-method inferiority, superiority, reader error or comparative effort; the author's overall comparison decision remains open.",
+      "source_refs": [1, 2, 4, 5, 6],
+      "headers": ["Qualification", "Restricted projection", "Full HIT record", "Capable structured review"],
+      "rows": [
+        ["Counsel:\nformal route versus\nactual event access", "IE; indeterminate.\nAccess uncertainty appears.\nThe alternative 1 and its\nformal-route basis are omitted.", "IE is proposed. Rationale\nretains 1 as a live alternative\nif the formal route applies.\nAuthor adjudication is open.", "Q2 records an advice route\nand unresolved event access.\nIt preserves that distinction,\nwithout assigning a HIT category."],
+        ["Repair:\noperational direction\nversus individual delivery", "2; observed exercise; triggered.\nThe route and unknown\nindividual delivery are omitted;\nunresolved_proposition is null.", "Rationale names operational\ndirection. Unknown individual\noutcomes and exclusions remain\nin rationale and evidence links.", "Q4 distinguishes directed record\ncorrection from full repair.\nRecipient-linked reconciliation\nis requested for broader claims."]
+      ],
+      "projection_title": "THE PROJECTION CONTAINS EXACTLY FIVE FIELDS",
+      "projection_fields": ["dimension", "finding", "evidence_state", "repair_trigger", "unresolved_proposition"],
+      "boundary": "Inspection of two qualifications only. The baseline shares HIT's evidence catalog; the same assistant prepared both outputs.\nNo observed reading error, independent comparison, measured effort or whole-method advantage or loss follows.",
+      "footer": "Sources: assessment draft, baseline Q2/Q4, comparison challenge and author decisions AD2/AD5/AD6. See data.json for exact locators."
+    }
+  ]
+}

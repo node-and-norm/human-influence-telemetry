@@ -1,0 +1,645 @@
+{
+  "study_id": "HIT-EU-001",
+  "method_id": "hit_graph",
+  "protocol_commit": "7a3b3d96e3cc477f6bae9efa8dbda5aa1d33a7fa",
+  "input_sha256": {
+    "research/strengthening/evidence-update-001/inputs/instructions.md": "b6ea627629d6fa0bbd7b230b3a28de06d23da4577ec5767518815ba23dcf65de",
+    "research/strengthening/evidence-update-001/inputs/dossier.json": "b08c53de022f1f6758fc052b03a9e30e48820f09556f08c71ab004800dd49a4b",
+    "research/strengthening/evidence-update-001/inputs/updates.json": "a25a42aec482bc9660ea225ea388d91eefb18f667c787c56149ec75ab3a01c67",
+    "research/strengthening/evidence-update-001/inputs/hit_graph.json": "ffaf9e9eb8a2e1d61587cb0cf0836d0c881b46b0b3ecc0d3013b03b467e1417e"
+  },
+  "executor": "ai_assistant",
+  "independent_review": false,
+  "author_review": "pending",
+  "access_declaration": "I read the complete permitted task inputs instructions.md, dossier.json, updates.json and hit_graph.json under research/strengthening/evidence-update-001/inputs/. I did not inspect the oracle, scorer, design, other method representation, other responses or surrounding research files, and used no web or external API sources. I also received the coordinator's task instructions, supplied protocol commit and input digests, and inherited conversation context. This was a voluntary access restriction and does not establish guaranteed blinding, human review or independent validation. Each scenario independently starts from the original packet.",
+  "scenarios": [
+    {
+      "id": "U00",
+      "claims": [
+        {
+          "id": "P01",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Within this constructed packet, Agency A issued its binding grading direction on 17 August 2040.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies the direction and issuance date. It establishes regulatory direction, not Agency A's operation of Board B's software."
+        },
+        {
+          "id": "P02",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "The direction requires Board B to use the higher of the calculated grade and centre estimate for Cohort A candidates with a centre estimate; candidates without one are excluded from this route.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies both the grading rule and eligibility boundary. This bounded coverage is supported and is not a claim about all candidates."
+        },
+        {
+          "id": "P03",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Board B published S02 reporting that it issued corrected records on 19 August 2040 for covered Cohort A candidates.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "The bulletin directly supplies the fact of Board B's report. Publication of that report is distinct from establishing that the reported issuance occurred."
+        },
+        {
+          "id": "P04",
+          "action": "retain",
+          "status": "limited_support",
+          "updated_statement": "Issuance of corrected records by Board B on 19 August 2040 for covered Cohort A candidates rests on Board B's account alone.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "S02 reports actual issuance, but the packet explicitly restricts occurrence support to this single account. It supplies no recipient acknowledgements."
+        },
+        {
+          "id": "P05",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "The admissible packet does not establish receipt of a corrected record by any named candidate.",
+          "evidence_refs": [
+            "S02",
+            "S04"
+          ],
+          "rationale": "S02 supplies no recipient acknowledgements, and S04 has no complete individual-outcome record. Receipt is therefore undetermined, not disproved."
+        },
+        {
+          "id": "P06",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "A formal technical advice panel existed before the grading direction and included Agency A board members.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 directly states that the panel existed before 17 August 2040. Formal panel existence does not establish access to underlying material."
+        },
+        {
+          "id": "P07",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Whether Agency A board members actually accessed underlying material before the grading direction remains unresolved.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 identifies the formal advice panel but does not identify the material members accessed before the direction. A route for advice neither establishes retrieval nor proves no access."
+        },
+        {
+          "id": "P08",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Repair of all consequential harm remains unestablished, including for candidates covered by the grading direction.",
+          "evidence_refs": [
+            "S01",
+            "S04"
+          ],
+          "rationale": "S01 supplies a bounded grading rule, while S04 acknowledges distress and uncertainty without a complete individual-outcome or remedy record. A changed grade or corrected record does not establish repair of every consequential harm."
+        }
+      ],
+      "qualifications": [
+        {
+          "id": "Q01",
+          "state": "synthetic_only",
+          "rationale": "All actors, dates, sources and events are constructed for this task; none is new historical evidence about Ofqual."
+        },
+        {
+          "id": "Q02",
+          "state": "direction_only",
+          "rationale": "S01 demonstrates Agency A's regulatory direction of the grading rule. The packet does not establish Agency A's operation of Board B's software."
+        },
+        {
+          "id": "Q03",
+          "state": "cohort_a_with_estimates_only",
+          "rationale": "The direction covers only Cohort A candidates with a centre estimate and excludes candidates without one from this route."
+        },
+        {
+          "id": "Q04",
+          "state": "no_verified_receipts",
+          "rationale": "Board B's report of issuance supplies no recipient acknowledgements. Receipt by a named candidate is not established."
+        },
+        {
+          "id": "Q05",
+          "state": "all_harm_repair_unestablished",
+          "rationale": "The packet has no complete individual-outcome or remedy record. Correction of a grade or record does not establish repair of all consequential harm."
+        },
+        {
+          "id": "Q06",
+          "state": "predecision_access_unresolved",
+          "rationale": "The formal panel record does not identify actual access to underlying material before the direction. Neither access nor absence of access is established."
+        },
+        {
+          "id": "Q07",
+          "state": "single_report_occurrence_qualified",
+          "rationale": "S02 remains a published report of issuance, while occurrence on 19 August 2040 has only the explicitly qualified support of Board B's single account."
+        }
+      ]
+    },
+    {
+      "id": "U01",
+      "claims": [
+        {
+          "id": "P01",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Within this constructed packet, Agency A issued its binding grading direction on 17 August 2040.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies the direction and issuance date. It establishes regulatory direction, not Agency A's operation of Board B's software."
+        },
+        {
+          "id": "P02",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "The direction requires Board B to use the higher of the calculated grade and centre estimate for Cohort A candidates with a centre estimate; candidates without one are excluded from this route.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies both the grading rule and eligibility boundary. This bounded coverage is supported and is not a claim about all candidates."
+        },
+        {
+          "id": "P03",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Board B published S02 reporting that it issued corrected records on 19 August 2040 for covered Cohort A candidates.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "The bulletin directly supplies the fact of Board B's report. Publication of that report is distinct from establishing that the reported issuance occurred."
+        },
+        {
+          "id": "P04",
+          "action": "retain",
+          "status": "limited_support",
+          "updated_statement": "Issuance of corrected records by Board B on 19 August 2040 for covered Cohort A candidates rests on Board B's account alone.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "S02 reports actual issuance, but the packet explicitly restricts occurrence support to this single account. It supplies no recipient acknowledgements."
+        },
+        {
+          "id": "P05",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "The admissible packet does not establish receipt of a corrected record by any named candidate.",
+          "evidence_refs": [
+            "S02",
+            "S04"
+          ],
+          "rationale": "S02 supplies no recipient acknowledgements, and S04 has no complete individual-outcome record. Receipt is therefore undetermined, not disproved."
+        },
+        {
+          "id": "P06",
+          "action": "revise",
+          "status": "unsupported",
+          "updated_statement": "The admissible packet no longer supports the claim that a formal technical advice panel existed before the grading direction.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 is withdrawn because its supplied content cannot be authenticated, and no replacement is supplied. It is cited here only as change history, not current support. Withdrawal does not prove that the panel never existed."
+        },
+        {
+          "id": "P07",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Whether Agency A board members actually accessed underlying material before the grading direction remains unresolved.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "Actual predecision access remains undetermined. S03 is withdrawn and is referenced only to explain the lost record, not as admissible support; no remaining source establishes access or proves no access. The substantive uncertainty therefore remains unchanged."
+        },
+        {
+          "id": "P08",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Repair of all consequential harm remains unestablished, including for candidates covered by the grading direction.",
+          "evidence_refs": [
+            "S01",
+            "S04"
+          ],
+          "rationale": "S01 supplies a bounded grading rule, while S04 acknowledges distress and uncertainty without a complete individual-outcome or remedy record. A changed grade or corrected record does not establish repair of every consequential harm."
+        }
+      ],
+      "qualifications": [
+        {
+          "id": "Q01",
+          "state": "synthetic_only",
+          "rationale": "All actors, dates, sources and events are constructed for this task; none is new historical evidence about Ofqual."
+        },
+        {
+          "id": "Q02",
+          "state": "direction_only",
+          "rationale": "S01 demonstrates Agency A's regulatory direction of the grading rule. The packet does not establish Agency A's operation of Board B's software."
+        },
+        {
+          "id": "Q03",
+          "state": "cohort_a_with_estimates_only",
+          "rationale": "The direction covers only Cohort A candidates with a centre estimate and excludes candidates without one from this route."
+        },
+        {
+          "id": "Q04",
+          "state": "no_verified_receipts",
+          "rationale": "Board B's report of issuance supplies no recipient acknowledgements. Receipt by a named candidate is not established."
+        },
+        {
+          "id": "Q05",
+          "state": "all_harm_repair_unestablished",
+          "rationale": "The packet has no complete individual-outcome or remedy record. Correction of a grade or record does not establish repair of all consequential harm."
+        },
+        {
+          "id": "Q06",
+          "state": "predecision_access_unresolved",
+          "rationale": "With S03 withdrawn and no replacement, the packet cannot establish actual access to underlying material before the direction. Loss of the panel record does not prove that access did not occur."
+        },
+        {
+          "id": "Q07",
+          "state": "single_report_occurrence_qualified",
+          "rationale": "S02 remains a published report of issuance, while occurrence on 19 August 2040 has only the explicitly qualified support of Board B's single account."
+        }
+      ]
+    },
+    {
+      "id": "U02",
+      "claims": [
+        {
+          "id": "P01",
+          "action": "revise",
+          "status": "supported",
+          "updated_statement": "Within this constructed packet, Agency A issued its binding grading direction on 18 August 2040.",
+          "evidence_refs": [
+            "S01R"
+          ],
+          "rationale": "S01R replaces the withdrawn S01 and expressly corrects issuance from 17 August to 18 August 2040. Its publication on 21 August is not the direction's issuance date; the actor and regulatory authority are unchanged."
+        },
+        {
+          "id": "P02",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "The direction requires Board B to use the higher of the calculated grade and centre estimate for Cohort A candidates with a centre estimate; candidates without one are excluded from this route.",
+          "evidence_refs": [
+            "S01R"
+          ],
+          "rationale": "S01R preserves the original grading rule and eligibility boundary while changing only the issuance date. The admissible reference changes, but the substantive proposition about covered candidates and the higher-grade rule does not."
+        },
+        {
+          "id": "P03",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Board B published S02 reporting that it issued corrected records on 19 August 2040 for covered Cohort A candidates.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "The bulletin directly supplies the fact of Board B's report. Publication of that report is distinct from establishing that the reported issuance occurred."
+        },
+        {
+          "id": "P04",
+          "action": "retain",
+          "status": "limited_support",
+          "updated_statement": "Issuance of corrected records by Board B on 19 August 2040 for covered Cohort A candidates rests on Board B's account alone.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "S02 reports actual issuance, but the packet explicitly restricts occurrence support to this single account. It supplies no recipient acknowledgements."
+        },
+        {
+          "id": "P05",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "The admissible packet does not establish receipt of a corrected record by any named candidate.",
+          "evidence_refs": [
+            "S02",
+            "S04"
+          ],
+          "rationale": "S02 supplies no recipient acknowledgements, and S04 has no complete individual-outcome record. Receipt is therefore undetermined, not disproved."
+        },
+        {
+          "id": "P06",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "A formal technical advice panel existed before the grading direction and included Agency A board members.",
+          "evidence_refs": [
+            "S03",
+            "S01R"
+          ],
+          "rationale": "S03 still states that the panel existed before 17 August 2040. That also places it before the corrected direction date of 18 August; the panel proposition therefore needs no substantive revision."
+        },
+        {
+          "id": "P07",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Whether Agency A board members actually accessed underlying material before the grading direction remains unresolved.",
+          "evidence_refs": [
+            "S03",
+            "S01R"
+          ],
+          "rationale": "The relevant direction date is now 18 August 2040. S03 still does not identify actual access before the direction, and the date correction adds no access evidence, including for 17 August. Predecision access remains unresolved."
+        },
+        {
+          "id": "P08",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Repair of all consequential harm remains unestablished, including for candidates covered by the grading direction.",
+          "evidence_refs": [
+            "S01R",
+            "S04"
+          ],
+          "rationale": "S01R changes only the direction's issuance date and leaves the bounded grading rule intact. S04 still lacks a complete individual-outcome or remedy record, so repair of all consequential harm remains unresolved."
+        }
+      ],
+      "qualifications": [
+        {
+          "id": "Q01",
+          "state": "synthetic_only",
+          "rationale": "All actors, dates, sources and events are constructed for this task; none is new historical evidence about Ofqual."
+        },
+        {
+          "id": "Q02",
+          "state": "direction_only",
+          "rationale": "S01R preserves Agency A's regulatory role and changes only the issuance date. Operation of Board B's software by Agency A remains unestablished."
+        },
+        {
+          "id": "Q03",
+          "state": "cohort_a_with_estimates_only",
+          "rationale": "S01R preserves coverage for Cohort A candidates with a centre estimate and the exclusion of candidates without one; it does not extend the route to all candidates."
+        },
+        {
+          "id": "Q04",
+          "state": "no_verified_receipts",
+          "rationale": "Board B's report of issuance supplies no recipient acknowledgements. Receipt by a named candidate is not established."
+        },
+        {
+          "id": "Q05",
+          "state": "all_harm_repair_unestablished",
+          "rationale": "The packet has no complete individual-outcome or remedy record. Correction of a grade or record does not establish repair of all consequential harm."
+        },
+        {
+          "id": "Q06",
+          "state": "predecision_access_unresolved",
+          "rationale": "Actual access before the corrected direction date of 18 August 2040 remains unresolved. The date correction supplies no retrieval evidence, and the panel's existence before 17 August does not establish access."
+        },
+        {
+          "id": "Q07",
+          "state": "single_report_occurrence_qualified",
+          "rationale": "S02 remains a published report of issuance, while occurrence on 19 August 2040 has only the explicitly qualified support of Board B's single account."
+        }
+      ]
+    },
+    {
+      "id": "U03",
+      "claims": [
+        {
+          "id": "P01",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Within this constructed packet, Agency A issued its binding grading direction on 17 August 2040.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies the direction and issuance date. It establishes regulatory direction, not Agency A's operation of Board B's software."
+        },
+        {
+          "id": "P02",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "The direction requires Board B to use the higher of the calculated grade and centre estimate for Cohort A candidates with a centre estimate; candidates without one are excluded from this route.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies both the grading rule and eligibility boundary. This bounded coverage is supported and is not a claim about all candidates."
+        },
+        {
+          "id": "P03",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Board B published S02 reporting that it issued corrected records on 19 August 2040 for covered Cohort A candidates.",
+          "evidence_refs": [
+            "S02",
+            "S05"
+          ],
+          "rationale": "S02 supplies the published report, and S05 expressly accepts that it was published and reported issuance. The contradiction concerns actual issuance on 19 August, not the existence of the report."
+        },
+        {
+          "id": "P04",
+          "action": "revise",
+          "status": "conflicted",
+          "updated_statement": "Whether Board B issued corrected records for the covered Cohort A on 19 August 2040 is conflicted: S02 reports issuance and the equally admissible S05 denies it.",
+          "evidence_refs": [
+            "S02",
+            "S05"
+          ],
+          "rationale": "These accounts contradict each other about the same occurrence, neither has precedence, and the packet supplies no adjudicating evidence. This does not erase S02's report or resolve issuance at other times."
+        },
+        {
+          "id": "P05",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "The admissible packet does not establish receipt of a corrected record by any named candidate.",
+          "evidence_refs": [
+            "S02",
+            "S04",
+            "S05"
+          ],
+          "rationale": "Neither S02 nor S05 supplies recipient acknowledgements, and S04 lacks a complete individual-outcome record. The conflict about issuance on 19 August does not establish or disprove receipt by any named candidate."
+        },
+        {
+          "id": "P06",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "A formal technical advice panel existed before the grading direction and included Agency A board members.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 directly states that the panel existed before 17 August 2040. Formal panel existence does not establish access to underlying material."
+        },
+        {
+          "id": "P07",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Whether Agency A board members actually accessed underlying material before the grading direction remains unresolved.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 identifies the formal advice panel but does not identify the material members accessed before the direction. A route for advice neither establishes retrieval nor proves no access."
+        },
+        {
+          "id": "P08",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Repair of all consequential harm remains unestablished, including for candidates covered by the grading direction.",
+          "evidence_refs": [
+            "S01",
+            "S04"
+          ],
+          "rationale": "S01 supplies a bounded grading rule, while S04 acknowledges distress and uncertainty without a complete individual-outcome or remedy record. A changed grade or corrected record does not establish repair of every consequential harm."
+        }
+      ],
+      "qualifications": [
+        {
+          "id": "Q01",
+          "state": "synthetic_only",
+          "rationale": "All actors, dates, sources and events are constructed for this task; none is new historical evidence about Ofqual."
+        },
+        {
+          "id": "Q02",
+          "state": "direction_only",
+          "rationale": "S01 demonstrates Agency A's regulatory direction of the grading rule. The packet does not establish Agency A's operation of Board B's software."
+        },
+        {
+          "id": "Q03",
+          "state": "cohort_a_with_estimates_only",
+          "rationale": "The direction covers only Cohort A candidates with a centre estimate and excludes candidates without one from this route."
+        },
+        {
+          "id": "Q04",
+          "state": "no_verified_receipts",
+          "rationale": "The equally admissible occurrence accounts add no recipient acknowledgements. Receipt by any named candidate remains unestablished regardless of which issuance account is correct."
+        },
+        {
+          "id": "Q05",
+          "state": "all_harm_repair_unestablished",
+          "rationale": "The packet has no complete individual-outcome or remedy record. Correction of a grade or record does not establish repair of all consequential harm."
+        },
+        {
+          "id": "Q06",
+          "state": "predecision_access_unresolved",
+          "rationale": "The formal panel record does not identify actual access to underlying material before the direction. Neither access nor absence of access is established."
+        },
+        {
+          "id": "Q07",
+          "state": "conflicting_occurrence_accounts_report_retained",
+          "rationale": "S02 reports issuance and S05 denies issuance for the same covered cohort on 19 August 2040. Neither account prevails in this packet, but S05 accepts the existence of S02's published report, which remains supported."
+        }
+      ]
+    },
+    {
+      "id": "U04",
+      "claims": [
+        {
+          "id": "P01",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Within this constructed packet, Agency A issued its binding grading direction on 17 August 2040.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies the direction and issuance date. It establishes regulatory direction, not Agency A's operation of Board B's software."
+        },
+        {
+          "id": "P02",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "The direction requires Board B to use the higher of the calculated grade and centre estimate for Cohort A candidates with a centre estimate; candidates without one are excluded from this route.",
+          "evidence_refs": [
+            "S01"
+          ],
+          "rationale": "S01 directly supplies both the grading rule and eligibility boundary. This bounded coverage is supported and is not a claim about all candidates."
+        },
+        {
+          "id": "P03",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "Board B published S02 reporting that it issued corrected records on 19 August 2040 for covered Cohort A candidates.",
+          "evidence_refs": [
+            "S02"
+          ],
+          "rationale": "The bulletin directly supplies the fact of Board B's report. Publication of that report is distinct from establishing that the reported issuance occurred."
+        },
+        {
+          "id": "P04",
+          "action": "retain",
+          "status": "limited_support",
+          "updated_statement": "Issuance of corrected records by Board B on 19 August 2040 for covered Cohort A candidates rests on Board B's account alone.",
+          "evidence_refs": [
+            "S02",
+            "S06"
+          ],
+          "rationale": "S06 establishes receipt by five named candidates on 23 August but does not determine when Board B first issued records. Occurrence specifically on 19 August still rests on S02 alone, so its single-account restriction remains."
+        },
+        {
+          "id": "P05",
+          "action": "revise",
+          "status": "supported",
+          "updated_statement": "Authenticated acknowledgements establish that eligible Cohort A candidates A01, A02, A03, A04 and A05 each received a corrected record on 23 August 2040; receipt by other candidates remains undetermined.",
+          "evidence_refs": [
+            "S02",
+            "S04",
+            "S06"
+          ],
+          "rationale": "S06 directly supplies admissible receipt evidence for these five named candidates, replacing the prior absence of named-recipient evidence. This is supported within that boundary, not merely limited_support; it does not establish receipt for others, issuance on 19 August, or repair of consequential harm."
+        },
+        {
+          "id": "P06",
+          "action": "retain",
+          "status": "supported",
+          "updated_statement": "A formal technical advice panel existed before the grading direction and included Agency A board members.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 directly states that the panel existed before 17 August 2040. Formal panel existence does not establish access to underlying material."
+        },
+        {
+          "id": "P07",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Whether Agency A board members actually accessed underlying material before the grading direction remains unresolved.",
+          "evidence_refs": [
+            "S03"
+          ],
+          "rationale": "S03 identifies the formal advice panel but does not identify the material members accessed before the direction. A route for advice neither establishes retrieval nor proves no access."
+        },
+        {
+          "id": "P08",
+          "action": "retain",
+          "status": "unresolved",
+          "updated_statement": "Repair of all consequential harm remains unestablished, including for candidates covered by the grading direction.",
+          "evidence_refs": [
+            "S01",
+            "S04",
+            "S06"
+          ],
+          "rationale": "S06 establishes corrected-record receipt only for A01 through A05 and expressly does not establish repair of consequential harm. S04 still lacks a complete remedy record, so all-harm repair remains unresolved even for the named recipients."
+        }
+      ],
+      "qualifications": [
+        {
+          "id": "Q01",
+          "state": "synthetic_only",
+          "rationale": "All actors, dates, sources and events are constructed for this task; none is new historical evidence about Ofqual."
+        },
+        {
+          "id": "Q02",
+          "state": "direction_only",
+          "rationale": "S01 demonstrates Agency A's regulatory direction of the grading rule. The packet does not establish Agency A's operation of Board B's software."
+        },
+        {
+          "id": "Q03",
+          "state": "cohort_a_with_estimates_only",
+          "rationale": "The direction still covers Cohort A candidates with centre estimates only. S06 identifies five eligible recipients and does not broaden eligibility to candidates without centre estimates."
+        },
+        {
+          "id": "Q04",
+          "state": "five_named_receipts_only",
+          "rationale": "S06 establishes receipt on 23 August 2040 only for A01, A02, A03, A04 and A05. It supplies no basis for claiming that other or all candidates received corrected records."
+        },
+        {
+          "id": "Q05",
+          "state": "all_harm_repair_unestablished",
+          "rationale": "Receipt by the five named candidates does not establish repair of their consequential harm, much less repair of every candidate's harm. The complete remedy record remains absent."
+        },
+        {
+          "id": "Q06",
+          "state": "predecision_access_unresolved",
+          "rationale": "The formal panel record does not identify actual access to underlying material before the direction. Neither access nor absence of access is established."
+        },
+        {
+          "id": "Q07",
+          "state": "single_report_occurrence_qualified",
+          "rationale": "S02 remains the report of issuance on 19 August 2040 and the sole account supporting occurrence on that date. S06 establishes later receipt for five named candidates without determining the issuance date; it does not remove that occurrence qualification."
+        }
+      ]
+    }
+  ]
+}
