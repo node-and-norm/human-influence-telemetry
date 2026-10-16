@@ -1,0 +1,91 @@
+{
+  "closeout_id": "HIT-CLOSEOUT-2026-10-16",
+  "recorded_date": "2026-10-16",
+  "timezone": "America/New_York",
+  "authority_record": "research/strengthening/author-decisions.md#ad-006-bounded-closeout-and-repository-updates",
+  "baseline_commit": "40ff9caa8f583bc613ff37f4c29b1a6f2fb5214b",
+  "current_archived_release": "0.6.7",
+  "current_archived_doi": "10.5281/zenodo.23252877",
+  "phase": "bounded_closeout_in_progress",
+  "decision_date": "2026-10-30",
+  "decision_date_is_release_authority": false,
+  "scope_frozen": true,
+  "maintenance_started": false,
+  "closeout_accepted": false,
+  "scientific_acceptance_conferred": false,
+  "publication_eligibility_inherited": false,
+  "manuscript_submission_authorized": false,
+  "v1_release_permitted": false,
+  "independent_human_audit_completed": false,
+  "current_contract_replication_scoring_permitted": false,
+  "external_invitation_sent": false,
+  "manuscript_claim_register": "paper/development-claim-register.json",
+  "manuscript_claim_ids": [
+    "DEV-C01",
+    "DEV-C02",
+    "DEV-C03",
+    "DEV-C04",
+    "DEV-C05",
+    "DEV-C06",
+    "DEV-C07",
+    "DEV-C08",
+    "DEV-C09",
+    "DEV-C10",
+    "DEV-C11",
+    "DEV-C12",
+    "DEV-C13",
+    "DEV-C14",
+    "DEV-C15",
+    "DEV-C16"
+  ],
+  "stable_gate_register": "release/v1.0.0/gate-register.json",
+  "author_review_queue": "research/strengthening/closeout-author-review.md",
+  "plan": "docs/closeout-plan.md",
+  "work_items": [
+    {
+      "id": "CO-01",
+      "task": "Freeze open-ended expansion and publish one current closeout entry point",
+      "owner": "Codex implements; maintainer governs",
+      "status": "implemented",
+      "completion": "Current README, roadmap and organization entry link this bounded plan; historical records remain unchanged."
+    },
+    {
+      "id": "CO-02",
+      "task": "Record material-claim dispositions",
+      "owner": "Mark Julius Banasihan, responsible author",
+      "status": "awaiting_author_review",
+      "completion": "Record accept, narrow, remove, unresolved or explicitly deferred for each grouped decision; retain original proposals and evidence limits."
+    },
+    {
+      "id": "CO-03",
+      "task": "Complete bounded source checks for retained claims",
+      "owner": "Codex assists; responsible author evaluates",
+      "status": "partial",
+      "completion": "Retained-source checks identify inspected passages and access limits. Wider literature coverage and manuscript-level source review remain incomplete unless separately documented."
+    },
+    {
+      "id": "CO-04",
+      "task": "Verify the closeout revision and preserve release boundaries",
+      "owner": "Codex",
+      "status": "verified_this_revision",
+      "completion": "Local workflow, closeout regression tests, link checks and protected-history checks pass on this proposed revision. Hosted checks on the exact PR head and merged commit remain required; their observations are recorded in the PR and workflow, not inferred from this field."
+    },
+    {
+      "id": "CO-05",
+      "task": "Choose maintenance or a specifically bounded continuation",
+      "owner": "Mark Julius Banasihan, maintainer",
+      "status": "awaiting_author_decision",
+      "completion": "Record the closeout revision, remaining unapproved material and deferred evidence needs. Any extension names one task, an owner, evidence requirement and stop date."
+    }
+  ],
+  "exclusions": [
+    "additional_small_model_batches",
+    "new_figures_without_a_defined_defect",
+    "new_dimensions",
+    "dashboards_and_runtime_integrations",
+    "sector_effectiveness_claims",
+    "participant_recruitment_or_scoring_without_protocol_activation",
+    "manuscript_submission_without_exact_draft_approval"
+  ],
+  "transition_rule": "This record is a bounded plan. The date does not close the phase automatically. Maintenance, manuscript publication and v1 promotion require separate recorded decisions and applicable evidence; the current checker confers none."
+}

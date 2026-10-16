@@ -2,6 +2,8 @@
 
 ## Current state
 
+The [16 October closeout plan](../docs/closeout-plan.md) permits repository maintenance while this manuscript remains an explicitly deferred working draft. Submission is a separate author decision. The [consolidated worksheet](../research/strengthening/closeout-author-review.md) retains the sixteen claim reviews and older unresolved interpretations; the [bounded source-check addendum](../research/strengthening/closeout-source-check.md) adds no systematic-review or publication-eligibility claim.
+
 The [development manuscript](development-manuscript.md) is a working methods/resource draft, not a submitted, accepted or peer-reviewed paper. The older manuscript and v0.6.5 audit remain version-bound. The [development register](development-claim-register.json) lists descriptive claims and unresolved author review; it does not inherit publication eligibility from that audit.
 
 Software archive 0.6.6 is already published. That archive does not establish that the current draft or later advisory records were included, nor does it approve their interpretations. Cite the exact software DOI and the actual development revision separately.

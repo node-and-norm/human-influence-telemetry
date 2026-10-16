@@ -21,6 +21,8 @@ Candidate release files, merged readiness controls, branch names, and roadmap mi
 
 ## Contribution process
 
+The [bounded closeout plan](docs/closeout-plan.md), authorized on 16 October 2026, freezes open-ended expansion and names 30 October as a maintainer decision date. Entering maintenance requires a recorded decision identifying the revision, claim dispositions and deferred research. Calendar passage, passing consistency tests or permission to edit does not constitute that decision. Manuscript submission and v1.0 promotion retain their separate requirements.
+
 Substantive changes should enter through a pull request. A normative change should state:
 
 1. the problem being corrected;

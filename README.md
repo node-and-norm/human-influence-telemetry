@@ -36,7 +36,9 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current maturity:** Level 2, Applicable
 
-The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [current publication-readiness record](research/strengthening/solo-publication-readiness.md) distinguishes completed development work from pending research obligations. This draft and the latest supplements are included in the 0.6.7 archive; they remain outside the 0.6.6 DOI archive. Repository distribution does not constitute paper submission or peer review. The [earlier manuscript](paper/manuscript.md) remains preserved.
+**Development phase:** Bounded closeout in progress, with a maintainer decision due 30 October 2026. The [closeout plan](docs/closeout-plan.md) freezes expansion and separates maintenance, manuscript submission and v1.0. The date does not automatically close the phase or authorize a release.
+
+The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [author-review worksheet](research/strengthening/closeout-author-review.md) consolidates pending decisions; the [8 October preparation record](research/strengthening/solo-publication-readiness.md) remains historical. The draft and its October 8 supplements are included in the 0.6.7 archive; later closeout work is outside that archive. Repository distribution does not constitute paper submission or peer review. The [earlier manuscript](paper/manuscript.md) remains preserved.
 
 ## Choose your path
 

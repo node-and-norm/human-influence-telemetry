@@ -47,3 +47,13 @@ Date: 8 October 2026, America/New_York. Decision authority: Mark Julius Banasiha
 The [author-review supplement](solo-002-author-review.md) and [exact question-and-response record](solo-002-author-review.json) preserve each disposition. The author accepted bounded exploratory case use, Judgment 2 on the public account, Command 2, Correction 2 and Reform 2 for the regulatory event, and Repair 2 on the operational-direction route only. The questions expressly excluded ordinary-period oversight, operation of each board's software, universal receipt and complete repair of harm.
 
 The author left Counsel unresolved. This is not acceptance of the original proposed IE. For the comparison, the author responded “Identify a missed distinction or loss”; the proposed tie remains unaccepted and a follow-up challenge examines candidate omissions. The author accepted limited status for both institutional-record integrity and assessment-packet integrity. These collaborative judgments do not attest independent source re-reading, accept the subsequent conditional reanalyses or approve the entire manuscript. Original proposals remain unchanged; no scientific-conclusion eligibility, release gate or replication claim is promoted.
+
+## AD-006: Bounded closeout and repository updates
+
+Date: 16 October 2026, America/New_York. Recorded by Codex from the maintainer's direction in the working conversation.
+
+The assistant recommended freezing open-ended development, consolidating the author-review queue, checking retained sources, separating manuscript and v1 decisions, and using 30 October 2026 as a closeout decision date. The maintainer responded: “Proceed. full authorization to update the repos as necessary.” The linked targets were HIT and the Node & Norm organization.
+
+Disposition: implement the [bounded closeout plan](../../docs/closeout-plan.md), update its public navigation and the HIT entry in the organization directory, and preserve separate release, manuscript and research requirements. Existing merge and publication authority under AD-004 remains subject to applicable checks. This records scope and workflow authorization, not acceptance of pending scientific interpretations, a source-review attestation, an independent audit, a phase-completion decision or approval to submit the current manuscript.
+
+The decision date does not automatically enter maintenance, authorize v1.0 or activate the replication protocol. The submitted chapter, other projects' findings, historical assessments, frozen results and published archives remain outside this change.

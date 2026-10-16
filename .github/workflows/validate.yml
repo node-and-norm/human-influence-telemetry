@@ -81,6 +81,11 @@ jobs:
       - name: Test exact-version release metadata boundaries
         run: python scripts/test_release_metadata.py
 
+      - name: Check bounded closeout state without research promotion
+        run: |
+          python scripts/validate_closeout.py
+          python -W error scripts/test_closeout.py
+
       - name: Validate v0.6.5 research-integrity package and generated figures
         shell: bash
         run: |
