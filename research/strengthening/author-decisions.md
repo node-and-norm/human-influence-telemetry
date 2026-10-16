@@ -226,3 +226,21 @@ Disposition: accept the closeout handling. Keep Counsel without an author-accept
 Source-review status: the author accepted the conversational distinction and proposed deferral. The response does not attest independent re-reading of the annual report or inspection of the Board's evidence and access records. Codex's comparison of retained records remains AI assistance.
 
 Implementation status: the original draft assessment, source ledger, earlier author-review records, current manuscript, descriptive register, specification and published archives remain unchanged. No external records request, new research task or source-verification claim follows. DEV-C14 and the comparison dispositions remain pending within Group 3. Groups 4 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-016: Closeout Group 3D restricted-projection description
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C14 in [Group 3 of the closeout worksheet](closeout-author-review.md#3-ofqual-use-accepted-scope-and-unresolved-comparison), at revision `9565104f17a3e64adce1d5e740185381139ecce3`. The [comparison challenge](solo-002-comparison-challenge.md), sections 1 and 3, inspects selected fields of the [Ofqual draft](solo-002-complete/assessment.draft.json) alongside the [structured baseline](solo-002-complete/baseline-and-review.md), especially Q2 and Q4.
+
+Presented observation: the restricted projection contains only `dimension`, `finding`, `evidence_state`, `repair_trigger` and `unresolved_proposition`, excluding rationales and evidence links. It omits Counsel's alternative `1`, which appears in the full rationale. It also omits Repair's operational-direction route and individual-outcome limits, which remain elsewhere in the complete record. The structured baseline preserves the underlying distinctions in prose while sharing HIT's evidence catalog and the same assistant's analysis; it is not an independent workflow comparison.
+
+The decision question was: “Do you accept DEV-C14 with these limits for a later draft?” The assistant recommended retaining a bounded description of these inspectable omissions. It excluded reader error, full-method inferiority, time saving and comparative benefit, none of which was measured. Acceptance would change no schema or score and would leave the overall comparison and proposed ties in the three earlier dossiers separate and unresolved.
+
+The author's response was: “Yes, I accept DEV-C14 with those limits for a later draft. Please record it and walk me through the next Group 3 decision. Thank you.”
+
+Disposition: retain DEV-C14's bounded restricted-projection description for a later draft. The accepted omission concerns the specified five-field view; the full HIT record retains the qualifications. This accepts no overall tie, comparative advantage or full-method loss, and no practical reader consequence. It does not resolve Counsel's category, amend the schema or authorize a new test. The earlier three dossier comparisons remain unaccepted.
+
+Source-review status: the author accepted the conversational description and its stated boundaries. The response does not attest independent inspection of the complete artifacts, verification of their external sources or a reader-performance study. Codex's field and prose inspection remains AI assistance.
+
+Implementation status: the original comparison challenge, assessment and baseline, earlier author-review records, current manuscript, descriptive register, specification, schema and published archives remain unchanged. This additive acceptance governs the described artifact observation for later reuse. The fuller Ofqual comparison outcome and the three earlier dossier comparison dispositions remain pending within Group 3. Groups 4 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
