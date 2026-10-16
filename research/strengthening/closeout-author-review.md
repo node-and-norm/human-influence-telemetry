@@ -10,7 +10,7 @@ For each group, identify any exceptions by claim ID and choose: retain the exact
 
 File inspection can establish that a record contains a number, category, decision or source link. A reproducible calculation can establish how a recorded result was obtained. Neither operation authenticates the external source or establishes that an interpretation is warranted. Record source review separately from agreement with the manuscript wording. Existing author decisions retain their original scope.
 
-Group 1's bounded descriptions are accepted for later-draft reuse under [AD-007](author-decisions.md#ad-007-closeout-group-1-bounded-wording). Groups 2 through 6 remain pending. The unchanged current manuscript and its descriptive register retain their pending labels; the additive decision does not approve the whole draft. Explicitly deferring the paper remains a permitted closeout decision.
+Group 1's bounded descriptions are accepted for later-draft reuse under [AD-007](author-decisions.md#ad-007-closeout-group-1-bounded-wording). Group 2A's bounded DEV-C03 description is accepted under [AD-008](author-decisions.md#ad-008-closeout-group-2a-historical-human-result); the other four Group 2 decisions and Groups 3 through 6 remain pending. The unchanged current manuscript and its descriptive register retain their pending labels; these additive decisions do not approve the whole draft. Explicitly deferring the paper remains a permitted closeout decision.
 
 ## 1. Artifact descriptions and archive identity
 
@@ -31,9 +31,11 @@ ACCEPTED for a later draft, not yet applied, DEV-C11: “Version 0.6.7 has a ver
 
 Decision: retain the narrow historical human observation, and give each older open interpretation a disposition without changing released scores?
 
+Partial disposition: DEV-C03 accepted with the presented limits for later-draft reuse on 16 October 2026 under [AD-008](author-decisions.md#ad-008-closeout-group-2a-historical-human-result). This accepts no other Group 2 item and supplies no independent source-review attestation.
+
 | Claim | Record and locator to inspect | Qualification to retain |
 | :--- | :--- | :--- |
-| DEV-C03 | [0.6.0 release](../../docs/releases/v0.6.0.md), “7 of 7”: two eligible independent scorers, one frozen Cigna packet, scorer contract 0.1.0. | The seven items share one case; all six substantive ratings use one category. The result supplies no population reliability estimate, construct validity or current-contract replication. Current manuscript reuse still requires review. |
+| DEV-C03 | [0.6.0 release](../../docs/releases/v0.6.0.md), “7 of 7”: two eligible independent scorers, one frozen Cigna packet, scorer contract 0.1.0. | The seven items share one case; all six substantive ratings use one category and kappa is undefined. The result supplies no population reliability estimate, source truth, construct validity or current-contract replication. Bounded later-draft wording is accepted in AD-008; the current manuscript remains unchanged. |
 
 The following older items require their own explicit answers within this group:
 
@@ -97,4 +99,4 @@ Original queue item 6 remains a pending choice: whether to seek one bounded exte
 
 ## Completion record
 
-Record each group response with covered claim IDs, exceptions, reviewed passages, source-review status, replacement wording where needed, reviewer and date. Carry unresolved items into the final closeout status with their missing evidence specified. Preserve original records and use an additive decision record for any new author judgment. Group 1 is recorded in AD-007; Groups 2 through 6 await responses. The current manuscript's sixteen descriptive-register entries remain unchanged pending a separately identified draft revision and review; this does not erase the bounded later-draft acceptance recorded above.
+Record each group response with covered claim IDs, exceptions, reviewed passages, source-review status, replacement wording where needed, reviewer and date. Carry unresolved items into the final closeout status with their missing evidence specified. Preserve original records and use an additive decision record for any new author judgment. Group 1 is recorded in AD-007 and Group 2A in AD-008; the remaining Group 2 items and Groups 3 through 6 await responses. The current manuscript's sixteen descriptive-register entries remain unchanged pending a separately identified draft revision and review; this does not erase the bounded later-draft acceptances recorded above.

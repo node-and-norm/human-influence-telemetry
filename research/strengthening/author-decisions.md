@@ -80,3 +80,21 @@ Disposition: accept the four bounded descriptions for later-draft reuse, includi
 Source-review status: the author reviewed the conversational summary and accepted its stated boundaries. This response does not attest independent inspection of the linked records, a fresh archive comparison or verification of external source truth. Codex's record inspection remains AI assistance.
 
 Implementation status: this additive record does not revise the current manuscript or its historical descriptive register. Their pending labels remain attached to that unchanged draft; this decision governs the four descriptions proposed for later reuse. The v0.6.7 archive and earlier releases remain immutable. Groups 2 through 6, broader scientific eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-008: Closeout Group 2A historical human result
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C03 in [Group 2 of the closeout worksheet](closeout-author-review.md#2-historical-human-evidence-and-earlier-case-qualifications), at revision `6433c0a862d7418178bfdfbb439e4a8689f63c32`. The assistant presented the [v0.6.0 result](../../docs/releases/v0.6.0.md), including its primary result and research-claim limits, as a historical descriptive observation for later-draft reuse.
+
+Presented description: two eligible independent scorers assessed one frozen Cigna packet under the earlier 0.1.0 contract. They agreed on all seven items, with zero protocol-defined critical disagreements. Both assigned `1` to all six substantive dimensions and `limited` to the then-single Telemetry Integrity item. Kappa was undefined because the substantive ratings had no category variation. The seven items share one case and are not seven independent cases.
+
+The decision question was: “Do you accept DEV-C03 on those terms, want to narrow it, or prefer to leave it unresolved?” The question limited acceptance to later-draft wording and excluded general reliability, source truth, construct validity and current-contract replication. It also stated that acceptance would not attest an independent recheck of the underlying submissions or settle the other Group 2 decisions.
+
+The author's response was: “Yes, I accept DEV-C03 with those limits for a later draft. Please record it and walk me through the next Group 2 decision. Thank you.”
+
+Disposition: retain DEV-C03 as the bounded historical result presented above, with all stated limits, for a later draft. This records acceptance of its description, not a new participant result, fresh replication, independent source verification or reapproval of the historical release. No additional reason or source re-reading is inferred from the response.
+
+Source-review status: the author accepted the conversational summary and its stated boundaries. The response does not attest independent inspection of the scorer submissions, transcription, eligibility or protocol execution. Codex's record inspection remains AI assistance.
+
+Implementation status: the current manuscript, descriptive claim register, historical scorer records, released scores and archives remain unchanged. CA-01, CA-06, SOLO-A-03 and the series-selection/scope decision remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
