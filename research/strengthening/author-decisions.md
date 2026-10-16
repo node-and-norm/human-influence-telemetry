@@ -208,3 +208,21 @@ Disposition: retain DEV-C05 as the bounded account of the previously recorded Of
 Source-review status: the author accepted the conversational account and its stated boundaries. The response does not attest independent re-reading of the primary documents, verification of institutional reports or inspection of individual outcomes. Codex's comparison of retained decision records remains AI assistance.
 
 Implementation status: the original assessment, source ledger, prior author-review records, current manuscript, descriptive register, specification and published archives remain unchanged. AD-013 and AD-014 accept later-draft descriptions only. DEV-C14, Counsel's closeout handling and the comparison dispositions remain pending within Group 3. Groups 4 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-015: Closeout Group 3C Counsel adjudication deferral
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: Counsel's separate closeout handling in [Group 3 of the closeout worksheet](closeout-author-review.md#3-ofqual-use-accepted-scope-and-unresolved-comparison), at revision `c563d5024f1362029ab7f394f22ac4b9aafaedde`. The [original response](solo-002-author-review.json), SOLO-002-AD2, leaves the author decision unresolved. The [draft assessment](solo-002-complete/assessment.draft.json), `substantive_findings[0]`, proposes `IE` and retains `1` as an alternative. The [source ledger](solo-002-complete/source-ledger.md), “Material missing records and contrary possibilities,” identifies the missing event-specific evidence bundle and access history.
+
+Presented distinction: the retained packet describes a technical-advice route during summer 2020 but does not establish the specific evidence and access timing for the 17 August decision. Under [specification](../../SPECIFICATION.md) sections 4.2 and 6.1, `1` could apply if the route establishes formal access applicable to that decision without demonstrated retrieval; `IE` could apply if relevant permission, retrieval, timing or scope cannot be determined. The author's earlier unresolved response accepted neither category. Unresolved author adjudication is distinct from an accepted insufficient-evidence finding.
+
+The assistant recommended preserving the draft `IE` and alternative `1` as proposals, reporting no author-accepted Counsel category, and explicitly deferring source-based adjudication beyond closeout unless separately authorized. A later resolution could require additional records. The decision question was: “Do you accept that closeout handling for Counsel?” The stated limits assigned no score, inferred no absent capacity and started no new research; the assessment would remain partly adjudicated.
+
+The author's response was: “Yes, I accept keeping Counsel unresolved and deferring adjudication beyond closeout with those limits. Please record it and walk me through the next Group 3 decision. Thank you.”
+
+Disposition: accept the closeout handling. Keep Counsel without an author-accepted category and preserve both proposals with their original status. Defer source-based adjudication beyond closeout; further work requires separate authorization. This resolves the immediate handling choice while leaving the substantive judgment unresolved. It neither accepts `IE` or `1` nor issues a fully adjudicated replacement assessment.
+
+Source-review status: the author accepted the conversational distinction and proposed deferral. The response does not attest independent re-reading of the annual report or inspection of the Board's evidence and access records. Codex's comparison of retained records remains AI assistance.
+
+Implementation status: the original draft assessment, source ledger, earlier author-review records, current manuscript, descriptive register, specification and published archives remain unchanged. No external records request, new research task or source-verification claim follows. DEV-C14 and the comparison dispositions remain pending within Group 3. Groups 4 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
