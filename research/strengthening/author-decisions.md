@@ -172,3 +172,21 @@ Disposition: retain the recorded three-case selection and its declared developme
 Source-review status: the author accepted the conversational account of selection and scope. The response does not attest independent inspection of primary sources, authenticate historical page versions or verify implementation. Codex's inspection of retained records remains AI assistance.
 
 Implementation status: all five Group 2 decision items now have bounded dispositions in AD-008 through AD-012. This is decision-queue completion only: CA-01 reassessment remains deferred, CA-06 route reporting still requires application to future uses, and source-level review and unresolved interpretations retain their separate requirements. The original selection record, dossiers, historical assessments, current manuscript, descriptive register, specification and published archives remain unchanged. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-013: Closeout Group 3A Ofqual application description
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C04 in [Group 3 of the closeout worksheet](closeout-author-review.md#3-ofqual-use-accepted-scope-and-unresolved-comparison), at revision `b4da6500af8d8bb9917c1d045a204193e6f473a9`. The [application plan](solo-002-complete/plan.md), “Assessment boundary,” and [source ledger](solo-002-complete/source-ledger.md), “Independence and temporal checks,” define the fuller Ofqual application. The earlier case-use acceptance recorded in [AD-005](#ad-005-partial-ofqual-author-adjudication) remains in force within its original scope.
+
+Presented description: the assessed event is Ofqual's exceptional grading-rule intervention in England on 17 August 2020, with a declared follow-up period of 18 to 20 August. The application uses six retrospectively accessed public documents with shared institutional dependencies. The packet lacks authenticated publication-day snapshots, internal deliberation records and individual-level outcome records. It examines statistical standardisation as an automation-boundary example and is an exploratory extension after the earlier announcement-only analysis, with prior familiarity disclosed.
+
+The decision question was: “Do you accept DEV-C04 with these limits for a later draft?” The assistant excluded claims of ordinary oversight, universal remedy or HIT's validity across AI systems, and distinguished structural completeness of the draft record from completed adjudication. Acceptance was limited to the description; it added no score approval or source-verification attestation. DEV-C05's account of prior findings, Counsel and comparison decisions remained separate.
+
+The author's response was: “Yes, I accept DEV-C04 with those limits for a later draft. Please record it and walk me through the next Group 3 decision. Thank you.”
+
+Disposition: retain DEV-C04's bounded application description for a later draft, with the stated actor, period, source and exploratory-design limits. This accepts no new finding or comparative outcome and does not reopen or broaden the earlier case-use or finding decisions. It does not declare the assessment fully adjudicated.
+
+Source-review status: the author accepted the conversational summary and its stated boundaries. The response does not attest independent inspection of the six source documents, authenticate their historical versions or verify individual outcomes. Codex's inspection of retained records remains AI assistance.
+
+Implementation status: the application plan, source ledger, original draft assessment and review records, current manuscript, descriptive register, specification and published archives remain unchanged. This additive acceptance governs DEV-C04's description for later reuse. DEV-C05, DEV-C14, Counsel's closeout handling and the comparison dispositions remain pending within Group 3. Groups 4 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
