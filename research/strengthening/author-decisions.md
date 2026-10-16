@@ -134,3 +134,21 @@ Disposition: accept the prospective reporting requirement with the stated limits
 Source-review status: the author accepted the conversational explanation and its stated boundaries. The response does not attest independent inspection of the specification, case sources or existing route assignments. Codex's record inspection remains AI assistance.
 
 Implementation status: the specification, original claim-audit proposal, historical assessments, current manuscript and descriptive register remain unchanged. This additive decision records a prospective reporting obligation; it does not amend the normative contract or declare that the current draft satisfies the obligation. Published archives remain untouched. SOLO-A-03 and series selection/scope remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-011: Closeout Group 2D Obermeyer overcorrection warning
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: SOLO-A-03 in [Group 2 of the closeout worksheet](closeout-author-review.md#2-historical-human-evidence-and-earlier-case-qualifications), at revision `a450a3e352d8a3eec80599c082ae15b918f403cf`. The [retained Obermeyer dossier](solo-001/dossier.md), “Proposed claim-audit dispositions,” warns against replacing the historical deployer profile with a positive profile merely because the paper discusses clinicians. [AD-001](#ad-001-obermeyer-qualifications) already accepts the narrower clinician-access and operational-rollout qualifications associated with SOLO-A-01 and SOLO-A-02.
+
+Presented warning: clinician role, available information, independent reasoning, practical override authority and actual intervention are distinct propositions. Evidence for one does not automatically establish the others. The [historical Judgment rationale](../../case-studies/obermeyer.md), “Actor A: deploying health systems,” concerns missing evidence distinguishing individualized reasoning from routine acceptance; it does not assert that clinicians were absent. Clinician involvement alone therefore does not disprove that rationale or justify favorable replacement scores. Findings about the studied hospital cannot represent every deploying institution.
+
+The decision question was: “Do you accept SOLO-A-03 with those limits?” The assistant recommended retaining the warning for future reuse while preserving historical scores. The stated limits excluded approval of the entire historical assessment, acceptance of the proposed comparison result and a fresh source-review attestation.
+
+The author's response was: “Yes, I accept SOLO-A-03 with those limits. Please record it, preserve the historical scores, and walk me through the final Group 2 decision. Thank you.”
+
+Disposition: accept the overcorrection warning for future reuse, with the stated actor and evidence limits. Preserve the historical scores. This resolves SOLO-A-03's warning decision; it creates no replacement finding, full current-contract assessment or approval of the entire historical profile. The proposed analytical comparison remains unaccepted. AD-001's narrower qualifications retain their original scope.
+
+Source-review status: the author accepted the conversational explanation and its stated boundaries. The response does not attest independent re-reading of the article, regulatory letter or underlying clinical records. Codex's inspection of retained records remains AI assistance.
+
+Implementation status: the original dossier, historical assessments and rationales, current manuscript, descriptive register, specification and published archives remain unchanged. This additive decision records the accepted warning. Series selection/scope is the final pending Group 2 decision. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
