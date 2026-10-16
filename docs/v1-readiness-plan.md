@@ -241,6 +241,8 @@ Withhold `1.0.0` when any condition remains true:
 
 ## 9. Immediate execution order
 
+Near-term scheduling is bounded by the [16 October closeout plan](closeout-plan.md). The sequence below defines work needed if the stable track continues; it does not require indefinite development or completion of v1.0 before entering maintenance. All eight gates remain unresolved.
+
 1. Reconcile stable-track controls and test missing-artifact and premature-promotion failures.
 2. Complete a full current-contract documentary application with explicit source and author/AI provenance; finish the selected series or disclose incompleteness. Resolve the application-or-migration-exception gate separately.
 3. Compare identical evidence with a capable structured review; preserve ties, losses, and full-document sensitivity failures.

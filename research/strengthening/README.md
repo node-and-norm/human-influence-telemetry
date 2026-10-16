@@ -1,5 +1,7 @@
 # Research strengthening workbench
 
+Current scheduling and phase status are in the [16 October closeout plan](../../docs/closeout-plan.md). Expansion is frozen; the [author-review worksheet](closeout-author-review.md) consolidates pending judgments and the [source-check addendum](closeout-source-check.md) records four bounded related-work checks. Maintenance, manuscript approval and v1.0 remain separate decisions. The dated records below preserve the earlier work.
+
 This supplementary workbench examines the usefulness and limits of HIT. Release 0.6.6 distributes these development artifacts without accepting pending scientific interpretations or changing research maturity. See the [release record](../../docs/releases/v0.6.6.md) for publication and archival status. The submitted chapter is outside its scope.
 
 The author approved the [bounded v1 execution priorities](v1-priorities.md) on 7 October 2026. The [8 October progress record](solo-publication-readiness.md) adds partial Ofqual author adjudication, three further qualitative conditions, a current methods/resource manuscript and additional file checks. These supplements postdate the 0.6.6 archive. The original draft and its four-condition record remain preserved; the existing scientific queue is not closed by implementation work.
@@ -8,7 +10,7 @@ Use the [evaluation-methods register](evaluation-methods.md) to distinguish soft
 
 The separately authorized [Jev advisory rehearsal](jev-review-001/README.md) returned fourteen source-scope responses. Its status and retained inputs are separate from the two historical model experiments. No model response accepts an author decision or completes the original documentary comparison. The later [full-argument qualitative extension](solo-002-extension/report.md) records the period, conflict and presentation conditions as AI-assisted proposals, not independent validation.
 
-See the [five-priority disposition and author decision queue](priority-status.md) for the current completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
+The [five-priority disposition and author decision queue](priority-status.md) preserves the earlier completion boundary. The [passage experiment](passage-report.md) retained one disagreement across ten model judgments. The [closest-method challenge](closest-methods.md) examines overlaps with audit and assurance-case methods. These supplementary findings have no automatic publication approval under the v0.6.5 claim gates.
 
 | Priority | Deliverable | Evidence available |
 |---|---|---|
