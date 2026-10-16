@@ -116,3 +116,21 @@ Disposition: accept the stated handling of CA-01. Preserve the historical Reform
 Source-review status: the author accepted the conversational comparison and proposed disposition. The response does not attest independent re-reading of the parliamentary sources or establish the historical truth of any authority claim. Codex's record comparison remains AI assistance.
 
 Implementation status: the historical assessment, original claim-audit proposal, current manuscript and descriptive register remain unchanged; this additive decision records the accepted handling. Published archives and the submitted chapter remain untouched. CA-06, SOLO-A-03 and series selection/scope remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-010: Closeout Group 2C prospective evidence-route reporting
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: CA-06 in [Group 2 of the closeout worksheet](closeout-author-review.md#2-historical-human-evidence-and-earlier-case-qualifications), at revision `51c28ba5721c3b01619dbc60bf1fdb42aca20410`. The original [claim audit](claim-audit.json), `CA-06`, identifies distinct evidence routes for findings of `2`; [specification](../../SPECIFICATION.md) sections 4.3, 4.4, 5.3 and 6 govern their use.
+
+Presented requirement: every future reported finding of `2`, including findings reused in a later manuscript, identifies its precise supporting evidence route. Analyses keep observed exercise and directly demonstrated operational capability distinct. The capability route is available only where the dimension's rules permit it and the assessment design does not reasonably permit observing exercise; missing records alone do not justify that alternative. The examples distinguished Counsel's actual timely access, Command's documented exercise or verified operational test, and Reform's implemented or operationally directed architecture change. Formal permission alone is insufficient.
+
+The decision question was: “Do you accept CA-06 as this prospective reporting requirement, with those limits?” The presented limits preserved the existing rubric and excluded approval of any particular score, a claim that all historical findings had been reviewed, or treating a successful test as proof of routine institutional practice.
+
+The author's response was: “Yes, I accept CA-06 as a prospective reporting requirement with those limits. Please record it and walk me through the next Group 2 decision. Thank you.”
+
+Disposition: accept the prospective reporting requirement with the stated limits. This resolves the reporting-policy choice for CA-06. Applying it to any later study or draft still requires identifying and checking each retained finding's actual evidence route against the dimension-specific rules. No existing score is accepted or replaced, and no completed route review is inferred.
+
+Source-review status: the author accepted the conversational explanation and its stated boundaries. The response does not attest independent inspection of the specification, case sources or existing route assignments. Codex's record inspection remains AI assistance.
+
+Implementation status: the specification, original claim-audit proposal, historical assessments, current manuscript and descriptive register remain unchanged. This additive decision records a prospective reporting obligation; it does not amend the normative contract or declare that the current draft satisfies the obligation. Published archives remain untouched. SOLO-A-03 and series selection/scope remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
