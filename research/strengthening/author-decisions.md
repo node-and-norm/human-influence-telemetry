@@ -98,3 +98,21 @@ Disposition: retain DEV-C03 as the bounded historical result presented above, wi
 Source-review status: the author accepted the conversational summary and its stated boundaries. The response does not attest independent inspection of the scorer submissions, transcription, eligibility or protocol execution. Codex's record inspection remains AI assistance.
 
 Implementation status: the current manuscript, descriptive claim register, historical scorer records, released scores and archives remain unchanged. CA-01, CA-06, SOLO-A-03 and the series-selection/scope decision remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
+
+## AD-009: Closeout Group 2B Dutch Reform handling
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: CA-01 in [Group 2 of the closeout worksheet](closeout-author-review.md#2-historical-human-evidence-and-earlier-case-qualifications), at revision `5187ca0f4083f396a00e92e8ee9685773ebd371c`. The assistant compared the [historical Dutch assessment](../../case-studies/assessments/toeslagenaffaire-harm-period.json), `substantive_findings` / `reform`, with [specification](../../SPECIFICATION.md) sections 4.1, 5.1 and 6.6. The old rationale describes unobserved exercise; the current Reform `0` rule requires no assessed actor to hold reform authority, or change to be structurally impossible within that role. The rationale alone does not establish either condition.
+
+The assistant proposed preserving the historical assessment and score, retaining that qualification in future reuse without presenting the old score as a current-contract assessment, and deferring a fresh current-contract assessment beyond closeout unless separately authorized. It stated that this would neither declare the old finding disproved nor substitute `1` or `IE`; the submitted chapter would remain untouched.
+
+The decision question was: “Do you accept that disposition for CA-01, or would you prefer to commission the fresh assessment now?”
+
+The author's response was: “Yes, I accept CA-01: preserve the historical score, retain the qualification for future reuse, and defer a fresh assessment beyond closeout. Please record it and walk me through the next Group 2 decision. Thank you.”
+
+Disposition: accept the stated handling of CA-01. Preserve the historical Reform `0` and its rationale. Retain the qualification in future reuse; no automatic current-contract reuse is permitted. A fresh bounded assessment is explicitly deferred beyond closeout and requires separate authorization before work begins. This resolves the immediate handling choice while leaving the substantive reassessment unresolved. It supplies no replacement finding, migration-exception approval or stable-release gate credit.
+
+Source-review status: the author accepted the conversational comparison and proposed disposition. The response does not attest independent re-reading of the parliamentary sources or establish the historical truth of any authority claim. Codex's record comparison remains AI assistance.
+
+Implementation status: the historical assessment, original claim-audit proposal, current manuscript and descriptive register remain unchanged; this additive decision records the accepted handling. Published archives and the submitted chapter remain untouched. CA-06, SOLO-A-03 and series selection/scope remain pending within Group 2. Groups 3 through 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.
