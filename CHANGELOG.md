@@ -6,6 +6,7 @@ All notable changes to Human Influence Telemetry are documented here. The projec
 
 Release-facing changes merged after the current published tag belong here. Candidate study and stable-release work remains governed by its separate gates.
 
+- Recorded the author's bounded Group 1 acceptance for later-draft reuse, including the v0.6.7 archive description. The current manuscript, descriptive register, source-review status and release gates remain unchanged; Groups 2 through 6 remain pending.
 - Added the 16 October bounded closeout plan, scope freeze, five-task status record and 30 October maintainer decision date. Maintenance has not begun; the date does not authorize a release.
 - Consolidated sixteen manuscript claims and older unresolved questions into an author-review worksheet. Preserved every original proposal and accepted decision; no new scientific acceptance or submission approval follows.
 - Recorded four bounded related-work source checks and additive bibliography entries. Wider review coverage and responsible-author source verification remain pending.

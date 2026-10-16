@@ -57,3 +57,26 @@ The assistant recommended freezing open-ended development, consolidating the aut
 Disposition: implement the [bounded closeout plan](../../docs/closeout-plan.md), update its public navigation and the HIT entry in the organization directory, and preserve separate release, manuscript and research requirements. Existing merge and publication authority under AD-004 remains subject to applicable checks. This records scope and workflow authorization, not acceptance of pending scientific interpretations, a source-review attestation, an independent audit, a phase-completion decision or approval to submit the current manuscript.
 
 The decision date does not automatically enter maintenance, authorize v1.0 or activate the replication protocol. The submitted chapter, other projects' findings, historical assessments, frozen results and published archives remain outside this change.
+
+## AD-007: Closeout Group 1 bounded wording
+
+Date: 16 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: [Group 1 of the closeout worksheet](closeout-author-review.md#1-artifact-descriptions-and-archive-identity), covering DEV-C01, DEV-C02, DEV-C11 and DEV-C13, as presented at repository revision `43d2cf52a62e08b01dbb7921b41793d24e6f7d2c`. The assistant presented the following bounded descriptions and asked whether the author accepted them for future manuscript reuse, without attesting independent source review or approving the whole manuscript.
+
+| Claim | Description accepted for a later draft | Retained limit |
+| :--- | :--- | :--- |
+| DEV-C01 | HIT represents six substantive dimensions and two integrity components. | A defined structure does not establish measurement validity. |
+| DEV-C02 | The historical audit reports six eligible mapped claims and detects eight specified corruptions. | It aggregates recorded judgments; historical eligibility does not transfer to the current manuscript. |
+| DEV-C11 | Update a later draft to cite v0.6.7, DOI `10.5281/zenodo.23252877`. Its publication receipt reports 382 matching archived files. | The archive includes the working manuscript and exhibits, but excludes later closeout records. Archiving supplies no scientific approval. |
+| DEV-C13 | File checks cover thirteen historical claims and nineteen evidence references. | They check file identity and dependencies, not source truth or scientific acceptance. |
+
+The decision question was: “Do you accept Group 1, covering DEV-C01, DEV-C02, DEV-C13 and the proposed DEV-C11 revision, on those terms?” The question expressly defined the response as a wording decision, with changes or deferral available.
+
+The author's response was: “Yes, I accept Group 1 with those limits, including the v0.6.7 update for a later draft. Please record it and walk me through Group 2. Thank you.”
+
+Disposition: accept the four bounded descriptions for later-draft reuse, including the worksheet's proposed v0.6.7 archive update. The underlying record locators remain the specification sections 6 and 7, historical audit and evaluator, 0.6.6/0.6.7 publication receipts, and file bindings and checker identified in the worksheet. The author's stated basis is acceptance with the presented limits; no additional rationale or independent re-reading is inferred.
+
+Source-review status: the author reviewed the conversational summary and accepted its stated boundaries. This response does not attest independent inspection of the linked records, a fresh archive comparison or verification of external source truth. Codex's record inspection remains AI assistance.
+
+Implementation status: this additive record does not revise the current manuscript or its historical descriptive register. Their pending labels remain attached to that unchanged draft; this decision governs the four descriptions proposed for later reuse. The v0.6.7 archive and earlier releases remain immutable. Groups 2 through 6, broader scientific eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain unresolved.

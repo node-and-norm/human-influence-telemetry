@@ -1,6 +1,6 @@
 # Closeout author-review worksheet
 
-Six grouped decisions cover the sixteen claims in the [development claim register](../../paper/development-claim-register.json) and the older unresolved judgments they depend on. Mark Julius Banasihan holds the responsible-author decision. This worksheet prepares that review; it records no new acceptance, source verification or release-gate credit.
+Six grouped decisions cover the sixteen claims in the [development claim register](../../paper/development-claim-register.json) and the older unresolved judgments they depend on. Mark Julius Banasihan holds the responsible-author decision. This worksheet links the additive decisions as they are recorded; it supplies no source-verification attestation or release-gate credit.
 
 Prepared 16 October 2026 for the [bounded closeout plan](../../docs/closeout-plan.md), with a decision date of 30 October 2026. The working manuscript, historical registers, assessments and results remain unchanged. Repository closeout and a possible manuscript submission are separate decisions.
 
@@ -10,11 +10,13 @@ For each group, identify any exceptions by claim ID and choose: retain the exact
 
 File inspection can establish that a record contains a number, category, decision or source link. A reproducible calculation can establish how a recorded result was obtained. Neither operation authenticates the external source or establishes that an interpretation is warranted. Record source review separately from agreement with the manuscript wording. Existing author decisions retain their original scope.
 
-Every group below is **pending responsible-author review for manuscript reuse**. Explicitly deferring the paper is a permitted closeout decision: preserve this queue, the draft and their pending labels without submitting them.
+Group 1's bounded descriptions are accepted for later-draft reuse under [AD-007](author-decisions.md#ad-007-closeout-group-1-bounded-wording). Groups 2 through 6 remain pending. The unchanged current manuscript and its descriptive register retain their pending labels; the additive decision does not approve the whole draft. Explicitly deferring the paper remains a permitted closeout decision.
 
 ## 1. Artifact descriptions and archive identity
 
 Decision: which descriptions of the implemented artifact should a later draft retain, and with what limits?
+
+Disposition: accepted with the presented limits on 16 October 2026 for DEV-C01, DEV-C02, DEV-C11 and DEV-C13. [AD-007](author-decisions.md#ad-007-closeout-group-1-bounded-wording) preserves the question, exact author response, accepted descriptions and absence of an independent source-review attestation.
 
 | Claim | Record and locator to inspect | Qualification to retain |
 | :--- | :--- | :--- |
@@ -23,7 +25,7 @@ Decision: which descriptions of the implemented artifact should a later draft re
 | DEV-C11 | [0.6.6 receipt](../../release/v0.6.6/publication-receipt.json), record `23226713`; [0.6.7 receipt](../../release/v0.6.7/publication-receipt.json), `release_commit`, `zenodo` and `scope`. | The archived draft's statement about 0.6.6 remains historical. The proposed update below concerns a later draft only. Archive verification supplies no scientific approval. |
 | DEV-C13 | [File bindings](../../evidence/research-integrity-bindings.json), `file_and_dependency_consistency_only`; [checker](../../scripts/validate_claim_bindings.py), `build`; [release amendment](../../release/v0.6.7/frozen-input-amendment.json). | Thirteen claim bindings and nineteen evidence references concern file identity and dependencies. The documented historical-file resolution preserves the old context; it cannot establish source truth or publication eligibility. |
 
-PROPOSED next-draft update for DEV-C11: “Version 0.6.7 has a verified exact-version software/research-artifact archive, DOI 10.5281/zenodo.23252877, bound to commit `4336b8acd16d571ef9b5ab1d8ca1ecc2ea0eb01e`. It contains the working manuscript and exhibits; later closeout records require their own revision identification.” The receipt reports all 382 tracked file bytes matching the archive. This proposal has not changed the archived manuscript or its claim register. Responsible-author acceptance remains pending.
+ACCEPTED for a later draft, not yet applied, DEV-C11: “Version 0.6.7 has a verified exact-version software/research-artifact archive, DOI 10.5281/zenodo.23252877, bound to commit `4336b8acd16d571ef9b5ab1d8ca1ecc2ea0eb01e`. It contains the working manuscript and exhibits; later closeout records require their own revision identification.” The receipt reports all 382 tracked file bytes matching the archive. [AD-007](author-decisions.md#ad-007-closeout-group-1-bounded-wording) accepts this bounded update for later reuse; it changes neither the archived manuscript nor the current descriptive register and does not attest a fresh archive comparison.
 
 ## 2. Historical human evidence and earlier case qualifications
 
@@ -95,4 +97,4 @@ Original queue item 6 remains a pending choice: whether to seek one bounded exte
 
 ## Completion record
 
-Record each group response with covered claim IDs, exceptions, reviewed passages, source-review status, replacement wording where needed, reviewer and date. Carry unresolved items into the final closeout status with their missing evidence specified. Preserve original records and use an additive decision record for any new author judgment. Until those responses exist, all sixteen manuscript claims retain their existing pending-review status.
+Record each group response with covered claim IDs, exceptions, reviewed passages, source-review status, replacement wording where needed, reviewer and date. Carry unresolved items into the final closeout status with their missing evidence specified. Preserve original records and use an additive decision record for any new author judgment. Group 1 is recorded in AD-007; Groups 2 through 6 await responses. The current manuscript's sixteen descriptive-register entries remain unchanged pending a separately identified draft revision and review; this does not erase the bounded later-draft acceptance recorded above.
