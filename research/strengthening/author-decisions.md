@@ -502,3 +502,23 @@ Disposition: accept the closeout handling and defer responsible-author review of
 Review status: this response accepts a timing and preservation decision. It does not attest that the author reviewed every explanation or rationale, and it supplies no independent human semantic evaluation. The original `semantic_prose_validated: false`, independent-review and scientific-eligibility flags remain unchanged. AD-022 retains its original scope; this later decision supplies the explicit deferral that the earlier acceptance did not.
 
 Implementation status: the frozen protocol, inputs, scorer, first responses, analysis and original report remain unchanged, as do the current manuscript and descriptive register, historical findings, prior author decisions, stable-release gates and published archives. The deferral concerns only this benchmark's two response texts; source-level author verification, Group 5's human adjudication and interpretation questions, and DEV-C12's evidence requirements retain their separate unresolved states and safeguards. Earlier explicit deferrals remain in force. Optional external critique, the paper disposition, remaining closeout choices and the maintenance decision still await their separate handling. No manuscript upload, release approval or scientific-conclusion promotion follows.
+
+## AD-030: Closeout Group 6E optional external critique deferral
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: original queue item 6's optional external methodological critique in [Group 6 of the closeout worksheet](closeout-author-review.md#6-contribution-remaining-obligations-and-the-paper-decision), at revision `f405837f2594a248f382133c2ced150351f151b9`. The [focused external review packet](external-review.md) describes proposed tasks and records no invitation or external result. The [submission notes](../../paper/submission-notes.md) and [stable gate register](../../release/v1.0.0/gate-register.json) preserve separate publication and implementation-audit requirements.
+
+Presented choice: seek a focused critique of one rule, one literature proposition or one bounded documentary interpretation, or explicitly defer that optional critique. The assistant recommended deferral beyond closeout unless separately authorized, to keep the current phase bounded.
+
+Presented limits: the absence of that critique remains disclosed, without a completed-external-review or independent-validation claim. The mandatory independent-human implementation audit for v1.0 remains unchanged. Future submission must meet the selected venue's requirements. Accepting this deferral sends no invitation, assigns no reviewer and changes no research finding. E5 wording keeps the timing decision separate from review completion or exemption.
+
+The decision question was: “Do you accept deferring the optional external methodological critique beyond closeout with these limits?”
+
+The author's response was: “Yes, I accept deferring the optional external methodological critique beyond closeout with those limits. Please record it and walk me through the next Group 6 decision. Thank you.”
+
+Disposition: defer the optional bounded external methodological critique beyond closeout unless separately authorized. Preserve its absent status and the prepared packet without claiming an invitation, received review, independent validation or endorsement. This deferral applies to the rule, literature or documentary critique choice; it neither replaces nor waives the mandatory v1.0 independent-human implementation audit or any applicable future venue requirement.
+
+Review status: the response accepts the presented timing and scope limits. It supplies no external judgment, source-verification attestation or independent scientific evaluation. Any later critique still requires a named task, suitable materials, reviewer arrangements and disclosure permissions; this decision initiates none of them.
+
+Implementation status: the original external-review packet and invitation status, prior author decisions, current manuscript and descriptive register, source-review records, assessments, frozen inputs and results, stable-release gates and published archives remain unchanged. No invitation, reviewer assignment, contact disclosure, new study, model request, release approval or manuscript upload follows. The paper disposition and final maintenance decision remain separate and pending. Existing unresolved judgments, source-verification duties and research requirements retain their states; earlier explicit deferrals retain their scopes.
