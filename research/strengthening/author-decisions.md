@@ -400,3 +400,25 @@ Disposition: retain DEV-C08's bounded recorded-result description for later-draf
 Source-review status: the author accepted the conversational description and stated limits. The response does not attest independent inspection of every constructed passage or model answer, reference-label adjudication or independent scientific evaluation. Codex's retained-record inspection and replay remain AI assistance.
 
 Implementation status: AD-002 and the original design, inputs, response, analysis, pending human-adjudication flag and report remain unchanged, as do the current manuscript, descriptive register, historical findings and published archives. No repeat request, relabeling, rescoring or new experiment follows. DEV-C09 and Group 6, independent human adjudication, earlier deferred judgments and pending benchmark prose review, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
+
+## AD-025: Closeout Group 5C Ofqual advisory result description
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C09 in [Group 5 of the closeout worksheet](closeout-author-review.md#5-jev-model-observations-and-the-preserved-disagreement), at revision `94d5785922d4c29754814321dc012fb24ed2ab81`. The [Ofqual advisory report](jev-review-001/report.md), [protocol](jev-review-001/PROTOCOL.md), [source packet](jev-review-001/sources.json) and [retained analysis](jev-review-001/run-001/analysis.json) preserve the run and its interpretation limits.
+
+Presented result: one Jev request used nine excerpts from four of the six Ofqual sources and returned fourteen structurally valid responses. Jev classified six existing draft propositions as supported. Eight constructed items examined broader claims and paired conditions. The date, synthetic-conflict and whitespace conditions each showed their declared relationship once. These observations do not establish full-document assessment quality or general robustness.
+
+Presented classification questions: Jev returned `contradicted` for the broader claims that Ofqual's Board directly operated every exam board's grade-issuing process and that every affected candidate's educational opportunities were fully restored. The report preserves Codex's reservations: `insufficient` remains defensible for the first and arguable for the second under a stricter outcome interpretation. Those reservations are neither accepted replacement labels nor proven model errors. Jev supplied no explanatory rationale.
+
+The screen had no human reference labels. Later Ofqual author judgments cannot retrospectively become pre-model reference labels for this run. No pooled accuracy, user benefit or new HIT finding follows. The assistant recommended retaining DEV-C09's bounded description for a later draft, with human review and classification questions unresolved; E5 wording separates recorded choices from proposed interpretations.
+
+The decision question was: “Do you accept DEV-C09 with these limits for a later draft, with human review and the classification questions still unresolved?”
+
+The author's response was: “Yes, I accept DEV-C09 with those limits for a later draft, with human review and the classification questions still unresolved. Please record it and walk me through the first Group 6 decision. Thank you.”
+
+Disposition: retain DEV-C09's bounded recorded-result description for later-draft reuse. Preserve all fourteen responses and the assistant's classification reservations without accepting new labels, a model-error claim, a human-reference comparison or general robustness. Human review and the classification questions remain unresolved. The acceptance does not convert later author judgments into pre-model labels or alter earlier Ofqual findings.
+
+Source-review status: the author accepted the conversational description and stated limits. The response does not attest independent inspection of every source excerpt or answer, source truth, human adjudication of the classifications or independent scientific evaluation. Codex's record inspection and replay remain AI assistance.
+
+Implementation status: the original protocol, excerpts, design, request, response, analysis, pending human-review flags and report remain unchanged, as do the Ofqual records, current manuscript, descriptive register, historical results and published archives. No new request, relabeling, rescoring or study activation follows. Group 5's three descriptive decisions now have bounded dispositions; human adjudication, P06 event identity and the advisory classification questions remain unresolved. Group 6, earlier deferred judgments and pending benchmark prose review, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
