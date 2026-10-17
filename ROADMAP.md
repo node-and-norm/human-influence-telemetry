@@ -21,7 +21,7 @@ Dates are secondary. A milestone is complete only when its artifacts and tests e
 
 ## Current execution priorities
 
-The [16 October closeout plan](docs/closeout-plan.md) now governs near-term scheduling. Expansion is frozen. By 30 October, the maintainer should record either maintenance with explicitly deferred research or one bounded continuation. This decision date is not a v1 deadline, manuscript approval or automatic phase closure. The [author worksheet](research/strengthening/closeout-author-review.md) groups the outstanding judgments; no model batch, figure or new feature is required merely to extend the work.
+The [closeout plan](docs/closeout-plan.md) governs near-term scheduling. On 17 October, the maintainer conditionally authorized maintenance after verification and merge. Activation remains pending and expansion stays frozen. The [author worksheet](research/strengthening/closeout-author-review.md) records all six groups' bounded dispositions, explicit deferrals and unresolved obligations. The original 30 October decision date remains planning history, without v1, manuscript or automatic phase-closure authority.
 
 [ADR-0005](docs/decisions/ADR-0005-separate-stable-and-empirical-tracks.md) separates stable release from study-preparation dependencies prospectively. One independent human implementation audit remains required. The [five-priority execution record](research/strengthening/v1-priorities.md) preserves that track's obligations: reconcile release controls; complete documentary applications; examine the capable-baseline comparison and sensitivity; finish and independently audit the implementation packet; then review v0.9.0 and accept v1.0.0 only when its gates pass. Closeout neither completes nor waives those obligations.
 

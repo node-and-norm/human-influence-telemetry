@@ -1,8 +1,8 @@
 # HIT bounded closeout and maintenance decision
 
-16 October 2026, America/New_York. Status: bounded closeout in progress; maintenance has not started. Decision date: 30 October 2026. The date limits open-ended development; it does not authorize a release or attest that research is complete.
+Prepared 16 October 2026, America/New_York; updated 17 October. Status: maintenance is conditionally authorized under [AD-032](../research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization), with verification and merge pending. Maintenance has not started. The original 30 October decision date is retained as planning history; it does not authorize a release or attest that research is complete.
 
-HIT has a citable [v0.6.7 software archive](https://doi.org/10.5281/zenodo.23252877). The remaining decision is how to finish this solo development phase without converting unresolved interpretations into findings. [AD-006](../research/strengthening/author-decisions.md#ad-006-bounded-closeout-and-repository-updates) authorizes this plan and repository work. It supplies no new scientific acceptance, source-review attestation, reviewer or manuscript-submission approval.
+HIT has a citable [v0.6.7 software archive](https://doi.org/10.5281/zenodo.23252877). The maintainer has authorized closing this bounded solo-development phase after its verification and merge conditions are met. Unresolved interpretations retain their recorded status. [AD-006](../research/strengthening/author-decisions.md#ad-006-bounded-closeout-and-repository-updates) authorizes this plan and repository work. It supplies no new scientific acceptance, source-review attestation, reviewer or manuscript-submission approval.
 
 ## One finite queue
 
@@ -11,10 +11,10 @@ The [status record](../research/strengthening/closeout-status.json) tracks these
 | Task | Owner and current state | Completion condition |
 | :--- | :--- | :--- |
 | CO-01: Freeze expansion | Codex implements; maintainer governs. Scope fixed. | Link one current closeout entry point from the README, roadmap and Node & Norm directory. Preserve prior records. |
-| CO-02: Dispose of material claims | Responsible author. Review pending. | Record accept, narrow, remove, unresolved or explicitly deferred for each grouped item, with scope and reasons. Approval of the workflow is not approval of its findings. |
+| CO-02: Dispose of material claims | Responsible author. [Bounded dispositions recorded](../research/strengthening/author-decisions.md#ad-031-closeout-group-6f-manuscript-deferral); manuscript work deferred. | Record accept, narrow, remove, unresolved or explicitly deferred for each grouped item, with scope and reasons. Approval of the workflow is not approval of its findings. |
 | CO-03: Check retained sources | Codex assists; responsible author evaluates. Partial. | Record what each inspected passage supports and what remains unchecked. Complete the declared review scope before claiming it is complete. |
 | CO-04: Verify this revision | Codex. Exact revision subject to PR checks. | Run the current workflow, closeout negative tests, links and protected-history checks. Retain successful and expected-failure boundaries. |
-| CO-05: Record the phase decision | Maintainer. Pending by 30 October. | Enter maintenance with explicit deferred work, or approve one bounded continuation with an owner, evidence requirement and stop date. |
+| CO-05: Record the phase decision | Maintainer. Conditionally authorized under AD-032; verification and merge pending. | Record the exact reviewed PR head, merged revision and successful checks before activating maintenance. Preserve deferred work and unresolved evidence. |
 
 No further small model batch, new dimension, dashboard, runtime integration or sector-effectiveness demonstration belongs in this queue. A correction to an existing defect remains in scope. New figures require an identified communication defect, not a desire to make the artifact look more complete.
 
@@ -26,11 +26,11 @@ Closeout requires a recorded maintainer decision for an exact revision, a dispos
 
 Maintenance covers reported defects, security and dependency fixes, citation corrections, reproduction failures and scoped responses to substantive external feedback. It does not archive or make the GitHub repository read-only. Reopening development requires a named problem, an evidence requirement, an owner and a stopping condition.
 
-If the decision date arrives without author review, report the closeout as awaiting decision. Do not mark it complete automatically or begin an unbounded extension. This plan creates no scheduled automation.
+The maintainer supplied the conditional phase decision on 17 October. Verification failure leaves activation pending. Reopening development requires the bounded scope above; the original deadline cannot authorize an extension or activate maintenance. This plan creates no scheduled automation.
 
 ### Publish a paper
 
-The manuscript is optional and separate from maintenance. Its sixteen claims remain pending responsible-author review for the current draft. Submission requires source and citation checks, an accurately declared literature-review scope, confirmed declarations, a chosen venue with checked requirements and approval of the exact draft. The [submission notes](../paper/submission-notes.md) remain controlling. The older audit supplies no automatic eligibility to new claims.
+The manuscript is optional and separate from maintenance. On 17 October, [AD-031](../research/strengthening/author-decisions.md#ad-031-closeout-group-6f-manuscript-deferral) preserved the unapproved working draft and explicitly deferred revision, whole-draft review and submission beyond closeout unless separately authorized. All six grouped decision queues have bounded dispositions; this completes their administrative record, not the current manuscript's review or the underlying research. Its sixteen claims remain pending responsible-author review for the current draft. Submission requires source and citation checks, an accurately declared literature-review scope, confirmed declarations, a chosen venue with checked requirements and approval of the exact draft. The [submission notes](../paper/submission-notes.md) remain controlling. The older audit supplies no automatic eligibility to new claims.
 
 The [bounded related-work check](../research/strengthening/closeout-source-check.md) records an additional AI-assisted check of four already-cited works. It is neither a systematic search nor independent scientific review. It does not close the literature-search log or establish novelty.
 
@@ -55,6 +55,6 @@ python scripts/validate_closeout.py
 python -W error scripts/test_closeout.py
 ```
 
-They check the fixed closeout state, claim coverage and preserved prohibitions. They do not authenticate a human decision or establish source truth. Any later transition requires an additive decision and a reviewed update to these state-specific controls.
+They check recorded state, claim coverage, preservation of research prohibitions and, for maintenance, a receipt bound to the reviewed PR head and its merged revision. The receipt records observed local and hosted checks. Offline validation cannot authenticate human authority, GitHub results or source truth. AD-032 authorizes the transition only when its conditions are met; a passing checker alone cannot activate it.
 
 AI assistance in this increment covers repository inspection, source retrieval, queue consolidation, prose, checks and review. No new Jev request, participant rating, institutional observation, external invitation or independent review was produced.
