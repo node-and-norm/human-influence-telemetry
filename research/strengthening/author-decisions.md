@@ -360,3 +360,23 @@ Disposition: retain DEV-C16's bounded recorded-outcome description for later-dra
 Source-review status: the author accepted the conversational result description and stated limits. The response does not attest independent inspection of every input or answer, human semantic adjudication, verified blinding or independent scientific evaluation. Codex's replay and retained-record inspection remain AI assistance.
 
 Implementation status: the frozen protocol, inputs and scoring rules, first responses, analysis flags (including `semantic_prose_validated: false`), original report and pending-review labels, historical Ofqual records, current manuscript, descriptive register and published archives remain unchanged. No new trial, model request, rescoring or study activation follows. Group 4's four decision items now have bounded dispositions; deferred conditional adjudication and pending benchmark prose review remain unresolved. Groups 5 and 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
+
+## AD-023: Closeout Group 5A first Jev result description
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C07 in [Group 5 of the closeout worksheet](closeout-author-review.md#5-jev-model-observations-and-the-preserved-disagreement), at revision `5b2af8e48d2c4f241e96be9163c86265c1f9247d`. The [first Jev report](jev-report.md), [retained request](jev-live-001/request.json), [response](jev-live-001/response.json), [run record](jev-live-001/run.json) and [analysis](jev-live-001/analysis.json) preserve the development observation and its provenance.
+
+Presented result: one request to `jev-1.13.0` returned eight valid classifications, comprising three supported, three contradicted and two insufficient. All eight matched assistant-authored development expectations. The retained request supplied the frozen README, specification, claims and category definitions without the expected-answer mappings. The questions and expectations shared AI-assisted authorship and familiarity with the material; several items directly restated repository rules or introduced unsupported numerical claims.
+
+Presented limits: these are development-label matches, not independently adjudicated accuracy. No retries or discarded judgments were recorded. Request duration excludes preparation and human review and therefore establishes no workflow time saving. Independent human adjudication remains pending. The result supplies no human reliability evidence or independent validation of HIT.
+
+The assistant recommended retaining DEV-C07's bounded result description for a later draft, with E5 wording separating observed matches from correctness and practical benefit. The decision question was: “Do you accept DEV-C07 with these limits for a later draft, with independent human adjudication still pending?”
+
+The author's response was: “Yes, I accept DEV-C07 with those limits for a later draft, with independent human adjudication still pending. Please record it and walk me through the next Group 5 decision. Thank you.”
+
+Disposition: retain DEV-C07's bounded recorded-result description for later-draft reuse. Preserve eight matches to eight assistant-authored expectations without treating those expectations as independent reference judgments or accepting the run as an accuracy study. Independent human adjudication remains pending. Neither workflow benefit, general model performance nor research or release-gate completion follows.
+
+Source-review status: the author accepted the conversational description and stated limits. The response does not attest independent inspection of every source passage or label, human reference-label adjudication, verified blinding or independent scientific evaluation. The absence of expected-answer mappings from the retained request does not establish the model's training exposure. Codex's retained-record inspection and replay remain AI assistance.
+
+Implementation status: the original design, frozen request, response, run metadata, analysis and pending human-adjudication flag, report, current manuscript, descriptive register, historical findings and published archives remain unchanged. No new model request, label change, rescoring or study activation follows. DEV-C08 and DEV-C09, Group 6, the earlier deferred judgments and pending benchmark prose review, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
