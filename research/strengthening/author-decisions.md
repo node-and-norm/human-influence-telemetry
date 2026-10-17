@@ -380,3 +380,23 @@ Disposition: retain DEV-C07's bounded recorded-result description for later-draf
 Source-review status: the author accepted the conversational description and stated limits. The response does not attest independent inspection of every source passage or label, human reference-label adjudication, verified blinding or independent scientific evaluation. The absence of expected-answer mappings from the retained request does not establish the model's training exposure. Codex's retained-record inspection and replay remain AI assistance.
 
 Implementation status: the original design, frozen request, response, run metadata, analysis and pending human-adjudication flag, report, current manuscript, descriptive register, historical findings and published archives remain unchanged. No new model request, label change, rescoring or study activation follows. DEV-C08 and DEV-C09, Group 6, the earlier deferred judgments and pending benchmark prose review, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
+
+## AD-024: Closeout Group 5B second Jev result description
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C08 in [Group 5 of the closeout worksheet](closeout-author-review.md#5-jev-model-observations-and-the-preserved-disagreement), at revision `be4447758562b030fb845066b1838f0cbc849a75`. The [second Jev report](passage-report.md), [retained design](jev-live-002/design.json), [request](jev-live-002/request.json), [response](jev-live-002/response.json) and [analysis](jev-live-002/analysis.json) preserve the result. [AD-002](#ad-002-p06-interpretation-disagreement) already governs the immediate handling of P06.
+
+Presented result: one request returned ten valid answers, nine of which matched the frozen assistant-authored expectations. P06's constructed passage describes an announcement on 18 August while the tested claim asks about 17 August. The frozen reference label is `insufficient`; Jev returned `contradicted`.
+
+Presented distinction: the reference allows the possibility of announcements on both dates. Treating the dates as descriptions of one unique event could explain the other reading, but Jev supplied no explanatory rationale. That account is a possible interpretation, not an established account of the model's reasoning. AD-002 already authorizes preserving the disagreement; the closeout question concerns its description in a later draft and does not reopen that handling decision.
+
+The assistant recommended retaining the 9/10 result, both original labels and unresolved event identity. E5 wording separates the observed mismatch from its possible explanation. The description establishes neither a proven model error nor general accuracy, changes no historical finding and starts no new experiment. The decision question was: “Do you accept DEV-C08 with these limits for a later draft, preserving AD-002’s handling and leaving the interpretation unresolved?”
+
+The author's response was: “Yes, I accept DEV-C08 with those limits for a later draft, preserving AD-002’s handling and leaving the interpretation unresolved. Please record it and walk me through the next Group 5 decision. Thank you.”
+
+Disposition: retain DEV-C08's bounded recorded-result description for later-draft reuse. Preserve the nine matches among ten valid responses, the original `insufficient` reference and observed `contradicted` choice, and AD-002's unresolved event-identity handling. Neither label is newly adjudicated as scientifically correct. The possible unique-event reading remains an inference; the model supplied no explanation. This accepts no accuracy estimate, model-defect claim or new historical account.
+
+Source-review status: the author accepted the conversational description and stated limits. The response does not attest independent inspection of every constructed passage or model answer, reference-label adjudication or independent scientific evaluation. Codex's retained-record inspection and replay remain AI assistance.
+
+Implementation status: AD-002 and the original design, inputs, response, analysis, pending human-adjudication flag and report remain unchanged, as do the current manuscript, descriptive register, historical findings and published archives. No repeat request, relabeling, rescoring or new experiment follows. DEV-C09 and Group 6, independent human adjudication, earlier deferred judgments and pending benchmark prose review, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
