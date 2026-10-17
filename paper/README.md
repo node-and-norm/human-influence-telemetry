@@ -4,6 +4,8 @@ Read the [current development manuscript](development-manuscript.md) for the met
 
 This directory contains a working research-paper package. It is not a submitted or accepted paper.
 
+On 17 October 2026, [AD-031](../research/strengthening/author-decisions.md#ad-031-closeout-group-6f-manuscript-deferral) preserved the unapproved working draft and deferred manuscript revision, whole-draft review and submission beyond closeout unless separately authorized. The sixteen bounded later-draft descriptions do not approve the current whole draft. Source verification, declared review-scope requirements and exact-submission approval remain outstanding. The [closeout plan](../docs/closeout-plan.md) reports the separate maintenance status.
+
 The published [v0.6.7 development release](../docs/releases/v0.6.7.md), archived at [10.5281/zenodo.23252877](https://doi.org/10.5281/zenodo.23252877), includes this workspace and its source-bound exhibits. Software publication and archive verification are complete; responsible-author review and manuscript submission approval remain pending.
 
 The manuscript now includes [three reproducible development exhibits](../figures/development-2026-10-08/README.md): assessment architecture, Ofqual event/source timing, and qualification preservation. Their captions distinguish conceptual structure and documentary inspection from empirical performance. The older claim-gate figure remains version-bound.

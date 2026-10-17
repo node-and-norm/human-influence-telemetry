@@ -19,11 +19,15 @@ A document in this directory does not create a release. A version becomes public
 | [`0.6.6`](v0.6.6.md) | 2026-10-07 | Development workbench, reproducibility and release-readiness controls | Published; archive verified |
 | [`0.6.7`](v0.6.7.md) | 2026-10-08 | Author review, evidence-update rehearsal and manuscript exhibits | Current published release; archive verified |
 
+## Post-release repository status
+
+On 17 October 2026, the maintainer [conditionally authorized maintenance](../../research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization) after verification and merge. Activation remains pending. The [closeout record](../closeout-plan.md) and six-group author dispositions are post-v0.6.7 work, outside that immutable archive. They create no new release or DOI and approve no manuscript submission. The current published version remains v0.6.7.
+
 ## Active and planned releases
 
 | Version | State | Purpose | Publication condition |
 |---|---|---|---|
-| [`0.7.0`](v0.7.0-candidate.md) | Active candidate | Freeze three current-contract packets and the multi-case replication protocol | Human case selection, packet freeze, comparison tooling, locked protocol, exact-commit validation |
+| [`0.7.0`](v0.7.0-candidate.md) | Candidate; scoring prohibited | Freeze three current-contract packets and the multi-case replication protocol | Human case selection, packet freeze, comparison tooling, locked protocol, exact-commit validation |
 | `0.8.0` | Pending | Publish current-contract applications and empirical result or recruitment disposition | Application records and declared empirical outcome |
 | `0.9.0` | Pending | Stable release candidate and clean-room implementation audit | Complete implementation packet, external audit, no release-blocking defect |
 | [`1.0.0`](v1.0.0-candidate.md) | Gated candidate | Stable public contract and compatibility commitment | Every stable-contract gate in `docs/v1-readiness-plan.md` passes |

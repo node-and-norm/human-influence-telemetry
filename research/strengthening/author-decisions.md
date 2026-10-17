@@ -542,3 +542,23 @@ Disposition: preserve the current manuscript and descriptive register unchanged 
 Review status: the response accepts the presented manuscript timing and handling. It supplies no whole-draft approval, source-verification attestation, scientific eligibility, external review or permission to submit. Separate source-review and scientific obligations retain their existing states; this manuscript-workflow deferral neither completes nor automatically defers every underlying obligation.
 
 Implementation status: all six grouped closeout decision queues now have bounded dispositions. CO-02 records that administrative coverage as `bounded_dispositions_recorded`; consistency checks require the additive AD-007 through AD-031 records but cannot authenticate a decision or its evidentiary support. CO-03 remains partial and CO-05 awaits the maintainer's decision. Maintenance has not started. The current manuscript, descriptive register, original source records, assessments, figures, frozen inputs and results, release gates and published archives remain unchanged. No new study, model request, invitation, release approval, maturity promotion or manuscript upload follows.
+
+## AD-032: Conditional maintenance authorization
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, acting as maintainer and responding directly in the working conversation. Recorded by Codex.
+
+Review object: the completed six-group disposition queue and the separate maintenance decision presented at revision `3bcd092cc20bec131b19204e575553f87e54bb4d` of [PR #42](https://github.com/node-and-norm/human-influence-telemetry/pull/42). [AD-031](#ad-031-closeout-group-6f-manuscript-deferral) preserves the unapproved working manuscript and defers revision, whole-draft review and submission beyond closeout.
+
+Presented choice: close this bounded solo-development phase and enter maintenance after the final reviewed pull-request revision and its merged revision pass their required checks. Record the exact revisions and verification evidence before activating maintenance.
+
+Presented limits: keep HIT public and usable; address reported defects, security and dependency fixes, citation corrections, reproduction failures and scoped external feedback. Preserve every recorded deferral and unresolved evidence question. All eight v1.0 gates remain unresolved. Reopening research development requires a named problem, an owner, an evidence requirement and a stopping condition. This phase decision authorizes no manuscript submission, new release or DOI, research-maturity promotion, independent-validation claim or waiver of a study requirement.
+
+The decision question was: “Do you authorize closing this bounded solo-development phase and entering maintenance after those verification and merge conditions are met, with these limits?”
+
+The maintainer's response was: “Yes, I authorize closing HIT’s bounded solo-development phase and entering maintenance once the verification and merge conditions are met, with those limits. Please record it and proceed. Thank you.”
+
+Disposition: conditional maintenance authorization accepted. Record this authorization, review and verify the final PR #42 revision, merge with preserved ancestry, and verify the merged revision. Enter maintenance only after those conditions are met and a verification receipt identifies the reviewed head, merged commit and successful checks. A follow-up that records the receipt and active state must itself pass review and applicable checks before and after merge. No self-referential receipt for its own unpublished commit is required.
+
+Review status: this is a maintainer phase decision. It supplies no manuscript approval, source-verification attestation, independent scientific review, new empirical finding or release-gate credit. Prior author decisions retain their scopes. Source checking remains partial, and manuscript and research duties retain their unresolved or explicitly deferred states.
+
+Implementation status at recording: CO-05 is `authorized_pending_verification`; maintenance and closeout-acceptance flags remain false. The later receipt must record actual observations of the required checks, without treating an offline consistency check as authentication of their execution. The repository remains public and writable; no archive, tag, historical score, frozen result, contract or maturity boundary changes. Delete only merged task branches after confirming that their work is reachable from the verified main branch. A failed check leaves activation pending; a later defect in the transition requires a scoped correction or explicit suspension of the maintenance record, with the history preserved.
