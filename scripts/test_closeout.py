@@ -43,6 +43,31 @@ class CloseoutTests(unittest.TestCase):
         for key in ("scientific_acceptance_conferred", "maintenance_activated", "release_authorized"):
             self.assertIs(result[key], False)
 
+    def test_bounded_dispositions_do_not_approve_manuscript_or_activate_phase(self):
+        for state in ("awaiting_author_review", "bounded_dispositions_recorded"):
+            self.mutate(check.STATUS, lambda d: d["work_items"][1].update(status=state))
+            result = check.evaluate(self.root)
+            self.assertEqual(result["check_kind"], "closeout_record_consistency_only")
+            self.assertEqual(result["bounded_dispositions_recorded"], state == "bounded_dispositions_recorded")
+            self.assertEqual(result["manuscript_claims"], 16)
+            self.assertEqual(result["unresolved_stable_gates"], 8)
+            for key in ("scientific_acceptance_conferred", "maintenance_activated", "release_authorized"):
+                self.assertIs(result[key], False)
+
+    def test_bounded_dispositions_require_each_record_once(self):
+        self.mutate(check.STATUS, lambda d: d["work_items"][1].update(status="bounded_dispositions_recorded"))
+        authority = self.root / check.AUTHORITY
+        original = authority.read_text(encoding="utf-8")
+        self.assertEqual(check.DISPOSITION_IDS, [f"AD-{n:03d}" for n in range(7, 32)])
+        for decision_id in check.DISPOSITION_IDS:
+            missing = original.replace(f"## {decision_id}:", "## Removed decision:")
+            duplicate = original + f"\n## {decision_id}: Duplicate decision\n"
+            for kind, changed in (("missing", missing), ("duplicate", duplicate)):
+                authority.write_text(changed, encoding="utf-8")
+                with self.subTest(decision=decision_id, mutation=kind), self.assertRaises(ValueError):
+                    check.evaluate(self.root)
+        authority.write_text(original, encoding="utf-8")
+
     def test_verification_status_can_advance_without_acceptance(self):
         for value in ("pending_verification", "verified_this_revision"):
             self.mutate(check.STATUS, lambda d: d["work_items"][3].update(status=value))
@@ -79,7 +104,7 @@ class CloseoutTests(unittest.TestCase):
                                               lambda d: d["work_items"][3].update(status="release_ready"),
                                               lambda d: d["work_items"][3].update(release_authorized=True)])
 
-    def test_claim_review_remains_author_only_and_pending(self):
+    def test_disposition_status_cannot_replace_author_review_or_owner(self):
         self.rejected_mutations(check.STATUS, [lambda d, state=state: d["work_items"][1].update(status=state)
                                               for state in ("accepted", "complete", "ai_review_complete", "verified_this_revision")])
         self.rejected_mutations(check.STATUS, [lambda d, owner=owner: d["work_items"][1].update(owner=owner)

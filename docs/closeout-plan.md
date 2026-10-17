@@ -11,7 +11,7 @@ The [status record](../research/strengthening/closeout-status.json) tracks these
 | Task | Owner and current state | Completion condition |
 | :--- | :--- | :--- |
 | CO-01: Freeze expansion | Codex implements; maintainer governs. Scope fixed. | Link one current closeout entry point from the README, roadmap and Node & Norm directory. Preserve prior records. |
-| CO-02: Dispose of material claims | Responsible author. Review pending. | Record accept, narrow, remove, unresolved or explicitly deferred for each grouped item, with scope and reasons. Approval of the workflow is not approval of its findings. |
+| CO-02: Dispose of material claims | Responsible author. [Bounded dispositions recorded](../research/strengthening/author-decisions.md#ad-031-closeout-group-6f-manuscript-deferral); manuscript work deferred. | Record accept, narrow, remove, unresolved or explicitly deferred for each grouped item, with scope and reasons. Approval of the workflow is not approval of its findings. |
 | CO-03: Check retained sources | Codex assists; responsible author evaluates. Partial. | Record what each inspected passage supports and what remains unchecked. Complete the declared review scope before claiming it is complete. |
 | CO-04: Verify this revision | Codex. Exact revision subject to PR checks. | Run the current workflow, closeout negative tests, links and protected-history checks. Retain successful and expected-failure boundaries. |
 | CO-05: Record the phase decision | Maintainer. Pending by 30 October. | Enter maintenance with explicit deferred work, or approve one bounded continuation with an owner, evidence requirement and stop date. |
@@ -30,7 +30,7 @@ If the decision date arrives without author review, report the closeout as await
 
 ### Publish a paper
 
-The manuscript is optional and separate from maintenance. Its sixteen claims remain pending responsible-author review for the current draft. Submission requires source and citation checks, an accurately declared literature-review scope, confirmed declarations, a chosen venue with checked requirements and approval of the exact draft. The [submission notes](../paper/submission-notes.md) remain controlling. The older audit supplies no automatic eligibility to new claims.
+The manuscript is optional and separate from maintenance. On 17 October, [AD-031](../research/strengthening/author-decisions.md#ad-031-closeout-group-6f-manuscript-deferral) preserved the unapproved working draft and explicitly deferred revision, whole-draft review and submission beyond closeout unless separately authorized. All six grouped decision queues have bounded dispositions; this completes their administrative record, not the current manuscript's review or the underlying research. Its sixteen claims remain pending responsible-author review for the current draft. Submission requires source and citation checks, an accurately declared literature-review scope, confirmed declarations, a chosen venue with checked requirements and approval of the exact draft. The [submission notes](../paper/submission-notes.md) remain controlling. The older audit supplies no automatic eligibility to new claims.
 
 The [bounded related-work check](../research/strengthening/closeout-source-check.md) records an additional AI-assisted check of four already-cited works. It is neither a systematic search nor independent scientific review. It does not close the literature-search log or establish novelty.
 

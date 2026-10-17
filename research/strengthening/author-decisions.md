@@ -522,3 +522,23 @@ Disposition: defer the optional bounded external methodological critique beyond 
 Review status: the response accepts the presented timing and scope limits. It supplies no external judgment, source-verification attestation or independent scientific evaluation. Any later critique still requires a named task, suitable materials, reviewer arrangements and disclosure permissions; this decision initiates none of them.
 
 Implementation status: the original external-review packet and invitation status, prior author decisions, current manuscript and descriptive register, source-review records, assessments, frozen inputs and results, stable-release gates and published archives remain unchanged. No invitation, reviewer assignment, contact disclosure, new study, model request, release approval or manuscript upload follows. The paper disposition and final maintenance decision remain separate and pending. Existing unresolved judgments, source-verification duties and research requirements retain their states; earlier explicit deferrals retain their scopes.
+
+## AD-031: Closeout Group 6F manuscript deferral
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: the manuscript disposition in [Group 6 of the closeout worksheet](closeout-author-review.md#6-contribution-remaining-obligations-and-the-paper-decision), at revision `6c8e1a4784cc238945961ecaaf646e3dfbbb060c`. The [working manuscript](../../paper/development-manuscript.md), [descriptive claim register](../../paper/development-claim-register.json) and [submission notes](../../paper/submission-notes.md) retain their separate approval and pre-submission requirements.
+
+Presented choice: preserve the current manuscript and claim register as an unapproved working draft, and explicitly defer manuscript revision, whole-draft review and submission beyond closeout unless separately authorized. The sixteen bounded descriptive decisions remain available for later-draft reuse; they do not approve the exact current text or resolve source and scientific questions.
+
+Presented limits: before any future submission, verify propositions and citations against sources, complete the declared literature-review scope or record an approved prospective amendment, confirm declarations and the selected venue or preprint server's requirements, and obtain author approval of the exact submission draft. Existing unresolved judgments and explicit deferrals retain their recorded scopes. The decision deletes nothing, changes no published archive, waives no requirement and authorizes no upload. Maintenance remains a separate decision.
+
+The decision question was: “Do you accept preserving the current working draft and deferring manuscript revision, whole-draft review and submission beyond closeout with these limits?”
+
+The author's response was: “Yes, I accept preserving the current working draft and deferring manuscript revision, whole-draft review and submission beyond closeout with those limits. Please record it and walk me through the maintenance decision. Thank you.”
+
+Disposition: preserve the current manuscript and descriptive register unchanged as an unapproved working draft. Defer manuscript revision, whole-draft review and submission beyond closeout unless separately authorized. Retain the sixteen bounded later-draft dispositions and their qualifications without treating them as approval of the whole manuscript. Future submission still requires the source, review-scope, declaration, venue-policy and exact-draft approvals stated above.
+
+Review status: the response accepts the presented manuscript timing and handling. It supplies no whole-draft approval, source-verification attestation, scientific eligibility, external review or permission to submit. Separate source-review and scientific obligations retain their existing states; this manuscript-workflow deferral neither completes nor automatically defers every underlying obligation.
+
+Implementation status: all six grouped closeout decision queues now have bounded dispositions. CO-02 records that administrative coverage as `bounded_dispositions_recorded`; consistency checks require the additive AD-007 through AD-031 records but cannot authenticate a decision or its evidentiary support. CO-03 remains partial and CO-05 awaits the maintainer's decision. Maintenance has not started. The current manuscript, descriptive register, original source records, assessments, figures, frozen inputs and results, release gates and published archives remain unchanged. No new study, model request, invitation, release approval, maturity promotion or manuscript upload follows.

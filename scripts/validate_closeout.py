@@ -15,6 +15,7 @@ PLAN = "docs/closeout-plan.md"
 SOURCES = "research/strengthening/closeout-source-check.md"
 AUTHORITY = "research/strengthening/author-decisions.md"
 CLAIM_IDS = [f"DEV-C{n:02d}" for n in range(1, 17)]
+DISPOSITION_IDS = [f"AD-{n:03d}" for n in range(7, 32)]
 GATE_IDS = [
     "three_public_current_contract_applications_or_documented_migration_exceptions",
     "standalone_implementation_packet", "clean_room_implementation_audit",
@@ -48,7 +49,7 @@ EXCLUSIONS = [
     "manuscript_submission_without_exact_draft_approval",
 ]
 ITEM_STATUSES = [
-    {"implemented"}, {"awaiting_author_review"}, {"partial"},
+    {"implemented"}, {"awaiting_author_review", "bounded_dispositions_recorded"}, {"partial"},
     {"pending_verification", "verified_this_revision"}, {"awaiting_author_decision"},
 ]
 
@@ -81,7 +82,7 @@ def evaluate(root=ROOT):
         require(isinstance(item["status"], str) and item["status"] in allowed, "Unsupported closeout transition")
         for key in ("task", "owner", "completion"):
             text(item[key])
-    # Work authorization does not complete this author's pending claim review.
+    # Recorded dispositions do not approve the unchanged manuscript or activate a phase.
     literal(items[1]["owner"], "Mark Julius Banasihan, responsible author", "claim-review owner")
     literal(items[4]["owner"], "Mark Julius Banasihan, maintainer", "phase-decision owner")
     literal(register.get("status"), "working_draft_pending_author_review", "manuscript status")
@@ -105,10 +106,17 @@ def evaluate(root=ROOT):
     require(set(re.findall(r"\bDEV-C\d+\b", queue)) == set(CLAIM_IDS), "Author worksheet claim coverage differs")
     authority = read(AUTHORITY).decode("utf-8")
     require(re.search(r"^## AD-006:\s+", authority, flags=re.MULTILINE), "Missing authority record")
+    dispositions_recorded = items[1]["status"] == "bounded_dispositions_recorded"
+    if dispositions_recorded:
+        # Presence and uniqueness only: this cannot authenticate human acceptance or support.
+        for decision_id in DISPOSITION_IDS:
+            matches = re.findall(rf"^## {re.escape(decision_id)}:[ \t]+[^\n]+$", authority, flags=re.MULTILINE)
+            require(len(matches) == 1, f"Missing or duplicate bounded disposition: {decision_id}")
     for path in (PLAN, SOURCES):
         text(read(path).decode("utf-8"))
     return {"check_kind": "closeout_record_consistency_only", "manuscript_claims": len(claims),
-            "unresolved_stable_gates": len(entries), "scientific_acceptance_conferred": False,
+            "unresolved_stable_gates": len(entries), "bounded_dispositions_recorded": dispositions_recorded,
+            "scientific_acceptance_conferred": False,
             "maintenance_activated": False, "release_authorized": False}
 
 
