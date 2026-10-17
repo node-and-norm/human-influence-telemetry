@@ -340,3 +340,23 @@ Disposition: retain DEV-C15's bounded description of the three explanatory exhib
 Source-review status: the author accepted the conversational descriptions and stated limits. The response does not attest independent visual inspection of every exhibit, primary-source review, historical authentication or independent scientific evaluation. Codex's inspection of the figures and retained records remains AI assistance.
 
 Implementation status: the existing figures, captions, source data, manifest, underlying assessments and comparisons, current manuscript, descriptive register, specification and published archives remain unchanged. No figure regeneration, new study, model request or rescoring follows. DEV-C16, Groups 5 and 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
+
+## AD-022: Closeout Group 4D synthetic rehearsal description
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C16 in [Group 4 of the closeout worksheet](closeout-author-review.md#4-conditional-analyses-exhibits-and-synthetic-rehearsal), at revision `bf5b5c6bf04e1138d0ee02369770e5153473b406`. The [HIT-EU-001 report](evidence-update-001/report.md), [protocol](evidence-update-001/PROTOCOL.md) and [analysis](evidence-update-001/analysis.json) retain the synthetic evidence-update design, first responses and separate descriptive counts.
+
+Presented result: one retained first AI response to a HIT-inspired graph and one to an equivalent-content structured table each identified all four deliberately affected propositions and made no unnecessary revisions among thirty-six unchanged proposition opportunities. Both also matched the prescribed documentary-state labels, qualification choices and two narrow date/recipient checks. No scored difference appeared in this run. Eight propositions were reused across five separate noncumulative scenarios; the counts are neither independent observations nor a combined accuracy estimate.
+
+Presented limits: the task explicitly announced the changes. Access restrictions were voluntary, one executor disclosed inherited context, and the exact serving-model version was unavailable. Neither representation was a complete HIT assessment. The materials were synthetic; the exercise involved no human participants or regulatory-sandbox participation. It establishes no method equivalence, superiority, reduced effort or institutional usefulness and changes no historical Ofqual finding.
+
+The assistant recommended retaining DEV-C16's bounded result description for a later draft while keeping review of the responses' explanatory prose pending. The decision question was: “Do you accept DEV-C16’s bounded result description for a later draft, with these limits and response-prose review still pending?”
+
+The author's response was: “Yes, I accept DEV-C16 with those limits for a later draft, with response-prose review still pending. Please record it and walk me through the first Group 5 decision. Thank you.”
+
+Disposition: retain DEV-C16's bounded recorded-outcome description for later-draft reuse. This accepts the description of what the retained responses and scorer recorded, without accepting every statement or rationale in those responses. Response-prose review remains pending; this response does not adjudicate the prose or explicitly defer its review beyond closeout. A later closeout disposition must preserve that distinction. No independent accuracy, human reliability, comparative benefit, representation equivalence or release readiness follows.
+
+Source-review status: the author accepted the conversational result description and stated limits. The response does not attest independent inspection of every input or answer, human semantic adjudication, verified blinding or independent scientific evaluation. Codex's replay and retained-record inspection remain AI assistance.
+
+Implementation status: the frozen protocol, inputs and scoring rules, first responses, analysis flags (including `semantic_prose_validated: false`), original report and pending-review labels, historical Ofqual records, current manuscript, descriptive register and published archives remain unchanged. No new trial, model request, rescoring or study activation follows. Group 4's four decision items now have bounded dispositions; deferred conditional adjudication and pending benchmark prose review remain unresolved. Groups 5 and 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
