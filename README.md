@@ -36,7 +36,7 @@ Use the specification and handbook to define an actor, decision, period, and evi
 
 **Current maturity:** Level 2, Applicable
 
-**Development phase:** Maintenance conditionally authorized on 17 October 2026; verification and merge remain pending. The [closeout plan](docs/closeout-plan.md) records the conditions and preserves the separation between maintenance, manuscript submission and v1.0. Expansion remains frozen; maintenance has not started.
+**Development phase:** Maintenance, following the verified closeout recorded on 17 October 2026. The [maintenance receipt](research/strengthening/maintenance-receipt.json) identifies the reviewed and merged revisions and their checks. The [closeout plan](docs/closeout-plan.md) limits ongoing work to corrections and scoped feedback; manuscript submission, further research and v1.0 retain their separate requirements.
 
 The [current working manuscript](paper/development-manuscript.md) is a methods/resource draft, with a [descriptive claim register](paper/development-claim-register.json). The [author-review worksheet](research/strengthening/closeout-author-review.md) records all six groups' bounded dispositions and remaining obligations; the [8 October preparation record](research/strengthening/solo-publication-readiness.md) remains historical. The draft and its October 8 supplements are included in the 0.6.7 archive; later closeout work is outside that archive. Repository distribution does not constitute paper submission or peer review. The [earlier manuscript](paper/manuscript.md) remains preserved.
 

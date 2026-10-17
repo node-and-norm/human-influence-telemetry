@@ -1,0 +1,54 @@
+{
+  "receipt_id": "HIT-MAINTENANCE-2026-10-17",
+  "recorded_date": "2026-10-17",
+  "authority_record": "research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization",
+  "scope": "bounded_solo_development_to_maintenance_only",
+  "reviewed_pr": {
+    "number": 42,
+    "url": "https://github.com/node-and-norm/human-influence-telemetry/pull/42",
+    "head_commit": "dace001b77e26f842362c647c8efd79274604fed",
+    "merge_commit": "f79ac32ecd25ce90de4af18fe9be46c8ac683b4f"
+  },
+  "local_checks": [
+    {
+      "revision": "dace001b77e26f842362c647c8efd79274604fed",
+      "workflow_commands_passed": true,
+      "closeout_tests_passed": true,
+      "local_links_passed": true,
+      "protected_history_unchanged": true,
+      "expected_readiness_failures_preserved": true,
+      "uncommitted_changes_included": false
+    },
+    {
+      "revision": "f79ac32ecd25ce90de4af18fe9be46c8ac683b4f",
+      "workflow_commands_passed": true,
+      "closeout_tests_passed": true,
+      "local_links_passed": true,
+      "protected_history_unchanged": true,
+      "expected_readiness_failures_preserved": true,
+      "uncommitted_changes_included": false
+    }
+  ],
+  "hosted_checks": [
+    {
+      "revision": "dace001b77e26f842362c647c8efd79274604fed",
+      "workflow": "HIT Validation",
+      "event": "pull_request",
+      "run_id": 39060224429,
+      "url": "https://github.com/node-and-norm/human-influence-telemetry/actions/runs/39060224429",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "revision": "f79ac32ecd25ce90de4af18fe9be46c8ac683b4f",
+      "workflow": "HIT Validation",
+      "event": "push",
+      "run_id": 39060330171,
+      "url": "https://github.com/node-and-norm/human-influence-telemetry/actions/runs/39060330171",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "offline_check_authenticates_execution": false,
+  "offline_check_authenticates_authority": false
+}

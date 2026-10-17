@@ -21,7 +21,7 @@ Candidate release files, merged readiness controls, branch names, and roadmap mi
 
 ## Contribution process
 
-The [bounded closeout plan](docs/closeout-plan.md) freezes open-ended expansion. On 17 October 2026, [AD-032](research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization) conditionally authorized maintenance after verification of the exact reviewed PR head and merged revision. Activation remains pending. The original 30 October decision date remains planning history. Calendar passage, passing consistency tests or permission to edit cannot replace the authorization and verification requirements. Manuscript submission and v1.0 promotion retain their separate requirements.
+The [bounded closeout plan](docs/closeout-plan.md) freezes open-ended expansion. On 17 October 2026, [AD-032](research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization) conditionally authorized maintenance after verification of the exact reviewed PR head and merged revision. The [maintenance receipt](research/strengthening/maintenance-receipt.json) records those completed conditions; ongoing work is limited to corrections and scoped feedback. New development requires a named problem, an owner, an evidence requirement and a stopping condition. The original 30 October decision date remains planning history. Calendar passage, passing consistency tests or permission to edit cannot replace the authorization and verification requirements. Manuscript submission and v1.0 promotion retain their separate requirements.
 
 Substantive changes should enter through a pull request. A normative change should state:
 
