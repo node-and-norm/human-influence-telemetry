@@ -320,3 +320,23 @@ Disposition: accept the handling for S01 through S07. Preserve the original four
 Source-review status: the author accepted the conversational distinction and proposed deferral. The response does not attest independent re-reading of the sources, inspection of every conditional answer or independent scientific evaluation. Codex's inspection of the retained procedure and results remains AI assistance.
 
 Implementation status: the original reports, frozen protocol and inputs, result narratives and pending-review labels, base Ofqual assessment and prior judgments, current manuscript, descriptive register, specification and published archives remain unchanged. No new study, evaluation API request or rescoring task follows. AD-019's procedure-description acceptance and the Group 3 deferrals keep their separate scopes. DEV-C15 and DEV-C16, Groups 5 and 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
+
+## AD-021: Closeout Group 4C development exhibit descriptions
+
+Date: 17 October 2026, America/New_York. Decision authority: Mark Julius Banasihan, responding directly in the working conversation. Recorded by Codex.
+
+Review object: DEV-C15 in [Group 4 of the closeout worksheet](closeout-author-review.md#4-conditional-analyses-exhibits-and-synthetic-rehearsal), at revision `8341b7eacecb77c7d4da5933da6a2201637a70fc`. The [three development exhibits](../../figures/development-2026-10-08/README.md), [source data](../../figures/development-2026-10-08/data.json) and [manifest](../../figures/development-2026-10-08/manifest.json) preserve their existing captions, source bindings and reproducibility boundaries.
+
+Presented descriptions: the assessment-structure exhibit separates assessor interpretation from software checks, which do not establish source truth or a correct judgment. The Ofqual timeline separates reported events from source publication and update dates; connected institutional reports do not verify every candidate's outcome, and equal spacing represents sequence, not elapsed time. The qualification-preservation exhibit depicts two qualifications omitted by a restricted five-field summary but retained in the complete record and structured review. This supplies no observed reader error, reduced effort or whole-method superiority.
+
+The assistant recommended accepting DEV-C15's bounded description for a later draft. The figures explain existing material and add no empirical observations or independent historical verification. Their reproducibility checks concern saved files and rendering, not scientific validity. The presented limits leave Counsel unresolved, preserve the bounds on previously accepted Ofqual findings and leave comparative adjudication deferred.
+
+The decision question was: “Do you accept DEV-C15 with these limits for a later draft?”
+
+The author's response was: “Yes, I accept DEV-C15 with those limits for a later draft. Please record it and walk me through the next Group 4 decision. Thank you.”
+
+Disposition: retain DEV-C15's bounded description of the three explanatory exhibits for later-draft reuse. This accepts no new finding, source-authentication claim, reader-performance result or overall comparative outcome. AD-016's restricted-projection description, the prior Ofqual judgments, unresolved Counsel and the separate comparative and conditional-analysis deferrals retain their existing scopes.
+
+Source-review status: the author accepted the conversational descriptions and stated limits. The response does not attest independent visual inspection of every exhibit, primary-source review, historical authentication or independent scientific evaluation. Codex's inspection of the figures and retained records remains AI assistance.
+
+Implementation status: the existing figures, captions, source data, manifest, underlying assessments and comparisons, current manuscript, descriptive register, specification and published archives remain unchanged. No figure regeneration, new study, model request or rescoring follows. DEV-C16, Groups 5 and 6, scientific-conclusion eligibility, manuscript submission, all eight stable-release gates and the maintenance decision remain pending or unresolved.
