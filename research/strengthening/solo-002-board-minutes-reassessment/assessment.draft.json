@@ -1,0 +1,1631 @@
+{
+  "assessment_id": "HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001",
+  "schema_version": "0.4.0",
+  "specification_version": "0.4.0",
+  "migration_status": "native_0.4.0",
+  "institutional_unit": "Ofqual Board-level authority and explicitly delegated implementation of the exceptional GCSE, AS and A-level grading intervention in England",
+  "decision_process": "14–16 August deliberation and recorded 16 August award-rule decision, 17 August announcement, and reported 18–20 August follow-through",
+  "assessment_scope": "event_specific",
+  "period": {
+    "start": "2020-08-14",
+    "end": "2020-08-17"
+  },
+  "follow_up_period": {
+    "start": "2020-08-18",
+    "end": "2020-08-20"
+  },
+  "ai_system_role": "Statistical standardisation of teacher-proposed qualification grades. This is an automation-boundary application, not an assertion that the system uses machine learning. Ofqual's regulatory rule and exam-board technical implementations are distinct.",
+  "sampling": {
+    "population_or_record_universe": "Fourteen external documents fixed in boundary-amendment.md: original six sources, six August minutes and two September approval records. The collection index is a discovery aid.",
+    "selection_rule": "Use the disclosed locations for one exceptional decision sequence. September minutes support provenance only; 18 August VTQ reporting supplies contextual limits, not general-qualification delivery proof.",
+    "known_exclusions": [
+      "Full underlying reports, letters, legal advice, annexes and redacted passages.",
+      "Candidate-level harm/remedy and production execution records, ordinary-period oversight, general VTQ conclusions and later reforms.",
+      "Authenticated historical source versions and independently audited edit/retention controls."
+    ],
+    "selection_effects": [
+      "Exploratory expansion after source inspection and prior findings; no blinding, independent raters or held-out sample.",
+      "Exceptional intervention with institutional-source dependence; no population inference."
+    ]
+  },
+  "aggregation": {
+    "mode": "event_specific",
+    "predeclared": false,
+    "rationale": "The dated amendment precedes this scored draft but follows source inspection and prior results. This is a disclosed exploratory sequence, not prospective preregistration or period-level aggregation.",
+    "other_rule": null
+  },
+  "actors": [
+    {
+      "actor_id": "ACT-OFQUAL",
+      "institutional_identity": "Ofqual Board, chaired at the event by Roger Taylor",
+      "role_type": "institutional",
+      "role_name": "Ofqual Board, chaired at the event by Roger Taylor",
+      "authority_types": [
+        "direct",
+        "reformative",
+        "remedial"
+      ],
+      "mechanisms_controlled": [
+        "Regulatory award-rule decision",
+        "Requirements addressed to exam boards"
+      ],
+      "decision_stages": [
+        "regulatory reconsideration",
+        "implementation direction"
+      ],
+      "relationship": "assessed_actor",
+      "related_actor_ids": [
+        "ACT-DFE",
+        "ACT-BOARDS",
+        "ACT-CHAIR",
+        "ACT-CR",
+        "ACT-EXEC"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-REASONS",
+        "EC-BMR-BOARD",
+        "EC-BMR-REISSUE-REQUIREMENT",
+        "EC-BMR-CIRCULATION",
+        "EC-BMR-DIRECTION",
+        "EC-BMR-ARCHITECTURE",
+        "EC-BMR-FINAL-REASONS"
+      ],
+      "notes": "The combined institution is assessed only where Board authority and expressly delegated implementation are traced in the dimension rationale. No individual's reading or receipt is imputed from another actor's activity."
+    },
+    {
+      "actor_id": "ACT-DFE",
+      "institutional_identity": "Secretary of State and Department for Education",
+      "role_type": "external_authority",
+      "role_name": "Secretary of State and Department for Education",
+      "authority_types": [
+        "direct"
+      ],
+      "mechanisms_controlled": [
+        "Government policy directions",
+        "Education-sector coordination"
+      ],
+      "decision_stages": [
+        "policy",
+        "follow-up coordination"
+      ],
+      "relationship": "other",
+      "related_actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-GOVERNMENT-ROLE",
+        "EC-BMR-ADMISSIONS-LIMIT"
+      ],
+      "notes": "A separate public authority involved in the response. Its sources are not presumed independent of Ofqual."
+    },
+    {
+      "actor_id": "ACT-BOARDS",
+      "institutional_identity": "Regulated exam boards, including OCR",
+      "role_type": "institutional",
+      "role_name": "Regulated exam boards, including OCR",
+      "authority_types": [
+        "direct",
+        "technical_control"
+      ],
+      "mechanisms_controlled": [
+        "Final grading implementation",
+        "Issue of qualification results"
+      ],
+      "decision_stages": [
+        "calculation",
+        "result issue"
+      ],
+      "relationship": "deployer",
+      "related_actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CENTRES"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-OCR-ACK",
+        "EC-BMR-REISSUE-REQUIREMENT",
+        "EC-BMR-ISSUE-COMMAND",
+        "EC-BMR-ISSUE-CORRECTION",
+        "EC-BMR-ISSUE-REPAIR",
+        "EC-BMR-ISSUE-REFORM",
+        "EC-BMR-CODE-BOUNDARY"
+      ],
+      "notes": "Grouped only for the reported common reissue requirement and aggregate issue statements. No uniform technical implementation or individual-board profile is inferred."
+    },
+    {
+      "actor_id": "ACT-CENTRES",
+      "institutional_identity": "Schools and colleges serving as assessment centres",
+      "role_type": "institutional",
+      "role_name": "Schools and colleges serving as assessment centres",
+      "authority_types": [
+        "advisory"
+      ],
+      "mechanisms_controlled": [
+        "Teacher-proposed assessment grades",
+        "Receipt of revised results"
+      ],
+      "decision_stages": [
+        "grade proposal",
+        "result communication"
+      ],
+      "relationship": "other",
+      "related_actor_ids": [
+        "ACT-BOARDS",
+        "ACT-CANDIDATES"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-ISSUE-COMMAND",
+        "EC-BMR-ISSUE-CORRECTION",
+        "EC-BMR-ISSUE-REPAIR",
+        "EC-BMR-ISSUE-REFORM",
+        "EC-BMR-EXTERNAL-LIMIT",
+        "EC-BMR-APPEALS-LIMIT"
+      ],
+      "notes": "They are not credited with the regulator's power to replace the national grading rule."
+    },
+    {
+      "actor_id": "ACT-CANDIDATES",
+      "institutional_identity": "Candidates affected by summer 2020 qualification awards",
+      "role_type": "human",
+      "role_name": "Candidates affected by summer 2020 qualification awards",
+      "authority_types": [
+        "none"
+      ],
+      "mechanisms_controlled": [],
+      "decision_stages": [
+        "receipt",
+        "contestability"
+      ],
+      "relationship": "affected_person",
+      "related_actor_ids": [
+        "ACT-CENTRES"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-HARM",
+        "EC-BMR-ISSUE-COMMAND",
+        "EC-BMR-ISSUE-CORRECTION",
+        "EC-BMR-ISSUE-REPAIR",
+        "EC-BMR-ISSUE-REFORM",
+        "EC-BMR-EXTERNAL-LIMIT",
+        "EC-BMR-APPEALS-LIMIT"
+      ],
+      "notes": "None denotes no assigned control of the assessed regulatory intervention. It does not deny rights, complaints, influence or appeal routes."
+    },
+    {
+      "actor_id": "ACT-CHAIR",
+      "institutional_identity": "Roger Taylor, Chair of Ofqual",
+      "role_type": "human",
+      "role_name": "Chair",
+      "authority_types": [
+        "delegated",
+        "advisory"
+      ],
+      "mechanisms_controlled": [
+        "Chairing, government liaison and delegated implementation"
+      ],
+      "decision_stages": [
+        "deliberation",
+        "implementation"
+      ],
+      "relationship": "other",
+      "related_actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-OPTIONS",
+        "EC-BMR-DIRECTION",
+        "EC-BMR-POLICY-CONTEXT"
+      ],
+      "notes": "Chairing does not establish unilateral power over all Board decisions."
+    },
+    {
+      "actor_id": "ACT-CR",
+      "institutional_identity": "Sally Collier, Chief Regulator of Ofqual",
+      "role_type": "human",
+      "role_name": "Chief Regulator",
+      "authority_types": [
+        "delegated",
+        "advisory"
+      ],
+      "mechanisms_controlled": [
+        "Executive reporting and delegated implementation"
+      ],
+      "decision_stages": [
+        "deliberation",
+        "implementation"
+      ],
+      "relationship": "other",
+      "related_actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-BRIEFING",
+        "EC-BMR-DIRECTION",
+        "EC-BMR-DELIBERATION"
+      ],
+      "notes": "Reporting that letters had arrived does not identify their recipient. Dissent and delegation are distinct propositions."
+    },
+    {
+      "actor_id": "ACT-EXEC",
+      "institutional_identity": "Ofqual Executive advisers, including the Director of Legal Moderation and Enforcement",
+      "role_type": "institutional",
+      "role_name": "Executive advisers",
+      "authority_types": [
+        "advisory"
+      ],
+      "mechanisms_controlled": [
+        "Advice and presentation of proposed resolutions"
+      ],
+      "decision_stages": [
+        "deliberation",
+        "implementation"
+      ],
+      "relationship": "other",
+      "related_actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-PAPERS-LIMIT",
+        "EC-BMR-DELIBERATION",
+        "EC-BMR-FINAL-REASONS"
+      ],
+      "notes": "Grouped for their recorded advisory role only; no uniform individual knowledge is inferred."
+    }
+  ],
+  "assessor": {
+    "name": "OpenAI Codex, provisional AI-assisted reassessment",
+    "organization": null,
+    "assessment_date": "2026-10-17",
+    "conflict_disclosure": "Prepared after prior source inspection and exposure to earlier findings. Parallel AI checks share the workflow. All new findings await author disposition; personal source review remains pending. No independent human review, paper approval or release-gate satisfaction."
+  },
+  "evidence_claims": [
+    {
+      "claim_id": "EC-BMR-REASONS",
+      "artifact_id": "ART-OFQ-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraphs 2–5",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The Chair's published reasons weigh distress, public confidence and appeal burdens in deciding to change the grading approach.",
+      "relation": "supports",
+      "dimensions": [
+        "judgment"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Public reasons dated 17 August; BM-05 separately dates the actual Board decision. This is not a complete deliberation or psychological causal account."
+    },
+    {
+      "claim_id": "EC-BMR-HARM",
+      "artifact_id": "ART-OFQ-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraphs 1 and 4",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "On 17 August Ofqual acknowledged anguish caused by its approach, referring to students awarded results the previous week.",
+      "relation": "supports",
+      "dimensions": [
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Acknowledgment stays dated 17 August; it evidences earlier distress. The new Repair argument concerns AS/A replacement records, not individualized harm adjudication."
+    },
+    {
+      "claim_id": "EC-BMR-DECISION",
+      "artifact_id": "ART-OFQ-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraph 5",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Ofqual announces a rule selecting the higher of the teacher-proposed or moderated grade.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": null
+    },
+    {
+      "claim_id": "EC-BMR-REPLACEMENT",
+      "artifact_id": "ART-OFQ-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraphs 2 and 5",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The announced architecture replaces the previous award rule for the stated qualifications.",
+      "relation": "supports",
+      "dimensions": [
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Implementation requires the additional sources, not this announcement alone."
+    },
+    {
+      "claim_id": "EC-BMR-ANNOUNCEMENT-LIMIT",
+      "artifact_id": "ART-OFQ-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraph 6",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The statement describes planned implementation with coordination underway, not completed delivery.",
+      "relation": "limits",
+      "dimensions": [
+        "command",
+        "correction",
+        "repair",
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": null
+    },
+    {
+      "claim_id": "EC-BMR-OCR-ACK",
+      "artifact_id": "ART-OCR-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "OCR-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Body paragraph 1",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "OCR acknowledges Ofqual's decision while describing implementation as work under way.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-BOARDS"
+      ],
+      "event_date": "2020-08-17",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Acknowledgement is not proof that revised grades reached recipients."
+    },
+    {
+      "claim_id": "EC-BMR-ADVICE",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Regulating GCSE, AS and A levels in response to Covid-19 / External Advisory Group and quality assurance, paragraphs 1–2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "A technical advisory group informed the Ofqual Board during summer 2020 preparations.",
+      "relation": "supports",
+      "dimensions": [
+        "counsel"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Seasonal context only; meeting-specific access evidence is assessed separately."
+    },
+    {
+      "claim_id": "EC-BMR-BOARD",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Governance statement / Overview, paragraph 1",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The report identifies the Board's regulatory authority and executive delegation.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Retrospective institutional account; not independent verification of every exercise."
+    },
+    {
+      "claim_id": "EC-BMR-RECONSIDERATION",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Regulating GCSE, AS and A levels in response to Covid-19 / Public confidence and results days, paragraph 4",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The Board changed the rule following concerns raised after A level results.",
+      "relation": "supports",
+      "dimensions": [
+        "correction"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "BM-05 supplies the precise 16 August decision date. The original record's 17 August metadata remain preserved."
+    },
+    {
+      "claim_id": "EC-BMR-IMPLEMENTATION",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Regulating GCSE, AS and A levels in response to Covid-19 / Public confidence and results days, paragraph 4",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The report says GCSE results were issued under the changed rule on 20 August.",
+      "relation": "supports",
+      "dimensions": [
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-BOARDS"
+      ],
+      "event_date": "2020-08-20",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": null
+    },
+    {
+      "claim_id": "EC-BMR-BIAS-LIMIT",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Regulating GCSE, AS and A levels in response to Covid-19 / Public confidence and results days, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The institution reports no systematic bias in its analysis of calculated grades.",
+      "relation": "limits",
+      "dimensions": [
+        "judgment",
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "This position is not independently adjudicated here; concern and distress do not establish that every calculated grade was incorrect."
+    },
+    {
+      "claim_id": "EC-BMR-GOVERNMENT-ROLE",
+      "artifact_id": "ART-OFQ-02",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-02",
+      "locator": {
+        "locator_type": "section",
+        "value": "Governance statement / Secretary of State Directions, dated list and following two paragraphs",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The Board operated in a policy setting with Secretary of State directions.",
+      "relation": "limits",
+      "dimensions": [
+        "command",
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-DFE"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Authority was institutionally situated; no unrestricted autonomy or exclusive causal credit is inferred."
+    },
+    {
+      "claim_id": "EC-BMR-REISSUE-REQUIREMENT",
+      "artifact_id": "ART-OFQ-03",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-03",
+      "locator": {
+        "locator_type": "section",
+        "value": "2.3 Monitoring awarding and results in 2020, paragraph 6",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Ofqual reports requiring exam boards to reissue AS/A level grades and recalculate GCSE grades.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-BOARDS"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "The retrospective paragraph dates the requirement to August; the linked event and subsequent issue records bound this interpretation. The accessible April 2021 statement page is marked updated 11 April 2024; no authenticated 2021 text was recovered."
+    },
+    {
+      "claim_id": "EC-BMR-REMEDY-DIRECTION",
+      "artifact_id": "ART-OFQ-03",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-03",
+      "locator": {
+        "locator_type": "section",
+        "value": "2.3 Monitoring awarding and results in 2020, paragraph 6",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Ofqual reports requiring exam boards to reissue previously issued AS/A-level grade records after the rule change.",
+      "relation": "supports",
+      "dimensions": [
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-BOARDS",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Narrowed Repair route. Accessible page updated 11 April 2024; original 2021 wording is not authenticated."
+    },
+    {
+      "claim_id": "EC-BMR-ISSUE-COMMAND",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Results and university entry in 2020 / Results days, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Government guidance reports grade issue after the rule change, providing a documented consequence of the intervention.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-BOARDS",
+        "ACT-CENTRES",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": "2020-08-20",
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Connect this consequence to Ofqual through EC-BMR-REISSUE-REQUIREMENT. This source alone does not establish who controlled issuance. This is one of four distinct propositions drawn from the same DFE-01 paragraph; they share one source lineage and are not independent observations."
+    },
+    {
+      "claim_id": "EC-BMR-ISSUE-CORRECTION",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Results and university entry in 2020 / Results days, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Government guidance reports replacement AS/A level grades sent to centres on 19 August after the earlier calculated awards.",
+      "relation": "supports",
+      "dimensions": [
+        "correction"
+      ],
+      "actor_ids": [
+        "ACT-BOARDS",
+        "ACT-CENTRES",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": "2020-08-19",
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "The proposition supports an altered outcome of the systemic reconsideration; it does not show an individual candidate's accessible appeal. This is one of four distinct propositions drawn from the same DFE-01 paragraph; they share one source lineage and are not independent observations."
+    },
+    {
+      "claim_id": "EC-BMR-ISSUE-REPAIR",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Results and university entry in 2020 / Results days, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Government guidance reports revised AS/A-level results sent to schools and colleges on 19 August.",
+      "relation": "supports",
+      "dimensions": [
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-BOARDS",
+        "ACT-CENTRES",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": "2020-08-19",
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "Replacement of previously issued records is linked to EC-BMR-HARM and EC-BMR-REMEDY-DIRECTION. No universal receipt, correct grades or complete remedy follows. First GCSE issuance is not automatically repair. This shares the DFE paragraph used by other issue claims and is not independent evidence."
+    },
+    {
+      "claim_id": "EC-BMR-ISSUE-REFORM",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Results and university entry in 2020 / Results days, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "Government guidance reports that 20 August GCSE results used the higher-grade award rule.",
+      "relation": "supports",
+      "dimensions": [
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-BOARDS",
+        "ACT-CENTRES",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": "2020-08-20",
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "This is evidence of the identified rule operating in the declared follow-up, distinct from its prior announcement or an assertion of model fairness. This is one of four distinct propositions drawn from the same DFE-01 paragraph; they share one source lineage and are not independent observations."
+    },
+    {
+      "claim_id": "EC-BMR-EXTERNAL-LIMIT",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "External candidates in 2020 / Arrangements for home-educated students and other external candidates, paragraph 3",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The guidance says some external candidates could not receive a summer grade.",
+      "relation": "limits",
+      "dimensions": [
+        "repair",
+        "correction"
+      ],
+      "actor_ids": [
+        "ACT-CANDIDATES",
+        "ACT-CENTRES"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "A reported summer-level exception; its precise within-follow-up timing is not established."
+    },
+    {
+      "claim_id": "EC-BMR-ADMISSIONS-LIMIT",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Results and university entry in 2020 / Universities, colleges and sixth forms and grade acceptance, paragraph 2",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The guidance permits alternative courses or deferred places when university capacity is exhausted.",
+      "relation": "limits",
+      "dimensions": [
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-DFE",
+        "ACT-CANDIDATES"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "The packet does not establish restoration of each lost educational opportunity."
+    },
+    {
+      "claim_id": "EC-BMR-APPEALS-LIMIT",
+      "artifact_id": "ART-DFE-01",
+      "artifact_type": "public_primary_document",
+      "source_id": "DFE-01",
+      "locator": {
+        "locator_type": "section",
+        "value": "Arrangements for summer 2020 appeals, paragraphs 1–3",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The guidance restricts appeal grounds and excludes mere disagreement with a centre's grade judgment.",
+      "relation": "limits",
+      "dimensions": [
+        "correction"
+      ],
+      "actor_ids": [
+        "ACT-CANDIDATES",
+        "ACT-CENTRES",
+        "ACT-BOARDS"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "This limits generalisation from the exceptional regulatory reversal to person-level contestability."
+    },
+    {
+      "claim_id": "EC-BMR-CODE-BOUNDARY",
+      "artifact_id": "ART-OFQ-04",
+      "artifact_type": "public_primary_document",
+      "source_id": "OFQ-04",
+      "locator": {
+        "locator_type": "section",
+        "value": "README, paragraph 3",
+        "reproducibility_note": "Use the source URL in source-ledger.md; paragraph counts exclude headings, images and navigation."
+      },
+      "proposition": "The published Ofqual code was not the final code used by exam boards.",
+      "relation": "limits",
+      "dimensions": [
+        "command",
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-BOARDS"
+      ],
+      "event_date": null,
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Public source read on 2026-10-07 America/New_York; bounded proposition paraphrased by Codex.",
+        "See source-ledger.md for exact URL, publication/access distinction, review coverage and dependencies.",
+        "Reassessed on 2026-10-17 under boundary-amendment.md; original preserved. New IDs distinguish this draft. See source-ledger.md for actual inspection scope."
+      ],
+      "notes": "The public code is not a production execution log or proof that Ofqual directly operated each implementation."
+    },
+    {
+      "claim_id": "EC-BMR-PACKET",
+      "artifact_id": "ART-PACKET",
+      "artifact_type": "assessment_source_ledger",
+      "source_id": "PACKET",
+      "locator": {
+        "locator_type": "section",
+        "value": "source-ledger.md / Scope and transition; Dependence and missing material; boundary-amendment.md",
+        "reproducibility_note": "This is the local source-ledger.md in the same directory, not a seventh external source. Inspect the named headings."
+      },
+      "proposition": "This reassessment discloses fourteen selected sources, shared lineages, partial preservation, prior exposure and pending personal source review.",
+      "relation": "limits",
+      "dimensions": [
+        "telemetry_integrity"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-DFE",
+        "ACT-BOARDS"
+      ],
+      "event_date": null,
+      "provenance_status": "verified",
+      "independence_status": "dependent",
+      "transformation_history": [
+        "Codex prepared this local disclosure on 2026-10-17; it is not independent institutional evidence."
+      ],
+      "notes": "Separate supplementary reassessment; historical files protected by preservation.json."
+    },
+    {
+      "claim_id": "EC-BMR-CIRCULATION",
+      "artifact_id": "ART-BM-01",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-01",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, item 91/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The 14 August meeting paused so members could read a circulated report and legal advice concerning the appeals policy.",
+      "relation": "supports",
+      "dimensions": [
+        "counsel"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-EXEC"
+      ],
+      "event_date": "2020-08-14",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Circulation can evidence presentation. No universal individual reading-log requirement is imposed. Sufficient relevance of the underlying material to the final reversal remains contested."
+    },
+    {
+      "claim_id": "EC-BMR-PRIOR-ACCESS",
+      "artifact_id": "ART-BM-02",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-02",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 3, item 95/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "On 15 August the Board paused to view a statement it had not seen before publication and clarify its legal position.",
+      "relation": "limits",
+      "dimensions": [
+        "counsel"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-15",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "An intermediate-stage visibility limit, not absence of all pre-decision access."
+    },
+    {
+      "claim_id": "EC-BMR-OPTIONS",
+      "artifact_id": "ART-BM-03",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-03",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, item 99/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Chair updated the Board and had drafted a paper setting out options, including changing appeals or issuing centre-assessed grades.",
+      "relation": "supports",
+      "dimensions": [
+        "counsel"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CHAIR"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "A draft paper alone does not prove circulation; the recorded update establishes an applicable information route."
+    },
+    {
+      "claim_id": "EC-BMR-BRIEFING",
+      "artifact_id": "ART-BM-04",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-04",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, item 103/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Chief Regulator reported that letters from two exam boards had been received, warning about delivery and appeals risks.",
+      "relation": "supports",
+      "dimensions": [
+        "counsel"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CR",
+        "ACT-BOARDS"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "The original recipient is unnamed. Briefing the Board does not prove that every member received or read the letters."
+    },
+    {
+      "claim_id": "EC-BMR-PAPERS-LIMIT",
+      "artifact_id": "ART-BM-04",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-04",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 3, item 103/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board and Executive recorded difficulty handling urgent matters without supporting papers.",
+      "relation": "limits",
+      "dimensions": [
+        "counsel",
+        "judgment"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-EXEC"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "This does not negate earlier circulation, oral advice or every form of access."
+    },
+    {
+      "claim_id": "EC-BMR-DELIBERATION",
+      "artifact_id": "ART-BM-04",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-04",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–4, item 103/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board compared alternatives and recorded abstentions and the Chief Regulator's opposition to its interim resolution.",
+      "relation": "supports",
+      "dimensions": [
+        "judgment"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CR",
+        "ACT-EXEC"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Disagreement concerned reissuing guidance, not opposition to the eventual higher-grade rule. Edited minutes are not a complete transcript."
+    },
+    {
+      "claim_id": "EC-BMR-FINAL-REASONS",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board weighed standards, confidence, appeals and fairness considerations before agreeing the higher-grade approach.",
+      "relation": "supports",
+      "dimensions": [
+        "judgment"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-EXEC"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Reasoning affecting the path is distinct from political independence or legal conformity."
+    },
+    {
+      "claim_id": "EC-BMR-DIRECTION",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board delegated actions necessary to implement its approach to the Chair and Chief Regulator.",
+      "relation": "supports",
+      "dimensions": [
+        "command"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CHAIR",
+        "ACT-CR"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Practical consequence additionally depends on OFQ-03 and DFE-01. No direct control of each board's software is attributed."
+    },
+    {
+      "claim_id": "EC-BMR-RECONSIDERATION-MINUTE",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board adopted the higher-grade approach after successive appeals deliberations, ending the mock route while noting other appeal and complaint grounds.",
+      "relation": "supports",
+      "dimensions": [
+        "correction"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Exceptional systemic reconsideration, not universal individual appeal accessibility."
+    },
+    {
+      "claim_id": "EC-BMR-ARCHITECTURE",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board agreed a changed award rule and authorized its implementation plan and necessary regulatory-framework changes.",
+      "relation": "supports",
+      "dimensions": [
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CHAIR",
+        "ACT-CR"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "The architecture is the grading rule and regulatory implementation, not all production software or subsequent institutional reforms."
+    },
+    {
+      "claim_id": "EC-BMR-REMEDIAL-OWNERSHIP",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board assigned implementation of the revised approach to the Chair and Chief Regulator.",
+      "relation": "supports",
+      "dimensions": [
+        "repair"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CHAIR",
+        "ACT-CR"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Identifies responsible actors only. Repair additionally requires the harm link and operational AS/A replacement direction; delegation alone is insufficient."
+    },
+    {
+      "claim_id": "EC-BMR-POLICY-CONTEXT",
+      "artifact_id": "ART-BM-04",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-04",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, item 103/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Chair reported the Secretary of State's preference for continuing mock appeals; the Board considered it alongside delivery risks.",
+      "relation": "limits",
+      "dimensions": [
+        "command",
+        "judgment",
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-CHAIR",
+        "ACT-DFE"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Political involvement limits unrestricted-autonomy claims without erasing recorded choices."
+    },
+    {
+      "claim_id": "EC-BMR-VTQ-LIMIT",
+      "artifact_id": "ART-BM-06",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-06",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–3, item 111/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The 18 August meeting concerned VTQ implications, recalculation work, delays and a requested daily certificate-issuance table.",
+      "relation": "limits",
+      "dimensions": [
+        "command",
+        "correction",
+        "repair",
+        "reform"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL",
+        "ACT-EXEC",
+        "ACT-BOARDS"
+      ],
+      "event_date": "2020-08-18",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Context only, not proof of GCSE/AS/A delivery, universal remedy or receipt of the requested table."
+    },
+    {
+      "claim_id": "EC-BMR-REFINEMENT",
+      "artifact_id": "ART-BM-07",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-07",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, item 128/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board deferred approval of earlier minutes on 16 September for refinement and recirculation.",
+      "relation": "limits",
+      "dimensions": [
+        "telemetry_integrity"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-09-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Approval-provenance event outside the substantive assessment window."
+    },
+    {
+      "claim_id": "EC-BMR-APPROVAL",
+      "artifact_id": "ART-BM-08",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-08",
+      "locator": {
+        "locator_type": "page",
+        "value": "p. 2, items 143/20–144/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The Board recorded approval of the six inspected August meetings on 25 September and described publication/redaction arrangements.",
+      "relation": "supports",
+      "dimensions": [
+        "telemetry_integrity"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-09-25",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Institutional approval, not independent verification. Current files retain draft headers; no approved/current-copy byte comparison exists."
+    },
+    {
+      "claim_id": "EC-BMR-REDACTIONS",
+      "artifact_id": "ART-BM-05",
+      "artifact_type": "published_redacted_board_minutes",
+      "source_id": "BM-05",
+      "locator": {
+        "locator_type": "page",
+        "value": "pp. 2–3, item 107/20",
+        "reproducibility_note": "Use exact PDF URL in source-ledger.md; page numbers are printed page numbers."
+      },
+      "proposition": "The published final-decision minutes contain legal-privilege and public-affairs redaction notices.",
+      "relation": "limits",
+      "dimensions": [
+        "counsel",
+        "judgment",
+        "command",
+        "correction",
+        "repair",
+        "reform",
+        "telemetry_integrity"
+      ],
+      "actor_ids": [
+        "ACT-OFQUAL"
+      ],
+      "event_date": "2020-08-16",
+      "provenance_status": "partially_verified",
+      "independence_status": "institutional_self_report",
+      "transformation_history": [
+        "Official published PDF text inspected on 2026-10-17 and paraphrased by Codex. See source-ledger.md for actual visual/text coverage, copies, redactions and approval trail."
+      ],
+      "notes": "Withheld contents are not reconstructed; redaction alone does not establish tampering."
+    }
+  ],
+  "substantive_findings": [
+    {
+      "dimension": "counsel",
+      "evidence_state": "formal_presence",
+      "finding": 1,
+      "repair_trigger": "not_applicable",
+      "supporting_claim_ids": [
+        "EC-BMR-CIRCULATION",
+        "EC-BMR-OPTIONS",
+        "EC-BMR-BRIEFING"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-PRIOR-ACCESS",
+        "EC-BMR-PAPERS-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "The circulated report and its annexes, exam-board letters, relevant advice and presentation context linking their contents to the final decision."
+      ],
+      "unresolved_proposition": "Whether the recorded circulation and advice establish timely access to underlying evidence sufficient for the expanded decision sequence, rather than only an established route and summaries.",
+      "search_or_request_summary": "Reused the bounded inspections of fourteen sources identified in source-ledger.md. Referenced underlying papers were not obtained and no institution was contacted. Author source review and interpretation remain pending.",
+      "aggregation_basis": "event_specific",
+      "rationale": "Proposed 1, not an accepted finding: the minutes establish an event-specific information route, recorded circulation and briefings. They do not establish sufficiently what relevant underlying material, beyond summaries, was available to the Board for the final reversal. The strongest case for 2 combines the 14 August circulation with subsequent reconsideration and the final reasons; it remains a live alternative. Under sections 5.3 and 6.1, 1 is proposed because the criteria for 2 are not affirmatively established on this reading. IE remains an alternative if scope cannot be determined. The proposal does not characterize the Board's reasoning as rubber-stamping, require individual reading logs or deny that operational and legal evidence can be relevant underlying evidence."
+    },
+    {
+      "dimension": "judgment",
+      "evidence_state": "observed_exercise",
+      "finding": 2,
+      "repair_trigger": "not_applicable",
+      "supporting_claim_ids": [
+        "EC-BMR-DELIBERATION",
+        "EC-BMR-FINAL-REASONS",
+        "EC-BMR-REASONS"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-PAPERS-LIMIT",
+        "EC-BMR-POLICY-CONTEXT",
+        "EC-BMR-BIAS-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "Underlying supporting papers and unredacted deliberation needed to examine the full reasons and their evidential basis."
+      ],
+      "unresolved_proposition": null,
+      "search_or_request_summary": null,
+      "aggregation_basis": "event_specific",
+      "rationale": "The recorded alternatives, disagreement and stated trade-offs are direct evidence of reasoning connected to successive Board decisions, including the final rule. This proposed 2 no longer relies only on public announcement reasons. It concerns reasoning beyond ratification of system output, not independence from government, soundness of every judgment or legal conformity. Redactions and absent papers limit the account; they do not erase the recorded reasoning."
+    },
+    {
+      "dimension": "command",
+      "evidence_state": "observed_exercise",
+      "finding": 2,
+      "repair_trigger": "not_applicable",
+      "supporting_claim_ids": [
+        "EC-BMR-DIRECTION",
+        "EC-BMR-BOARD",
+        "EC-BMR-REISSUE-REQUIREMENT",
+        "EC-BMR-ISSUE-COMMAND"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-POLICY-CONTEXT",
+        "EC-BMR-ANNOUNCEMENT-LIMIT",
+        "EC-BMR-GOVERNMENT-ROLE",
+        "EC-BMR-CODE-BOUNDARY",
+        "EC-BMR-VTQ-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "Original dated directions to exam boards and reconciliation of each board's execution."
+      ],
+      "unresolved_proposition": null,
+      "search_or_request_summary": null,
+      "aggregation_basis": "event_specific",
+      "rationale": "The Board's recorded resolution and delegation identify institutional authority; the reported requirement to exam boards and subsequent issue account supply a bounded practical consequence. This proposed 2 credits Ofqual's regulatory intervention and expressly delegated implementation, not direct operation of exam-board code, exclusive causal control, unrestricted autonomy or ordinary-period oversight. A reading that established only transmission of another actor's command would require reconsideration as 1 or IE."
+    },
+    {
+      "dimension": "correction",
+      "evidence_state": "observed_exercise",
+      "finding": 2,
+      "repair_trigger": "not_applicable",
+      "supporting_claim_ids": [
+        "EC-BMR-RECONSIDERATION-MINUTE",
+        "EC-BMR-ISSUE-CORRECTION"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-ANNOUNCEMENT-LIMIT",
+        "EC-BMR-APPEALS-LIMIT",
+        "EC-BMR-EXTERNAL-LIMIT",
+        "EC-BMR-VTQ-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "Individual appeal accessibility, use and disposition records."
+      ],
+      "unresolved_proposition": null,
+      "search_or_request_summary": null,
+      "aggregation_basis": "event_specific",
+      "rationale": "The final minutes document systemic reconsideration and authority to change the grading outcome, with revised AS/A-level results subsequently reported. This proposed 2 concerns that exceptional intervention. Intermediate appeals and website actions on 14–16 August are not the final reversal. The proposal does not establish an accessible or successful individual appeal for every candidate."
+    },
+    {
+      "dimension": "repair",
+      "evidence_state": "observed_exercise",
+      "finding": 2,
+      "repair_trigger": "triggered",
+      "supporting_claim_ids": [
+        "EC-BMR-HARM",
+        "EC-BMR-REMEDIAL-OWNERSHIP",
+        "EC-BMR-REMEDY-DIRECTION",
+        "EC-BMR-ISSUE-REPAIR"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-ANNOUNCEMENT-LIMIT",
+        "EC-BMR-BIAS-LIMIT",
+        "EC-BMR-EXTERNAL-LIMIT",
+        "EC-BMR-ADMISSIONS-LIMIT",
+        "EC-BMR-VTQ-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "Recipient-linked reconciliation of acknowledged harm, corrected AS/A-level records, delivery and remaining consequences."
+      ],
+      "unresolved_proposition": null,
+      "search_or_request_summary": null,
+      "aggregation_basis": "event_specific",
+      "rationale": "The 17 August acknowledgment describes distress associated with the previous week's awards; the acknowledgment is not backdated to 16 August. Board delegation identifies responsibility, while the reissue requirement and reported 19 August provision to schools and colleges support operationally directed replacement AS/A-level records. This proposed 2 uses section 6.5's record-correction route tied to acknowledged harm. First-time GCSE issuance is not treated as repair of an earlier result. The proposal establishes neither universal receipt nor resolved distress, correct grades or restored opportunities. Repair 1 remains an alternative if the record supports only process correction; IE remains possible if ownership, the trigger or action cannot be determined."
+    },
+    {
+      "dimension": "reform",
+      "evidence_state": "observed_exercise",
+      "finding": 2,
+      "repair_trigger": "not_applicable",
+      "supporting_claim_ids": [
+        "EC-BMR-ARCHITECTURE",
+        "EC-BMR-IMPLEMENTATION",
+        "EC-BMR-ISSUE-REFORM"
+      ],
+      "contradicting_claim_ids": [],
+      "limiting_claim_ids": [
+        "EC-BMR-POLICY-CONTEXT",
+        "EC-BMR-ANNOUNCEMENT-LIMIT",
+        "EC-BMR-GOVERNMENT-ROLE",
+        "EC-BMR-CODE-BOUNDARY",
+        "EC-BMR-VTQ-LIMIT",
+        "EC-BMR-REDACTIONS"
+      ],
+      "requested_missing_artifacts": [
+        "Dated implementation reconciliation for the changed grading rule across exam boards."
+      ],
+      "unresolved_proposition": null,
+      "search_or_request_summary": null,
+      "aggregation_basis": "event_specific",
+      "rationale": "The minutes identify the changed award rule, Board reasoning and delegated implementation. Reported follow-through falls inside the declared follow-up period. This proposed 2 concerns substantive institutional direction of that rule change, including adaptation within a government-involved response, not external compulsion alone. It does not establish every production configuration, control of all software, ordinary-period reform capacity or later reforms."
+    }
+  ],
+  "telemetry_integrity": {
+    "institutional_record_integrity": {
+      "status": "limited",
+      "provenance": "Official sources identify institutional publishers and reporting roles. Redacted August minutes are supplemented by a September approval trail; their underlying records were not independently authenticated.",
+      "scope_and_completeness": "Some internal deliberation is available in the redacted minutes. Full supporting papers, letters, advice, candidate-linked outcomes and historical snapshots remain absent from this packet.",
+      "edit_authority": "Institutional approval and publication/redaction arrangements are recorded. Internal edit logs and a match between approved and currently published bytes were not inspected.",
+      "independence": "Ofqual documents share institutional lineage; DfE and OCR were involved actors. The extra documents are not independent raters or independent confirmation.",
+      "tamper_evidence": "No authenticated publication-day snapshots or independent chain-of-custody audit. Redactions and draft headers alone are not evidence of tampering.",
+      "retention": "Current publication was inspectable; internal retention controls and continuing availability were not audited.",
+      "contradictions": "The draft headers are considered with recorded approval rather than treated as disproof. Intermediate disagreements retain their dates and objects. Unseen passages and underlying evidence remain unresolved.",
+      "affected_dimensions": [
+        "counsel",
+        "judgment",
+        "command",
+        "correction",
+        "repair",
+        "reform"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-PACKET",
+        "EC-BMR-REFINEMENT",
+        "EC-BMR-APPROVAL",
+        "EC-BMR-REDACTIONS"
+      ],
+      "unresolved_proposition": null,
+      "rationale": "Traceable institutional records with specific gaps permit bounded proposals but do not establish adequate independence, completeness or historical authenticity. No inspected alteration establishes an unreliable classification."
+    },
+    "assessment_packet_integrity": {
+      "status": "limited",
+      "provenance": "The dated boundary amendment, fourteen-source ledger, locators and transformation notes identify the assistant's selected evidence and reused inspections.",
+      "scope_and_completeness": "The packet covers an expanded event and follow-up, not ordinary practice. It contains propositions and locators, not the full underlying institutional record or a durable copy of every external document.",
+      "edit_authority": "Codex prepared this draft under the author's explicit reassessment authority. New findings, personal source review and publication approval remain pending and separately recorded.",
+      "independence": "Unblinded, result-informed selection and AI-assisted checks share the development workflow. No independent human assessment is added.",
+      "tamper_evidence": "The preservation manifest checks protected local file identities. Three temporary downloaded PDFs have recorded hashes; these do not authenticate original publication bytes or source truth.",
+      "retention": "The local draft and ledger are retained in the repository checkout. Three PDFs are temporary copies outside the repository; a durable fourteen-source archive is not established.",
+      "contradictions": "The new chronology and competing Counsel interpretations are explicit. Old temporal analyses are not silently reinterpreted; new categories await author disposition.",
+      "affected_dimensions": [
+        "counsel",
+        "judgment",
+        "command",
+        "correction",
+        "repair",
+        "reform"
+      ],
+      "evidence_claim_ids": [
+        "EC-BMR-PACKET",
+        "EC-BMR-REFINEMENT",
+        "EC-BMR-APPROVAL",
+        "EC-BMR-REDACTIONS"
+      ],
+      "unresolved_proposition": null,
+      "rationale": "Disclosed selection, provenance and version boundaries support inspection. Partial preservation, dependent sources and pending author review prevent an adequate assessment-packet classification; more files do not resolve those limits."
+    },
+    "overall_status": "limited",
+    "derivation_rule": "unreliable>IE>limited>adequate"
+  },
+  "summary": "Expanded-source exploratory draft, not full-record conformant because aggregation.predeclared is false under a schema requiring true. Counsel 1 proposed with 2 and IE alternatives; Judgment, Command, Correction, Repair and Reform 2 proposed under the 14–17 August decision sequence and 18–20 August follow-up. Both integrity components are proposed limited. All new findings await author disposition; personal source review remains pending. Historical records and manuscripts are unchanged.",
+  "most_consequential_missing_artifact": "The underlying Board evidence papers and presentation context for Counsel, plus recipient-linked harm/remedy reconciliation for Repair.",
+  "limitations": [
+    "Full-record conformance fails at aggregation.predeclared. Retaining false discloses the post-inspection boundary expansion; the normative schema is not altered to pass this draft. Author acceptance cannot retroactively cure predeclaration.",
+    "All findings are assistant proposals for a new evidence boundary, not accepted replacements or independent human findings.",
+    "The expansion was selected after source inspection and prior results. It is exploratory, unblinded and not a preregistered replication.",
+    "The event concerns an exceptional regulatory response involving statistical standardisation, not an assumed machine-learning system, ordinary oversight or a representative institutional sample.",
+    "Counsel 1 is contestable: 2 and IE remain live interpretations; neither individual reading logs nor independently authenticated sources are added as normative requirements.",
+    "Repair 2 is proposed only for operationally directed replacement AS/A-level records tied to acknowledged harm; first-time GCSE issuance does not itself establish repair.",
+    "The current files are redacted institutional accounts. Full papers, letters and candidate-level outcomes were not obtained; no independence is inferred from document count.",
+    "Personal source review, new author adjudication, source truth, comparative benefit, general reliability and causal effectiveness remain unresolved.",
+    "No new baseline, comparative tie, legal-conformity claim, maturity advancement, release-gate completion, manuscript revision or publication follows.",
+    "OFQ-03 is a currently accessible page updated 11 April 2024. Its April 2021 title does not authenticate earlier wording.",
+    "The original S05 temporal analysis remains a result under its old packet; its no-earlier-exercise reasoning cannot be exported to this expanded packet."
+  ],
+  "migration_notes": "New native 0.4.0 draft under the dated HIT-SOLO-002-BM boundary amendment, not an in-place migration or correction of the old six-source assessment. Historical assessments, author decisions, conditional analyses, figures, manuscripts, claim register, normative contract and maintenance state remain unchanged."
+}

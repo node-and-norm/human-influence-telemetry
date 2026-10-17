@@ -1,0 +1,176 @@
+{
+  "record_id": "HIT-SOLO-002-BM-PRESERVATION-001",
+  "recorded_date": "2026-10-17",
+  "baseline_commit": "8272ca76c90973985573b48530fe5cb61a73254a",
+  "purpose": "Protected existing files; identity checks do not establish scientific validity",
+  "files": [
+    {
+      "path": "SPECIFICATION.md",
+      "sha256": "00cc5813bec33c0425f6b43827f0522599ff6d5b9e64223f759d868f3dab8184"
+    },
+    {
+      "path": "docs/application-handbook.md",
+      "sha256": "a5d20ac579162632ec33f9f1284fe3a9c8772e0fe23ed2b865b6bfe81435c3a5"
+    },
+    {
+      "path": "figures/development-2026-10-08/README.md",
+      "sha256": "6a17ad7e97ddcac25c60ee54ce031a88a36ca59773a581d7166fca1c7c2801d5"
+    },
+    {
+      "path": "figures/development-2026-10-08/assessment-architecture.png",
+      "sha256": "6e3890c48d70d3a2cbbaac3c5dd078183a17126a1a77c327e166aefa8e0e5f0d"
+    },
+    {
+      "path": "figures/development-2026-10-08/assessment-architecture.svg",
+      "sha256": "c352c7f5426cb606cee7ff2dfa028b1a52d036869c95fbf2745050d409c635ce"
+    },
+    {
+      "path": "figures/development-2026-10-08/data.json",
+      "sha256": "e24e400f48c69db83118168e0f7545ede801cfcad8315429e32077bb9b1882ec"
+    },
+    {
+      "path": "figures/development-2026-10-08/manifest.json",
+      "sha256": "dc5efdc89cdf348b76a0c899cf3204da7b1dabe063b45ffdf647173013d5052e"
+    },
+    {
+      "path": "figures/development-2026-10-08/ofqual-actor-time.png",
+      "sha256": "d247555c15a9b2ff1b9a0ba28adc73ceb015602250431e79a37b30a699a35f3f"
+    },
+    {
+      "path": "figures/development-2026-10-08/ofqual-actor-time.svg",
+      "sha256": "40fe7a1ee2d8bb7c65518748249c0088b4fe5b203122338bb71ba881939e25a5"
+    },
+    {
+      "path": "figures/development-2026-10-08/qualification-preservation.png",
+      "sha256": "5d48b82abd7e17e5b8b7c78a1b462d681f4b421bb81ef8086c2bc795e376542d"
+    },
+    {
+      "path": "figures/development-2026-10-08/qualification-preservation.svg",
+      "sha256": "b026310ba487f71782401e2df3b1639ba5d4ef711c354bf58f1e685c66c1127e"
+    },
+    {
+      "path": "paper/README.md",
+      "sha256": "c0a37f9e272e0eb7c79a256db5ff9833a024882ee6e8c213ba7b377befab0119"
+    },
+    {
+      "path": "paper/claim-crosswalk.md",
+      "sha256": "810ca81146ca3f5c300edf4d3e8e23886ec5959734dabacd487d8280abdba408"
+    },
+    {
+      "path": "paper/claim-evidence-register.md",
+      "sha256": "0fe7c7d68a3a15b614c8816c43b27f04217ef8293c2e252f7b82707b812ba82b"
+    },
+    {
+      "path": "paper/development-claim-register.json",
+      "sha256": "01253c45be9aca218b6fb874669a84658914f38e129e206e0f2f9a199faf8cce"
+    },
+    {
+      "path": "paper/development-manuscript.md",
+      "sha256": "9388e86522c8749eb9b35227cf21f5304f813881ba1a06637b63e83fbb7b5401"
+    },
+    {
+      "path": "paper/literature-matrix.md",
+      "sha256": "888933c020b4619c6ed26fedc10ce317ac689bcd1c5854d0da04a72560b7192e"
+    },
+    {
+      "path": "paper/literature-search-log.md",
+      "sha256": "225f6bddfafc54bec2d8448ac7e527738123206c15c9af45b85a04057d3a4b06"
+    },
+    {
+      "path": "paper/manuscript.md",
+      "sha256": "a984ff72244eb2b2a2eb6c95cb897a07a5f1ce77057c4b739dccf8a9fa4ed87a"
+    },
+    {
+      "path": "paper/novelty-audit.md",
+      "sha256": "95ad600736fe836d1bf20ba816944d407cc33ecad7fac64dd9268e665932cc26"
+    },
+    {
+      "path": "paper/paper-charter.md",
+      "sha256": "3727c5429a0d4f41fd321d405f205a4a366e00d141ce635998aa2b9b0e26b611"
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "6e6e908c50be289538fb71d84a96aed1484bbb1ac1263cff8ca88dd3676f0f76"
+    },
+    {
+      "path": "paper/submission-notes.md",
+      "sha256": "f29e12d05fa0219c1c8089770b610a24bfdf6cec9298cfe94987855ae69edd12"
+    },
+    {
+      "path": "research/strengthening/author-decisions.md",
+      "sha256": "3ff5a74a525945a0ff34cffd9b9561f71931ea165ee2ec2ce36cbdcff11c53d0"
+    },
+    {
+      "path": "research/strengthening/closeout-status.json",
+      "sha256": "07fd080ed76bd39c2a0f7ac8f5915c334c8c0c51a8f659972887437d188c6240"
+    },
+    {
+      "path": "research/strengthening/solo-002-author-review.json",
+      "sha256": "b3ae2f3f57c34c6018e8ba48bdf1479f0491db192bb648440f20a8727fa4aaa4"
+    },
+    {
+      "path": "research/strengthening/solo-002-author-review.md",
+      "sha256": "204ba9ece9c26243f9cc31407896d18c64ac6c0865ab7ba671f64862ac58d9d0"
+    },
+    {
+      "path": "research/strengthening/solo-002-comparison-challenge.md",
+      "sha256": "11d40b85ce4a169254c0b4efbe3359d245d4df6e232479b8b22a8654b0000a37"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/README.md",
+      "sha256": "bd7ae1558a86d3c5e9728146460bcf2b88e8bf89ad38ebc31643fd7445e476f8"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/assessment.draft.json",
+      "sha256": "020ae6d8c4a33cc6294891886fccef1bef51d471e1b0376d9995a78d369e182c"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/baseline-and-review.md",
+      "sha256": "0d03d09b6a5bb5d013850611fb3af7806f9fd138784566dba3776c9866ac962c"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/plan.md",
+      "sha256": "786799a1fb27f40e58a144e60910813dd75217bc9c713bef72cdd8083a06fc66"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/record-check.json",
+      "sha256": "a85d1a882277f7cd7a21e93310b295032d5c9328a94aaff0a1c4bb81738a318e"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/review-status.json",
+      "sha256": "a890d64eb54c13386be956ba0dccd2c7889aa74d74f82779b019aa2fcf63b9e8"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/sensitivity.md",
+      "sha256": "c3d0ac09bdbb57e51aa29dfe8d9ba564c3b14490cb8c4c83eeb233d789fba6c9"
+    },
+    {
+      "path": "research/strengthening/solo-002-complete/source-ledger.md",
+      "sha256": "54876920f18ee731c96ab20e7706eac95514d3dbd9ef0d7ef2a5b578c86163b0"
+    },
+    {
+      "path": "research/strengthening/solo-002-extension/PROTOCOL.md",
+      "sha256": "3a387275692a79c5a0da420bdf3ed1c6f83072153aba8105599592c4889daa80"
+    },
+    {
+      "path": "research/strengthening/solo-002-extension/design.json",
+      "sha256": "77337e374da90f40b9bf7ac4ced9915e419f6d316839c03e5975b51210072400"
+    },
+    {
+      "path": "research/strengthening/solo-002-extension/formatting.json",
+      "sha256": "82fee2d3a0189731b3431f91ad0101194c06273abb83e115a4721e815a9b09f6"
+    },
+    {
+      "path": "research/strengthening/solo-002-extension/report.md",
+      "sha256": "6b18ae691d28f11d060969297c128114fe099bcaab3167c323311519fcc0da2a"
+    },
+    {
+      "path": "research/strengthening/solo-002-extension/results.json",
+      "sha256": "c926708578f101bdb5cfd18d97aca2bee51fd02cdf9287cf9c5a8d1ab10d47a1"
+    },
+    {
+      "path": "schema/hit-assessment.schema.json",
+      "sha256": "bddfaccc4b6ced6bd8d586a5d846efa0234b66185f37ff5d7611b9d619769740"
+    }
+  ]
+}
