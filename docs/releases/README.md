@@ -21,7 +21,7 @@ A document in this directory does not create a release. A version becomes public
 
 ## Post-release repository status
 
-On 17 October 2026, the maintainer [conditionally authorized maintenance](../../research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization) after verification and merge. Activation remains pending. The [closeout record](../closeout-plan.md) and six-group author dispositions are post-v0.6.7 work, outside that immutable archive. They create no new release or DOI and approve no manuscript submission. The current published version remains v0.6.7.
+On 17 October 2026, HIT entered maintenance under [AD-032](../../research/strengthening/author-decisions.md#ad-032-conditional-maintenance-authorization) after verification and merge. The [maintenance receipt](../../research/strengthening/maintenance-receipt.json) identifies both checked revisions and workflow runs. The [closeout record](../closeout-plan.md) and six-group author dispositions are post-v0.6.7 work, outside that immutable archive. They create no new release or DOI and approve no manuscript submission. The current published version remains v0.6.7.
 
 ## Active and planned releases
 

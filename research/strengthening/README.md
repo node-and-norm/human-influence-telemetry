@@ -1,6 +1,6 @@
 # Research strengthening workbench
 
-Current scheduling and phase status are in the [closeout plan](../../docs/closeout-plan.md). Maintenance is conditionally authorized, with verification and merge pending. Expansion remains frozen. The [author-review worksheet](closeout-author-review.md) records six groups' bounded dispositions and remaining obligations; the [source-check addendum](closeout-source-check.md) records four bounded related-work checks. Manuscript approval and v1.0 retain their separate requirements. The dated records below preserve the earlier work.
+Current scheduling and phase status are in the [closeout plan](../../docs/closeout-plan.md). HIT is in maintenance following the [verified closeout](maintenance-receipt.json). Ongoing work covers corrections and scoped feedback. Expansion remains frozen. The [author-review worksheet](closeout-author-review.md) records six groups' bounded dispositions and remaining obligations; the [source-check addendum](closeout-source-check.md) records four bounded related-work checks. Manuscript approval and v1.0 retain their separate requirements. The dated records below preserve the earlier work.
 
 This supplementary workbench examines the usefulness and limits of HIT. Release 0.6.6 distributes these development artifacts without accepting pending scientific interpretations or changing research maturity. See the [release record](../../docs/releases/v0.6.6.md) for publication and archival status. The submitted chapter is outside its scope.
 
