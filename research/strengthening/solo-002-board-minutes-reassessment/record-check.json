@@ -1,0 +1,53 @@
+{
+  "assessment_id": "HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001",
+  "check_kind": "exploratory_packet_guardrails_only",
+  "guardrails_pass": true,
+  "protected_files_unchanged": 42,
+  "external_source_count": 14,
+  "evidence_claim_count": 39,
+  "actor_count": 8,
+  "assessment_conformance": {
+    "source": "research/strengthening/solo-002-board-minutes-reassessment/assessment.draft.json",
+    "valid": false,
+    "schema_valid": false,
+    "semantic_valid": true,
+    "issues": [
+      {
+        "code": "HIT-SCHEMA",
+        "severity": "error",
+        "path": "/aggregation/predeclared",
+        "message": "True was expected"
+      }
+    ]
+  },
+  "source_truth_validated": false,
+  "scientific_interpretation_validated": false,
+  "personal_source_review": "pending",
+  "new_author_dispositions": 8,
+  "pending_author_decisions": 0,
+  "bounded_author_decisions_complete": true,
+  "accepted_repair_trigger": "triggered",
+  "accepted_integrity": {
+    "institutional_record_integrity": "limited",
+    "assessment_packet_integrity": "limited",
+    "overall_status": "limited"
+  },
+  "source_qualification_ids": [
+    "SQ-01"
+  ],
+  "accepted_source_qualification_ids": [
+    "SQ-01"
+  ],
+  "independent_human_review": false,
+  "sha256": {
+    "README.md": "a07d36cd5e3516ec3f8331c1b1be16b6d5b39766d3ab7f8dc2db1a0e10c26ed0",
+    "boundary-amendment.md": "35d311a301127bfef5f58c110087fc344d6af3cdfffc2211a8ddc279dcfaf258",
+    "source-ledger.md": "68bfe4aa90c00ec6a9371e60dcbf5e781e1243a0264c8058c71fc7f173175e15",
+    "assessment.draft.json": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c",
+    "review-status.json": "5a6aab28bffddcb8197f333e5ec3eec4b839584659b669c547a44b7b3e7d34f1",
+    "preservation.json": "0eea5548dd070cfe68539c05311c1932e574773c860695a982acb96a43b5efd6",
+    "verification.md": "42e7b5691ec9d2efca2db2b76af3ac1e21aee2af50ffed458518117c1e16287e",
+    "check.py": "0c619c94b8fd184b4b30395b281a79af6ed9a04b2c5ab14671dcca0ebbf151ad",
+    "test_check.py": "2d11139c52c1850b2e552cd2e61b22e37392c6c44b7a60442d83f1e66a2c9f07"
+  }
+}

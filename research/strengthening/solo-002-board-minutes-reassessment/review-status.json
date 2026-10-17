@@ -1,0 +1,191 @@
+{
+  "record_id": "HIT-SOLO-002-BM-REVIEW-001",
+  "recorded_date": "2026-10-17",
+  "assessment_id": "HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001",
+  "status": "exploratory_draft_bounded_author_decisions_complete_nonconformant",
+  "bounded_author_decisions_complete": true,
+  "assessment_conformant": false,
+  "contract_issue": {
+    "code": "HIT-SCHEMA",
+    "path": "/aggregation/predeclared",
+    "reason": "Result-informed boundary expansion; false retained. Current schema requires true. No retroactive predeclaration or contract change."
+  },
+  "authority": {
+    "kind": "direct_user_instruction",
+    "instruction": "Yes, proceed with the bounded Ofqual reassessment using the Board minutes. Preserve historical records, keep the manuscript unchanged and my personal source review pending, and walk me through any decisions. Thank you.",
+    "scope": "Prepare separate bounded reassessment and proposals only; no new findings accepted."
+  },
+  "personal_source_review": "pending",
+  "independent_human_review": false,
+  "manuscript_revision_authorized": false,
+  "publication_authorized": false,
+  "scientific_conclusion_eligible": false,
+  "release_gate_satisfied": false,
+  "decisions": [
+    {
+      "id": "BMR-01",
+      "subject": "Counsel",
+      "proposal": 1,
+      "alternatives": [
+        2,
+        "IE"
+      ],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 1,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept Counsel 1 for this bounded reassessment, retaining 2 and IE as alternatives and keeping my personal source review pending. Please record it and walk me through the next decision, keeping the manuscript unchanged.",
+        "scope": "Counsel 1 for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only; alternatives 2 and IE retained. No historical replacement, personal source-reading attestation, other finding acceptance, manuscript revision, independent verification or publication approval.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-02",
+      "subject": "Judgment",
+      "proposal": 2,
+      "alternatives": [],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 2,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept Judgment 2 for this bounded reassessment with those limits. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through the next decision. Thank you.",
+        "scope": "Judgment 2 for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only, on the recorded reasoning linked to this decision sequence. Dissent concerns an interim guidance decision, not the final resolution. Redacted institutional accounts do not establish complete deliberation, adequate underlying evidence, political independence, correct outcomes, legal conformity or ordinary-period performance. Counsel 1 and its 2/IE alternatives are unchanged. Personal source review remains pending; no historical replacement, independent verification, manuscript revision, acceptance of another pending finding or publication approval. The predeclaration-related conformance limit remains.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-03",
+      "subject": "Command",
+      "proposal": 2,
+      "alternatives": [
+        1,
+        "IE"
+      ],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 2,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept Command 2 for this bounded reassessment with those limits. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through the next decision. Thank you.",
+        "scope": "Command 2 for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only, limited to Ofqual's regulatory intervention and reported follow-through. Decision/delegation, reported requirements and issuance are read together; delegation or announcement alone is insufficient. No direct operation of exam-board software, independence from government, exclusive control of downstream outcomes, universal candidate receipt or ordinary-period oversight is established. Original dated directions and board-by-board execution records remain uninspected; source dependence and reporting limits remain. Personal source review remains pending. No historical replacement, independent verification, manuscript revision, acceptance of another pending finding or publication approval. The predeclaration-related conformance limit remains.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-04",
+      "subject": "Correction",
+      "proposal": 2,
+      "alternatives": [],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 2,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept Correction 2 for this bounded reassessment with those limits. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through the Repair decision. Thank you.",
+        "scope": "Correction 2 for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only, limited to exceptional systemic reconsideration with authority to alter outcomes and reported replacement AS/A-level results sent to centres. No universal accessible appeal, candidate receipt, favourable outcome, substantively correct grade or complete remedy is established. Restricted appeal grounds, excluded external candidates and unknown individual outcomes remain explicit; source accounts remain institutionally connected. Repair is undecided. Personal source review remains pending; no historical replacement, independent verification, manuscript revision, acceptance of another pending finding or publication approval. The predeclaration-related conformance limit remains.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-05",
+      "subject": "Repair",
+      "proposal": 2,
+      "proposed_trigger": "triggered",
+      "accepted_trigger": "triggered",
+      "alternatives": [
+        1,
+        "IE"
+      ],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 2,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept the harm trigger and Repair 2 on the limited AS/A-level record-correction route, with those limits. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through Reform. Thank you.",
+        "scope": "Harm trigger accepted as triggered through Ofqual's 17 August formal acknowledgment of distress associated with earlier awards; Repair 2 separately accepted for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only on the operationally directed replacement AS/A-level record route. The acknowledgment is not backdated to the 16 August delegation. Responsibility, reported reissue requirement and 19 August provision to centres are read together. First-time GCSE issuance is excluded from this Repair claim. No universal receipt, substantively correct individual grades, resolved distress, restored opportunities or complete remediation is established; exclusions and unknown outcomes remain. Recipient-linked harm-to-remedy records were not obtained. Personal source review remains pending. No historical replacement, independent verification, manuscript revision, acceptance of another pending finding or publication approval. The predeclaration-related conformance limit remains.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-06",
+      "subject": "Reform",
+      "proposal": 2,
+      "alternatives": [],
+      "disposition": "accepted_with_limits",
+      "accepted_value": 2,
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept Reform 2 with those limits and the implementation-plan qualification. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through the integrity decision. Thank you.",
+        "scope": "Reform 2 for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only, limited to the event-specific grading-rule change and operationally directed regulatory implementation. SQ-01 is accepted: the Board delegated development of an implementation plan; the minutes do not record approval of a completed plan. The recorded decision, delegation and reported operation are read together within the government-involved response. No political independence, legal conformity, exclusive causal credit, control of every software configuration, correct individual grades, prevention of future harm, ordinary-period reform capacity or lasting institutional improvement is established. Board-by-board implementation reconciliation was not obtained; sources remain connected institutional accounts. GCSE issuance supports the operative-rule interpretation only and remains excluded from the AS/A-level Repair claim. Personal source review remains pending. No historical replacement, independent verification, manuscript revision, acceptance of another pending decision or publication approval. The predeclaration-related conformance limit remains.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-07",
+      "subject": "Separate integrity components",
+      "proposal": {
+        "institutional_record_integrity": "limited",
+        "assessment_packet_integrity": "limited"
+      },
+      "proposed_overall_status": "limited",
+      "accepted_overall_status": "limited",
+      "derivation_rule": "unreliable>IE>limited>adequate",
+      "alternatives": [],
+      "disposition": "accepted_with_limits",
+      "accepted_value": {
+        "institutional_record_integrity": "limited",
+        "assessment_packet_integrity": "limited"
+      },
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept limited for both integrity components separately and overall, with those limits. Keep my personal source review pending and the manuscript unchanged. Please record it and walk me through the final decision.",
+        "scope": "Institutional-record integrity and assessment-packet integrity are separately accepted as limited for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only, with the derived overall limited status also accepted. Institutional sources have identifiable publishers and an approval trail but retain redactions, unavailable supporting records, source dependence and unexamined edit and retention controls. The assessment packet documents selection, locators, transformations and qualifications, with result-informed selection, partial source preservation and no independent human review. Recorded hashes identify preserved bytes; they do not establish publication-day authenticity or source truth. SQ-01 remains attached to reuse. These classifications neither establish adequate assurance nor resolve the separate predeclaration-related conformance failure; that failure does not by itself establish an unreliable record. Personal source review remains pending. No historical replacement, independent verification, manuscript revision, acceptance of BMR-08, release-gate completion or publication approval.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    },
+    {
+      "id": "BMR-08",
+      "subject": "Reporting and reuse boundaries",
+      "proposal": "Retain expanded chronology, exploratory nonconformance and original S05/comparison boundaries; no manuscript or release change.",
+      "alternatives": [],
+      "disposition": "accepted_with_limits",
+      "accepted_value": "Retain expanded chronology, exploratory nonconformance and original S05/comparison boundaries; no manuscript or release change.",
+      "personal_source_review": "pending",
+      "author_receipt": {
+        "recorded_date": "2026-10-17",
+        "authority": "Direct author reply in this chat; recorded by the assistant.",
+        "statement": "Yes, I accept these reporting and reuse boundaries, with personal source review pending and the manuscript unchanged. Please record it and summarize what is complete and what remains open. Thank you.",
+        "scope": "Reporting and reuse boundaries accepted for HIT-SOLO-002-BM-REASSESSMENT-DRAFT-001 only. Retain deliberation on 14–16 August, the recorded decision on 16 August, announcement on 17 August and reported follow-through on 18–20 August; September records concern approval and publication provenance only. The fourteen-source expansion remains result-informed and exploratory, not preregistered or independent replication. The predeclaration-related conformance failure remains disclosed. Preserve the proposal snapshot, historical assessments, decisions, comparisons and conditional analyses; later separately authorized reuse must carry the author receipts, retained alternatives, limitations and SQ-01 plan-development qualification. S05 remains confined to its original source boundary and cannot establish absence of earlier action in the expanded record. No new tie, comparative superiority, reduced effort, independent agreement or validation is established. Personal source review remains pending. This completes the eight bounded author decisions only; earlier source-check and related-work questions retain their own dispositions. Both manuscripts, the claim register, v0.6.7 maintenance state and unresolved study and release requirements remain unchanged. No manuscript revision, preprint, submission, release, DOI update, scientific-conclusion eligibility or maturity advancement is authorized.",
+        "assessment_sha256": "12e9672572e703aa2828211a5774591a062e6aaadcea3dfbcddb15549d55a66c"
+      }
+    }
+  ],
+  "source_qualifications": [
+    {
+      "id": "SQ-01",
+      "recorded_date": "2026-10-17",
+      "source_id": "BM-05",
+      "claim_id": "EC-BMR-ARCHITECTURE",
+      "source_url": "https://assets.publishing.service.gov.uk/media/5f90330de90e072ca19b9c1b/20200816_2130_Ofqual_emergency_board_minutes.pdf",
+      "locator": "p. 3, item 107/20; all three pages' extracted text inspected.",
+      "qualified_proposition": "The Board agreed the changed award rule and delegated implementation actions to the Chair and Chief Regulator, including developing an implementation plan and making necessary regulatory-framework changes.",
+      "excluded_inference": "This passage does not record Board approval of a completed implementation plan.",
+      "snapshot_preserved": true,
+      "personal_source_review": "pending",
+      "author_disposition": "accepted_with_limits",
+      "author_receipt_decision_id": "BMR-06",
+      "inspection": "Fresh main-assistant web text inspection on 2026-10-17; no new source or local snapshot, visual check or independent authentication."
+    }
+  ]
+}

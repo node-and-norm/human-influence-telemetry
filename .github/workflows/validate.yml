@@ -86,6 +86,11 @@ jobs:
           python scripts/validate_closeout.py
           python -W error scripts/test_closeout.py
 
+      - name: Check exploratory Ofqual review boundaries, not assessment conformance
+        run: |
+          python research/strengthening/solo-002-board-minutes-reassessment/check.py --check
+          python -W error research/strengthening/solo-002-board-minutes-reassessment/test_check.py
+
       - name: Validate v0.6.5 research-integrity package and generated figures
         shell: bash
         run: |
