@@ -8,6 +8,16 @@ Documentary evidence of practical human authority.
 
 </div>
 
+## Research summary
+
+Maintenance. A documentary assessment method and a preserved exercise in which two scorers agreed on seven of seven items in one case packet under the earlier scoring contract.
+
+Organize evidence of human authority, identify missing support and compare recorded judgments with their stated basis.
+
+[Findings, use, limits and next steps](docs/research-summary.md), reviewed 29 October 2026.
+
+
+
 [At a glance](#at-a-glance) · [Choose your path](#choose-your-path) · [The research problem](#the-research-problem) · [Current results](#current-results) · [Repository map](#repository-map) · [Reproduce the checks](#reproduce-the-checks) · [Research boundaries](#research-boundaries) · [Citation](#citation) · [Release history and next gates](#release-history-and-next-gates)
 
 ## At a glance
