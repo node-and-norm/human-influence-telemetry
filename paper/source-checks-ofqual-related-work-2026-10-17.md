@@ -14,6 +14,10 @@ Mark Julius Banasihan reports personally reading OFQ-01’s standfirst and all s
 
 Selected personal passage review is reported complete for SR-02. Mark Julius Banasihan reports reading the remaining Board and executive team response paragraph through a search-engine extract of GOV.UK; earlier OCR, EAG and public-confidence passages retain their recorded reading scope. His reporting refinements are recorded in the completion receipt below. The earlier partial receipt remains history. Personal inspection of the Board minutes, the broader SC-04/SC-07 packages and manuscript approval retain their separate statuses.
 
+## Current SR-03 status: November 3, 2026
+
+SR-03 is partially reviewed. Mark Julius Banasihan reports personally reading all four rendered paragraphs of OFQ-03 section 2.3 and supplies corrections for that source. DFE-01 and OFQ-04 remain pending. The dated receipt below distinguishes edition, publication-history and displayed update dates; it does not authenticate the wording of an earlier version. SR-01 and SR-02 selected passage reviews retain their completed scopes.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -159,7 +163,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | :--- | :--- | :--- | :--- |
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
-| SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm the actor, timing, exclusions and remedy boundaries. | Pending | Pending; no attestation recorded |
+| SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for OFQ-03 on November 3; the other two source decisions remain pending | Partial: OFQ-03 section 2.3 reported read in full; DFE-01 and OFQ-04 personal passage reviews remain pending |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
@@ -279,6 +283,37 @@ The existing [Board-minutes supplement](ofqual-board-minutes-supplement-2026-10-
 The earlier December/October lead in the partial receipt remains preserved as that earlier report. Its differing reported dates are not silently harmonized with this later lead. Neither report supplies personal reading of the mid-August minutes.
 
 Disposition: SR-02 selected personal passage review is recorded as complete on the combined reported scope, with the search-extract access qualification retained. The author accepts the reporting boundaries with the stated corrections and refinements for later authorized reuse. This is not approval of a combined manuscript sentence or submission draft. Broader SC-04/SC-07 completion, other SR items, BMR personal-source flags, scores, claim eligibility, release gates and publication approval retain their prior states. No manuscript or public website change is made through this receipt.
+
+### SR-03 OFQ-03 personal source review: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The author reports reading all four rendered paragraphs of section 2.3, Monitoring awarding and results in 2020, in the [April 2021 Regulatory Burden Statement](https://www.gov.uk/government/publications/ofquals-regulatory-burden-statement/regulatory-burden-statement-april-2021). This completes reported reading for this selected source; SR-03 covers two further sources.
+
+#### Dates and access
+
+The edition/title is April 2021. The HTML displays Updated April 11, 2024. The author reports metadata giving April 30, 2021 as first publication; that metadata statement is retained as his report. Codex checked the [parent publication history](https://www.gov.uk/government/publications/ofquals-regulatory-burden-statement): its April 30, 2021 entry says the April 2021 statement was added in PDF and HTML formats. Its April 11, 2024 entry says the 2024 statement was added. The parent's March 31, 2017 first-publication date belongs to the broader publication record.
+
+These labels do not establish that section 2.3 of the April 2021 statement was revised in 2024. The current HTML and parent change notes do not establish earlier wording, the reason for the child's displayed update label or byte identity with the 2021 edition. No historical-version comparison was performed. The author reported his reading on November 3, 2026; Codex re-opened the current source and parent history on that date.
+
+#### Reported reading and corrections
+
+| Section 2.3 content group | Author's reading and retained boundary |
+| :--- | :--- |
+| Qualification categorization | Ofqual reports requiring vocational awarding organizations to categorize qualifications as calculated, adapted or delayed, with a similar spring 2021 exercise under VCRF. |
+| Monitoring and readiness | The account describes monitoring during 2020, sampled record-keeping checks and Readiness Reviews for high-stakes qualifications before awarding. These are reported activities within the regulator's account. |
+| IT systems | Development of systems for remote assessment/invigilation and calculated results is attributed to awarding organizations. The section supplies no account of Ofqual operating exam-board software. |
+| August change and results | Retain the sequence: Ofqual reports requiring AS/A-level grades to be reissued quickly, then GCSE grades recalculated. It reports asking a small number of vocational awarding organizations using an approach similar to the A-level/GCSE model to review it, and reports a small proportion of vocational results reissued. No count is given here. |
+
+Locations follow the author's four rendered paragraph groups. This record uses content locators so a text extraction that splits paragraphs differently does not change the reported reading scope.
+
+Author-proposed vocational correction, preserved verbatim:
+
+> Ofqual reports asking a small number of vocational awarding organizations whose approach resembled the A level and GCSE model to review it.
+
+Retain the source's condition and its explanation that most vocational qualifications used a different model. Remove the assistant's earlier “only” limitation, which could imply a stronger restriction on the request. Add the reported outcome that a small proportion of vocational results were reissued, attributed to Ofqual and without inventing a count.
+
+The author also notes that the paragraph refers to the August 2020 decision without naming its maker. Identification of the Board comes from the separately recorded annual-report passage and minutes account; it is not silently attributed to this burden-statement paragraph. The statement frames the reissue/recalculation requirement as a burden placed on exam boards.
+
+Disposition: OFQ-03 section 2.3 personal passage review is reported complete, and the author's corrections are recorded for later authorized use within these bounds. The source reports requirements and some outcomes; it does not establish receipt of a corrected result by every learner or independent verification of implementation. The review supplies no full-page reading attestation or authenticated historical wording. DFE-01 and OFQ-04 remain pending, so SR-03 remains partial. Manuscripts, scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
