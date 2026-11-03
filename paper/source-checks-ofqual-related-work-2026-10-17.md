@@ -6,6 +6,10 @@ Subsequent instruction on 17 October 2026: the author requested inspection of Bo
 
 The author requested source checks while preserving the manuscript. The [development manuscript](development-manuscript.md), [earlier manuscript](manuscript.md), [claim register](development-claim-register.json), historical assessments, [author decisions](../research/strengthening/author-decisions.md) and [maintenance state](../research/strengthening/closeout-status.json) remain unchanged. Later-draft wording below belongs to this review record, not to an approved submission draft. Wording dispositions and pending personal source review are recorded separately below. No preprint, submission, release or DOI is created.
 
+## Current SR-01 status: November 3, 2026
+
+Mark Julius Banasihan reports personally reading OFQ-01’s standfirst and all six body paragraphs. SR-01 personal passage review is complete for that reported scope, with terminology and timing qualifications recorded in the dated receipt below. Earlier SR-01 pending statements describe the October 17 checkpoint. Other source checks, the broader SC-04/SC-07 packages, Board-minutes personal-review flags and manuscript approval retain their separate statuses.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -35,7 +39,7 @@ Paragraphs 2 and 5 announce the revised rule, preserving a higher calculated gra
 
 Proposed later-use sentence: On 17 August 2020, Ofqual announced that AS, A-level and GCSE students would receive the higher of their centre-assessed or calculated grade. Its Chair gave public reasons and described a planned implementation path, with coordination already underway; the statement alone does not establish completed delivery.
 
-Mapping: DEV-C04/05, proposed section 4; relevant to DEV-C15's timing exhibit. The author accepted this wording for a later draft on 17 October 2026 under SR-01. Personal source review remains pending at the author's explicit request; no passage-reading attestation is recorded.
+Mapping: DEV-C04/05, proposed section 4; relevant to DEV-C15's timing exhibit. The author accepted this wording for a later draft on 17 October 2026 under SR-01. Personal source review remains pending at the author's explicit request; no passage-reading attestation is recorded. This is the October 17 state; the November 3 receipt below records the subsequent personal passage review and author-proposed revision.
 
 ### OCR-01: Awarding-body announcement
 
@@ -149,7 +153,7 @@ Review one item at a time. The author may accept wording without attesting perso
 
 | Review ID | Passages and decision | Wording disposition | Personal passage-review disposition |
 | :--- | :--- | :--- | :--- |
-| SR-01 | OFQ-01 paragraphs 2–6: is the proposed announcement sentence faithful to the changed rule, public reasons and prospective implementation? | Accepted for a later draft, 17 October 2026; see decision receipt below | Pending at the author's explicit request; no attestation recorded |
+| SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
 | SR-02 | OCR-01 and OFQ-02 locations above: retain institutional dependence, advice-route limits and the distinction between an absent packet record and a nonexistent record. | Not accepted; author requested Board-minutes inspection before proceeding; see supplement | Pending; no attestation recorded |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm the actor, timing, exclusions and remedy boundaries. | Pending | Pending; no attestation recorded |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
@@ -171,6 +175,34 @@ Disposition: acceptance of this wording for a later draft only. Personal review 
 ### SR-02 instruction receipt: 17 October 2026
 
 The author replied to the proposed SR-02 limits: “No, inspect board minutes.” This is an instruction to investigate the source lead, not acceptance of those limits or an attestation of personal reading. The [supplement](ofqual-board-minutes-supplement-2026-10-17.md) records the completed AI-assisted inspection, which materially expands the available access and timing evidence. SR-02 wording is not approved. Scores, the original packet and the manuscript remain unchanged; any expanded-source reassessment requires its own dated boundary amendment before scoring.
+
+### SR-01 personal passage review and wording revision: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current disclosure-review conversation. Recorded with Codex assistance. Source event/publication date: August 17, 2020. Personal review reported and recorded: November 3, 2026. The source dates and review date have different meanings.
+
+The author reported: “I read all six body paragraphs of the 17 August 2020 statement, plus the one-line standfirst under the title.” He stated that the summary holds with wording corrections and a scope note. His reported reading covers the following:
+
+| Location | Author's reading and retained qualification |
+| :--- | :--- |
+| Body paragraph 1 | Distress, stress and uncertainty for students; freeing heads and teachers to prepare schools to reopen. |
+| Body paragraph 2 | Teacher-submitted grades for AS, A levels and GCSE results students would receive later that week. This is forward-looking delivery language. |
+| Body paragraph 3 | The Secretary of State's request for calculated grades maintaining standards broadly in line with previous years. |
+| Body paragraph 4 | Anguish, damaged public confidence, burdens on teachers from appeals and an apology. |
+| Body paragraph 5 | The operative rule uses centre assessment grade or moderated grade, whichever is higher. Preserve the source's terminology. |
+| Body paragraph 6 | Intended implementation and urgent clarity, together with coordination already underway with the Department for Education, universities and others affected. |
+| Standfirst | It additionally names Extended Project Qualification and Advanced Extension Award in maths. Those qualifications are named in the standfirst; they are not silently inserted into the body's AS/A-level/GCSE list or treated as evidence of completed delivery. |
+
+The author then explained that paragraphs 2 and 6 record a decision and a plan as of August 17, 2020, and that confirming delivery requires a later source.
+
+Author-proposed later-use revision, preserved verbatim:
+
+> Ofqual announced that students would receive the higher of their centre assessment grade or moderated (calculated) grade for summer 2020. It gave public reasons and stated an intent to implement, naming the Department for Education and universities as partners. The statement alone leaves delivery unconfirmed.
+
+The parenthetical “calculated” is the author's explanatory terminology; paragraph 5 itself says “moderated grade.” The source says it is already working with the named bodies. The revision's “partners” describes that coordination and establishes no formal partnership or completed implementation.
+
+Disposition: SR-01 personal passage review is recorded as complete for the author's reported reading and analysis of this one source. This records his stated activity and the resulting corrections; it does not independently authenticate his reading or the institution's account. The October 17 acceptance and exact sentence remain preserved above. The new author-proposed wording is available for an authorized later draft, with its source and scope qualifications attached. Neither manuscript has been revised or approved through this receipt.
+
+SC-04 remains an incomplete multi-source package. SC-07, SR-02–06, personal review of the Board minutes and other source documents, comparative adjudication, claim eligibility, release gates and publication approval retain their prior states. This source alone establishes no person-level delivery, complete repair, historical webpage immutability, independent validation or broader effectiveness finding. The source was re-opened and compared by Codex on November 3, 2026; that assistance is separate from the author's reported reading.
 
 ## Before submission
 
