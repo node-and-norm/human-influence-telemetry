@@ -24,7 +24,7 @@ Selected personal passage review is reported complete for SR-04's two sources: R
 
 ## Current SR-05 status: November 3, 2026
 
-SR-05 is partially reviewed. Mark Julius Banasihan reports reading RW-03's section 4 text, including all numbered artifact subsections, and section 5 in the pinned arXiv v1 HTML. Figure 2's diagram remains unread; the caption alone was available to him. His corrections and incidental abstract/section 2.3 reading are recorded below. RW-04 remains pending. This text review supplies no SMACTR or HIT effectiveness result and does not complete the broader comparison or manuscript review.
+Selected body-text review is reported complete for RW-03 and RW-04, with the scopes in their dated receipts. SR-05 remains partial: Mark Julius Banasihan did not read an Annexe 5 notice or update date in his extracted text. He read the parent guidance's under-review notice through a search-engine extract; that does not fill the Annexe-specific field. Figure 2's SMACTR diagram, linked standards and other excluded material retain their stated limits. The body-text corrections do not establish operating effectiveness, legal conformity or manuscript approval.
 
 ## Method and status
 
@@ -173,7 +173,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for both sources on November 3; source-ordering inconsistency retained; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, within the dated receipts' scopes and access qualifications; Springer date-panel reading is not attested |
-| SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Author corrections recorded for RW-03 on November 3; RW-04 decision remains pending | Partial: RW-03 sections 4 and 5 text reported read, including numbered artifact subsections; Figure 2 diagram unchecked; RW-04 personal passage review remains pending |
+| SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Author corrections recorded for both body-text comparisons on November 3; Annexe-specific notice reading and later manuscript integration remain separate | Partial: selected RW-03/RW-04 body text reported read; Figure 2 diagram and Annexe 5 notice/update date unread; parent notice read via search extract only |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
 
 For each reply, append the author's actual decision, exact scope, date and any passage they report reading; preserve qualifications and disagreement. Do not infer that accepting an assistant's paraphrase constitutes independent review. A question about wording need not force new scores, an accepted tie or publication approval.
@@ -488,6 +488,45 @@ The author distinguishes three categories:
 The author flags section 4.4's HTML statement giving CelebA as 14.2% lighter-skinned and 85.8% darker-skinned and questions whether those labels are reversed. Codex confirmed that the pinned HTML contains those figures and labels, citing Merler and colleagues (2019) for them. Their accuracy against that cited source remains unchecked; Liu and colleagues (2015), cited for the dataset material, were also not opened. No correction is inferred from expectation. These values are retained only as a source-verification lead, not adopted as verified dataset demographics, a HIT finding or a basis for a comparative claim. The PDF, cited originals and Figure 2 were not inspected to resolve it in this step.
 
 Disposition: RW-03 personal passage review is reported complete for the stated section text, with the diagram and other access limits retained. The author's corrections are recorded for later authorized use within these bounds. RW-04 remains pending, so SR-05 remains partial. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-05 RW-04 personal body-text review: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The source is the ICO's [Annexe 5: Argument-based assurance cases](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/annexe-5-argument-based-assurance-cases/). This receipt records completed selected body-text reading, with the requested notice check still unfulfilled.
+
+#### Access route, coverage and notices
+
+The author reports reading a direct-fetch extraction beginning at the Annexe 5 title: the opening account, its three bullets and background-reading paragraph; the Main components introduction; and the Top-level normative goals, Claims (including context and justification), Arguments and Evidence subsections. The extraction contained no notice or update date. Both remain unread by the author; omission from an extraction does not establish absence from the page.
+
+The author separately read, through a search-engine extract, the [parent Explaining decisions made with AI page](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/) notice that the guidance is under review following changes made by the Data (Use and Access) Act and may change. Attribute this reading to the parent page only. It is not an attestation that he read an Annexe 5 banner.
+
+Codex's direct retrieval of both pages returned HTTP 403 in this step. Official-domain indexed extracts were available and displayed an under-review notice for each page. That is Codex's indexed-text inspection, separate from the author's reported access; it neither fills his unread Annexe field nor authenticates a fresh origin-page response or historical wording. The source's publication/update date remains unestablished. The reading report and current checks are dated November 3, 2026.
+
+The author also mentions differently worded Part 2 banners. No exact Part 2 page or reading route was identified in this reply, and no legal commencement claim is adopted from that observation. A review notice establishes neither unchanged legal requirements nor legal invalidity.
+
+The extraction also returned Advantages, Governing procurement practices and further-reading material, which the author did not use for this review. Returned text does not establish personal reading of those sections. Linked standards, platforms and further readings remain outside the requested scope.
+
+#### Author's corrections to the conceptual account
+
+| Component | Retained account and boundary |
+| :--- | :--- |
+| Normative goals | The case begins with goals derived from context-specific impact and risk assessment for an AI application. Examples for process-based explanation include fairness and bias mitigation, responsibility, safety and performance, and beneficial/non-harmful impact. Claims identify properties needed to realize those goals; starting at claims omits their purpose. |
+| Claims, context and justification | In some methods, including GSN, claims have context components specifying scope, definitions, assumptions and lifecycle risks. Claims may also have justification components explaining their choice and connection to a goal. Do not generalize those notation-specific components to every assurance method. |
+| Arguments and assumptions | Arguments link claims to evidence through reasoning and may use subordinate claims and assumptions over several levels. Assumptions can be taken as self-evident without further backing. Recording an assumption does not supply missing evidential support. |
+| Evidence | The ICO describes evidence as supporting artifacts and documentation, characterized as objective, demonstrable and repeatable information recorded during production and use, potentially organized in a repository. Keep those qualities attributed to the guidance; the description does not certify every record used by HIT or any assurance case. |
+| Lifecycle monitoring | The opening account describes arguments that monitoring and reassessment measures have been set up. The case contains a justification of those arrangements; conducting monitoring and establishing controls' effectiveness require evidence beyond the mere presence of the argument. |
+| Guidance scope | The page offers a broad account of component relationships and expressly leaves detailed assurance-case construction methods outside scope. |
+
+The author's proposed context wording, preserved verbatim:
+
+> goals anchored in context-specific risk assessment, with claims that some methods qualify by context and justification.
+
+The author's proposed monitoring wording, preserved verbatim:
+
+> including arguments that monitoring and reassessment measures are in place.
+
+Retain the lifecycle account when describing this neighboring approach; do not reduce it to a static graph or claim that HIT uniquely connects evidence with monitoring or action. The component description does not validate HIT's dimensions, procedures, scientific contribution or practical effectiveness.
+
+Disposition: RW-04 selected body-text review is reported complete with the author's corrections, and RW-03 retains its recorded text-reading scope. SR-05 remains partial because the Annexe-specific notice check is unfulfilled; its update date is also unread and unestablished. Parent-notice reading and Codex's indexed Annexe check remain separate. No legal-conformity conclusion is drawn. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
