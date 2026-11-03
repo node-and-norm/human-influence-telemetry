@@ -10,6 +10,10 @@ The author requested source checks while preserving the manuscript. The [develop
 
 Mark Julius Banasihan reports personally reading OFQ-01’s standfirst and all six body paragraphs. SR-01 personal passage review is complete for that reported scope, with terminology and timing qualifications recorded in the dated receipt below. Earlier SR-01 pending statements describe the October 17 checkpoint. Other source checks, the broader SC-04/SC-07 packages, Board-minutes personal-review flags and manuscript approval retain their separate statuses.
 
+## Current SR-02 status: November 3, 2026
+
+Personal passage review is partially complete on the author's reported scope: both OCR body paragraphs; the External Advisory Group membership, model-testing and quality-assurance passages; and the additional public-confidence/results-day passage identifying the Board's decision. The first Board and executive team response paragraph and personal inspection of the mid-August minutes remain unread in this reply. Corrections for the passages read are recorded below; the full SR-02 reporting decision remains open. The completed SR-01 review and the separate BMR decisions retain their own scopes.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -154,7 +158,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | Review ID | Passages and decision | Wording disposition | Personal passage-review disposition |
 | :--- | :--- | :--- | :--- |
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
-| SR-02 | OCR-01 and OFQ-02 locations above: retain institutional dependence, advice-route limits and the distinction between an absent packet record and a nonexistent record. | Not accepted; author requested Board-minutes inspection before proceeding; see supplement | Pending; no attestation recorded |
+| SR-02 | OCR-01 and OFQ-02: distinguish attributed coordination, advisory remit, the reported Board decision and a general records lead. | Author corrections recorded November 3 for passages read; full SR-02 wording decision remains open pending the remaining passage review | Partial, author-reported November 3: OCR paragraphs and named EAG/public-confidence passages read; Board-response paragraph and personal reading of mid-August minutes remain pending |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm the actor, timing, exclusions and remedy boundaries. | Pending | Pending; no attestation recorded |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
@@ -203,6 +207,46 @@ The parenthetical “calculated” is the author's explanatory terminology; para
 Disposition: SR-01 personal passage review is recorded as complete for the author's reported reading and analysis of this one source. This records his stated activity and the resulting corrections; it does not independently authenticate his reading or the institution's account. The October 17 acceptance and exact sentence remain preserved above. The new author-proposed wording is available for an authorized later draft, with its source and scope qualifications attached. Neither manuscript has been revised or approved through this receipt.
 
 SC-04 remains an incomplete multi-source package. SC-07, SR-02–06, personal review of the Board minutes and other source documents, comparative adjudication, claim eligibility, release gates and publication approval retain their prior states. This source alone establishes no person-level delivery, complete repair, historical webpage immutability, independent validation or broader effectiveness finding. The source was re-opened and compared by Codex on November 3, 2026; that assistance is separate from the author's reported reading.
+
+### SR-02 partial personal passage review: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the disclosure-review conversation. Recorded with Codex assistance. The author reports reading both OCR body paragraphs, the External Advisory Group (EAG) passages and the additional public-confidence/results-day passage described below. He expressly reports not yet reading the first Board and executive team response paragraph or the mid-August minutes.
+
+The OCR source is dated August 17, 2020. The annual report displays an update date of July 20, 2021. This personal review was reported on November 3, 2026. These are separate source, reported-event and review dates.
+
+#### Reading scope and retained corrections
+
+| Source location | Reported reading and decision |
+| :--- | :--- |
+| OCR-01, both body paragraphs | Read. The author accepts the attribution to Ofqual and narrows the implementation description: OCR reports Ofqual's coordination with DfE, universities and exam boards, supplies no specific implementation step and defers details. |
+| OCR-01, second body paragraph | Read. Cambridge Technicals and Cambridge Nationals implications were still under review. This supports downstream uncertainty on August 17, not a completed implementation finding. |
+| OFQ-02, EAG heading: establishment, membership, model testing and quality assurance | Read as the three content groups described by the author. The report identifies ten independent statistical/assessment members and also two Board members including the Chair; no total membership count is inferred here. The author also identifies the Head of Centre declarations, Maintenance of Standards checks, appeals and autumn-series safeguards. |
+| OFQ-02, model-testing and bias account | Read. The author retains these as Ofqual's own reports of model performance and lack of bias; this supplies no independent fairness finding. |
+| OFQ-02, Public confidence and results days | Additional reading reported. The author identifies the report's attribution of the higher-grade decision to the Ofqual Board in response to loss of confidence. This does not attest personal inspection of the underlying meeting record. |
+| OFQ-02, Board and executive team response, first paragraph | Not read yet. The author reports repeated retrievals cutting off before this location. Personal reading and the corresponding specific source check remain pending. |
+| Mid-August Board minutes | Not personally inspected in this reply. The previously accepted bounded BMR decisions and their personal-source flags remain separate. |
+
+Source locations are recorded by heading and content, matching the author's report. Paragraph groupings can differ between HTML rendering, text extraction and PDF copies; the record does not infer unread content from a differing paragraph count.
+
+Author-proposed OCR correction, preserved verbatim:
+
+> OCR attributes the decision to Ofqual, reports that Ofqual is working with the DfE, universities and exam boards to implement it, and defers details.
+
+The author identified three source-specific details: OCR explicitly names exam boards in that coordination; it uses the term “calculated grade awarded by exam boards”; and its second paragraph records an open vocational-qualification question. The Ofqual Chair statement's “moderated grade” wording remains separately attributed. No universal equivalence between the two terms is introduced.
+
+Author-proposed advisory-group boundary, preserved verbatim:
+
+> The advisory-group description covers its remit, membership and model-development work; it identifies no information considered for the 17 August reversal.
+
+This is a limit of the passages reviewed. The report describes an advisory role and shared Board membership. Whether the group advised on the particular reversal remains open within that scope; these passages do not establish that no such advice or records existed elsewhere.
+
+#### Unread passage and additional records lead
+
+The author accepts the general logic that material missing from a research packet does not establish that the material never existed. He does not attest having read the annual report's pointer to Board minutes. Codex located and re-opened that paragraph on November 3; that assistant inspection does not complete the author's pending reading.
+
+The author also reported finding a December 9, 2020 Board-minute reference to approval of October 15 emergency-meeting minutes. No source URL or inspected extract for that lead was supplied in this reply. It is retained only as an author-reported, unverified lead outside this source check; it is not added to the source packet, used to establish the August decision record, or treated as personal inspection of mid-August minutes.
+
+Disposition: partial personal passage review, with the two author-proposed corrections retained for later authorized reuse within their stated bounds. SR-02 is not complete. The unread governance paragraph and the overall SR-02 wording decision remain pending. No scores, manuscripts, publication approval, claim eligibility, BMR personal-review flags or other SR dispositions change through this receipt. The historical October 17 investigation instruction remains preserved.
 
 ## Before submission
 
