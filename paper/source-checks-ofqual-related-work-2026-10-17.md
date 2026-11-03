@@ -20,7 +20,7 @@ Selected personal passage review is reported complete for SR-03's three sources:
 
 ## Current SR-04 status: November 3, 2026
 
-SR-04 is partially reviewed. Mark Julius Banasihan reports reading RW-01's abstract on printed page 1 and the two paragraphs ending its Introduction on printed page 3. His corrections to the Green comparison and its reporting limits are recorded below. RW-02 remains pending. The selected reading does not attest review of the full paper, its cited evidence or all 41 policy documents, and does not validate HIT's method. Earlier pending statements retain their historical checkpoint meaning; other review and manuscript statuses remain separate.
+Selected personal passage review is reported complete for SR-04's two sources: RW-01's abstract and final two Introduction paragraphs, and RW-02's abstract and sections 3.3 and 3.3.1. Mark Julius Banasihan's corrections and reading routes are recorded below. RW-02 dates were personally read in an institutional PDF; the Springer date panel remains unread by the author and was checked separately by Codex. The ability–authority wording inconsistency remains unresolved. This completion does not establish full-paper or cited-source review, empirical validation of HIT, manuscript integration or publication approval. Earlier partial and pending statements retain their historical checkpoint meaning.
 
 ## Method and status
 
@@ -168,7 +168,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
-| SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for RW-01 on November 3; RW-02 decision remains pending | Partial: RW-01 abstract and final two Introduction paragraphs reported read; RW-02 personal passage review remains pending |
+| SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for both sources on November 3; source-ordering inconsistency retained; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, within the dated receipts' scopes and access qualifications; Springer date-panel reading is not attested |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
 
@@ -410,6 +410,44 @@ The author recommends “Green surveys 41 policies” for the abstract's wording
 The author also points to page 4's education/error and protest references to Kolkman (2020), suggesting a possible connection with the 2020 grading case. Retain this as an author-reported lead only. The cited Kolkman source and its connection to the SR-03 case have not been checked in this step. No new case link, source-packet extension or evidentiary conclusion is adopted from it.
 
 Disposition: RW-01 personal passage review is reported complete for the stated abstract and two Introduction paragraphs, with the author's corrections recorded for later authorized use within these bounds. RW-02 remains pending, so SR-04 remains partial. Full-argument review, inspection of cited evidence, the broader SC-04/SC-07 packages, manuscripts, historical scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-04 RW-02 personal source review and selected-review completion: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The source is Cavalcante Siebert and colleagues' [Meaningful human control: actionable properties for AI system development](https://link.springer.com/article/10.1007/s43681-022-00167-3), DOI `10.1007/s43681-022-00167-3`. This record separates the author's reported reading from Codex's source and metadata checks.
+
+#### Reading routes and citation dates
+
+The author reports reading sections 3.3 and 3.3.1 on Springer's article page. He read the abstract and dates in a publisher-formatted PDF hosted by the Politecnico di Torino institutional repository, identified by its journal header and front matter. No exact PDF URL was supplied, so this record does not identify that copy's bytes or assume identity with a Springer-hosted PDF or an arXiv version. He explicitly has not read the dates displayed on the Springer landing page.
+
+Codex checked the publisher's current article metadata separately: received January 7, 2022; accepted April 15, 2022; published and version of record May 18, 2022; issue date February 2023. The volume citation is AI and Ethics 3, 241–255 (2023). The received, accepted and online-publication dates agree with those the author reports reading in the institutional PDF; the February issue month is from Codex's publisher-metadata check. Cite the volume as 2023 and retain May 18, 2022 as the online publication date.
+
+Codex also checked [arXiv's version history](https://arxiv.org/abs/2112.01298): v1 was submitted November 25, 2021, 11:05:37 UTC; v2 was submitted May 19, 2022, 15:28:01 UTC. These confirm the author's reported preprint-history dates; neither date replaces the journal's publication or issue date. No reading of either preprint's full text is attested here.
+
+The author reports a TU Delft listing combining volume 3, issue 1 and pages 241–255 with year 2022. Its exact URL was not supplied. A [TU Delft portal entry located by Codex](https://research.tudelft.nl/en/publications/meaningful-human-control-actionable-properties-for-ai-system-deve/) also uses 2022 for publication status and its exported citation, but the displayed record does not corroborate that full volume/issue/page combination. This documents the reported metadata discrepancy without identifying the exact listing the author read or declaring the 2022 online date erroneous. The publisher's volume citation remains the citation authority for this record. All personal reading and current checks were reported or performed on November 3, 2026; no historical-version comparison was performed.
+
+#### Author's corrections and conceptual boundary
+
+The author's proposed wording, preserved verbatim:
+
+> Humans’ responsibility should be matched by their ability (including resources such as tools and time) and their authority, and organizational practices shape both.
+
+| Reviewed content | Retained structure and limit |
+| :--- | :--- |
+| Abstract | The authors identify four actionable properties through iterative abductive thinking and discuss automated vehicles and AI-based hiring. Treat these as argued design proposals illustrated by those scenarios. The selected passages do not establish empirical validation of the properties or of HIT; no conclusion about every part of the paper or subsequent research is adopted from this limited reading. |
+| Ability in section 3.3 | Tools and time are resources within ability, not separate parallel conditions detached from ability. Ability includes what an agent can perceive, understand, decide and do with available skills and resources. |
+| Responsibility in section 3.3 | Within the authors' framework, both humans and AI agents have ability and authority, while responsibility is human-only. The system's ability and authority must be traced to responsible humans. This is attributed to their framework, not asserted as a universal legal rule. |
+| Organizational practices in section 3.3.1 | Training, oversight procedures, administrative discretion and policy shape ability and authority. Their connection to responsibility runs through those relationships. |
+| Hiring-manager example | Section 3.3 describes final authority as insufficient without proper ability, including a manager who merely signs off on AI hiring recommendations. The author draws a conceptual parallel with the Green oversight concern. This cross-source analogy is supplied by the reviewer; it is not an empirical HIT case, a tested comparison or an endorsement. |
+
+#### Ability–authority ordering: inconsistency retained
+
+The author identifies repeated wording in section 3.3 that places ability at least as high as authority, and authority at least as high as responsibility. The paper attributes this account to Flemisch and colleagues and restates it as authority not exceeding ability and responsibility not exceeding authority. This receipt records how Cavalcante Siebert and colleagues describe that account; personal inspection of the cited Flemisch source is not attested.
+
+The opening sentence of section 3.3.1 reverses the ability–authority relation, saying authority should not be smaller than ability. Its remaining call for a baseline understanding of abilities and consistency with designed authority does not resolve direction. The abstract's term commensurate is neutral about this ordering. Codex rechecked these opposing statements in the current publisher HTML.
+
+Record this as an internal wording inconsistency. Whether it reflects a drafting slip remains unsettled. The section 3.3 account can be described with its location and attribution, accompanied by the conflicting section 3.3.1 wording; no unqualified hierarchy is silently harmonized or adopted as a HIT formula. The author's neutral matched-ability-and-authority sentence preserves the broad comparison.
+
+Disposition: RW-02 personal passage review is reported complete for the abstract and sections 3.3 and 3.3.1, with the stated reading routes, citation-date distinction and unresolved inconsistency. Together with the RW-01 receipt, this completes SR-04's selected personal passage review. The Springer date panel remains unread by the author; his institutional PDF's exact identity, full-paper reading and personal inspection of cited sources are not established. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
