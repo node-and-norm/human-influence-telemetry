@@ -22,6 +22,10 @@ Selected personal passage review is reported complete for SR-03's three sources:
 
 Selected personal passage review is reported complete for SR-04's two sources: RW-01's abstract and final two Introduction paragraphs, and RW-02's abstract and sections 3.3 and 3.3.1. Mark Julius Banasihan's corrections and reading routes are recorded below. RW-02 dates were personally read in an institutional PDF; the Springer date panel remains unread by the author and was checked separately by Codex. The ability–authority wording inconsistency remains unresolved. This completion does not establish full-paper or cited-source review, empirical validation of HIT, manuscript integration or publication approval. Earlier partial and pending statements retain their historical checkpoint meaning.
 
+## Current SR-05 status: November 3, 2026
+
+SR-05 is partially reviewed. Mark Julius Banasihan reports reading RW-03's section 4 text, including all numbered artifact subsections, and section 5 in the pinned arXiv v1 HTML. Figure 2's diagram remains unread; the caption alone was available to him. His corrections and incidental abstract/section 2.3 reading are recorded below. RW-04 remains pending. This text review supplies no SMACTR or HIT effectiveness result and does not complete the broader comparison or manuscript review.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -169,7 +173,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for both sources on November 3; source-ordering inconsistency retained; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, within the dated receipts' scopes and access qualifications; Springer date-panel reading is not attested |
-| SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
+| SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Author corrections recorded for RW-03 on November 3; RW-04 decision remains pending | Partial: RW-03 sections 4 and 5 text reported read, including numbered artifact subsections; Figure 2 diagram unchecked; RW-04 personal passage review remains pending |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
 
 For each reply, append the author's actual decision, exact scope, date and any passage they report reading; preserve qualifications and disagreement. Do not infer that accepting an assistant's paraphrase constitutes independent review. A question about wording need not force new scores, an accepted tie or publication approval.
@@ -448,6 +452,42 @@ The opening sentence of section 3.3.1 reverses the ability–authority relation,
 Record this as an internal wording inconsistency. Whether it reflects a drafting slip remains unsettled. The section 3.3 account can be described with its location and attribution, accompanied by the conflicting section 3.3.1 wording; no unqualified hierarchy is silently harmonized or adopted as a HIT formula. The author's neutral matched-ability-and-authority sentence preserves the broad comparison.
 
 Disposition: RW-02 personal passage review is reported complete for the abstract and sections 3.3 and 3.3.1, with the stated reading routes, citation-date distinction and unresolved inconsistency. Together with the RW-01 receipt, this completes SR-04's selected personal passage review. The Springer date panel remains unread by the author; his institutional PDF's exact identity, full-paper reading and personal inspection of cited sources are not established. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-05 RW-03 personal source review: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The author reports reading section 4's opening, sections 4.1–4.6 including every numbered artifact subsection, and section 5 in [Raji and colleagues' Closing the AI Accountability Gap, arXiv v1 HTML](https://arxiv.org/html/2001.00973v1). Version 1 is dated January 3, 2020; the published DOI is `10.1145/3351095.3372873`. The November 3, 2026 reading report and Codex's text check are separate from that source-version date.
+
+#### Reading scope and access limits
+
+The author reports full reading of the requested section text. He did not read Figure 2's framework diagram: his HTML displayed only its caption. Artifact-to-stage assignments attributed specifically to the figure remain unchecked, even where stage descriptions are available in the text. The supplementary templates and PDF remain outside the request and are not attested as read. The abstract and section 2.3 were read in passing to locate the audit-integrity phrasing; that incidental reading is recorded separately from the requested sections.
+
+#### Author's corrections to the comparison
+
+| Topic | Retained account and boundary |
+| :--- | :--- |
+| Five-stage structure | SMACTR comprises Scoping, Mapping, Artifact Collection, Testing and Reflection, with documentation requirements at each stage. Scoping includes ethical review of the use case and a social impact assessment. Mapping includes stakeholder and system maps and ethnographic fieldwork. These front-end activities locate anticipation before testing. |
+| Testing | The framework proposes tests against the organization's prioritized, declared ethical values, using FMEA risk prioritization. Outputs include adversarial-test results and an ethical risk analysis chart. These are proposed audit activities and artifacts, not reported effectiveness measurements from an actual deployment. |
+| Remediation and acceptance | The remediation plan aims to reduce risk as far as reasonably practicable and can be reviewed by auditors and leadership to inform deployment decisions. The acceptable-performance threshold remains an open question; tolerable-risk approaches are suggested as something that could be developed. A plan or review route is not proof of successful mitigation. |
+| Records | The authors propose an algorithmic design history file, modeled on medical-device practice, to support reconstruction of key decisions. The stakeholder map provides an internal record of individual accountability. Neither proposed record establishes that a control operated effectively. |
+| Internal reporting | The summary report aggregates audit artifacts for review against stated ethical objectives; findings go to leadership and product teams. These passages describe internal reporting and do not establish a public-reporting requirement. |
+| Independence and integrity | Section 5 addresses shared organizational interests, difficulty maintaining independence, reputation-management risks and the need for broader checks and balances. The audit-integrity phrase is located in the abstract and section 2.3, which the author read incidentally. Do not silently attribute that phrase to section 5. |
+| Framework scope | The framework addresses how to conduct an audit, leaving selection of which systems to audit and why outside its scope. It may be used in full or in a lighter formulation, depending on the desired assessment. |
+
+The comparison should preserve SMACTR's links between anticipatory review, testing, remediation, records and internal reporting. It should not reduce the framework to paperwork or imply that HIT uniquely connects records with action. These passages do not test or endorse HIT's method.
+
+#### Hypothetical examples, validation language and evidence limits
+
+The author distinguishes three categories:
+
+1. Company X is fictional and its two client projects are hypothetical: child-abuse screening modeled on real cases, and smile detection for an invented photo-booth company. Reflection-stage outcomes are presented as possibilities. The smile detector's hypothetical datasheet draws on published research about the real CelebA dataset, so the illustration is not wholly detached from real source material.
+2. Section 4.1 describes the procedure as validated and transparently outlined. Preserve this as the authors' characterization. The author reports finding no named SMACTR validation study in that section; this is not an author admission that the framework was unvalidated, nor a finding about every part of the paper or subsequent literature.
+3. The reviewed passages report no real-system SMACTR application or measured outcome. Section 5's cited claim about effective risk control through internal auditing in other industries concerns those practices generally. It is not evidence of SMACTR's own effectiveness. The cited study itself was not personally reviewed in this step.
+
+#### CelebA source-check lead
+
+The author flags section 4.4's HTML statement giving CelebA as 14.2% lighter-skinned and 85.8% darker-skinned and questions whether those labels are reversed. Codex confirmed that the pinned HTML contains those figures and labels, citing Merler and colleagues (2019) for them. Their accuracy against that cited source remains unchecked; Liu and colleagues (2015), cited for the dataset material, were also not opened. No correction is inferred from expectation. These values are retained only as a source-verification lead, not adopted as verified dataset demographics, a HIT finding or a basis for a comparative claim. The PDF, cited originals and Figure 2 were not inspected to resolve it in this step.
+
+Disposition: RW-03 personal passage review is reported complete for the stated section text, with the diagram and other access limits retained. The author's corrections are recorded for later authorized use within these bounds. RW-04 remains pending, so SR-05 remains partial. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
