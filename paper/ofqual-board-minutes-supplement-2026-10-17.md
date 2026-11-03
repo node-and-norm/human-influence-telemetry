@@ -2,6 +2,10 @@
 
 Inspection ID: HIT-OFQ-BM-01, revision 1. Prepared 17 October 2026 (America/New_York), at repository base `8272ca76c90973985573b48530fe5cb61a73254a`.
 
+## Source-check status update: November 3, 2026
+
+The [source-check record](source-checks-ofqual-related-work-2026-10-17.md#sr-02-selected-personal-passage-review-completion-november-3-2026) now records the author's SR-01 and SR-02 selected personal passage reviews as complete within their stated scopes. SR-02's remaining governance paragraph was read through a search-engine extract. Earlier references below to SR-02 not being accepted and SR-01 personal review being pending describe their October 17 checkpoints. This update supplies no personal reading of the Board minutes and changes none of the BMR findings, approval trail or other research gates. New October/December provenance leads remain separately unverified as recorded in the dated source-check receipt.
+
 ## Authority and scope
 
 After the assistant presented SR-02 in the [source-check record](source-checks-ofqual-related-work-2026-10-17.md), the author replied: “No, inspect board minutes.” This authorizes the supplementary inspection. It does not accept SR-02's proposed wording, attest personal reading, authorize rescoring or revise the manuscript. The prior SR-01 wording acceptance and pending personal review remain recorded.

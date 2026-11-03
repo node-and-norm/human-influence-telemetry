@@ -12,7 +12,7 @@ Mark Julius Banasihan reports personally reading OFQ-01’s standfirst and all s
 
 ## Current SR-02 status: November 3, 2026
 
-Personal passage review is partially complete on the author's reported scope: both OCR body paragraphs; the External Advisory Group membership, model-testing and quality-assurance passages; and the additional public-confidence/results-day passage identifying the Board's decision. The first Board and executive team response paragraph and personal inspection of the mid-August minutes remain unread in this reply. Corrections for the passages read are recorded below; the full SR-02 reporting decision remains open. The completed SR-01 review and the separate BMR decisions retain their own scopes.
+Selected personal passage review is reported complete for SR-02. Mark Julius Banasihan reports reading the remaining Board and executive team response paragraph through a search-engine extract of GOV.UK; earlier OCR, EAG and public-confidence passages retain their recorded reading scope. His reporting refinements are recorded in the completion receipt below. The earlier partial receipt remains history. Personal inspection of the Board minutes, the broader SC-04/SC-07 packages and manuscript approval retain their separate statuses.
 
 ## Method and status
 
@@ -158,7 +158,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | Review ID | Passages and decision | Wording disposition | Personal passage-review disposition |
 | :--- | :--- | :--- | :--- |
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
-| SR-02 | OCR-01 and OFQ-02: distinguish attributed coordination, advisory remit, the reported Board decision and a general records lead. | Author corrections recorded November 3 for passages read; full SR-02 wording decision remains open pending the remaining passage review | Partial, author-reported November 3: OCR paragraphs and named EAG/public-confidence passages read; Board-response paragraph and personal reading of mid-August minutes remain pending |
+| SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm the actor, timing, exclusions and remedy boundaries. | Pending | Pending; no attestation recorded |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
@@ -247,6 +247,38 @@ The author accepts the general logic that material missing from a research packe
 The author also reported finding a December 9, 2020 Board-minute reference to approval of October 15 emergency-meeting minutes. No source URL or inspected extract for that lead was supplied in this reply. It is retained only as an author-reported, unverified lead outside this source check; it is not added to the source packet, used to establish the August decision record, or treated as personal inspection of mid-August minutes.
 
 Disposition: partial personal passage review, with the two author-proposed corrections retained for later authorized reuse within their stated bounds. SR-02 is not complete. The unread governance paragraph and the overall SR-02 wording decision remain pending. No scores, manuscripts, publication approval, claim eligibility, BMR personal-review flags or other SR dispositions change through this receipt. The historical October 17 investigation instruction remains preserved.
+
+### SR-02 selected personal passage review completion: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current disclosure-review conversation. Recorded with Codex assistance. The author reports reading the remaining first paragraph under Board and executive team response through a search-engine extract of the GOV.UK page. This supplements the OCR, EAG and public-confidence passages in the preceding partial receipt.
+
+#### Access and scope
+
+The completion records reported reading and analysis of the selected paragraph through that extract. The author did not report direct reading of the full canonical annual-report page or personal inspection of the underlying minutes. The exact search engine, extract URL, query and extraction timestamp were not supplied; none is inferred. Codex separately re-opened the canonical GOV.UK paragraph on November 3 and found its account consistent with the content described by the author. That comparison records assistant work and does not independently authenticate the author's activity, historical webpage wording or the institution's account.
+
+The author reports that the paragraph describes 25 emergency Board meetings between March and October 2020, says their detailed actions and decisions are available in Board minutes on GOV.UK, and states that the meetings followed the Ofqual Governance Framework. These remain attributed statements by Ofqual.
+
+Author-proposed entry, preserved verbatim:
+
+> The annual report states that 25 emergency Board meetings (March to October 2020) took place and that their detailed actions and decisions are in Board minutes published on gov.uk.
+
+#### Accepted reporting refinements
+
+- Record the count, named period and stated coverage of the minutes, together with the attributed Governance Framework statement. A generic statement that minutes exist would omit the paragraph's more specific claim.
+- The August 17 announcement falls within the stated period, but the paragraph does not name that announcement or identify a particular August meeting. The relevant decision records must be identified and assessed separately.
+- The annual report supplies an institutional publication/coverage claim. The original packet's omission is a limitation of its selected inventory; it is not evidence that records did not exist. Historical publication timing and correspondence between approved and currently published bytes retain their existing evidentiary limits.
+
+These refinements supplement the author's earlier corrections: OCR reports named coordination and defers details; the EAG description alone identifies no material considered for the particular reversal; model-testing and bias assertions remain attributed institutional reports. The additional public-confidence reading identifies the Board as decision-maker in the annual report's account. The original announcement date remains distinct from the meeting-specific decision chronology in the separate supplement.
+
+#### Additional leads and the existing packet
+
+The author reported a December 9, 2020 reference to a factual correction for August 15 emergency-meeting minutes and an October 1 approval date, an official 2020 minutes collection, and an August 25 announcement concerning Amanda Spielman's committee role. The December correction/approval detail and the committee-announcement lead were not separately verified in this source check and are not promoted to established provenance or control findings. They create no new task prerequisite for SR-02.
+
+The existing [Board-minutes supplement](ofqual-board-minutes-supplement-2026-10-17.md) already identifies the official 2020 collection, BM-02 on August 15 and three meetings on August 16. It describes the August 15 decision as intermediate and locates the recorded higher-grade resolution in BM-05, August 16 at 21:30. Its inspected approval trail records September 25. The newly reported October/December details therefore require reconciliation with the exact source passages and versions before they can change that account. They do not establish August 15 as a newly located or final reversal decision.
+
+The earlier December/October lead in the partial receipt remains preserved as that earlier report. Its differing reported dates are not silently harmonized with this later lead. Neither report supplies personal reading of the mid-August minutes.
+
+Disposition: SR-02 selected personal passage review is recorded as complete on the combined reported scope, with the search-extract access qualification retained. The author accepts the reporting boundaries with the stated corrections and refinements for later authorized reuse. This is not approval of a combined manuscript sentence or submission draft. Broader SC-04/SC-07 completion, other SR items, BMR personal-source flags, scores, claim eligibility, release gates and publication approval retain their prior states. No manuscript or public website change is made through this receipt.
 
 ## Before submission
 
