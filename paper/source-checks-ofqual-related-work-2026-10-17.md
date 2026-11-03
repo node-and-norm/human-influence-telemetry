@@ -16,7 +16,7 @@ Selected personal passage review is reported complete for SR-02. Mark Julius Ban
 
 ## Current SR-03 status: November 3, 2026
 
-SR-03 is partially reviewed. Mark Julius Banasihan reports personally reading OFQ-03 section 2.3 and all requested DFE-01 passages, with source-specific corrections recorded below. OFQ-04 remains pending. The DFE-01 receipt distinguishes the displayed update date, verified withdrawal metadata and reported event dates; it does not authenticate an earlier version. Earlier pending statements retain their historical checkpoint meaning. SR-01 and SR-02 selected passage reviews retain their completed scopes.
+Selected personal passage review is reported complete for SR-03's three sources: OFQ-03 section 2.3, the named DFE-01 passages and OFQ-04's first three README paragraphs at the pinned commit. Mark Julius Banasihan's corrections are recorded in the dated receipts below. Earlier partial and pending statements retain their historical checkpoint meaning. This completion covers the stated reading and reporting boundaries only. Linked appeals guidance, source code and deployed software were not personally reviewed in this step. The broader SC-04/SC-07 packages, Board-minutes personal-review flags and manuscript approval retain their separate statuses.
 
 ## Method and status
 
@@ -163,7 +163,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | :--- | :--- | :--- | :--- |
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
-| SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for OFQ-03 and DFE-01 on November 3; OFQ-04 wording decision remains pending | Partial: OFQ-03 section 2.3 and DFE-01 named passages reported read; OFQ-04 personal passage review remains pending |
+| SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
@@ -340,6 +340,38 @@ The author reports reading all requested passages: Awarding grades in 2020, incl
 | Vocational context read in passing | The guidance reports delayed results and some reissues, alongside Ofqual's statement that regrading would not lower a learner's result. Preserve this as an in-progress account as of the displayed August 27 update, without claiming completed delivery for every learner. |
 
 Disposition: DFE-01 personal review is reported complete for the named passages, with the author's corrections recorded for later authorized use within those bounds. Reported delivery to centres, policy eligibility, promised routes and institutional expectations remain distinct from individual receipt, successful admission and effective remedy. The linked Ofqual guidance remains unread. OFQ-04 is still pending, so SR-03 remains partial. Manuscripts, historical scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-03 OFQ-04 personal source review and selected-review completion: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The author reports reading the first three paragraphs after the title in the [Ofqual grading-code README](https://github.com/OfqualGovUK/Summer-2020-code-used-to-grade-qualifications/blob/d80a3efe85ea90a04b50a5e25e55085ad38fa073/README.md), pinned to commit `d80a3efe85ea90a04b50a5e25e55085ad38fa073`. Codex re-read those paragraphs and checked repository metadata and commit history. This is a passage-review record, with no code inspection, execution or deployed-software verification performed in this step.
+
+#### Provenance and dates
+
+The [pinned commit](https://github.com/OfqualGovUK/Summer-2020-code-used-to-grade-qualifications/commit/d80a3efe85ea90a04b50a5e25e55085ad38fa073) has author and committer timestamps of October 24, 2025, 15:09:03 UTC. It merges a README update. This identifies the repository revision; it is not a publication date stated by the README or the date of the 2020 events. The three reviewed paragraphs contain no publication dateline of their own. The reported personal reading and this record are dated November 3, 2026.
+
+The author reports that the repository banner says its owner archived it on October 24, 2025 and that it is now read-only. Codex confirmed the current `archived: true` repository status. The exact archive date is retained as the author's banner report; it is not inferred from the commit timestamp. The earlier October 17 inspection did not pin a source commit. This receipt pins the present review without claiming the earlier inspection used identical bytes.
+
+#### Reported reading and corrections
+
+| README paragraph | Author's reading and retained boundary |
+| :--- | :--- |
+| 1: Code and context | Ofqual describes R code it developed to support calculated GCSE, AS and A-level grades in summer 2020. This establishes the repository's stated purpose and context. |
+| 2: Final awarding and transparency | The README describes calculated grades as unused in final awarding except in a small number of cases where they exceeded the candidate's centre assessment grade. It presents publication as a transparency step for review and evaluation. Retain the small-number qualifier without inventing a count or implying a standing practice. |
+| 3: Published code and responsibility | Ofqual states that the published code was not the final code used. It assigns exam boards responsibility for determining final code suited to their individual systems. Ofqual's code was designed to assist exam-board compliance by showing how relevant regulatory requirements could be implemented. This description supplies no account of a particular board's actual code or evidence that compliance was achieved. |
+
+The author's proposed purpose correction, preserved verbatim:
+
+> Ofqual published code it developed to show exam boards how its regulatory requirements could be implemented, and states it was not the final code used.
+
+The author's proposed higher-grade correction, preserved verbatim:
+
+> Calculated grades were used only in the small number of cases where they exceeded the centre assessment grade.
+
+Keep the second statement attributed to the README's account of final summer 2020 awarding. Replace the assistant's earlier “remained in use” phrasing, which could suggest an ongoing practice. Preserve responsibility wording for exam boards; a role assignment does not describe the deployed implementation.
+
+The author accepts the boundary that reading this README does not verify deployed software. He connects its division of responsibilities with OFQ-03's attribution of IT-system development to awarding organizations. These are two statements by Ofqual, with different purposes, and do not constitute independent observations of exam-board systems.
+
+Disposition: OFQ-04 personal passage review is reported complete for the pinned README's first three paragraphs, with the author's corrections recorded for later authorized use within these bounds. Together with the earlier OFQ-03 and DFE-01 receipts, this completes SR-03's selected personal passage review. It does not attest reading any source code, the linked Ofqual appeals guidance, every passage in the source documents or any board's deployed software. No code was executed and no implementation was validated. The broader SC-04/SC-07 packages, manuscripts, historical scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
