@@ -18,6 +18,10 @@ Selected personal passage review is reported complete for SR-02. Mark Julius Ban
 
 Selected personal passage review is reported complete for SR-03's three sources: OFQ-03 section 2.3, the named DFE-01 passages and OFQ-04's first three README paragraphs at the pinned commit. Mark Julius Banasihan's corrections are recorded in the dated receipts below. Earlier partial and pending statements retain their historical checkpoint meaning. This completion covers the stated reading and reporting boundaries only. Linked appeals guidance, source code and deployed software were not personally reviewed in this step. The broader SC-04/SC-07 packages, Board-minutes personal-review flags and manuscript approval retain their separate statuses.
 
+## Current SR-04 status: November 3, 2026
+
+SR-04 is partially reviewed. Mark Julius Banasihan reports reading RW-01's abstract on printed page 1 and the two paragraphs ending its Introduction on printed page 3. His corrections to the Green comparison and its reporting limits are recorded below. RW-02 remains pending. The selected reading does not attest review of the full paper, its cited evidence or all 41 policy documents, and does not validate HIT's method. Earlier pending statements retain their historical checkpoint meaning; other review and manuscript statuses remain separate.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -164,7 +168,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | SR-01 | OFQ-01 standfirst and all six body paragraphs: distinguish the operative grade rule, public reasons, future delivery and coordination already underway. | Original wording accepted October 17; author-proposed terminology and timing revision recorded November 3; see both dated receipts below | Personal passage review reported complete November 3, 2026, by Mark Julius Banasihan for the stated passages only |
 | SR-02 | Selected OCR-01 and OFQ-02 passages: attributed coordination, advisory remit, the reported Board decision and the annual report's general minutes pointer. | Reporting boundaries accepted with the author's November 3 corrections and refinements for these passages; later draft integration remains separate | Selected passage review reported complete November 3; remaining governance paragraph read via a search-engine extract, not an attested full canonical-page reading |
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
-| SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Pending | Pending; no attestation recorded |
+| SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for RW-01 on November 3; RW-02 decision remains pending | Partial: RW-01 abstract and final two Introduction paragraphs reported read; RW-02 personal passage review remains pending |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Pending | Pending; no attestation recorded |
 | SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
 
@@ -372,6 +376,40 @@ Keep the second statement attributed to the README's account of final summer 202
 The author accepts the boundary that reading this README does not verify deployed software. He connects its division of responsibilities with OFQ-03's attribution of IT-system development to awarding organizations. These are two statements by Ofqual, with different purposes, and do not constitute independent observations of exam-board systems.
 
 Disposition: OFQ-04 personal passage review is reported complete for the pinned README's first three paragraphs, with the author's corrections recorded for later authorized use within these bounds. Together with the earlier OFQ-03 and DFE-01 receipts, this completes SR-03's selected personal passage review. It does not attest reading any source code, the linked Ofqual appeals guidance, every passage in the source documents or any board's deployed software. No code was executed and no implementation was validated. The broader SC-04/SC-07 packages, manuscripts, historical scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-04 RW-01 personal source review: November 3, 2026
+
+Reviewer and decision authority: Mark Julius Banasihan, reporting directly in the current source-review conversation. Recorded with Codex assistance. The author reports reading the abstract on printed page 1 and the two paragraphs ending the Introduction on printed page 3 of Ben Green's [The flaws of policies requiring human oversight of government algorithms](https://www.benzevgreen.com/wp-content/uploads/2022/04/22-clsr.pdf), Computer Law & Security Review 45 (2022), 105681; [DOI](https://doi.org/10.1016/j.clsr.2022.105681). Codex re-opened the author-hosted, publisher-formatted 22-page PDF for text inspection. The report of personal reading, the source's 2022 publication year and the November 3, 2026 inspection date remain distinct. No historical-version comparison was performed.
+
+#### Author's corrections and reporting boundaries
+
+The author's proposed correction to the strength of Green's claim, preserved verbatim:
+
+> Green argues, from the evidence he reviews, that people generally cannot perform the oversight these policies assume, and that the policies therefore legitimize flawed algorithms.
+
+Keep this attributed to Green's argument about the government-algorithm oversight policies he examines. The assistant's earlier “questions whether” phrasing understates the critique. The author's reading does not independently reproduce Green's review or establish a universal claim about every form of human oversight.
+
+| Reviewed location | Retained account and limit |
+| :--- | :--- |
+| Abstract, printed page 1 | Green reports surveying 41 policies and identifies two flaws: the evidence he reviews suggests that people cannot perform the desired oversight functions, and oversight policies consequently legitimize faulty or controversial algorithms without resolving their underlying problems. The count and conclusions remain attributed to Green. |
+| First of the final two Introduction paragraphs, printed page 3: appropriateness | The proposal requires written justification for adopting algorithms in high-stakes government decisions. It excludes algorithms that violate fundamental rights, fit the decision poorly or are untrustworthy, even with human oversight. This is a proposed adoption rule, not evidence that HIT or a particular institution meets it. |
+| Same paragraph: two evidence requirements | Preserve both objects of the empirical requirement: proposed human oversight must be effective, and the algorithm must improve human decision-making. “Evidence of effectiveness” alone omits the second requirement and the broader appropriateness test. |
+| Same paragraph: review and approval gate | Written justifications must be made public. Green proposes public review and approval before use, not merely consultation or publication. The abstract describes democratic review and approval. |
+| Closing Introduction paragraph, printed page 3 | Green argues that this institutional approach would help prevent blanket human-oversight rules from providing superficial reassurance about algorithmic injustice. This is the proposal's stated rationale, not a newly tested outcome. |
+
+The author's proposed HIT boundary, preserved verbatim:
+
+> Green's framework motivates asking for oversight evidence; it is a normative proposal about government algorithm adoption, and it says nothing about HIT's method.
+
+Here, “normative proposal” describes the institutional-adoption framework. The paper also presents Green's evidence-based critique and reported policy survey. Neither the critique nor the proposal tests, endorses or validates HIT's dimensions or procedures. This receipt does not establish that HIT satisfies Green's adoption requirements.
+
+#### Count, incidental references and an unverified lead
+
+The author recommends “Green surveys 41 policies” for the abstract's wording. He notes that the Introduction on page 2 and section 3 use the more precise unit “policy documents” offering official mandate or guidance. Those references are outside the requested passages; this reply does not attest reading either section in full or inspecting the 41 underlying records.
+
+The author also points to page 4's education/error and protest references to Kolkman (2020), suggesting a possible connection with the 2020 grading case. Retain this as an author-reported lead only. The cited Kolkman source and its connection to the SR-03 case have not been checked in this step. No new case link, source-packet extension or evidentiary conclusion is adopted from it.
+
+Disposition: RW-01 personal passage review is reported complete for the stated abstract and two Introduction paragraphs, with the author's corrections recorded for later authorized use within these bounds. RW-02 remains pending, so SR-04 remains partial. Full-argument review, inspection of cited evidence, the broader SC-04/SC-07 packages, manuscripts, historical scores, BMR personal-review flags, other SR decisions, claim eligibility and publication approval retain their separate states.
 
 ## Before submission
 
