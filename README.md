@@ -192,7 +192,11 @@ Cite the version you actually used. For an older release, the project across ver
 
 Mark Julius Banasihan · [Node & Norm](https://github.com/node-and-norm) · [ORCID](https://orcid.org/0009-0001-8121-2878)
 
-Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope. AI assistance and scoped author decisions are disclosed in the research records.
+Repository stewardship moved to Node & Norm on 2026-09-15. Published versions, authorship, and research-status claims retain their existing scope.
+
+The [working-manuscript disclosure](paper/development-manuscript.md#7-declarations-and-conclusion) identifies Codex assistance with retrieval, code, proposed interpretations, methodological critique and prose, separately from Jev classifications. The [AI-assistance log](evidence/ai-assistance-log.json) records selected development activities; it is not a complete transcript. The [closeout plan](docs/closeout-plan.md#recorded-verification-and-continuing-limits) preserves partial source checks and deferred manuscript approval. The [preserved human exercise](validation/results/README.md) remains separate from AI-assisted development and does not establish general reliability or current-contract replication.
+
+The [program AI-use statement](https://nodeandnorm.org/about/research-integrity/#ai-use) provides shared reporting principles; the versioned project records describe the assistance and review documented here.
 
 ## Release history and next gates
 
