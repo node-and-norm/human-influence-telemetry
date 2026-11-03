@@ -26,6 +26,10 @@ Selected personal passage review is reported complete for SR-04's two sources: R
 
 Selected body-text review is reported complete for RW-03 and RW-04, with the scopes in their dated receipts. SR-05 remains partial: Mark Julius Banasihan did not read an Annexe 5 notice or update date in his extracted text. He read the parent guidance's under-review notice through a search-engine extract; that does not fill the Annexe-specific field. Figure 2's SMACTR diagram, linked standards and other excluded material retain their stated limits. The body-text corrections do not establish operating effectiveness, legal conformity or manuscript approval.
 
+## Current SR-06 status: November 3, 2026
+
+Mark Julius Banasihan approved bounded use of the recorded SR-01–SR-05 corrections in a later draft, with manuscripts unchanged. The approval retains every reading limit and unresolved issue, including SR-05's partial status. It is a reuse decision, not a source-reading attestation, exact-manuscript approval or authorization to revise a manuscript. This records the final decision in the defined HIT source-review sequence; broader SC-04/SC-07 work and TAE remain separate.
+
 ## Method and status
 
 Authorization-stage record, 17 October 2026: after inspecting the supplement, the author explicitly authorized a separately bounded reassessment. The [new review packet](../research/strengthening/solo-002-board-minutes-reassessment/README.md) recorded the expanded boundary and proposed findings. At that stage, all new interpretations and personal source review remained pending. The draft disclosed a predeclaration-related conformance failure; the contract was unchanged. That authorization did not accept SR-02 or change the manuscript. Earlier statements below about reassessment requiring authorization describe the preceding stage.
@@ -174,7 +178,7 @@ Review one item at a time. The author may accept wording without attesting perso
 | SR-03 | OFQ-03 section 2.3, DFE-01 named passages and OFQ-04 README: confirm actor, sequence, qualifications and remedy boundaries. | Author corrections recorded for all three sources on November 3; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, for the stated passages only; OFQ-04 README pinned to d80a3efe85ea90a04b50a5e25e55085ad38fa073 |
 | SR-04 | RW-01 and RW-02 selected passages: approve only the bounded conceptual comparisons and citation-date distinction. | Author corrections recorded for both sources on November 3; source-ordering inconsistency retained; later manuscript integration remains separate | Selected passage review reported complete November 3, 2026, within the dated receipts' scopes and access qualifications; Springer date-panel reading is not attested |
 | SR-05 | RW-03 and RW-04 selected passages: preserve prior action/monitoring methods and consider the ICO wording clarification. | Author corrections recorded for both body-text comparisons on November 3; Annexe-specific notice reading and later manuscript integration remain separate | Partial: selected RW-03/RW-04 body text reported read; Figure 2 diagram and Annexe 5 notice/update date unread; parent notice read via search extract only |
-| SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Pending | Not a source-reading attestation |
+| SR-06 | Confirm how these checks may be used in a later draft. Any wider-search scope amendment, packet extension or manuscript revision requires a separate decision. | Approved November 3, 2026: bounded later-draft use of recorded SR-01–SR-05 corrections with all limits retained; manuscripts unchanged | Reuse decision only; no new reading attestation; SR-05 remains partial and other reading dispositions are unchanged |
 
 For each reply, append the author's actual decision, exact scope, date and any passage they report reading; preserve qualifications and disagreement. Do not infer that accepting an assistant's paraphrase constitutes independent review. A question about wording need not force new scores, an accepted tie or publication approval.
 
@@ -527,6 +531,22 @@ The author's proposed monitoring wording, preserved verbatim:
 Retain the lifecycle account when describing this neighboring approach; do not reduce it to a static graph or claim that HIT uniquely connects evidence with monitoring or action. The component description does not validate HIT's dimensions, procedures, scientific contribution or practical effectiveness.
 
 Disposition: RW-04 selected body-text review is reported complete with the author's corrections, and RW-03 retains its recorded text-reading scope. SR-05 remains partial because the Annexe-specific notice check is unfulfilled; its update date is also unread and unestablished. Parent-notice reading and Codex's indexed Annexe check remain separate. No legal-conformity conclusion is drawn. Manuscripts, historical scores, BMR personal-review flags, broader SC-04/SC-07 packages, other SR decisions, claim eligibility and publication approval retain their separate states.
+
+### SR-06 bounded-use decision receipt: November 3, 2026
+
+Decision authority: Mark Julius Banasihan, responding directly to the SR-06 question in the current source-review conversation. Recorded with Codex assistance.
+
+Author's exact reply:
+
+> Approve bounded use in a later draft; keep manuscripts unchanged
+
+The question presented use of the recorded SR-01–SR-05 corrections in a later draft only, retaining every source-reading limit and unresolved issue. The author's selection approves that bounded disposition. It is not an attestation of additional personal reading or approval of an exact revised manuscript.
+
+The approved reuse carries the dated receipts' qualifications. In particular, SR-05 remains partial with the Annexe 5 notice and update date unread; its parent-page notice reading and Codex's indexed-text check remain separate. Figure 2's unread diagram, the unresolved ability–authority wording inconsistency, the unverified Kolkman and CelebA leads, other access limits and attribution boundaries remain attached to the relevant comparisons. No disputed ordering, source lead or reported institutional outcome becomes a verified finding through this approval.
+
+No manuscript revision is performed or authorized by this receipt. Any actual manuscript revision requires separate authorization, a revision identifier and review of the resulting draft. Wider literature work, source-packet extensions, claim coverage, publication declarations, venue checks and the broader SC-04/SC-07 packages retain their existing requirements. Historical scores, BMR personal-review flags, research conclusions, the website and publication approval are unchanged. TAE is outside this decision's scope.
+
+Disposition: SR-06's bounded-use decision is recorded. This is the final wording/reuse decision in the defined HIT source-review sequence. Recorded personal reading gaps remain open; completion of this decision does not complete every source check, close the HIT research or validate its method.
 
 ## Before submission
 
