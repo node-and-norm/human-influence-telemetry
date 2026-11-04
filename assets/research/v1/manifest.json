@@ -1,0 +1,26 @@
+{
+  "asset_version": "1.0.0-draft",
+  "config": "projects/human-influence-telemetry/config.json",
+  "input_hashes": {
+    "projects/human-influence-telemetry/config.json": "daf62fbd9d51c87c84318797eaff7d33b92cfe88b8e65db5c1564f8293ad3782",
+    "tokens.json": "ddb30f6bbffed2fd978b24cd8195365c737337aeea609c40e16dd0d87110fde0",
+    "generate.py": "ac709d59bb4ccdb0d47b413c994a6bb8cabce58fd43c7ec2ad2906398f126a8e",
+    "generate_catalog.py": "99f34b99a90148e5327656cf432b0685d999a8c1f681892ddbf9126f7278b66d"
+  },
+  "source_hashes": {
+    "assets/brand/current/logo.svg": "def26d7e6887ce1c1846ea3929816df9b9c6484f30679642d003724c3df85f55",
+    "assets/brand/current/banner.svg": "178e1018845b43ba22de409d389ee48860163b229ea8fbca2ad164c4d5d28df6"
+  },
+  "files": {
+    "banner-light.svg": "d819f2898145f1259f8f4af40fe87372e951e0520ac250d85fa2e461d67c3b59",
+    "banner-mobile-light.svg": "ea7ac75bd95eee71e0999be21251884b60ef43140e22b00dec4a140ce00bfd99",
+    "badges/status-light.svg": "b43b7258378ba37612db3bfd5811e5739abea73facf442a7858a5a09bb31aa1f",
+    "badges/version-light.svg": "47aafceea156c04cc940eb2b2ecf62992f5203338de25de19113463468e3a276",
+    "badges/license-light.svg": "0bbbd949a5ae451a67522379e24968f97bfa5030ab300d5c69b88e272c6e603a",
+    "banner-dark.svg": "101ac1b03fbfc3bee7122cb67d83d6c9eb0a13911c1ab46910a345df03db5f2d",
+    "banner-mobile-dark.svg": "57ff893b395a797e7707ca3df2256948241e696ee2d1f14182c169b464ffc8ad",
+    "badges/status-dark.svg": "40f892a84d8a13b6ec213df090793d07e9762f68d3fd460d5743015fb148d8b2",
+    "badges/version-dark.svg": "4e0344ff1f849f0d2ceb39c773d6d0406e5992a1473ba3d99f96082ec33aa35b",
+    "badges/license-dark.svg": "19d32f3306119c3c3512ff197fc0ad2de06b74ea188d4398e4ea23dd4b9c4f03"
+  }
+}
