@@ -1,0 +1,40 @@
+{
+  "title": "Human Influence Telemetry",
+  "purpose": "Evidence of practical human authority.",
+  "mobile_title_lines": [
+    "Human Influence",
+    "Telemetry"
+  ],
+  "mobile_purpose_lines": [
+    "Evidence of practical",
+    "human authority."
+  ],
+  "sources": {
+    "title": "CITATION.cff",
+    "purpose": "SPECIFICATION.md"
+  },
+  "badges": [
+    {
+      "label": "Status",
+      "value": "Maintenance",
+      "href": "docs/closeout-plan.md",
+      "source": "research/strengthening/maintenance-receipt.json",
+      "id": "status"
+    },
+    {
+      "label": "Software",
+      "value": "0.6.7",
+      "href": "https://github.com/node-and-norm/human-influence-telemetry/releases/tag/v0.6.7",
+      "source": "CITATION.cff",
+      "id": "version"
+    },
+    {
+      "label": "License",
+      "value": "Apache-2.0",
+      "href": "LICENSE",
+      "source": "LICENSE",
+      "id": "license"
+    }
+  ],
+  "desktop_title_size": 44
+}
