@@ -1,3 +1,9 @@
+> **Research status, 11 November 2026: maintenance.**
+>
+> **Held:** Documentary scoring rules and one preserved human scoring exercise. Two eligible independent scorers agreed on 7 of 7 items under the earlier 0.1.0 contract; the substantive ratings had no category variance.
+>
+> **Open:** Broader reliability, current-contract replication and live-review effectiveness. The current replication protocol remains candidate and scoring prohibited. Manuscript approval and all eight stable-release gates remain unresolved; this note does not reopen recruitment or authorize scoring.
+
 <h1>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/research/v1/banner-mobile-dark.svg">
