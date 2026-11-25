@@ -40,15 +40,7 @@ Each finding retains its sources and uncertainty. A value of `0` requires affirm
 
 ## Method in brief
 
-```mermaid
-flowchart LR
-  accTitle: HIT documentary assessment method
-  accDescr: Define the actor and decision boundary. Assemble sources. Assess six dimensions and two integrity components. Preserve findings and uncertainty. Run declared conformance checks.
-  A["Define actor, decision<br/>and period"] -->|bounds| B["Assemble sources<br/>and evidence locations"]
-  B -->|supports review of| C["Six dimensions<br/>and two integrity components"]
-  C -->|records| D["Findings, reasons<br/>and uncertainty"]
-  D -->|supplies| E["Declared conformance<br/>checks"]
-```
+![Define the actor, decision and period. Assemble sources and evidence locations, assess six dimensions and two integrity components, and record findings, reasons and uncertainty for the declared conformance checks.](assets/research/method-in-brief.svg)
 
 The text sequence is: define the boundary, assemble sources, assess the dimensions and integrity, preserve the reasons, then check the record against declared rules. Conformance means the record satisfies those rules. Source interpretation remains a human review responsibility. [Handbook](docs/application-handbook.md), [conformance implementation](src/), [limits](LIMITATIONS.md).
 
